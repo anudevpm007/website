@@ -1,15 +1,17 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useRef } from "react";
 import "./Main_services.css";
 import Services_Main_data from "../Data/Service_Main_data";
 import { CardImg, CardText, CardTitle } from "react-bootstrap";
 
 export default class Main_services extends Component {
+  
   render() {
     var url = window.location.pathname;
     var parts = url.split("/");
     var idu = parts[parts.length - 1];
     var i = 0;
     var j = 0;
+    window.scroll(0,0)
 
     while (i < Services_Main_data.length) {
       if (Services_Main_data[i].SM_id.toString() == idu) {
