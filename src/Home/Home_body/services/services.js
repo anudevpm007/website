@@ -17,7 +17,7 @@ export default class Services extends Component {
     return (
       <div ref={this.state.id} className="col-lg-6">
         <Link
-          to={"/StartUp/services/"+this.state.id}
+          to={"/website/services/"+this.state.id}
           className="S_link"
           style={{ textDecoration: "none" }}
         >

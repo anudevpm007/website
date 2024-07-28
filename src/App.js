@@ -20,11 +20,11 @@ class App extends Component {
         </div>
         <div className="App1">
         <Routes>
-          <Route path="StartUp/" Component={Home} />
-          <Route path="StartUp/blogs/" Component={Main_Blog} />
+          <Route path="website/" Component={Home} />
+          <Route path="website/blogs/" Component={Main_Blog} />
           <Route path="/blogs/:Headings" Component={Blog_detials} />
-          <Route path={"/StartUp/Join_Us/"} Component={Join_us} />
-          <Route path="StartUp/services/:id" Component={Main_services} />
+          <Route path={"/website/Join_Us/"} Component={Join_us} />
+          <Route path="website/services/:id" Component={Main_services} />
           
         </Routes>
         </div>
