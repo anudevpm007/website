@@ -11,6 +11,7 @@ export default class Home extends Component {
         <div id="home">
           <Header_L />
           <Home_body id="HB" />
+          heloo
           <Home_footer />
         </div>
       </div>
