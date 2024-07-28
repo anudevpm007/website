@@ -1,0 +1,41 @@
+.I_S_card {
+  color: black;
+  border: none;
+}
+
+.S_card {
+  overflow: hidden;
+  height: 350px;
+  background-image: linear-gradient(
+    45deg,
+    #fff 50%,
+    #9cfff08e 30%,
+    #7ff9ff5b 20%
+  );
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.709);
+  margin: 20px;
+  padding: 30px;
+  opacity: 0.8;
+  transition: 1s;
+  color: rgb(0, 128, 106);
+}
+.SH_img {
+  display: flex;
+  justify-content: center;
+}
+.S_card:hover {
+  background-image: linear-gradient(
+    45deg,
+    #fff 50%,
+    #9cfff08e 30%,
+    #6dffbb4f 20%
+  );
+  scale: 1.05;
+  opacity: 1;
+  transform: rotateZ(2deg);
+
+  
+}
+#ser_link,.I_S_card{
+  background: transparent;
+}

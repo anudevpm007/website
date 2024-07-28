@@ -1,0 +1,51 @@
+
+.Main_Blogs>h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 100px;
+    margin: 0px;
+    margin-left: 20%;
+    padding-top: 130px;
+
+}
+.Main_Blogs{
+    z-index: 1;
+    background-color: black;
+    background: rgb(34,193,195);
+    background: linear-gradient(221deg, rgb(0, 90, 92) 0%, rgb(0, 26, 82) 87%);
+}
+.M{
+    z-index: 2;
+}
+.Main_blog{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.container{
+    width: 60%;
+}
+
+@media screen and (max-width:1000px) {
+
+    .container{
+    width: 70%;
+}
+
+}
+
+@media screen and (max-width:900px) {
+
+    .container{
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width:600px) {
+
+    .container{
+    width: 90%;
+}
+
+}
