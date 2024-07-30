@@ -1,0 +1,31 @@
+#Menu_S_box{
+    display: flex;
+    border: 3px solid rgb(0, 107, 107);
+    margin-top: 10px;
+    padding: 10px ;
+    border-radius: 10px;
+    width: 700px;
+}
+#Section_1_2{
+    margin-top: 20px;
+}
+#Section_1{
+    display: flex;
+    align-items: center;
+}
+#Section_2{
+    width: 50%;
+}
+#Menu_services>.container>.row{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:500px){
+    #Section_1_1{
+        font-size: medium;
+    }
+    #Section_1_2{
+        font-size: small;
+    }
+    
+}

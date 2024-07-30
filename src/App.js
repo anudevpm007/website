@@ -8,6 +8,7 @@ import Menu from "./Menu/Menu";
 import "./App.css"
 import Join_us from "./Join_us/Join_us";
 import Main_services from "./Services/Main_services";
+import Menu_Services from "./Menu_Services/Menu_Services";
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/blogs/:Headings" Component={Blog_detials} />
           <Route path={"/website/Join_Us/"} Component={Join_us} />
           <Route path="website/services/:id" Component={Main_services} />
+          <Route path="/website/services" Component={Menu_Services} />
           
         </Routes>
         </div>
