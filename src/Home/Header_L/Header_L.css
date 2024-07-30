@@ -99,6 +99,11 @@
   #heading-L2 > span > h1 {
     text-align: center;
   }
+  #Header_L {
+    position: relative;
+    height: 50vh;
+  }
+  
 }
 
 @media screen and (max-width: 370px) {
