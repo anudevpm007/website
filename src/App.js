@@ -8,25 +8,30 @@ import Menu from "./Menu/Menu";
 import "./App.css"
 import Join_us from "./Join_us/Join_us";
 import Main_services from "./Services/Main_services";
-import Menu_Services from "./Menu_Services/Menu_Services";
 
 
 class App extends Component {
   render() {
+    var url = window.location.pathname;
+    console.log(url)
+    var parts = url.split("/");
+    var idu = parts[parts.length - 1];
+    
     return (
 
       <Router>
-        <div className="App">
-          <Menu/>
-        </div>
+        {/* <div id="App"> */}
+          {/* <Menu/> */}
+        {/* </div> */}
         <div className="App1">
+        
         <Routes>
           <Route path="website/" Component={Home} />
+          <Route path="website/from=blog/" Component={Home} />
           <Route path="website/blogs/" Component={Main_Blog} />
           <Route path="/blogs/:Headings" Component={Blog_detials} />
           <Route path={"/website/Join_Us/"} Component={Join_us} />
           <Route path="website/services/:id" Component={Main_services} />
-          <Route path="/website/services" Component={Menu_Services} />
           
         </Routes>
         </div>

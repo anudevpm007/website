@@ -5,8 +5,7 @@ import Services from "./services/services";
 import { Link } from "react-router-dom";
 import Courses from "./Courses/courses";
 
-class Home_body extends Component {
-  render() {
+function Home_body (){
     return (
       <div className="Home_body">
         <div className="container-fluid">
@@ -14,6 +13,7 @@ class Home_body extends Component {
             <div id="service_home">
               <div id="service_list">
                 <div
+                id = "T_SER"
                   style={{
                     fontSize: 30,
                     fontWeight: "bolder",
@@ -44,8 +44,9 @@ class Home_body extends Component {
             </div>
           </div>
         </div>
+        
       </div>
     );
   }
-}
+
 export default Home_body;
