@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.1f54f2d8.css",
-    "main.js": "/website/static/js/main.3082394f.js",
+    "main.css": "/website/static/css/main.38a51a82.css",
+    "main.js": "/website/static/js/main.0f945586.js",
     "static/js/453.bb828c5d.chunk.js": "/website/static/js/453.bb828c5d.chunk.js",
     "static/media/image-1.jpg": "/website/static/media/image-1.1d1dbf46b4508d9f9fdd.jpg",
     "static/media/image-2.jpg": "/website/static/media/image-2.53f56bc9e17f3e495b44.jpg",
@@ -10,15 +10,16 @@
     "static/media/Artboard 10.png": "/website/static/media/Artboard 10.9abd13a4d0facbf8e575.png",
     "static/media/image-3.jpg": "/website/static/media/image-3.6938b533cad0ff6a1e25.jpg",
     "static/media/image-4.png": "/website/static/media/image-4.a6137232539f561efd62.png",
+    "static/media/AB WPL 5.png": "/website/static/media/AB WPL 5.9ebd11072859361edf10.png",
     "static/media/Logo.png": "/website/static/media/Logo.efc96c269c1e6477dc1e.png",
     "static/media/website.png": "/website/static/media/website.d902085963adebf0b1bc.png",
     "index.html": "/website/index.html",
-    "main.1f54f2d8.css.map": "/website/static/css/main.1f54f2d8.css.map",
-    "main.3082394f.js.map": "/website/static/js/main.3082394f.js.map",
+    "main.38a51a82.css.map": "/website/static/css/main.38a51a82.css.map",
+    "main.0f945586.js.map": "/website/static/js/main.0f945586.js.map",
     "453.bb828c5d.chunk.js.map": "/website/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f54f2d8.css",
-    "static/js/main.3082394f.js"
+    "static/css/main.38a51a82.css",
+    "static/js/main.0f945586.js"
   ]
 }
