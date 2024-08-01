@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 // import { useEffect } from "react";
 import "./Home.css";
 import "./Home_body.css";
@@ -25,6 +26,7 @@ export default function Home() {
   //   }
   // }, []);
 
+
   return (
     <div id="main">
       <div id="home">
@@ -33,7 +35,7 @@ export default function Home() {
             <div className="S-logo">
               <img
                 className="logo"
-                src={require("../images/Logo.png")}
+                src={require("../images/AB WPL 5.png")}
                 alt="N/A"
               />
             </div>
@@ -64,7 +66,7 @@ export default function Home() {
                 About Us
               </Link>
               <Link href="#" className="links">
-                Course
+                Courses
               </Link>
               <Link href="#" className="links">
                 Events
@@ -75,84 +77,97 @@ export default function Home() {
             </div>
           </nav>
         </div>
-        <div id="Header_L">
-          <div className="container">
-            <div className="row" id="r">
-              <div className="col-7" id="heading-L">
-                <span>
-                  <h1>Integrity and Innovation in Cyber Security </h1>
-                </span>
-                <span>
-                  <p>
-                    At ingokSek , we prioritize integrity and innovation in
-                    cyber security. We're a research-driven organization,
-                    developing new solutions and leveraging advanced
-                    technologies to protect your digital assets. Our ethical
-                    approach ensures trust and reliability, offering
-                    personalized solutions to meet your specific needs. Discover
-                    how ingokSek can enhance your cyber security strategy with
-                    our advanced expertise and commitment to excellence.
-                  </p>
-                </span>
-                {/* <span><h6>Research Focused, In-Depth & Resilient Security Assessments For Applications, Cloud & Networks</h6></span> */}
-              </div>
-              <div className="col-10" id="heading-L2">
-                <span>
-                  <h1>Integrity and Innovation in Cyber Security</h1>
-                </span>
-                <span>
-                  <p>
-                    At ingokSek , we prioritize integrity and innovation in
-                    cyber security. We're a research-driven organization,
-                    developing new solutions and leveraging advanced
-                    technologies to protect your digital assets. Our ethical
-                    approach ensures trust and reliability, offering
-                    personalized solutions to meet your specific needs. Discover
-                    how ingokSek can enhance your cyber security strategy with
-                    our advanced expertise and commitment to excellence.
-                  </p>
-                </span>
-                {/* <span><h6>Research Focused, In-Depth & Resilient Security Assessments For Applications, Cloud & Networks</h6></span> */}
-              </div>
-              <div className="col-5" id="img-div">
-                <img src={require("../images/AB3.png")} alt="N?A" id="IMG" />
+        <div id="Rest">
+          <div id="D_P_up">
+            <Button as="a" href="#home" id="B_P_up"><img src={require("../images/UP.png")}/></Button>
+          </div >
+          <div id="B_P_down">
+          <Button as="a" id="B_P_down" href="#down"><img src={require("../images/DOWN.png")}/></Button>
+          </div> 
+          
+          <div id="Header_L">
+            <div className="container">
+              <div className="row" id="r">
+                <div className="col-7" id="heading-L">
+                  <span>
+                    <h1>Integrity and Innovation in Cyber Security </h1>
+                  </span>
+                  <span>
+                    <p>
+                      At ingokSek , we prioritize integrity and innovation in
+                      cyber security. We're a research-driven organization,
+                      developing new solutions and leveraging advanced
+                      technologies to protect your digital assets. Our ethical
+                      approach ensures trust and reliability, offering
+                      personalized solutions to meet your specific needs.
+                      Discover how ingokSek can enhance your cyber security
+                      strategy with our advanced expertise and commitment to
+                      excellence.
+                    </p>
+                  </span>
+                  {/* <span><h6>Research Focused, In-Depth & Resilient Security Assessments For Applications, Cloud & Networks</h6></span> */}
+                </div>
+                <div className="col-10" id="heading-L2">
+                  <span>
+                    <h1>Integrity and Innovation in Cyber Security</h1>
+                  </span>
+                  <span>
+                    <p>
+                      At ingokSek , we prioritize integrity and innovation in
+                      cyber security. We're a research-driven organization,
+                      developing new solutions and leveraging advanced
+                      technologies to protect your digital assets. Our ethical
+                      approach ensures trust and reliability, offering
+                      personalized solutions to meet your specific needs.
+                      Discover how ingokSek can enhance your cyber security
+                      strategy with our advanced expertise and commitment to
+                      excellence.
+                    </p>
+                  </span>
+                  {/* <span><h6>Research Focused, In-Depth & Resilient Security Assessments For Applications, Cloud & Networks</h6></span> */}
+                </div>
+                <div className="col-5" id="img-div">
+                  <img src={require("../images/AB3.png")} alt="N?A" id="IMG" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="Home_body">
-          <div className="container-fluid">
-            <div className="row">
-              <div id="service_home">
-                <div id="service_list">
-                  <div
-                    id="T_SER"
-                    style={{
-                      fontSize: 30,
-                      fontWeight: "bolder",
-                      margin: 20,
-                      color: "black",
-                      backgroundColor: "transparent",
-                    }}
-                  >
-                    Services
-                  </div>
-                  <div className="row" id="list">
-                    {services_data.map((Data) => (
-                      <Services
-                        id={Data.id}
-                        heading={Data.Heading}
-                        pera={Data.Pera}
-                        img={Data.img}
-                      />
-                    ))}
+          <div className="Home_body">
+            <div className="container-fluid">
+              <div className="row">
+                <div id="service_home">
+                  <div id="service_list">
+                    <div
+                      id="T_SER"
+                      style={{
+                        fontSize: 30,
+                        fontWeight: "bolder",
+                        margin: 20,
+                        color: "black",
+                        backgroundColor: "transparent",
+                      }}
+                    >
+                      Services
+                    </div>
+                    <div className="row" id="list">
+                      {services_data.map((Data) => (
+                        <Services
+                          id={Data.id}
+                          heading={Data.Heading}
+                          pera={Data.Pera}
+                          img={Data.img}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div id="down">
+          <Home_footer  />
+          </div>
         </div>
-        <Home_footer />
       </div>
     </div>
   );

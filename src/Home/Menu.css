@@ -69,17 +69,17 @@ nav .M-logo{
     display: none;
 }
 .open-sidebar-bt{
-    padding-right: 10px;
+    padding-right: 30px;
     display: none;
 }
 .close-sidebar-bt{
     display: none;
 }
 nav .M-logo{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 nav .S-logo{
-    display: none;
+    display: block;
     margin-left: 10px;
     margin-right: auto;
     color: white;
@@ -125,6 +125,7 @@ nav .S-logo{
         top: 0;
         right: -100%;
         width: 400px;
+        height: 100vh;
         transition: 0.4s ease-out;
     }
     nav .S-logo{
