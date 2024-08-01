@@ -109,7 +109,7 @@ nav .S-logo{
         margin-left: 20px;
     }
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:820px){
     nav a{
         color: white;
         box-sizing: border-box;

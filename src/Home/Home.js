@@ -26,6 +26,11 @@ export default function Home() {
   //   }
   // }, []);
 
+  function close(){
+    document.getElementById("sidebar-active").click()
+
+  }
+
 
   return (
     <div id="main">
@@ -44,7 +49,7 @@ export default function Home() {
               <img src={require("../images/Menu.png")} alt="N/A" />
             </label>
             <label id="overlay" htmlFor="sidebar-active"></label>
-            <div className="links-container">
+            <div className="links-container" id="comp_1">
               <label htmlFor="sidebar-active" className="close-sidebar-bt">
                 <img
                   src={require("../images/Menu2.png")}
@@ -53,22 +58,22 @@ export default function Home() {
                 />
               </label>
 
-              <Link to={"/website/"} className="links">
+              <Link to={"/website/"} onClick={close} className="links">
                 Home
               </Link>
-              <Link to={"/website/blogs/"} className="links">
+              <Link to={"/website/blogs/"} onClick={close} className="links">
                 Blog
               </Link>
-              <a href="#service_list" className="links">
+              <a href="#service_list" onClick={close} className="links">
                 Services
               </a>
-              <Link href="#" className="links">
+              <Link href="#" onClick={close} className="links">
                 About Us
               </Link>
-              <Link href="#" className="links">
+              <Link href="#" onClick={close} className="links">
                 Courses
               </Link>
-              <Link href="#" className="links">
+              <Link href="#" onClick={close} className="links">
                 Events
               </Link>
               <div>

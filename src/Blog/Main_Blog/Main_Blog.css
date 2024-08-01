@@ -9,6 +9,7 @@
 
 }
 .Main_Blogs{
+    position: relative;
     z-index: 1;
     background-color: black;
     background: rgb(34,193,195);
@@ -20,6 +21,12 @@
 .Main_blog{
     margin-top: 40px;
     width: 100%;
+}
+
+
+.Menu-m{
+    z-index: 20;
+    position: absolute;
 }
 
 .container{

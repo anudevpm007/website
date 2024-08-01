@@ -66,7 +66,7 @@ export default function Main_Blog() {
           fontFamily: "sans-serif",
         }}
       >
-        Blogs{parts}
+        Blogs
       </h1>
       <div className="container">
         <div className="row">
