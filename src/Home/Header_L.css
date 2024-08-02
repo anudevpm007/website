@@ -2,6 +2,10 @@
   font-size: clamp(8, 1, 20);
   
 }
+
+#r{
+  margin-top: 150px;
+}
 #heading-L2 {
   display: none;
 }
@@ -22,8 +26,8 @@
 #heading-L {
   position: absolute;
   width: 30%;
-  left: 100px;
-  top: 100px;
+  left: 60px;
+  top: 50px;
   text-align: center;
   
 }
@@ -144,7 +148,7 @@
     font-size: large;
   }
   #heading-L2 > span > p {
-    font-size: small;
+    font-size: x-small;
   }
 }
 @media screen and (max-width: 500px) {
@@ -152,4 +156,16 @@
     margin-top: 140px;
   }
   
+}
+
+@media screen and (max-width: 470px) {
+  #heading-L2 > span > h1 {
+    margin-top: 0px;
+  }
+  #heading-L2 > span > h1 {
+    font-size: large;
+  }
+  #heading-L2 > span > p {
+    font-size: x-small;
+  }
 }

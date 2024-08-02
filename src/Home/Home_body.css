@@ -31,6 +31,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
 }
+
 @media screen and (min-width:300px) {
     #service_list{
         width: 100%;

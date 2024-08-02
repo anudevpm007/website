@@ -77,7 +77,7 @@ export default function Home() {
                 Events
               </Link>
               <div>
-                <Link id="jU">Join Us</Link>
+                <Link id="jU" to={"/website/Join_Us/"}>Join Us</Link>
               </div>
             </div>
           </nav>
@@ -121,7 +121,7 @@ export default function Home() {
                       At ingokSek , we prioritize integrity and innovation in
                       cyber security. We're a research-driven organization,
                       developing new solutions and leveraging advanced
-                      technologies to protect your digital assets. Our ethical
+                      technolog ies to protect your digital assets. Our ethical
                       approach ensures trust and reliability, offering
                       personalized solutions to meet your specific needs.
                       Discover how ingokSek can enhance your cyber security
@@ -137,6 +137,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          
           <div className="Home_body">
             <div className="container-fluid">
               <div className="row">

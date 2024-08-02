@@ -20,7 +20,7 @@ export default function Main_Blog() {
           <div className="S-logo">
             <img
               className="logo"
-              src={require("../../images/Logo.png")}
+              src={require("../../images/AB WPL 5.png")}
               alt="N/A"
             />
           </div>

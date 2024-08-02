@@ -79,7 +79,7 @@ nav .M-logo{
     color: white;
 }
 nav .S-logo{
-    display: none;
+    display: block;
     margin-left: 10px;
     margin-right: auto;
     color: white;
@@ -109,7 +109,7 @@ nav .S-logo{
         margin-left: 20px;
     }
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:900px){
     nav a{
         color: white;
         box-sizing: border-box;

@@ -36,6 +36,11 @@
 
   
 }
+
+#S_BOX_HEADING{
+  font-size: xx-large;
+}
+
 #ser_link,.I_S_card{
   background: transparent;
 }

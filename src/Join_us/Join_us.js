@@ -2,6 +2,8 @@ import { Card } from "react-bootstrap";
 import "./Join_us.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Join_mobile from "./Join_mobile";
+import Menu from "../Menu/Menu";
 
 export default function Join_us() {
 
@@ -11,7 +13,10 @@ export default function Join_us() {
       console.log(val);
     }
     return (
+      <div>
+        <Menu/>
       <div className="Join_us">
+        
         <div className="container">
           <div className="col">
             <Card className="JU_card">
@@ -27,13 +32,17 @@ export default function Join_us() {
                     <button type="button" onClick={bt}>Submit</button>
                   </div>
                   <div>
-                    <Link style={{padding:20,textDecoration:"none"}}>Already have Acoout</Link>
+                    <Link style={{padding:20,textDecoration:"none"}}>Already have Account</Link>
                   </div>
                 </div>
               </form>
             </Card>
           </div>
         </div>
+        <div id="mobile">
+          <Join_mobile/>
+        </div>
+      </div>
       </div>
     );
   }

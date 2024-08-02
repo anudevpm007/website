@@ -34,9 +34,9 @@ export default class Services extends Component {
                   style={{ width: "36%" }}
                 ></CardImg>
               </div>
-              <Card.Title style={{ fontSize: 27 }}>
+              <div  id="S_BOX_HEADING">
                 {this.state.Heading}
-              </Card.Title>
+              </div>
               <Card className="I_S_card" style={{ padding: 10, marginTop: 10 }}>
                 <CardText id="ser_link">{this.state.Pera}</CardText>
               </Card>
