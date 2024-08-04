@@ -4,7 +4,7 @@
 }
 
 #r{
-  margin-top: 150px;
+  margin-top: 100px;
 }
 #heading-L2 {
   display: none;
@@ -24,8 +24,9 @@
 }
 
 #heading-L {
-  position: absolute;
-  width: 30%;
+  margin-top: 50px;
+
+  width: 45%;
   left: 60px;
   top: 50px;
   text-align: center;
@@ -58,18 +59,15 @@
   #heading-L > span > h1 {
     font-size: x-large;
   }
+
+  
 }
 
 @media screen and (max-width: 950px) {
   #img-div > img {
     top: 10px;
   }
-  #heading-L > span > h1 {
-    margin-top: 90px;
-  }
-  #heading-L {
-    top: 30px;
-  }
+
   #heading-L > span > p {
     font-size: small;
   }
@@ -91,7 +89,7 @@
   }
   
   #heading-L {
-    top: 50px;
+    margin-top: 40px;
   }
   #heading-L > span > p {
     font-size: x-small;
@@ -163,9 +161,9 @@
     margin-top: 0px;
   }
   #heading-L2 > span > h1 {
-    font-size: large;
+    font-size: xx-large;
   }
   #heading-L2 > span > p {
-    font-size: x-small;
+    font-size: medium;
   }
 }
