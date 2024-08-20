@@ -6,40 +6,69 @@ export default class Home_footer extends Component {
   render() {
     return (
       <div id="home_footer">
-        <div id="About_data">
-          <p>
-            <div>
-              <h5>Informations</h5>
+        <div className="row" id="main_box">
+          <div id="footer_logo">
+            <img src={require("../../images/Logo.png")} id="box_logo" />
+          </div>
+          <div className="col-md" id="box_1">
+            <h3>Readings</h3>
+            <p>
+              RedTeam Hacker Academy’s career-focused, implementation-based learning programs pave the road to a success-assured career in Ethical Hacking & Cybersecurity. Their curriculum is designed to blend theoretical knowledge with practical, hands-on experience, ensuring students are well-prepared for real-world challenges. The academy offers a range of certifications and courses tailored to different skill levels, from beginners to advanced professionals. Instructors are industry experts, providing insights into the latest trends and threats in cybersecurity. With a strong emphasis on ethical practices and cutting-edge technology, RedTeam Hacker Academy equips its students with the skills needed to protect and defend against cyber threats.
+            </p>
+          </div>
+          <div className="col-lg" id="box_2">
+            <h3>Contact Info</h3>
+            <div id="C_Info">
+                <div>
+                  E_Mail: anudevpm101@gmail.com
+                </div>
+                <div>
+                  Mobile: 9895816480
+                </div>
             </div>
-            <div>
-              Mobile No: <span>+919xxxxxxxxx</span>
-            </div>
-            <div>
-              E Mail: <span>sales@inkogsek.com</span>
-            </div>
-            <div>
-              Website:{" "}
-              <span>
-                <Link>www.inkogsek.com</Link>
-              </span>
-            </div>
-            <div>
-              address:{" "}
-              <span>
-                58/1617 S Beach Rd Kuttichira Calicut, Kerala India-673001
-              </span>
-            </div>
-          </p>
-          <div>
-            <div>Important pages</div>
-            <div>
-              <Link>Blogs</Link>
-            </div>
-            <div>
-              <Link>Services</Link>
-            </div>
-            <div>
-              <Link>Courses</Link>
+            <h3>Our Links</h3>
+            <div id="footer_links">
+              <ul id="F_link_list">
+                <li>
+                  <div>
+                    <Link to={"/website/"}>
+                      Home
+                    </Link>
+                    <a href="#service_list">
+                      Services
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Link to={"/website/blogs/"}>
+                      Blog
+                    </Link>
+
+                    <Link href="#">
+                      About Us
+                    </Link>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <Link href="#">
+                      Courses
+                    </Link>
+                    <Link href="#">
+                      Events
+                    </Link>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Link to={"/website/Join_Us/"}>
+                      Join Us
+                    </Link>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

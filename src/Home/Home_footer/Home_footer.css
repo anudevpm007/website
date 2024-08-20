@@ -1,41 +1,78 @@
 #home_footer{
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-}
-#About_data{
-    width: 90%;
-}
-#About_data>p{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
+    background-color: black;
+    padding: 20px;
 }
 
-#About_data>p>div:nth-child(1)>h5{
-    margin-top: 5px;
-    color: rgb(108, 245, 255);
-    font-weight: bolder;
+#box_1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+#box_1>h3{
+    margin-bottom: 40px;
+}
+
+#box_logo{
+    width: 12%;
+}
+
+#div_box_logo{
+    display: flex;
+    align-items: end;
+
+}
+
+#box_2{
+    color: white;
+    padding-left: 200px;
+}
+
+#box_2>div{
+    color: white;
+   
+}
+#C_Info{
+    
+    padding-left: 20px;
+}
+
+#C_Info>div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#footer_links>ul{
+
+    list-style: none;
+}
+
+#F_link_list{
+    margin-top: 30px;
+    width: 60%;
+}
+
+#F_link_list>li>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
     
 }
 
-#About_data>p>div:nth-child(n-1){
-    color: white;
+#F_link_list>li>div>a{
+    color: rgb(94, 244, 255);
+    text-decoration: none;
 }
-
-#About_data{
-    display: flex;
-    flex-direction: row;
-}
-
-#About_data>div{
-    margin-left: 90px;
-}
-
-#About_data>div>div{
-    margin-top: 10px;
-    color: white;
+@media screen and (max-width:1200px) {
+    #box_logo{
+        width: 20%;
+    }
+    #box_2{
+        margin-top: 40px;
+        padding-left: 0px;
+    }
+    #F_link_list{
+        width: 50%;
+    }
 }
