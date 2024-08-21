@@ -15,7 +15,7 @@ export default class Services extends Component {
       img: this.props.img,
     };
     return (
-      <div ref={this.state.id} className="col-lg-6">
+      <div ref={this.state.id} className="col-5">
         <Link
           to={"/website/services/"+this.state.id}
           className="S_link"
@@ -37,9 +37,7 @@ export default class Services extends Component {
               <div  id="S_BOX_HEADING">
                 {this.state.Heading}
               </div>
-              <Card className="I_S_card" style={{ padding: 10, marginTop: 10 }}>
-                <CardText id="ser_link">{this.state.Pera}</CardText>
-              </Card>
+             
             </Card>
           </div>
         </Link>

@@ -11,7 +11,7 @@ export default class Home_footer extends Component {
             <img src={require("../../images/Logo.png")} id="box_logo" />
           </div>
           <div className="col-md" id="box_1">
-            <h3>Readings</h3>
+            <h3>About Us</h3>
             <p>
               RedTeam Hacker Academy’s career-focused, implementation-based learning programs pave the road to a success-assured career in Ethical Hacking & Cybersecurity. Their curriculum is designed to blend theoretical knowledge with practical, hands-on experience, ensuring students are well-prepared for real-world challenges. The academy offers a range of certifications and courses tailored to different skill levels, from beginners to advanced professionals. Instructors are industry experts, providing insights into the latest trends and threats in cybersecurity. With a strong emphasis on ethical practices and cutting-edge technology, RedTeam Hacker Academy equips its students with the skills needed to protect and defend against cyber threats.
             </p>
@@ -31,9 +31,9 @@ export default class Home_footer extends Component {
               <ul id="F_link_list">
                 <li>
                   <div>
-                    <Link to={"/website/"}>
+                    <a href="#home">
                       Home
-                    </Link>
+                    </a>
                     <a href="#service_list">
                       Services
                     </a>
@@ -44,30 +44,23 @@ export default class Home_footer extends Component {
                     <Link to={"/website/blogs/"}>
                       Blog
                     </Link>
-
-                    <Link href="#">
-                      About Us
-                    </Link>
-                  </div>
-                </li>
-
-                <li>
-                  <div>
                     <Link href="#">
                       Courses
                     </Link>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
                     <Link href="#">
                       Events
                     </Link>
-                  </div>
-                </li>
-                <li>
-                  <div>
                     <Link to={"/website/Join_Us/"}>
                       Join Us
                     </Link>
                   </div>
                 </li>
+
               </ul>
             </div>
           </div>

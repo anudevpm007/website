@@ -1,31 +1,58 @@
+#Pera_1 {
+    width: 500px;
+}
 
-
-.Home_body{
+#Pera_2>div{
+    width: 500px;
+    text-align: justify;
     
+}
+#Pera_2{
+    display: flex;
+    justify-content: center;
+
+}
+
+#Ser_pera{
+    display: flex;
+    align-items: center;
+}
+
+#Pera_1 {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.Home_body {
+
     background-color: rgb(255, 255, 255);
     width: 100%;
 }
 
-.container-fluid{
+.container-fluid {
     width: 90%;
-    
+
 }
-#service_home{
+
+#service_home {
     overflow: hidden;
     width: 100%;
     display: flex;
-    justify-content: center;
+
     flex-direction: row;
 }
-#service_list{
+
+/* #service_list{
     width: 60%;
     
-}
-.detials{
+} */
+.detials {
     display: flex;
     justify-content: center;
 }
-.detials>a{
+
+.detials>a {
     text-decoration: none;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
@@ -33,33 +60,35 @@
 }
 
 @media screen and (min-width:300px) {
-    #service_list{
+    #service_list {
         width: 100%;
     }
 }
 
 @media screen and (min-width:600px) {
-    #service_list{
+    /* #service_list{
         width: 90%;
-    }
+    } */
 }
- @media screen and (min-width:700px) {
-    #service_list{
+
+@media screen and (min-width:700px) {
+    /* #service_list{
         width: 80%;
-    }
+    } */
 }
 
 @media screen and (min-width:800px) {
-    #service_list{
+    /* #service_list{
         width: 70%;
-    }
-} 
+    } */
+}
+
 @media screen and (min-width:900px) {
-    #service_list{
+    /* #service_list{
         width: 60%;
-    }
-   
-} 
+    } */
+
+}
 
 /* @media screen and (min-width:450px) {
     .Home_body{
