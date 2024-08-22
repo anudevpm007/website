@@ -3,7 +3,7 @@
 }
 
 #Pera_2>div{
-    width: 500px;
+    width: 600px;
     text-align: justify;
     
 }
@@ -38,8 +38,8 @@
 }
 
 #service_home {
-    overflow: hidden;
-    margin-bottom: 10px;
+
+    margin-bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: center;

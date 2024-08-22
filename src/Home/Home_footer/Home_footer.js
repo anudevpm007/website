@@ -25,6 +25,9 @@ export default class Home_footer extends Component {
                 <div>
                   Mobile: 9895816480
                 </div>
+                <div>
+                  Address: 1600 Amphitheatre Parkway in Mountain View, California
+                </div>
             </div>
             <h3>Our Links</h3>
             <div id="footer_links">
