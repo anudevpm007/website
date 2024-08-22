@@ -1,6 +1,6 @@
 
 .S_card {
-  height: 170px;
+  height: 200px;
   overflow: hidden;
   margin-top: 10px;
   background-image: linear-gradient(
@@ -16,6 +16,7 @@
   color: rgb(0, 128, 106);
 }
 .SH_img {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   scale: 1.2;
