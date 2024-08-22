@@ -10,6 +10,10 @@
   width: 400px;
   text-align: center;
 }
+
+#H_Col2{
+  padding: 0px;
+}
 #H_Col1{
   font-size: small;
 }

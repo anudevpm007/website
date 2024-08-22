@@ -1,7 +1,8 @@
 
 .S_card {
+  height: 170px;
   overflow: hidden;
-  margin: 2px;
+  margin-top: 10px;
   background-image: linear-gradient(
     45deg,
     #fff 50%,

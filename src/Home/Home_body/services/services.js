@@ -15,10 +15,10 @@ export default class Services extends Component {
       img: this.props.img,
     };
     return (
-      <div ref={this.state.id} className="col-5">
+      <div ref={this.state.id} className="col-4">
         <Link
           to={"/website/services/"+this.state.id}
-          className="S_link"
+          id="S_link"
           style={{ textDecoration: "none" }}
         >
           <div id="ser">

@@ -8,6 +8,7 @@
     
 }
 #Pera_2{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 
@@ -25,7 +26,8 @@
 
 
 .Home_body {
-
+    margin: 0px;
+    padding: 0px;
     background-color: rgb(255, 255, 255);
     width: 100%;
 }
@@ -37,9 +39,10 @@
 
 #service_home {
     overflow: hidden;
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
-
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -58,11 +61,11 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
 }
+#service_list {
+    width: 60%;
+}
 
 @media screen and (min-width:300px) {
-    #service_list {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width:600px) {

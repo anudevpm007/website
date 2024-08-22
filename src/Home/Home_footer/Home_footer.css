@@ -1,6 +1,21 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 #home_footer{
     background-color: black;
     padding: 20px;
+    width: 100vw;
+}
+:root{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #box_1{
@@ -9,6 +24,9 @@
     flex-direction: column;
     margin-left: 40px;
     
+}
+#box_1>p{
+    text-align: justify;
 }
 #box_1>h3{
     margin-bottom: 40px;
