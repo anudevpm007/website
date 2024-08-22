@@ -55,14 +55,14 @@
 
 @media screen and (max-width:1000px) {
   #S_BOX_HEADING{
-    font-size: x-large;
+    font-size: medium;
   }
 }
 
 
 @media screen and (max-width:360px) {
   #S_BOX_HEADING{
-    font-size: large;
+    font-size: small;
   }
 }
 

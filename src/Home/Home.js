@@ -63,7 +63,7 @@ export default function Home() {
                 Events
               </Link>
               <div>
-                <Link id="jU" to={"/website/Join_Us/"}>Join Us</Link>
+                <Link id="jU" to={"/website/Book/"}>Book Now</Link>
               </div>
             </div>
           </nav>
@@ -112,45 +112,59 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-              <div className="Home_body">
-                <div className="container-fluid">
-                  <div className="row">
-                    <div id="service_home">
-                      <div id="service_list">
-                        <div
-                          id="T_SER"
-                          style={{
-                            fontSize: 30,
-                            fontWeight: "bolder",
-                            margin: 20,
-                            color: "black",
-                            backgroundColor: "transparent",
-                          }}
-                        >
+            <div className="Home_body">
+              <div className="container-fluid">
+                <div className="row">
+                  <div id="service_home">
+                    <div id="service_list">
+                      <div
+                        id="T_SER"
+                        style={{
+                          fontSize: 30,
+                          fontWeight: "bolder",
+                          margin: 20,
+                          color: "black",
+                          backgroundColor: "transparent",
+                        }}
+                      >
 
-                        </div>
-                        <div className="row" id="list">
-                          {services_data.map((Data) => (
-                            <Services
-                              id={Data.id}
-                              heading={Data.Heading}
-                              pera={Data.Pera}
-                              img={Data.img}
-                            />
-                          ))}
-                        </div>
+                      </div>
+                      <div className="row" id="list">
+                        {services_data.map((Data) => (
+                          <Services
+                            id={Data.id}
+                            heading={Data.Heading}
+                            pera={Data.Pera}
+                            img={Data.img}
+                          />
+                        ))}
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-          <div id="Pera_2">
+          <div id="book_now">
+            <div className="row" id="book_box_1">
+              <div className="col-6" id="book_box_1_1">
+                <h3>Book Your Free Concultency</h3>
+              </div>
+              <div className="col-6" id="book_box_1_2">
+                <button >
+                  <Link to={"/website/Book/"} id="Book_Link">
+                  Book Now
+                  </Link>
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* <div id="Pera_2">
             <div>
               <h3>About Us</h3>
               RedTeam Hacker Academy’s career-focused, implementation-based learning programs pave the road to a success-assured career in Ethical Hacking & Cybersecurity. Their curriculum is designed to blend theoretical knowledge with practical, hands-on experience, ensuring students are well-prepared for real-world challenges. The academy offers a range of certifications and courses tailored to different skill levels, from beginners to advanced professionals. Instructors are industry experts, providing insights into the latest trends and threats in cybersecurity. With a strong emphasis on ethical practices and cutting-edge technology, RedTeam Hacker Academy equips its students with the skills needed to protect and defend against cyber threats.
             </div>
-          </div>
+          </div> */}
 
           <div id="down">
             <Home_footer />

@@ -2,21 +2,23 @@ div{
     color: wheat;
     
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 #home{
     position: relative;
-    
     width: 100vw;
     height: 100%;
     background-color: transparent;
     background-size: 100vh 100vw;
 }
 #Rest{
-    position: absolute;
+    /* position: absolute; */
     z-index: -10;
 }
 #D_P_up,#B_P_down{
+    
     position: fixed;
     right: 10px;
     
@@ -42,6 +44,48 @@ div{
     z-index: 55;
 }
 
+/* book Now Section */
+
+#book_now{
+    display: flex;
+    justify-content: center;
+}
+#book_box_1{
+    border: 3px solid rgba(0, 0, 0, 0.274);
+    padding: 15px;
+    /* border-radius: 10px; */
+    width: 850px;
+    background-color:  rgba(89, 252, 217, 0.432);
+}
+#book_box_1_2{
+    display: flex;
+    justify-content: end;
+}
+
+#book_box_1_2>button{
+    background-color: transparent;
+    transition: 1s;
+    
+}
+
+#book_box_1_2>button>a{
+    text-decoration: none;
+    color: black;
+}
+
+#book_box_1_1>h3{
+    color: rgb(0, 0, 0);
+}
+
+#book_box_1_2>button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+#book_box_1_2>button:hover~#Book_Link{
+    color: white;
+}
 
 @media screen and (max-width:600px) {
     #D_P_up,#B_P_down{

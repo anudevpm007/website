@@ -1,7 +1,9 @@
 #Pera_1 {
     width: 500px;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 #Pera_2>div{
     width: 600px;
     text-align: justify;
@@ -11,7 +13,10 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
 
+:root{
+    scroll-behavior: smooth;
 }
 
 #Ser_pera{
@@ -26,6 +31,7 @@
 
 
 .Home_body {
+    scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
     background-color: rgb(255, 255, 255);
@@ -38,7 +44,7 @@
 }
 
 #service_home {
-
+    
     margin-bottom: 50px;
     width: 100%;
     display: flex;
@@ -62,34 +68,34 @@
     font-weight: bolder;
 }
 #service_list {
-    width: 60%;
+    width: 70%;
 }
 
 @media screen and (min-width:300px) {
 }
 
 @media screen and (min-width:600px) {
-    /* #service_list{
+    #service_list{
         width: 90%;
-    } */
+    }
 }
 
 @media screen and (min-width:700px) {
-    /* #service_list{
+    #service_list{
         width: 80%;
-    } */
+    }
 }
 
 @media screen and (min-width:800px) {
-    /* #service_list{
+    #service_list{
         width: 70%;
-    } */
+    }
 }
 
 @media screen and (min-width:900px) {
-    /* #service_list{
+    #service_list{
         width: 60%;
-    } */
+    }
 
 }
 
