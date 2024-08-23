@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import "./Menu.css";
 import { Link } from "react-router-dom";
 
@@ -8,10 +8,18 @@ function close(){
 
 }
 
-export default class Menu extends Component {
-    
-  render() {
+let url = window.location
+let F_url = (url.pathname).split('/')
+let word = F_url[2]
+
+
+export default function Menu() {
+  useEffect(()=>{
+    document.getElementById("B_T_N_join").style.display="none";
+  })
+  
     return (
+      
       <div className="Menu-m">
         <nav>
         <div className="S-logo"><img className="logo" src={require("../images/AB WPL 5.png")} alt="N/A"/></div>
@@ -31,11 +39,11 @@ export default class Menu extends Component {
             <Link href="#" className="links" onClick={close}>About Us</Link>
             <Link href="#" className="links" onClick={close}>Course</Link>
             <Link href="#" className="links" onClick={close}>Events</Link>
-            <div><Link id="jU">Join Us</Link></div>
+            <div id="B_T_N_join"><Link to={"/website/Book/"} id="jU">Book Now</Link></div>
           </div>
         </nav>
         
       </div>
     );
+    
   }
-}
