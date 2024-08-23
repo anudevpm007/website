@@ -1,7 +1,7 @@
 const Services_Main_data = [
   {
     SM_id: 21323121,
-    media: require("./images/iot.png"),
+    media: require("./images/p8.png"),
     heading: " IoT And Embedded Security Testing",
     paragraph:
       "At Inkogsek, we specialize in identifying and exploiting security vulnerabilities in IoT and embedded devices. Our comprehensive approach covers hardware, firmware, network services, and applications, ensuring thorough protection against potential threats.",
@@ -28,7 +28,7 @@ const Services_Main_data = [
   // secound object
   {
     SM_id: 21323122,
-    media: require("./images/CS.png"),
+    media: require("./images/p11.png"),
     heading: " Mobile Application Security",
     paragraph:
       "Mobile application security testing is often underestimated in broader security assessments. Many organizations mistakenly believe that web application tests cover their mobile counterparts. However, mobile apps differ significantly from web apps, necessitating specialized security testing approaches. At Inkogsek, our expert team provides targeted mobile security assessments, guidance, and training to ensure your mobile applications are robust against emerging threats in today's dynamic mobile landscape.",
