@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardText } from "react-bootstrap";
+import { Button, Card, CardImg, CardText } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./services.css";
 export default class Services extends Component {
@@ -16,31 +16,31 @@ export default class Services extends Component {
     };
     return (
       <div ref={this.state.id} className="col-4">
-        <Link
+        {/* <Link
           to={"/website/services/"+this.state.id}
           id="S_link"
           style={{ textDecoration: "none" }}
-        >
-          <div id="ser">
-            <Card
-              className="S_card"
-              style={{
-                padding: 10,
-              }}
-            >
-              <div className="SH_img">
-                <CardImg
-                  src={this.props.img}
-                  style={{ width: "36%" }}
-                ></CardImg>
-              </div>
-              <div  id="S_BOX_HEADING">
-                {this.state.Heading}
-              </div>
-             
-            </Card>
-          </div>
-        </Link>
+        > */}
+        <div id="ser">
+          <Card
+            className="S_card"
+
+          >
+            <div className="SH_img">
+              <CardImg
+                src={this.props.img}
+              ></CardImg>
+            </div>
+            <div id="S_BOX_HEADING">
+              {this.state.Heading}
+            </div>
+            <Button id="EP_Button">
+              <Link to={"/website/services/"+this.state.id}>Explore more</Link>
+            </Button>
+          </Card>
+
+        </div>
+        {/* </Link> */}
       </div>
     );
   }
