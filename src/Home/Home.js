@@ -80,8 +80,13 @@ export default function Home() {
           {/* Header Section */}
 
           <div id="Header_L">
-            <video   autoPlay loop muted src={BgVideo} type="video/mp4">
-            </video>
+            <div>
+              <video autoPlay loop muted src={BgVideo} type="video/mp4">
+              </video>
+            </div>
+            <div id="Header_Heading">
+              <span><h1>A Bit of Defense Beats a Breach of Bytes</h1></span>Protect Your Business with Our Innovative Cybersecurity Services!
+            </div>
           </div>
           <div className="row">
             <div className="Home_body">

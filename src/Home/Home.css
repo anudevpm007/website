@@ -8,7 +8,23 @@ html {
 }
 
 
-#Header_L>video {
+#Header_Heading>span>h1{
+    color: white;
+    font-size: 70px;
+}
+
+
+#Header_Heading{
+    top: 330px;
+    left: 100px;
+    position: absolute;
+    color: white;
+    width: 800px;
+}
+
+
+#Header_L>div>video {
+    position: relative;
     width: 100vw;
     height: auto;
 }
@@ -17,7 +33,7 @@ html {
     position: relative;
     width: 100vw;
     height: 100%;
-    background: rgb(0, 0, 0);
+    background: #000000ef;
     background-size: 100vh 100vw;
 }
 
