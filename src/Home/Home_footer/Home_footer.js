@@ -7,65 +7,148 @@ export default class Home_footer extends Component {
     return (
       <div id="home_footer">
         <div className="row" id="main_box">
-          <div id="footer_logo">
-            <img src={require("../../images/Logo.png")} id="box_logo" />
+          <div id="footer_logo" className="row">
+            <div className="col-1"><img src={require("../../images/AB WPL 5.png")} id="box_logo" /></div>
+            <div className="col-2"><h3>INKOGSEK</h3></div>
           </div>
           <div className="col-md" id="box_1">
-            <h3>About Us</h3>
             <p>
-              RedTeam Hacker Academy’s career-focused, implementation-based learning programs pave the road to a success-assured career in Ethical Hacking & Cybersecurity. Their curriculum is designed to blend theoretical knowledge with practical, hands-on experience, ensuring students are well-prepared for real-world challenges. The academy offers a range of certifications and courses tailored to different skill levels, from beginners to advanced professionals. Instructors are industry experts, providing insights into the latest trends and threats in cybersecurity. With a strong emphasis on ethical practices and cutting-edge technology, RedTeam Hacker Academy equips its students with the skills needed to protect and defend against cyber threats.
+              Research Powered Cybersecurity Services and Training. Eliminate security threats through our innovative and extensive security assessments.
             </p>
+            <div id="box_1_1">
+
+              <h4>Subscribe to our newsletter</h4>
+              <form>
+                <div className="row" id="box_11_1">
+                  <div className="col-6" id="box_111_1">
+                    <input placeholder="E-Mail" type="email" />
+                  </div>
+                  <div className="col-6" id="box_111_2">
+                    <button>Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
           <div className="col-lg" id="box_2">
-            <h3>Contact Info</h3>
-            <div id="C_Info">
-                <div>
-                  E_Mail: anudevpm101@gmail.com
-                </div>
-                <div>
-                  Mobile: 9895816480
-                </div>
-                <div>
-                  Address: 1600 Amphitheatre Parkway in Mountain View, California
-                </div>
-            </div>
-            <h3>Our Links</h3>
+
             <div id="footer_links">
               <ul id="F_link_list">
+                <div>
+                  Services
+                </div>
                 <li>
-                  <div>
-                    <a href="#home">
-                      Home
-                    </a>
-                    <a href="#service_list">
-                      Services
-                    </a>
-                  </div>
+                  <a href="#home">
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <div>
-                    <Link to={"/website/blogs/"}>
-                      Blog
-                    </Link>
-                    <Link href="#">
-                      Courses
-                    </Link>
-                  </div>
+                  <a href="#service_list">
+                    Services
+                  </a>
                 </li>
-
                 <li>
-                  <div>
-                    <Link href="#">
-                      Events
-                    </Link>
-                    <Link to={"/website/Join_Us/"}>
-                      Join Us
-                    </Link>
-                  </div>
+                  <Link to={"/website/blogs/"}>
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    Courses
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    Events
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/website/Join_Us/"}>
+                    Join Us
+                  </Link>
                 </li>
 
               </ul>
             </div>
+          </div>
+        </div>
+        <div className="row" id="footer_loc_box">
+          <div id="footer_loc_box_1">
+            <div className="row">
+              <div className="col-3" >
+                <div className="row" id="loc_box">
+                  <div className="col-3" id="loc_box_1">
+                    <img src={require("../../images/location.png")} />
+                  </div>
+
+                  <div className="col" id="loc_box_2">
+                    <div className="row">
+                      US
+                    </div>
+                    <div className="row">
+                      98579823457
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div className="col-3">
+                <div className="row" id="loc_box">
+                  <div className="col-3" id="loc_box_1">
+                    <img src={require("../../images/location.png")} />
+                  </div>
+
+                  <div className="col" id="loc_box_2">
+                    <div className="row">
+                      India
+                    </div>
+                    <div className="row">
+                      45456456
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="row" id="loc_box">
+                  <div className="col-3" id="loc_box_1">
+                    <img src={require("../../images/location.png")} />
+                  </div>
+
+                  <div className="col" id="loc_box_2">
+                    <div className="row">
+                      England
+                    </div>
+                    <div className="row">
+                      546756785
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3">
+                <div className="row" id="loc_box">
+                  <div className="col-3" id="loc_box_1">
+                    <img src={require("../../images/location.png")} />
+                  </div>
+
+                  <div className="col" id="loc_box_2">
+                    <div className="row">
+                      Japan
+                    </div>
+                    <div className="row">
+                      234234234433
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row" id="last_bottom">
+          <div className="col-6">
+            Terms & conditions 
+          </div>
+          <div className="col-6">
+          Copyright © 2010-2024 Freepik Company S.L. All rights reserved.
           </div>
         </div>
       </div>

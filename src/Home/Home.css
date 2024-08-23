@@ -89,9 +89,9 @@ html {
 #book_box_1 {
     border: 3px solid rgba(0, 0, 0, 0.274);
     padding: 15px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     width: 850px;
-    background-color: rgba(89, 252, 217, 0.432);
+    background-color: rgb(154, 255, 233);
 }
 
 #book_box_1_2 {
@@ -100,25 +100,28 @@ html {
 }
 
 #book_box_1_2>button {
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #061113;
+    border: none;
+    width: 120px;
+    border-radius: 5px;
+    height: 50px;
     transition: 1s;
 
 }
 
 #book_box_1_2>button>a {
     text-decoration: none;
-    color: black;
+    color: rgb(173, 173, 173);
 }
 
 #book_box_1_1>h3 {
     color: rgb(0, 0, 0);
 }
 
-#book_box_1_2>button:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-}
+
 
 #book_box_1_2>button:hover~#Book_Link {
     color: white;

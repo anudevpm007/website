@@ -86,10 +86,7 @@ export default function Home() {
             </div>
             <div id="Header_Heading">
               <span><h1>A Bit of Defense Beats a Breach of Bytes</h1></span>Protect Your Business with Our Innovative Cybersecurity Services!
-              <div id="Header_Heading_1">
-                <h3>Our Services</h3>
-                We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.
-              </div>
+
             </div>
           </div>
           <div className="row">
@@ -101,13 +98,16 @@ export default function Home() {
                       <div
                         id="T_SER"
                         style={{
-                          fontSize: 30,
-                          fontWeight: "bolder",
+                          fontWeight: "600",
                           margin: 20,
                           color: "black",
                           backgroundColor: "transparent",
                         }}
                       >
+                        <div id="Header_Heading_1">
+                          <h3>Our Services</h3>
+                          We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.
+                        </div>
 
                       </div>
                       <div className="row" id="list">
