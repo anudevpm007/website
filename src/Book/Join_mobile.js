@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Join_mobile.css";
 import { Button } from "bootstrap";
+import { Link } from "react-router-dom";
 
 
 
@@ -28,6 +29,12 @@ export default class Join_mobile extends Component {
                 <div id="D_Form_I">
                   <input placeholder="Location" type="text" />
                 </div>
+                <div className="row">
+                    <div className="col" id="Mobile_privacy">
+                      <input type="checkbox" />
+                      i agree to the <span><Link>terms and conditions</Link></span> and <span><Link>privacy policy</Link></span>
+                    </div>
+                  </div>
                 <div id="D_Form_I">
                   <button>Submit</button>
                 </div>

@@ -7,6 +7,7 @@ import { Routes } from "react-router-dom";
 import "./App.css"
 import Book from "./Book/Book";
 import Main_services from "./Services/Main_services";
+import Events from "./Events/Events";
 
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
           <Route path="/blogs/:Headings" Component={Blog_detials} />
           <Route path={"/website/Book/"} Component={Book} />
           <Route path="website/services/:id" Component={Main_services} />
+          <Route path="/website/events/" Component={Events} />
           
         </Routes>
         </div>

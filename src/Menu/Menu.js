@@ -14,10 +14,6 @@ let word = F_url[2]
 
 
 export default function Menu() {
-  useEffect(()=>{
-    document.getElementById("B_T_N_join").style.display="none";
-  })
-  
     return (
       
       <div className="Menu-m">
@@ -37,8 +33,8 @@ export default function Menu() {
             <Link to={"/website/blogs/"} className="links" onClick={close}>Blog</Link>
             <Link to={"/website/"} className="links" onClick={close}>Services</Link>
             <Link href="#" className="links" onClick={close}>About Us</Link>
-            <Link href="#" className="links" onClick={close}>Course</Link>
-            <Link href="#" className="links" onClick={close}>Events</Link>
+            <Link href="#" className="links" onClick={close}>Carrier</Link>
+            <Link  to={"/website/events/"} className="links" onClick={close}>Events</Link>
             <div id="B_T_N_join"><Link to={"/website/Book/"} id="jU">Book Now</Link></div>
           </div>
         </nav>

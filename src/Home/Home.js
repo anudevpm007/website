@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, CardImg } from "react-bootstrap";
 // import { useEffect } from "react";
@@ -9,6 +9,7 @@ import "./Header_L.css";
 import "./Menu.css";
 import services_data from "../Data/Services_data";
 import Services from "./Home_body/services/services";
+import BgVideo from "../video/front_video.mp4";
 
 export default function Home() {
 
@@ -57,9 +58,9 @@ export default function Home() {
                 About Us
               </a>
               <Link href="#" onClick={close} className="links">
-                Courses
+                Carrier
               </Link>
-              <Link href="#" onClick={close} className="links">
+              <Link to={"/website/events/"} onClick={close} className="links">
                 Events
               </Link>
               <div>
@@ -79,37 +80,8 @@ export default function Home() {
           {/* Header Section */}
 
           <div id="Header_L">
-            <div className="row" id="H_div_mian">
-              <div className="col" id="H_Col1">
-                <h3>Integrity and Innovation in Cyber Security</h3>
-                At ingokSek , we prioritize integrity and innovation in
-                cyber security. We're a research-driven organization,
-                developing new solutions and leveraging advanced
-                technologies to protect your digital assets. Our ethical
-                approach ensures trust and reliability, offering
-                personalized solutions to meet your specific needs.
-                Discover how ingokSek can enhance your cyber security
-                strategy with our advanced expertise and commitment to
-                excellence.
-              </div>
-              <div className="col" id="H_Col3">
-                <div>
-                  <h3>Integrity and Innovation in Cyber Security</h3>
-                  At ingokSek , we prioritize integrity and innovation in
-                  cyber security. We're a research-driven organization,
-                  developing new solutions and leveraging advanced
-                  technologies to protect your digital assets. Our ethical
-                  approach ensures trust and reliability, offering
-                  personalized solutions to meet your specific needs.
-                  Discover how ingokSek can enhance your cyber security
-                  strategy with our advanced expertise and commitment to
-                  excellence.
-                </div>
-              </div>
-              <div className="col" id="H_Col2">
-                <CardImg src={require("../images/AB3.png")} />
-              </div>
-            </div>
+            <video   autoPlay loop muted src={BgVideo} type="video/mp4">
+            </video>
           </div>
           <div className="row">
             <div className="Home_body">
@@ -153,7 +125,7 @@ export default function Home() {
               <div className="col-6" id="book_box_1_2">
                 <button >
                   <Link to={"/website/Book/"} id="Book_Link">
-                  Book Now
+                    Book Now
                   </Link>
                 </button>
               </div>

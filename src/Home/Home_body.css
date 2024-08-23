@@ -34,7 +34,7 @@ html{
     scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     width: 100%;
 }
 

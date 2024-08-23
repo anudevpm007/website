@@ -23,12 +23,12 @@ export default function Book() {
                   <input type="text" name="" id="" placeholder="Location" />
                   <div className="row">
                     <div className="col" id="privacy">
-                      <input type="checkbox" />
+                      <input id="IN_privacy" type="checkbox" />
                       i agree to the <span><Link>terms and conditions</Link></span> and <span><Link>privacy policy</Link></span>
                     </div>
                   </div>
                   <div>
-                    <button type="button" >Submit</button>
+                    <button type="button"  id="Book_submite">Submit</button>
                   </div>
                 </div>
               </form>

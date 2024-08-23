@@ -6,8 +6,12 @@
     width: 100%;
 }
 
+#IN_privacy:checked{
+    color: brown;
+}
+
 #privacy {
-    margin-top: 20px;
+    margin-top: 30px;
     color: white;
     font-size: small;
 }
