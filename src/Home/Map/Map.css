@@ -1,0 +1,45 @@
+#world_map_container{
+    height: auto;
+}
+
+
+#world_map>div>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#world_map_container{
+    position: relative;
+}
+#world_map_img{
+    width: 70%;
+}
+
+#world_map_container{
+    display: flex;
+    justify-content: center;
+}
+
+#pin_india{
+    position: absolute;
+    bottom: 40%;
+    right: 30%;
+}
+
+#PI_dot{
+    border: none;
+    background-color: rgb(10, 84, 94);
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    
+}
+
+#PI_label{
+    margin-left: 8px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 6px;
+}

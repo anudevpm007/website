@@ -10,6 +10,7 @@ import "./Menu.css";
 import services_data from "../Data/Services_data";
 import Services from "./Home_body/services/services";
 import BgVideo from "../video/front_video.mp4";
+import Map from "./Map/Map";
 
 export default function Home() {
 
@@ -126,6 +127,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div id="why_box">
+            <div id="why_box_2">
+              <h2>Why INKOGSEK</h2>
+              <p>We're a research-driven organization, developing new solutions and leveraging advanced technologies to protect your digital assets. Our ethical approach ensures trust and reliability, offering personalized solutions to meet your specific needs. Discover how ingokSek can enhance your cyber security strategy with our advanced expertise and commitment to excellence.</p>
+            </div>
+          </div>
           <div id="book_now">
             <div className="row" id="book_box_1">
               <div className="col-6" id="book_box_1_1">
@@ -146,7 +153,9 @@ export default function Home() {
               RedTeam Hacker Academy’s career-focused, implementation-based learning programs pave the road to a success-assured career in Ethical Hacking & Cybersecurity. Their curriculum is designed to blend theoretical knowledge with practical, hands-on experience, ensuring students are well-prepared for real-world challenges. The academy offers a range of certifications and courses tailored to different skill levels, from beginners to advanced professionals. Instructors are industry experts, providing insights into the latest trends and threats in cybersecurity. With a strong emphasis on ethical practices and cutting-edge technology, RedTeam Hacker Academy equips its students with the skills needed to protect and defend against cyber threats.
             </div>
           </div> */}
-
+          <div id="div_map">
+            <Map />
+          </div>
           <div id="down">
             <Home_footer />
           </div>

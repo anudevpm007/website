@@ -3,7 +3,36 @@
     align-items: center;
 
 }
+#S_Main{
+    margin-top: 200px;
+}
+#D_Main_services{
+    background-color: rgb(0, 0, 0);
+}
+#S_title_head{
+    color: white;
+}
 
+#S_pera{
+    color: white;
+}
+#S_sub_head{
+    color: white;
+}
+
+#S_sub_pera{
+    color: white;
+}
+#S_subM_head{
+    color: white;
+}
+
+#S_sub2_head{
+    color: white;
+}
+#S_sub2_pera{
+    color: white;
+}
 
 #S_Main{
     width: 100%;
@@ -25,8 +54,8 @@
    
 }
 
-#S_media{
-    width: 40%;
+#Main_img_SD{
+    opacity: 0.37;
 }
 
 

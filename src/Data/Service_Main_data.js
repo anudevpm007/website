@@ -1,7 +1,7 @@
 const Services_Main_data = [
   {
     SM_id: 21323121,
-    media: require("./images/p8.png"),
+    media: require("./images/IOT.jpg"),
     heading: " IoT And Embedded Security Testing",
     paragraph:
       "At Inkogsek, we specialize in identifying and exploiting security vulnerabilities in IoT and embedded devices. Our comprehensive approach covers hardware, firmware, network services, and applications, ensuring thorough protection against potential threats.",
