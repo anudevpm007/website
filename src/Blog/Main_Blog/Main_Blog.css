@@ -29,13 +29,13 @@
     position: absolute;
 }
 
-.container{
+#Main_Blogs>.container{
     width: 60%;
 }
 
 @media screen and (max-width:1000px) {
 
-    .container{
+    #Main_Blogs>.container{
     width: 70%;
 }
 
@@ -43,7 +43,7 @@
 
 @media screen and (max-width:900px) {
 
-    .container{
+    #Main_Blogs>.container{
     width: 80%;
 }
 
@@ -51,7 +51,7 @@
 
 @media screen and (max-width:600px) {
 
-    .container{
+    #Main_Blogs>.container{
     width: 90%;
 }
 

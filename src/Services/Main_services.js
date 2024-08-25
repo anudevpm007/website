@@ -42,83 +42,116 @@ export default class Main_services extends Component {
       return (
         <div>
           <div>
-            <Menu/>
+            <Menu />
           </div>
           <div id="D_Main_services">
-          <div id="Main_SD">
-          <CardImg alt="N?A" src={this.state.media}  id="Main_img_SD"/>
-          </div>
-            <div className="container">
-            
-              <div className="row" id="M_row_id">
-                <div className="col-11" id="S_Main">
-                  <div className="row" id="M_row_id">
-                    <div className="col-5" id="S_title">
-                      <CardTitle id="S_title_head">{this.state.heading}</CardTitle>
-                    </div>
-                  </div>
-                  <CardText id="S_pera">{this.state.Pera}</CardText>
-                  <div id="SM_sub_box" className="row">
-                    {this.state.R_heading.map((Data, k) => {
-                      return (
-                        <div id="S_sub_box" className="col-lg">
-                          <CardTitle id="S_sub_head">
-                            {this.state.R_heading[k]}
-                          </CardTitle>
-                          <CardText
-                            id="S_sub_pera"
-                            style={{ marginTop: "20px", marginBottom: "20px" }}
-                          >
-                            {this.state.R_content[k]}
-                          </CardText>
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <div id="box_sub_services">
-                    {this.state.S_Main_heading.map((data, i) => {
-                      return (
-                        <div id="S_sub2_box">
-                          <CardTitle
-                            id="S_subM_head"
-                            style={{ marginTop: "30px" }}
-                          >
-                            {this.state.S_Main_heading[i]}
-                          </CardTitle>
-                          <div className="row">
-                            {this.state.sub_heading[i].map((data, j) => {
-                              return (
-                                <div
-                                  style={{ marginTop: "30px" }}
-                                  id="small_contant"
-                                  className="col-lg-6"
-                                >
-                                  <CardTitle id="S_sub2_head">
-                                    {this.state.sub_heading[i][j]}
-                                  </CardTitle>
-                                  <CardText
-                                    id="S_sub2_pera"
-                                    style={{
-                                      marginTop: "20px",
-                                      marginBottom: "20px",
-                                    }}
-                                  >
-                                    {this.state.sub_contant[i][j]}
-                                  </CardText>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      );
-                    })}
+            <div id="Main_SD">
+              <div id="Main_SD_1">
+                <CardImg alt="N?A" src={this.state.media} id="Main_img_SD" />
+              </div>
+              <div id="Main_SD_2">
+                <div id="Main_SD_2_1">
+                  <CardTitle id="S_title_head">{this.state.heading}</CardTitle>
+                </div>
+                <div id="Main_SD_2_2">
+                  <div id="Main_SD_22_1">
+                    <CardText id="S_pera">{this.state.Pera}</CardText>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="container">
+              <div className="row" id="M_row_id">
+                <div id="S_Main">
+
+                  <div id="SM_sub_con">
+                    <div id="SM_sub_box">
+                      {this.state.R_heading.map((Data, k) => {
+                        if (k % 2 == 0) {
+                          return (
+                            <>
+                              <div id="S_sub_box" className="row">
+                                <div className="col-6" id="S_sub_box1_1">
+                                  <CardTitle id="S_sub_head">
+                                    {this.state.R_heading[k]}
+                                  </CardTitle>
+                                  <CardText
+                                    id="S_sub_pera"
+                                    style={{ marginTop: "20px", marginBottom: "20px" }}
+                                  >
+                                    {this.state.R_content[k]}
+                                  </CardText>
+                                </div>
+                                <div className="col-6" id="S_sub_box1_2">
+                                  <CardImg src={require("../Data/images/micro.png")} />
+                                </div>
+                              </div>
+                            </>
+                          );
+                        } else {
+                          return (
+                            <>
+                              <div id="S_sub_box" className="row">
+                                <div className="col-6" id="S_sub_box1_2">
+                                  <CardImg src={require("../Data/images/IOT_D.jpeg")} />
+                                </div>
+                                <div className="col-6" id="S_sub_box1_1">
+                                  <CardTitle id="S_sub_head">
+                                    {this.state.R_heading[k]}
+                                  </CardTitle>
+                                  <CardText
+                                    id="S_sub_pera"
+                                    style={{ marginTop: "20px", marginBottom: "20px" }}
+                                  >
+                                    {this.state.R_content[k]}
+                                  </CardText>
+                                </div>
+
+                              </div>
+                            </>
+                          );
+                        }
+                      })}
+                    </div>
+
+                  </div>
+                  <div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="container" id="small_Service">
+              <div className="row" id="small_Service_1">
+                {this.state.S_Main_heading.map((data, i) => {
+                  return (
+                    <div id="small_Service1_1">
+                      <CardTitle id="small_Service_head">
+                        {this.state.S_Main_heading[i]}
+                      </CardTitle>
+                      <div className="row" id="small_Service11_1">
+                        {this.state.sub_heading[i].map((data, j) => {
+                          return (
+                            <div style={{ marginTop: "30px" }} id="small_Service111_1" className="col-lg-5" >
+                              <CardTitle id="S_sub2_head">
+                                {this.state.sub_heading[i][j]}
+                              </CardTitle>
+                              <CardText id="small_Service111_2" style={{marginTop: "20px", marginBottom: "20px"}}>
+                                {this.state.sub_contant[i][j]}
+                              </CardText>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+
+              </div>
+            </div>
           </div>
           <div>
-            <Home_footer/>
+            <Home_footer />
           </div>
         </div>
       );

@@ -2,9 +2,9 @@ const Services_Main_data = [
   {
     SM_id: 21323121,
     media: require("./images/IOT.jpg"),
-    heading: " IoT And Embedded Security Testing",
+    heading: " IoT and Embedded Security Testing",
     paragraph:
-      "At Inkogsek, we specialize in identifying and exploiting security vulnerabilities in IoT and embedded devices. Our comprehensive approach covers hardware, firmware, network services, and applications, ensuring thorough protection against potential threats.",
+      "At Inkogsek, we are dedicated to identifying and addressing security vulnerabilities in Internet of Things (IoT) and embedded devices. Our expertise lies in thoroughly analyzing these devices across multiple layers, including hardware, firmware, network services, and applications. We take a comprehensive approach to ensure that all potential weak points are scrutinized and fortified. By examining the physical hardware, we assess for any design flaws or potential points of attack. Our firmware analysis focuses on the software that runs on these devices, checking for coding errors or security loopholes that could be exploited. We also evaluate network services to secure communication channels and prevent unauthorized access. Finally, our application assessments ensure that the software running on these devices is robust against potential threats. This multi-faceted strategy allows us to provide complete protection against a wide range of cyber threats, ensuring that IoT and embedded devices are secure from potential attacks and vulnerabilities.",
     Read: {
       Heading: [
         "Why IoT Security Matters",
@@ -13,8 +13,8 @@ const Services_Main_data = [
 
       ],
       Content: [
-        "IoT devices often lack robust security measures, making them prime targets for attackers. Our expert team of security researchers helps you identify and mitigate vulnerabilities in your embedded devices before malicious actors can exploit them.",
-        "With a dedicated team of specialized security researchers, Inkogsek ensures your IoT devices are secure. Trust us to uncover security weaknesses and fortify your devices against potential threats, safeguarding your technology and data. ",
+        "IoT devices frequently suffer from insufficient security measures, which renders them highly susceptible to cyber attacks. Their vulnerabilities are often overlooked, making them prime targets for malicious actors seeking to exploit weaknesses for unauthorized access or data breaches. At our organization, our team of expert security researchers specializes in addressing these concerns. We meticulously examine your embedded devices to uncover and analyze potential vulnerabilities. By employing advanced techniques and thorough testing, we identify these weaknesses before they can be exploited. Our proactive approach ensures that your devices are fortified against potential threats, thereby safeguarding your systems and sensitive data from malicious exploitation and enhancing overall security.",
+        "IoT devices frequently suffer from insufficient security measures, which renders them highly susceptible to cyber attacks. Their vulnerabilities are often overlooked, making them prime targets for malicious actors seeking to exploit weaknesses for unauthorized access or data breaches. At our organization, our team of expert security researchers specializes in addressing these concerns. We meticulously examine your embedded devices to uncover and analyze potential vulnerabilities. By employing advanced techniques and thorough testing, we identify these weaknesses before they can be exploited. Our proactive approach ensures that your devices are fortified against potential threats, thereby safeguarding your systems and sensitive data from malicious exploitation and enhancing overall security.",
         
       ],
     },
