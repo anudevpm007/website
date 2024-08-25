@@ -1,6 +1,6 @@
-.Card{
-    box-shadow: 5px 5px 18px rgb(31, 31, 31);
-    background-color: rgb(0, 58, 58);
+#blog_Card{
+    background-color: rgb(0, 0, 0);
+    height: auto;
 
 }
 .blog:hover{

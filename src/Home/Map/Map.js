@@ -8,7 +8,7 @@ export default class Map extends Component {
         
         <div id='world2'>
           <div id='World_img'>
-            <img src={require("./world_map.png")} />
+            <img src={require("./world_map2.png")} />
           </div>
           <div id='IN'>
             <div id='dot'>

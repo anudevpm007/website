@@ -4,6 +4,7 @@ import Main_Data from "../../Data/Blog_data";
 import "./Main_Blog.css";
 import { Link } from "react-router-dom";
 
+
 var url = window.location.pathname;
 var parts = url.split("/");
 var idu = parts[parts.length - 2];
@@ -68,10 +69,10 @@ export default function Main_Blog() {
       >
         Stay tuned for our next blog !!
       </h1>
-      <div className="container">
-        <div className="row">
+      <div id="blog_con" className="container">
+        <div id="blog_row" className="row">
           {Main_Data.map((Data) => (
-            <div className="col-lg-6">
+            <div id="blog_row_block"  className="col-lg-6">
               <Blog
                 media_type={Data.media_type}
                 media={Data.media}
@@ -84,6 +85,9 @@ export default function Main_Blog() {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        
       </div>
     </div>
   );

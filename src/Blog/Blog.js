@@ -21,7 +21,7 @@ export default class Blog extends Component {
     if (this.state.media_type == 1) {
       return (
         <Link className="blog" style={{textDecoration:"none" }} to={"/blogs/"+this.state.id}>
-          <Card className="Card" style={{ marginTop: "20px" ,color:"black"}}>
+          <Card id="blog_Card" style={{ marginTop: "20px" ,color:"white"}}>
             <Card.Img src={this.state.media} style={{ height: "40%" ,borderRadius:"14px",padding:"5px"}} />
             <Card.Body>
               <Card.Title className="head">{this.state.heading}</Card.Title>
@@ -33,7 +33,7 @@ export default class Blog extends Component {
     } else if (this.state.media_type == 2) {
       return (
         <Link className="blog" style={{textDecoration:"none"}} to={"/blogs/"+this.state.id}>
-          <Card className="Card" style={{ marginTop: "10px" ,color:"black"}}>
+          <Card id="blog_Card" style={{ marginTop: "10px" ,color:"white"}}>
           <iframe
           style={{width:"100%",overflow:"hidden",padding:"2px",borderRadius:"7px"}}
               src={this.state.media}

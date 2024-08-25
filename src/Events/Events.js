@@ -41,30 +41,43 @@ export default function Events() {
       <div id='events_menu'>
         <Menu />
       </div>
-      <div className='container' id='events_box'>
+      <div id='events_box'>
         <div id='event_head'>
-          <img src={require("./image/p5.jpg")}/>
+          <img id='event_head_img' src={require("./image/Head_p1.jpg")} />
+        </div>
+        <div id='couter_box' className='row'>
+          <div id='couter_box_1' className='col-4'>
+            <div><h1>{sub_d}d</h1></div>
+          </div>
+          <div id='couter_box_2' className='col-4'>
+            <div><h1>{houre}h</h1></div>
+          </div>
+          <div id='couter_box_3' className='col-4'>
+            <div><h1>{minute}m</h1></div>
+          </div>
         </div>
       </div>
+
+
     </div>
   )
 }
 // }
 
 
-// <div id='event_heading'>
-//             <div id='event_heading_img'>
-//               <img src={require("./image/Head_p1.jpg")} />
-//             </div>
-//             <div id='couter_box' className='row'>
-//               <div id='couter_box_1' className='col-4'>
-//                 <div><h1>{sub_d}d</h1></div>
-//               </div>
-//               <div id='couter_box_1' className='col-4'>
-//                 <div><h1>{houre}h</h1></div>
-//               </div>
-//               <div id='couter_box_1' className='col-4'>
-//                 <div><h1>{minute}m</h1></div>
-//               </div>
-//             </div>
-//           </div>
+{/* <div id='event_heading'>
+            <div id='event_heading_img'>
+              <img src={require("./image/Head_p1.jpg")} />
+            </div>
+            <div id='couter_box' className='row'>
+              <div id='couter_box_1' className='col-4'>
+                <div><h1>{sub_d}d</h1></div>
+              </div>
+              <div id='couter_box_1' className='col-4'>
+                <div><h1>{houre}h</h1></div>
+              </div>
+              <div id='couter_box_1' className='col-4'>
+                <div><h1>{minute}m</h1></div>
+              </div>
+            </div>
+          </div>  */}

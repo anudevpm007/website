@@ -1,16 +1,16 @@
-#IN,#DB,#KW {
+/* #IN,#DB,#KW {
     display: flex;
     align-items: center;
     color: white;
     position: absolute;
     height: max-content;
-    top: 59%;
-    right: 10%;
     font-size: small;
-}
+} */
 
-#World_img {
-    scale: 1.5;
+
+
+#World_img>img{
+    width: 930px;
 }
 
 #text {
@@ -56,15 +56,21 @@
 }
 
 #dot {
-    background-color: #ff4545;
-    width: 18px;
-    height: 18px;
+    background-color: rgb(255, 255, 255);
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     margin-right: 20px;
     /* animation-name: dot_animation;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite; */
+}
+
+#IN{
+    position: absolute;
+    top: 56%;
+    right: 25%;
 }
 
 #US{

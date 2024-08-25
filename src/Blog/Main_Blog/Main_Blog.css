@@ -30,29 +30,17 @@
 }
 
 #Main_Blogs>.container{
-    width: 60%;
+    
+    width: 40%;
 }
 
-@media screen and (max-width:1000px) {
-
-    #Main_Blogs>.container{
-    width: 70%;
-}
-
-}
-
-@media screen and (max-width:900px) {
-
-    #Main_Blogs>.container{
+#blog_row{
+    
     width: 80%;
 }
 
-}
 
-@media screen and (max-width:600px) {
-
-    #Main_Blogs>.container{
-    width: 90%;
-}
-
+#blog_con{
+    display: flex;
+    justify-content: center;
 }
