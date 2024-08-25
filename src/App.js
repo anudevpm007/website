@@ -8,6 +8,7 @@ import "./App.css"
 import Book from "./Book/Book";
 import Main_services from "./Services/Main_services";
 import Events from "./Events/Events";
+import Main_book from "./Book/Main_book";
 
 
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
           <Route path="website/from=blog/" Component={Home} />
           <Route path="website/blogs/" Component={Main_Blog} />
           <Route path="/blogs/:Headings" Component={Blog_detials} />
-          <Route path={"/website/Book/"} Component={Book} />
+          <Route path={"/website/Book/"} Component={Main_book} />
           <Route path="website/services/:id" Component={Main_services} />
           <Route path="/website/events/" Component={Events} />
           

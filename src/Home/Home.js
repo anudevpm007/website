@@ -153,6 +153,12 @@ export default function Home() {
               RedTeam Hacker Academy’s career-focused, implementation-based learning programs pave the road to a success-assured career in Ethical Hacking & Cybersecurity. Their curriculum is designed to blend theoretical knowledge with practical, hands-on experience, ensuring students are well-prepared for real-world challenges. The academy offers a range of certifications and courses tailored to different skill levels, from beginners to advanced professionals. Instructors are industry experts, providing insights into the latest trends and threats in cybersecurity. With a strong emphasis on ethical practices and cutting-edge technology, RedTeam Hacker Academy equips its students with the skills needed to protect and defend against cyber threats.
             </div>
           </div> */}
+          <div id="world_head">
+            <div id="world_head_1">
+              <h3>Our Global Presences</h3>
+              <p>Explore our clients' locations across the region. Use this interactive map to see where we collaborate and connect. Find out how we're making an impact near you!</p>
+            </div>
+          </div>
           <div id="div_map">
             <Map />
           </div>

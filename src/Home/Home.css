@@ -127,6 +127,27 @@ html {
     color: white;
 }
 
+#world_head_1>h3{
+    color: white;
+}
+
+
+#world_head_1{
+    margin-top: 120px;
+    width: 50%;
+}
+
+#world_head{
+    
+    display: flex;
+    justify-content: center;
+}
+
+#world_head_1>p{
+    margin-top: 50px;
+    color: white;
+}
+
 @media screen and (max-width:600px) {
 
     #D_P_up,

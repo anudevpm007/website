@@ -1,45 +1,107 @@
-#world_map_container{
-    height: auto;
+#IN,#DB,#KW {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    height: max-content;
+    top: 59%;
+    right: 10%;
+    font-size: small;
 }
 
+#World_img {
+    scale: 1.5;
+}
 
-#world_map>div>div{
+#text {
+    background-color: rgb(20, 239, 255);
+    opacity: 0;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 900;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: transparent;
+    scale: 0;
+    transition: 0.7s;
 }
 
-#world_map_container{
-    position: relative;
-}
-#world_map_img{
-    width: 70%;
-}
-
-#world_map_container{
+#world_map {
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
 }
 
-#pin_india{
-    position: absolute;
-    bottom: 40%;
-    right: 30%;
+#world2 {
+    position: relative;
 }
 
-#PI_dot{
-    border: none;
-    background-color: rgb(10, 84, 94);
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
+@keyframes dot_animation {
+    0%{
+        /* scale: 0; */
+        opacity: 0;
+    }
+    50%{
+        /* scale: 1; */
+        opacity: 1;
+    }
+    100%{
+        /* scale: 0; */
+        opacity: 0;
+    }
+}
+
+#dot {
+    background-color: #ff4545;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 20px;
+    animation-name: dot_animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#US{
     
+    position: absolute;
+    top: 42%;
+    right: 80%;
+}
+#UK{
+    position: absolute;
+    top: 33%;
+    right: 34%;
+}
+#DB{
+    z-index: 4;
+    position: absolute;
+    top: 54%;
+    right: 17%;
+}
+#KW{
+    position: absolute;
+    top: 47%;
+    right: 21%;
+}
+#SG{
+    position: absolute;
+    top: 66%;
+    right: 2%;
+}
+#dot:hover~#dot{
+    opacity: 0;
 }
 
-#PI_label{
-    margin-left: 8px;
-    border: none;
+#dot:hover~#text {
+    opacity: 1;
+    scale: 1;
     color: rgb(0, 0, 0);
-    background-color: white;
-    border-radius: 6px;
 }
+
+

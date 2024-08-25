@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Join_mobile from "./Join_mobile";
 import Menu from "../Menu/Menu";
+import Home_footer from "../Home/Home_footer/Home_footer";
 
 export default function Book() {
   return (
@@ -18,9 +19,9 @@ export default function Book() {
               <form >
                 <div id="JU_form">
                   <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="E-Mail" />
-                  <input type="password" placeholder="Password" />
-                  <input type="text" name="" id="" placeholder="Location" />
+                  <input type="email" placeholder="E Mail" />
+                  <input type="text" placeholder="Phone Number" />
+                  <input type="text" name="" id="" placeholder="company" />
                   <div className="row">
                     <div className="col" id="privacy">
                       <input id="IN_privacy" type="checkbox" />

@@ -40,7 +40,6 @@
 }
 
 .Join_us {
-    overflow-y: scroll;
     object-fit: cover;
     height: 100vh;
     padding-top: 40px;
