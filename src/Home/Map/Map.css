@@ -61,10 +61,10 @@
     height: 18px;
     border-radius: 50%;
     margin-right: 20px;
-    animation-name: dot_animation;
+    /* animation-name: dot_animation;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 #US{
