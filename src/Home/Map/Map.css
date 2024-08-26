@@ -10,8 +10,9 @@
 
 
 #World_img>img{
-    width: 930px;
+    width: 700px;
 }
+
 
 #text {
     background-color: rgb(20, 239, 255);
@@ -56,7 +57,7 @@
 }
 
 #dot {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -70,7 +71,7 @@
 #IN{
     position: absolute;
     top: 56%;
-    right: 25%;
+    right: 23%;
 }
 
 #US{
@@ -109,5 +110,58 @@
     scale: 1;
     color: rgb(0, 0, 0);
 }
+
+@media screen and (max-width:800px) {
+    #World_img>img{
+        width: 600px;
+    }
+
+    #IN{
+        position: absolute;
+        top: 56%;
+        right: 21.5%;
+    }
+    
+}
+
+@media screen and (max-width:660px) {
+    #World_img>img{
+        width: 450px;
+    }
+
+    #IN{
+        position: absolute;
+        top: 56%;
+        right: 17.5%;
+    }
+
+    #dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width:460px) {
+    #World_img>img{
+        width: 350px;
+    }
+
+    #IN{
+        position: absolute;
+        top: 56%;
+        right: 17.5%;
+    }
+
+    #dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    
+}
+
 
 

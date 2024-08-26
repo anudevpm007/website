@@ -28,7 +28,7 @@ export default function Home() {
             <div className="S-logo">
               <img
                 className="logo"
-                src={require("../images/AB WPL 5.png")}
+                src={require("../images/Main_logo.png")}
                 alt="N/A"
               />
             </div>
@@ -71,12 +71,12 @@ export default function Home() {
           </nav>
         </div>
         <div id="Rest">
-          <div id="D_P_up">
+          {/* <div id="D_P_up">
             <Button as="a" href="#home" id="B_P_up"><img src={require("../images/UP.png")} /></Button>
           </div >
           <div id="B_P_down">
             <Button as="a" id="B_P_down" href="#down"><img src={require("../images/DOWN.png")} /></Button>
-          </div>
+          </div> */}
 
           {/* Header Section */}
 
@@ -86,7 +86,8 @@ export default function Home() {
               </video>
             </div>
             <div id="Header_Heading">
-              <span><h1>A Bit of Defense Beats a Breach of Bytes</h1></span>Protect Your Business with Our Innovative Cybersecurity Services!
+              <span><h1>A Bit of Defense Beats a Breach of Bytes</h1></span>
+              <p>Protect Your Business with Our Innovative Cybersecurity Services!</p>
 
             </div>
           </div>
@@ -100,14 +101,13 @@ export default function Home() {
                         id="T_SER"
                         style={{
                           fontWeight: "600",
-                          margin: 20,
                           color: "black",
                           backgroundColor: "transparent",
                         }}
                       >
                         <div id="Header_Heading_1">
                           <h3>Our Services</h3>
-                          We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.
+                          <p>We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.</p>
                         </div>
 
                       </div>

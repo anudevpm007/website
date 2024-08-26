@@ -1,20 +1,16 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import Menu from '../Menu/Menu'
 import "./Events.css"
 
 
+
+  
 let date_s = new Date("2024-08-30")
 let i = true
-
-
-
-
-
 let date = new Date();
 let houre = date.getHours();
 let minute = date.getMinutes();
 let sub = date_s - date;
-
 let sub_d = sub / (1000 * 60 * 60 * 24);
 sub_d = Math.trunc(sub_d);
 if (sub_d < 10) {
@@ -33,18 +29,26 @@ if (houre < 10) {
 
 
 export default function Events() {
-  // const [min, setMin] = useState(0)
-  // setMin(min=sub_m_2)
+  const [min, setMin] = useState(0)
+  useEffect(()=>{
+    setMin(minute);
+  })
+ 
   // render() {
   return (
     <div id='events_page'>
       <div id='events_menu'>
         <Menu />
       </div>
+      
       <div id='events_box'>
+      
         <div id='event_head'>
           <img id='event_head_img' src={require("./image/Head_p1.jpg")} />
         </div>
+        <div id='events_main_heading'>
+        <h1>INKOGSEK CYBER SECURITY CONFRANCES 2024</h1>
+      </div>
         <div id='couter_box' className='row'>
           <div id='couter_box_1' className='col-4'>
             <div><h1>{sub_d}d</h1></div>

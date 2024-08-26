@@ -8,8 +8,8 @@ export default class Home_footer extends Component {
       <div id="home_footer">
         <div className="row" id="main_box">
           <div id="footer_logo" className="row">
-            <div className="col-1"><img src={require("../../images/AB WPL 5.png")} id="box_logo" /></div>
-            <div className="col-2"><h3>INKOGSEK</h3></div>
+            <div className="col-2"><img src={require("./image/Main_logo.png")} id="box_logo" /></div>
+            {/* <div className="col-2"><h3>INKOGSEK</h3></div> */}
           </div>
           <div className="col-md" id="box_1">
             <p>
@@ -32,7 +32,7 @@ export default class Home_footer extends Component {
           </div>
           <div className="col-lg" id="box_2">
             <div id="footer_right" className="row">
-              <div id="footer_right_1" className="col-3">
+              <div id="footer_right_1" className="col-4">
                 <h3>Services</h3>
                 <ul>
                   <div>
@@ -71,7 +71,7 @@ export default class Home_footer extends Component {
                 </ul>
 
               </div>
-              <div id="footer_right_2" className="col-3">
+              <div id="footer_right_2" className="col-4">
                 <h3>Global location</h3>
                 <ul>
                   <div>

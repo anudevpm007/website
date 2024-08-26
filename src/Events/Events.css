@@ -4,7 +4,7 @@
 }
 
 #event_head_img{
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -19,6 +19,19 @@
     margin: 0px;
     position: relative;
 }
+#events_main_heading{
+    position: absolute;
+    z-index: 4;
+    margin-top: 30px;
+    top: 20%;
+    
+}
+
+
+#events_main_heading>h1{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
 
 #couter_box{
     position: absolute;
@@ -27,7 +40,7 @@
     background-color: rgba(0, 255, 255, 0.856);
     display: flex;
     align-items: center;
-    top: 20%;
+    top: 50%;
     border-radius: 20px;
 }
 
