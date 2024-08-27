@@ -153,6 +153,10 @@ html {
     align-items: center;
 }
 
+/* #list{
+    display: none;
+} */
+
 
 @media screen and (max-width:1000px) {
     #world_head_1{

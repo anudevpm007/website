@@ -10,7 +10,7 @@ export default class Main_book extends Component {
         <div>
             <Book/>
         </div>
-        <div>
+        <div id='down'>
             <Home_footer/>
         </div>
       </div>

@@ -48,6 +48,65 @@ html,body
     border: none;
     border-radius: 5px;
 }
+#Ev_box_2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Ev_box212_1>h5{
+    color: white;
+    font-size: 1.4vw;
+}
+
+#Ev_box212_2>h5{
+    color: white;
+    font-size: 1.4vw;
+}
+
+#Ev_box212_3>h5{
+    color: white;
+    font-size: 1.4vw;
+}
+
+#Ev_box212_1>ul>li{
+    margin-top: 1vw;
+}
+
+#Ev_box212_2>ul>li{
+    margin-top: 1vw;
+}
+
+
+#Ev_box212_1>ul>li>a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+#Ev_box212_2>ul>li>a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+#Ev_box2_1{
+    width: 95%;
+}
+
+#Ev_box21_1>p{
+    width: 95%;
+    font-size: 1vw;
+    color: white;
+}
+
+#Ev_box2123_1>li>a>img{
+    width: 4vw;
+    margin: 10px;
+}
 
 #box_1{
     margin-top: 20px;
@@ -99,17 +158,6 @@ html,body
     align-items: end;
 
 }
-
-#box_2{
-    margin-top: 0px;
-    color: white;
-    padding-left: 20px;
-}
-
-#box_2>div{
-    color: white;
-   
-}
 #C_Info{
     
     padding-left: 20px;
@@ -120,12 +168,6 @@ html,body
     margin-bottom: 10px;
     color: white;
 }
-
-
-
-
-
-
 #footer_loc_box{
     margin-top: 10px;
     display: flex;
@@ -143,7 +185,28 @@ html,body
     background-color: rgb(17, 17, 17);
     border: 2px solid rgb(128, 128, 128);
     border-radius: 15px;
-    height: 90px;
+    height: 7vw;
+    width: 60vw;
+}
+#Mobile_social_ser{
+    display: none;
+}
+
+#Mobile_social_ser>div>a>img{
+    width: 4vw;
+}
+
+#Mobile_social_ser>div{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#Mobile_social_ser{
+    display: none;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 #footer_loc_box_1>div>div{
@@ -159,18 +222,29 @@ html,body
     justify-content: center;
 }
 
+#footer_loc_box_1>div{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer_loc_box_1>div>div{
+    display: flex;
+    justify-content: start;
+}
+
 #loc_box_1{
     display: flex;
     justify-content: end;
 }
 
 #loc_box_1>img{
-    width: 30px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
 }
 #loc_box_2>div{
     color: white;
-    font-size: smaller;
+    font-size: 0.8vw;
 }
 #loc_box{
     margin-left: 80px;
@@ -251,6 +325,9 @@ html,body
 #footer_right_3>div>ul>li>img{
     width: 4vw;
 }
+#last_bottom>div{
+    font-size: 0.8vw;
+}
 
 
 @media screen and (max-width:1200px) {
@@ -260,9 +337,6 @@ html,body
 
     #box_logo{
         width: 100%;
-    }
-    #box_2{
-        padding-left: 0px;
     }
     #box_1{
         font-size: 1.4vw;
@@ -315,4 +389,18 @@ html,body
         
         margin-right: 30px;
     }
+    #footer_loc_box{
+        display: none;
+    }
 }
+
+@media screen and (max-width:400px) {
+    #Ev_box212_3{
+        display: none;
+    }
+    #Mobile_social_ser{
+        display: flex;
+    }
+
+}
+

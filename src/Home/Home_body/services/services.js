@@ -22,10 +22,7 @@ export default class Services extends Component {
           style={{ textDecoration: "none" }}
         > */}
         <div id="ser">
-          <Card
-            className="S_card"
-
-          >
+          <Card className="S_card">
             <div className="SH_img">
               <CardImg
                 src={this.props.img}

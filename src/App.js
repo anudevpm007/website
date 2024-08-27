@@ -9,6 +9,7 @@ import Book from "./Book/Book";
 import Main_services from "./Services/Main_services";
 import Events from "./Events/Events";
 import Main_book from "./Book/Main_book";
+import { Helmet } from "react-helmet";
 
 
 class App extends Component {
@@ -25,6 +26,11 @@ class App extends Component {
           {/* <Menu/> */}
         {/* </div> */}
         <div className="App1">
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>INKOGSEK</title>
+                <link rel="canonical"/>
+        </Helmet>
         
         <Routes>
           <Route path="website/" Component={Home} />

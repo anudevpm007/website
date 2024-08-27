@@ -9,137 +9,76 @@ export default class Home_footer extends Component {
         <div className="row" id="main_box">
           <div id="footer_logo" className="row">
             <div className="col-2"><img src={require("./image/Main_logo.png")} id="box_logo" /></div>
-            {/* <div className="col-2"><h3>INKOGSEK</h3></div> */}
           </div>
-          <div className="col-md" id="box_1">
-            <p>
-              Research Powered Cybersecurity Services and Training. Eliminate security threats through our innovative and extensive security assessments.
-            </p>
-            <div id="box_1_1">
 
-              <h4>Subscribe to our newsletter</h4>
-              <form>
-                <div className="row" id="box_11_1">
-                  <div className="col-6" id="box_111_1">
-                    <input placeholder="Enter your Email address" type="email" />
+          <div className="col-lg" id="Ev_box_2">
+            <div className="row" id="Ev_box2_1">
+              <div className="col-lg-6" id="Ev_box21_1">
+                <p>Research Powered Cybersecurity Services and Training. Eliminate security threats through our innovative and extensive security assessments.</p>
+              </div>
+              <div className="col-lg-6" id="Ev_box21_2">
+                <div className="row">
+                  <div id="Ev_box212_1" className="col">
+                    <h5>Links</h5>
+                    <ul>
+                      <li><Link>Home</Link></li>
+                      <li><Link>Services</Link></li>
+                      <li><Link>Blogs</Link></li>
+                      <li><Link>Courses</Link></li>
+                      <li><Link>Events</Link></li>
+                      <li><Link>Join Us</Link></li>
+                    </ul>
                   </div>
-                  <div className="col-6" id="box_111_2">
-                    <button>Subscribe</button>
+                  <div id="Ev_box212_2" className="col">
+                    <h5>Global location</h5>
+                    <ul>
+                      <li><Link>Home</Link></li>
+                      <li><Link>Services</Link></li>
+                      <li><Link>Blogs</Link></li>
+                      <li><Link>Courses</Link></li>
+                      <li><Link>Events</Link></li>
+                      <li><Link>Join Us</Link></li>
+                    </ul>
+                  </div>
+                  <div id="Ev_box212_3" className="col">
+                    <h5>Social Media</h5>
+                    <ul>
+                      <div id="Ev_box2123_1">
+                        <li>
+                          <Link><img src={require("./image/linkedin.png")} /></Link>
+                          <Link><img src={require("./image/instagram.png")} /></Link>
+                        </li>
+                        <li>
+                          <Link><img src={require("./image/facebook.png")} /></Link>
+                          <Link><img src={require("./image/reddit.png")} /></Link>
+                        </li>
+                        <li>
+                          <Link><img src={require("./image/twitter.jpg")} /></Link>
+                          <Link><img src={require("./image/youtube.png")} /></Link>
+                        </li>
+                      </div>
+                    </ul>
                   </div>
                 </div>
-              </form>
+              </div>
+
             </div>
           </div>
-          <div className="col-lg" id="box_2">
-            <div id="footer_right" className="row">
-              <div id="footer_right_1" className="col-4">
-                <h3>Services</h3>
-                <ul>
-                  <div>
-                    <li>
-                      <a href="#home">
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#service_list">
-                        Services
-                      </a>
-                    </li>
-                    <li>
-                      <Link to={"/website/blogs/"}>
-                        Blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        Courses
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        Events
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={"/website/Join_Us/"}>
-                        Join Us
-                      </Link>
-                    </li>
-                  </div>
-
-                </ul>
-
-              </div>
-              <div id="footer_right_2" className="col-4">
-                <h3>Global location</h3>
-                <ul>
-                  <div>
-                    <li>
-                      <a href="#home">
-                        India
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#service_list">
-                        United States
-                      </a>
-                    </li>
-                    <li>
-                      <Link to={"/website/blogs/"}>
-                        United Kingdom
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        Dubai
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        Kuwait
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={"/website/Join_Us/"}>
-                        Sigapore
-                      </Link>
-                    </li>
-                  </div>
-
-                </ul>
-              </div>
-              <div id="footer_right_3" className="col-4">
-                <h3>Social</h3>
-                <div id="footer_right3_1">
-                  <ul id="footer_right31_1">
-                    <li>
-                      <img src={require("./image/linkedin.png")} />
-                      <img src={require("./image/twitter.jpg")} />
-                    </li>
-                  </ul>
-                  <ul id="footer_right31_1">
-                    <li>
-                      <img src={require("./image/facebook.png")} />
-                      <img src={require("./image/instagram.png")} />
-                    </li>
-                  </ul>
-                  <ul id="footer_right31_1">
-                    <li>
-                      <img src={require("./image/reddit.png")} />
-
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
+        </div>
+        <div id="Mobile_social_ser">
+          <div>
+            <Link><img src={require("./image/linkedin.png")} /></Link>
+            <Link><img src={require("./image/facebook.png")} /></Link>
+            <Link><img src={require("./image/instagram.png")} /></Link>
+            <Link><img src={require("./image/reddit.png")} /></Link>
+            <Link><img src={require("./image/twitter.jpg")} /></Link>
+            <Link><img src={require("./image/youtube.png")} /></Link>
           </div>
         </div>
         <div className="row" id="footer_loc_box">
           <div id="footer_loc_box_1">
             <div className="row">
-              <div className="col-3" >
+              {/* <div className="col-3" >
                 <div className="row" id="loc_box">
                   <div className="col-3" id="loc_box_1">
                     <img src={require("../../images/location.png")} />
@@ -155,24 +94,9 @@ export default class Home_footer extends Component {
                   </div>
                 </div>
 
-              </div>
-              <div className="col-3">
-                <div className="row" id="loc_box">
-                  <div className="col-3" id="loc_box_1">
-                    <img src={require("../../images/location.png")} />
-                  </div>
+              </div> */}
+              {/* <div className="col-3">
 
-                  <div className="col" id="loc_box_2">
-                    <div className="row">
-                      India
-                    </div>
-                    <div className="row">
-                      45456456
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-3">
                 <div className="row" id="loc_box">
                   <div className="col-3" id="loc_box_1">
                     <img src={require("../../images/location.png")} />
@@ -187,10 +111,26 @@ export default class Home_footer extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-3">
+              </div> */}
+              <div className="col-4">
                 <div className="row" id="loc_box">
-                  <div className="col-3" id="loc_box_1">
+                  <div className="col-4" id="loc_box_1">
+                    <img src={require("../../images/location.png")} />
+                  </div>
+
+                  <div className="col" id="loc_box_2">
+                    <div className="row">
+                      India
+                    </div>
+                    <div className="row">
+                      45456456
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="row" id="loc_box">
+                  <div className="col-4" id="loc_box_1">
                     <img src={require("../../images/location.png")} />
                   </div>
 

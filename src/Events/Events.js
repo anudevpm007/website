@@ -1,10 +1,11 @@
 import React, { Component, useEffect, useState } from 'react'
 import Menu from '../Menu/Menu'
 import "./Events.css"
+import Home_footer from "../Home/Home_footer/Home_footer";
 
 
 
-  
+
 let date_s = new Date("2024-08-30")
 let i = true
 let date = new Date();
@@ -30,39 +31,83 @@ if (houre < 10) {
 
 export default function Events() {
   const [min, setMin] = useState(0)
-  useEffect(()=>{
+  useEffect(() => {
     setMin(minute);
   })
- 
+
   // render() {
   return (
-    <div id='events_page'>
-      <div id='events_menu'>
-        <Menu />
-      </div>
-      
-      <div id='events_box'>
-      
-        <div id='event_head'>
-          <img id='event_head_img' src={require("./image/Head_p1.jpg")} />
+    <div>
+      <div id='events_page'>
+        <div id='events_menu'>
+          <Menu />
         </div>
-        <div id='events_main_heading'>
-        <h1>INKOGSEK CYBER SECURITY CONFRANCES 2024</h1>
-      </div>
-        <div id='couter_box' className='row'>
-          <div id='couter_box_1' className='col-4'>
-            <div><h1>{sub_d}d</h1></div>
+
+        <div className='row' id='events_box'>
+
+          <div id='event_head'>
+            <img id='event_head_img' src={require("./image/Head_p1.jpg")} />
           </div>
-          <div id='couter_box_2' className='col-4'>
-            <div><h1>{houre}h</h1></div>
+          <div id='events_main_heading'>
+            <h1>INKOGSEK CYBER SECURITY CONFRANCES 2024</h1>
           </div>
-          <div id='couter_box_3' className='col-4'>
-            <div><h1>{minute}m</h1></div>
+          <div id='couter_box' className='row'>
+            <div id='couter_box_1' className='col-4'>
+              <div><h1>{sub_d}d</h1></div>
+            </div>
+            <div id='couter_box_2' className='col-4'>
+              <div><h1>{houre}h</h1></div>
+            </div>
+            <div id='couter_box_3' className='col-4'>
+              <div><h1>{minute}m</h1></div>
+            </div>
+          </div>
+          <div className='row' id='event_main_box'>
+            <div className='col-6' id='event_main_col_1'><h3>Conference</h3></div>
+            <div className='col-6' id='event_main_col_2'><h3>Venue</h3></div>
+          </div>
+          <div className='row' id='event_main_box_2'>
+            <div className='col-6' id='event_main_col_1'><h3>Conference</h3></div>
           </div>
         </div>
+
       </div>
-
-
+      <div className='row' id='event_body'>
+        <h3>Just come with an open mind and willingness to share and learn.</h3>
+        <div id='event_img_box'>
+          <img src={require("./image/img_1.jpg")} />
+        </div>
+        <div id='event_data_set_1'>
+          <div id='event_data_set1_1'>
+            <p>null meets are free for anyone to attend. There are absolutely no fees. just come with an open mind and willingness to share and learn. </p>
+            <div>
+              <h4>Proposed sessions for this event</h4>
+              <div>
+                <ul>
+                  <li>Soc what lies ahead! by Aarya Jain</li>
+                  <li>OpSec Safe Red Team Infrastructure by Rishi Kanwar</li>
+                  <li>Pentesters Approach to AWS! AM by Divyanshu Shaukla</li>
+                </ul>
+              </div>
+              <p>Note: The session details including schedule are available below</p>
+            </div>
+          </div>
+          
+        </div>
+        <table id='event_data_set_2'>
+            <tr>
+              <th>Date</th>
+              <th>Sunday June 15 2024</th>
+            </tr>
+            <tr>
+              <th>Date</th>
+              <th>Sunday June 15 2024</th>
+            </tr>
+        </table>
+      </div>
+      <div id='down'>
+        <Home_footer/>
+      </div>
     </div>
   )
 }
