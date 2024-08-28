@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from 'react'
 import Menu from '../Menu/Menu'
 import "./Events.css"
 import Home_footer from "../Home/Home_footer/Home_footer";
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,9 +43,7 @@ export default function Events() {
         <div id='events_menu'>
           <Menu />
         </div>
-
         <div className='row' id='events_box'>
-
           <div id='event_head'>
             <img id='event_head_img' src={require("./image/Head_p1.jpg")} />
           </div>
@@ -62,15 +61,7 @@ export default function Events() {
               <div><h1>{minute}m</h1></div>
             </div>
           </div>
-          <div className='row' id='event_main_box'>
-            <div className='col-6' id='event_main_col_1'><h3>Conference</h3></div>
-            <div className='col-6' id='event_main_col_2'><h3>Venue</h3></div>
-          </div>
-          <div className='row' id='event_main_box_2'>
-            <div className='col-6' id='event_main_col_1'><h3>Conference</h3></div>
-          </div>
         </div>
-
       </div>
       <div className='row' id='event_body'>
         <h3>Just come with an open mind and willingness to share and learn.</h3>
@@ -92,21 +83,34 @@ export default function Events() {
               <p>Note: The session details including schedule are available below</p>
             </div>
           </div>
-          
+        </div>
+        <div id='Reg_box'>
+          <div id='Reg_box_1' className='row' >
+            <div id='Reg_box1_1' className='col'>
+              Continue with Register
+            </div>
+            <div id='Reg_box1_2' className='col'>
+              <Link to={"/website/Register/"}>
+                <div>
+                  Register Now
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
         <table id='event_data_set_2'>
-            <tr>
-              <th>Date</th>
-              <th>Sunday June 15 2024</th>
-            </tr>
-            <tr>
-              <th>Date</th>
-              <th>Sunday June 15 2024</th>
-            </tr>
+          <tr>
+            <th>Date</th>
+            <th>Sunday June 15 2024</th>
+          </tr>
+          <tr>
+            <th>Date</th>
+            <th>Sunday June 15 2024</th>
+          </tr>
         </table>
       </div>
       <div id='down'>
-        <Home_footer/>
+        <Home_footer />
       </div>
     </div>
   )

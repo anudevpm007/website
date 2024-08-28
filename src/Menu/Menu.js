@@ -18,7 +18,7 @@ export default function Menu() {
       
       <div className="Menu-m">
         <nav>
-        <div className="S-logo"><img className="logo" src={require("../images/AB WPL 5.png")} alt="N/A"/></div>
+        <div className="S-logo"><img className="logo" src={require("../images/Main_logo.png")} alt="N/A"/></div>
           <input type="checkbox" id="sidebar-active" />
           <label htmlFor="sidebar-active" className="open-sidebar-bt">
             <img src={require("../images/Menu.png")} alt="N/A"/>

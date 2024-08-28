@@ -1,7 +1,7 @@
 #blog_Card{
     background-color: rgb(0, 0, 0);
+    border: 2px solid rgba(7, 219, 208, 0.623);
     height: auto;
-
 }
 .blog:hover{
     color: white;

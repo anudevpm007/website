@@ -1,4 +1,6 @@
-
+#blog_con{
+    margin-bottom: 60px;
+}
 .Main_Blogs>h1{
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -11,9 +13,7 @@
 .Main_Blogs{
     position: relative;
     z-index: 1;
-    background-color: black;
-    background: rgb(34,193,195);
-    background: linear-gradient(221deg, rgb(0, 90, 92) 0%, rgb(0, 26, 82) 87%);
+    background: #061113;
 }
 .M{
     z-index: 2;

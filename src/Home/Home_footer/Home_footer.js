@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Home_footer.css";
 import { Link } from "react-router-dom";
+import { Button } from "bootstrap";
 
 export default class Home_footer extends Component {
   render() {
@@ -15,6 +16,22 @@ export default class Home_footer extends Component {
             <div className="row" id="Ev_box2_1">
               <div className="col-lg-6" id="Ev_box21_1">
                 <p>Research Powered Cybersecurity Services and Training. Eliminate security threats through our innovative and extensive security assessments.</p>
+                <div id="Subscribe_box">
+                  <div id="Subscribe_box_1" className="row">
+                    <div id="Subscribe_box1_1" className="col">
+                      <form>
+                        <input type="email" placeholder="Enter your Email address" />
+                      </form>
+                    </div>
+                    <div id="Subscribe_box1_2" className="col">
+                      <Link>
+                        <div>
+                          Subscribe
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="col-lg-6" id="Ev_box21_2">
                 <div className="row">

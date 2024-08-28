@@ -3,6 +3,7 @@ import Blog from "../Blog";
 import Main_Data from "../../Data/Blog_data";
 import "./Main_Blog.css";
 import { Link } from "react-router-dom";
+import Home_footer from "../../Home/Home_footer/Home_footer"
 
 
 var url = window.location.pathname;
@@ -21,7 +22,7 @@ export default function Main_Blog() {
           <div className="S-logo">
             <img
               className="logo"
-              src={require("../../images/AB WPL 5.png")}
+              src={require("../../images/Main_logo.png")}
               alt="N/A"
             />
           </div>
@@ -86,8 +87,8 @@ export default function Main_Blog() {
           ))}
         </div>
       </div>
-      <div>
-        
+      <div id="down">
+        <Home_footer/>
       </div>
     </div>
   );

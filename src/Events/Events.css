@@ -87,6 +87,55 @@
     font-size: 1.8vw;
 }
 
+#Reg_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Reg_box1_1{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+#Reg_box_1{
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Reg_box_1{
+    background-color: rgba(197, 209, 207, 0.575);
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#Reg_box_1>div{
+    display: flex;
+    justify-content: center;
+}
+
+#Reg_box1_2>a>div{
+    background-color: black;
+    color: white;
+    text-decoration-line: none;
+    height: 2.8vw;
+    width: 8vw;
+}
+
+#Reg_box1_2>a>div{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Reg_box1_2>a{
+    text-decoration: none;
+}
+
+
 #event_main_box>div {
     background-color: rgb(28, 0, 46);
     margin: 30px;

@@ -10,6 +10,7 @@ import Main_services from "./Services/Main_services";
 import Events from "./Events/Events";
 import Main_book from "./Book/Main_book";
 import { Helmet } from "react-helmet";
+import Main_book_Register from "./Events/Register/Main_Register";
 
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
           <Route path="website/blogs/" Component={Main_Blog} />
           <Route path="/blogs/:Headings" Component={Blog_detials} />
           <Route path={"/website/Book/"} Component={Main_book} />
+          <Route path={"/website/Register/"} Component={Main_book_Register} />
           <Route path="website/services/:id" Component={Main_services} />
           <Route path="/website/events/" Component={Events} />
           
