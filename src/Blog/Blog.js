@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Card, CardBody } from "react-bootstrap";
 export default class Blog extends Component {
+
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -18,11 +20,12 @@ export default class Blog extends Component {
     };
   }
   render() {
+    
     if (this.state.media_type == 1) {
       return (
         <Link className="blog" style={{textDecoration:"none" }} to={"/blogs/"+this.state.id}>
           <Card id="blog_Card" style={{ marginTop: "20px" ,color:"white"}}>
-            <Card.Img src={this.state.media} style={{ height: "40%" ,borderRadius:"14px",padding:"5px"}} />
+            <Card.Img alt="N?a" src={this.state.media} style={{ height: "40%" ,borderRadius:"14px",padding:"5px"}} />
             <Card.Body>
               <Card.Title className="head">{this.state.heading}</Card.Title>
               <Card.Text>{this.state.peragraph}</Card.Text>

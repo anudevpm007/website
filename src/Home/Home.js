@@ -59,12 +59,14 @@ export default function Home() {
               <a href="#down" onClick={close} className="links">
                 About Us
               </a>
-              <Link href="#" onClick={close} className="links">
+              <Link to={"/website/carrier"} onClick={close} className="links">
                 Carrier
               </Link>
               <Link to={"/website/events/"} onClick={close} className="links">
                 Events
               </Link>
+              <Link  to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
+              <Link  to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
               <div>
                 <Link id="jU" to={"/website/Book/"}>Book Now</Link>
               </div>
@@ -89,13 +91,18 @@ export default function Home() {
             <div id="Header_Heading">
               <span><h1>A Bit of Defense Beats a Breach of Bytes</h1></span>
               <p>Protect Your Business with Our Innovative Cybersecurity Services!</p>
-
             </div>
           </div>
           <div className="row">
             <div className="Home_body">
               <div className="container-fluid">
                 <div className="row">
+                  <div id="Header_Heading_1">
+                    <div>
+                      <h3>Our Services</h3>
+                      <p>We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.</p>
+                    </div>
+                  </div>
                   <div id="service_home">
                     <div id="service_list">
                       <div
@@ -106,10 +113,7 @@ export default function Home() {
                           backgroundColor: "transparent",
                         }}
                       >
-                        <div id="Header_Heading_1">
-                          <h3>Our Services</h3>
-                          <p>We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.</p>
-                        </div>
+
 
                       </div>
                       <div className="row" id="list">
@@ -122,8 +126,8 @@ export default function Home() {
                           />
                         ))}
                       </div>
-                      <div>
-                        <Mobile_services/>
+                      <div id="Mobile_list">
+                        <Mobile_services />
                       </div>
                     </div>
                   </div>

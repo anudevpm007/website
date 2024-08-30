@@ -5,7 +5,7 @@ export default class Map extends Component {
   render() {
     return (
       <div id='world_map'>
-        
+
         <div id='world2'>
           <div id='World_img'>
             <img src={require("./world_map3.png")} />
@@ -28,22 +28,16 @@ export default class Map extends Component {
             <div id='dot'>
             </div>
             <div id='text'>
-            United Kingdom
+              United Kingdom
             </div>
           </div>
-          <div id='DB'>
-            <div id='dot'>
+          <div id='MDE'>
+            
+            <div id='dot_CEN'>
+              Middle East
             </div>
-            <div id='text'>
-              Dubai
-            </div>
-          </div>
-          <div id='KW'>
-            <div id='dot'>
-            </div>
-            <div id='text'>
-              Kuwait
-            </div>
+           
+
           </div>
           <div id='SG'>
             <div id='dot'>

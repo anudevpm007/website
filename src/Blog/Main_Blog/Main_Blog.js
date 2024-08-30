@@ -6,14 +6,18 @@ import { Link } from "react-router-dom";
 import Home_footer from "../../Home/Home_footer/Home_footer"
 
 
-var url = window.location.pathname;
-var parts = url.split("/");
-var idu = parts[parts.length - 2];
-console.log(parts);
-if (idu == "blogs") {
-  console.log("okay");
-}
+// var url = window.location.pathname;
+// var parts = url.split("/");
+// var idu = parts[parts.length - 2];
+// console.log(parts);
+// if (idu == "blogs") {
+//   console.log("okay");
+// }
 export default function Main_Blog() {
+  function close() {
+    document.getElementById("sidebar-active").click()
+
+  }
   // render() {
   return (
     <div className="Main_Blogs">
@@ -48,12 +52,14 @@ export default function Main_Blog() {
             <Link href="#" className="links">
               About Us
             </Link>
-            <Link href="#" className="links">
-              Course
+            <Link to={"/website/carrier"} className="links">
+              Carrier
             </Link>
-            <Link href="#" className="links">
+            <Link to={"/website/events/"} className="links">
               Events
             </Link>
+            <Link  to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
+            <Link  to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
             <div>
               <Link id="jU">Join Us</Link>
             </div>

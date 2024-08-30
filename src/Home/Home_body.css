@@ -45,7 +45,7 @@ html{
 
 #service_home {
     
-    margin-bottom: 50px;
+    margin-bottom: 16px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -67,18 +67,23 @@ html{
 }
 
 #why_box_2{
-    width: 50%;
+    width: 70%;
 }
 #why_box_2>p{
     text-align: justify;
     color: white;
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 #why_box_2>h2{
+    font-size: 2.4vw;
     margin: 0px;
     color: white;
+}
+
+#why_box_2>p{
+    font-size: 1.6vw;
 }
 
 .detials>a {
@@ -88,7 +93,7 @@ html{
     font-weight: bolder;
 }
 #service_list {
-    width: 70%;
+    width: 80%;
 }
 
 #T_SER{
@@ -97,7 +102,7 @@ html{
 
 @media screen and (max-width:1300px) {
     #service_list {
-        width: 70%;
+        width: 80%;
     }
     
     
@@ -115,12 +120,9 @@ html{
     #why_box_2{
         width: 70%;
     }
-    #why_box_2>p{
-        font-size: 3vw;
-    }
-    #why_box_2>h2{
-        font-size: 6vw;
-    }
+    /* #list{
+        display: none;
+    } */
     
 }
 

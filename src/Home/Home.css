@@ -8,8 +8,15 @@ html {
 }
 
 #Header_Heading_1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Header_Heading_1>div{
+    width: 77%;
     color: white;
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: justify;
 }
 
@@ -25,6 +32,10 @@ html {
     position: absolute;
     color: white;
     width: 800px;
+}
+
+#Header_Heading>p{
+    font-size: 20px;
 }
 
 
@@ -133,7 +144,7 @@ html {
 
 
 #world_head_1{
-    margin-top: 120px;
+    margin-top: 60px;
     width: 70%;
 }
 
@@ -144,7 +155,7 @@ html {
 }
 
 #world_head_1>p{
-    margin-top: 50px;
+    margin-top: 10px;
     color: white;
 }
 
@@ -153,9 +164,14 @@ html {
     align-items: center;
 }
 
-/* #list{
-    display: none;
-} */
+#Header_Heading_1>h3{
+    font-size: 2.4vw;
+    margin-bottom: 10px;
+}
+#Header_Heading_1>p{
+    font-size: 1.6vw;
+}
+
 
 
 @media screen and (max-width:1000px) {
@@ -182,7 +198,6 @@ html {
         height: 6vw;
     }
     #Header_Heading_1{
-        font-size: 3vw;
         width: 100%;
     }
 }

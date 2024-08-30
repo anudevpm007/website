@@ -58,14 +58,44 @@
 
 #dot {
     background-color: rgb(255, 0, 0);
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     margin-right: 20px;
+    z-index: 4;
     /* animation-name: dot_animation;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite; */
+}
+#dot_CEN {
+    background-color: rgb(255, 0, 0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    z-index: 4;
+    font-size: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    /* animation-name: dot_animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+}
+
+
+
+#dot_CEN:hover{
+    border-radius: 2px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 0.7vw;
+    background-color: rgb(20, 239, 255);
+    font-weight: 800;
 }
 
 #IN{
@@ -85,11 +115,11 @@
     top: 33%;
     right: 34%;
 }
-#DB{
-    z-index: 4;
+#MDE{
+    
     position: absolute;
-    top: 54%;
-    right: 17%;
+    top: 48%;
+    right: 35%;
 }
 #KW{
     position: absolute;
@@ -98,11 +128,12 @@
 }
 #SG{
     position: absolute;
-    top: 66%;
-    right: 2%;
+    top: 60%;
+    right: 13%;
 }
 #dot:hover~#dot{
     opacity: 0;
+    
 }
 
 #dot:hover~#text {

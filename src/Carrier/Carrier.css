@@ -1,0 +1,67 @@
+#Carrier_mid{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#Carrier_search_input>input{
+    outline: none;
+    background-color: rgba(161, 161, 161, 0.185);
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+#Carrier_list_1>a{
+    text-decoration: none;
+    
+}
+
+#Carrier_search_button>button{
+    width: 100%;
+}
+
+#Carrier_search_input>input::placeholder{
+    color: black;
+}
+
+#Carrier_search{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#Carrier_search_input>input{
+    width: 100%;
+}
+#Carrier_mid{
+    display: flex;
+    justify-content: center;
+}
+
+#Carrier_list_1{
+    width: 80%;
+
+}
+
+#Carrier_list{
+    margin-top: 30PX;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#Carrier_head{
+    margin-top: 30px;
+}
+
+
+#Carrier_head>h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Carrier_list_box{
+    border: 2px solid rgba(189, 189, 189, 0.644);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}

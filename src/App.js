@@ -9,41 +9,53 @@ import Book from "./Book/Book";
 import Main_services from "./Services/Main_services";
 import Events from "./Events/Events";
 import Main_book from "./Book/Main_book";
-import { Helmet } from "react-helmet";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 import Main_book_Register from "./Events/Register/Main_Register";
+import Test from "./test/test";
+import Carrier from "./Carrier/Carrier";
+import Carrier_det from "./Carrier/Detials/Carrier_det";
+import Under_construction from "./under_con/Under_construction";
 
 
 class App extends Component {
   render() {
-    var url = window.location.pathname;
-    console.log(url)
-    var parts = url.split("/");
-    var idu = parts[parts.length - 1];
-    
+    // var url = window.location.pathname;
+    // console.log(url)
+    // var parts = url.split("/");
+    // var idu = parts[parts.length - 1];
+
     return (
 
       <Router>
         {/* <div id="App"> */}
-          {/* <Menu/> */}
+        {/* <Menu/> */}
         {/* </div> */}
         <div className="App1">
-        <Helmet>
+          <HelmetProvider>
+            <div>
+              <Helmet>
                 <meta charSet="utf-8" />
                 <title>INKOGSEK</title>
-                <link rel="canonical"/>
-        </Helmet>
-        
-        <Routes>
-          <Route path="website/" Component={Home} />
-          <Route path="website/from=blog/" Component={Home} />
-          <Route path="website/blogs/" Component={Main_Blog} />
-          <Route path="/blogs/:Headings" Component={Blog_detials} />
-          <Route path={"/website/Book/"} Component={Main_book} />
-          <Route path={"/website/Register/"} Component={Main_book_Register} />
-          <Route path="website/services/:id" Component={Main_services} />
-          <Route path="/website/events/" Component={Events} />
-          
-        </Routes>
+                <link rel="canonical" />
+              </Helmet>
+            </div>
+          </HelmetProvider>
+
+          <Routes>
+            <Route path="website/" Component={Home} />
+            <Route path="website/Under_construction" Component={Under_construction} />
+            <Route path="website/carrier" Component={Carrier} />
+            <Route path="website/carrier/:d" Component={Carrier_det} />
+            <Route path="website/test" Component={Test} />
+            <Route path="website/from=blog/" Component={Home} />
+            <Route path="website/blogs/" Component={Main_Blog} />
+            <Route path="/blogs/:Headings" Component={Blog_detials} />
+            <Route path={"/website/Book/"} Component={Main_book} />
+            <Route path={"/website/Register/"} Component={Main_book_Register} />
+            <Route path="website/services/:id" Component={Main_services} />
+            <Route path="/website/events/" Component={Events} />
+
+          </Routes>
         </div>
       </Router>
     );

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.c61f3c7b.css",
-    "main.js": "/website/static/js/main.dcce6a34.js",
+    "main.css": "/website/static/css/main.c8e903c9.css",
+    "main.js": "/website/static/js/main.3ffb0851.js",
     "static/js/453.bb828c5d.chunk.js": "/website/static/js/453.bb828c5d.chunk.js",
     "static/media/front_video.mp4": "/website/static/media/front_video.e86494e44fa1f2dab322.mp4",
     "static/media/Head_p1.jpg": "/website/static/media/Head_p1.bd0042f9b4ffb8b083b7.jpg",
@@ -23,17 +23,16 @@
     "static/media/img_1.jpg": "/website/static/media/img_1.ba4406ef18daf9b2588d.jpg",
     "static/media/instagram.png": "/website/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/Main_logo.png": "/website/static/media/Main_logo.338e888599e326379961.png",
-    "static/media/AB WPL 5.png": "/website/static/media/AB WPL 5.9ebd11072859361edf10.png",
     "static/media/location.png": "/website/static/media/location.39261a4c95eecf324099.png",
     "static/media/reddit.png": "/website/static/media/reddit.2075bfc31002e9091450.png",
     "static/media/linkedin.png": "/website/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/website/index.html",
-    "main.c61f3c7b.css.map": "/website/static/css/main.c61f3c7b.css.map",
-    "main.dcce6a34.js.map": "/website/static/js/main.dcce6a34.js.map",
+    "main.c8e903c9.css.map": "/website/static/css/main.c8e903c9.css.map",
+    "main.3ffb0851.js.map": "/website/static/js/main.3ffb0851.js.map",
     "453.bb828c5d.chunk.js.map": "/website/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c61f3c7b.css",
-    "static/js/main.dcce6a34.js"
+    "static/css/main.c8e903c9.css",
+    "static/js/main.3ffb0851.js"
   ]
 }

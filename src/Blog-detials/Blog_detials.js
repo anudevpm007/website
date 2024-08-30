@@ -9,7 +9,7 @@ class Blog_detials extends React.Component {
     var urls = url.split("/");
     const urlid = urls[urls.length - 1];
     var i = 0;
-    
+
 
     while (i < Main_Data.length) {
       if (Main_Data[i].id.toString() == urlid) {
@@ -38,11 +38,11 @@ class Blog_detials extends React.Component {
                   className="row"
                   id="D_head"
                   style={{
-                    boxShadow:"rgb(34, 34, 34) 10px 10px 30px",
+                    boxShadow: "rgb(34, 34, 34) 10px 10px 30px",
                     border: "solid black 1px",
                     padding: "10px",
                     margin: "10px",
-                    
+
                   }}
                 >
                   <div className="col-lg">
@@ -53,9 +53,10 @@ class Blog_detials extends React.Component {
                         {this.state.heading}
                       </Card.Title>
                       <Card.Img
+                        alt="N?a"
                         src={this.state.media}
                         className="D_img"
-                        style={{  marginTop: 20 }}
+                        style={{ marginTop: 20 }}
                       />
                     </CardBody>
                   </div>
@@ -67,7 +68,7 @@ class Blog_detials extends React.Component {
                     </CardBody>
                   </div>
                 </div>
-                <div className="row" style={{ width: "90%", margin: "10px" ,}}>
+                <div className="row" style={{ width: "90%", margin: "10px", }}>
                   <Card.Title>Read More</Card.Title>
                   {this.state.read.Heading.map((DataI, i) => {
                     console.log(i);
@@ -105,7 +106,7 @@ class Blog_detials extends React.Component {
                 <div
                   className="row"
                   style={{
-                    boxShadow:"rgb(34, 34, 34) 10px 10px 30px",
+                    boxShadow: "rgb(34, 34, 34) 10px 10px 30px",
                     border: "solid black 1px",
                     padding: "10px",
                     margin: "10px",
@@ -124,7 +125,7 @@ class Blog_detials extends React.Component {
                           overflow: "hidden",
                           padding: "2px",
                           borderRadius: "7px",
-                          height:"300px"
+                          height: "300px"
                         }}
                         src={this.state.media}
                         title="YouTube video"
@@ -136,7 +137,7 @@ class Blog_detials extends React.Component {
                   </div>
                   <div className="col-lg" id="Sub">
                     <CardBody>
-                      <Card.Text style={{ fontSize: 22, fontWeight: "600"  }}>
+                      <Card.Text style={{ fontSize: 22, fontWeight: "600" }}>
                         {this.state.paragraph}
                       </Card.Text>
                     </CardBody>

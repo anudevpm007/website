@@ -1,0 +1,33 @@
+#Con_text{
+    display: flex;
+    align-items: center;
+}
+#construction_page_1>div>img{
+    width: 40vw;
+}
+#Con_text>div>h2{
+    color: white;
+}
+
+#Con_text>div>div>p{
+    color: white;
+}
+
+#Con_text>div>div>p>a{
+    text-decoration: none;
+}
+
+
+#Con_text>div{
+    display: flex;
+    flex-direction: column;
+}
+
+#construction_page_1>div{
+   margin-top: 100px;
+}
+
+#construction_page{
+    height: 100vh;
+    background-color: black;
+}

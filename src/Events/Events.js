@@ -74,7 +74,7 @@ export default function Events() {
             <div>
               <h4>Proposed sessions for this event</h4>
               <div>
-                <ul>
+                <ul id='event_data_set_point'>
                   <li>Soc what lies ahead! by Aarya Jain</li>
                   <li>OpSec Safe Red Team Infrastructure by Rishi Kanwar</li>
                   <li>Pentesters Approach to AWS! AM by Divyanshu Shaukla</li>
