@@ -21,7 +21,7 @@ export default function Menu() {
         <div className="S-logo"><img className="logo" src={require("../images/Main_logo.png")} alt="N/A"/></div>
           <input type="checkbox" id="sidebar-active" />
           <label htmlFor="sidebar-active" className="open-sidebar-bt">
-            <img src={require("../images/Menu.png")} alt="N/A"/>
+            <img src={require("../images/white_menu.png")} alt="N/A"/>
           </label>
           <label id="overlay" htmlFor="sidebar-active"></label>
           <div className="links-container">
@@ -33,7 +33,7 @@ export default function Menu() {
             <Link to={"/website/blogs/"} className="links" onClick={close}>Blog</Link>
             <Link to={"/website/"} className="links" onClick={close}>Services</Link>
             <a href="#down" className="links" onClick={close}>About Us</a>
-            <Link to={"/website/carrier"} className="links" onClick={close}>Carrier</Link>
+            <Link to={"/website/carrier"} className="links" onClick={close}>Careers</Link>
             <Link  to={"/website/events/"} className="links" onClick={close}>Events</Link>
             <Link  to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
             <Link  to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>

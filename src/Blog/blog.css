@@ -6,3 +6,10 @@
 .blog:hover{
     color: white;
 }
+@media screen and (max-width:500px){
+    #B_pera{
+        text-align: justify;
+        margin-top: 30px;
+        font-size: 3.1vw;
+    }
+}

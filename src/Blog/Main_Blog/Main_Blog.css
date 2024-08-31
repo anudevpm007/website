@@ -44,3 +44,10 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width:500px){
+    .Main_Blogs>h1{
+        font-size: 4vw;
+        margin-bottom: 20px;
+    }
+}

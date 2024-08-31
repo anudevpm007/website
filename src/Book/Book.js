@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Join_mobile from "./Join_mobile";
 import Menu from "../Menu/Menu";
-import Home_footer from "../Home/Home_footer/Home_footer";
+// import Home_footer from "../Home/Home_footer/Home_footer";
 
 export default function Book() {
   const [name, setName] = useState({})

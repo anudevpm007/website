@@ -79,3 +79,19 @@
     font-size: 2vw;
   }
 }
+@media screen and (max-width:1000px) {
+
+  #EP_Button{
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 25px;
+  }
+  #S_BOX_HEADING{
+    font-size: 2.4vw;
+  }
+
+  #EP_Button>a{
+    font-size: 2.2vw;
+  }
+}

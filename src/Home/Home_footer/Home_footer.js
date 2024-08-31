@@ -6,21 +6,22 @@ import axios from "axios";
 import valid from "../../test/validation";
 
 export default function Home_footer() {
-  const [email, setEmail] = useState({})
+  // const [email, setEmail] = useState({})
 
-  const getData = (event) => {
-    setEmail({ email: event.target.value })
-    console.log(email.email);
+  // const getData = (event) => {
+  //   setEmail({ email: event.target.value })
+  //   console.log(email.email);
 
-  }
+  // }
 
   const sub = (event) => {
-    console.log(email);
+    // console.log(email);
     event.preventDefault();
-    let data = (email.email);
+    let email = document.getElementById('sub_email').value;
+    let data = {email:email};
     console.log(data.length)
     if (data.length !== 0) {
-      axios.post("http://localhost:8000/", email).then(res => console.log("okay")).catch(err => console.log("error"));
+      axios.post("http://localhost:8000/", data).then(res => console.log("okay")).catch(err => console.log("error"));
       
     }
   }
@@ -41,7 +42,7 @@ export default function Home_footer() {
                 <div id="Subscribe_box_1">
                   <form className="row" method="POST" onSubmit={sub}>
                     <div className="col-6" id="Subscribe_box_input">
-                      <input placeholder="Enter your email" type="email" onChange={getData}/>
+                      <input placeholder="Enter your email" id="sub_email" type="email"/>
                     </div>
                     <div className="col-3" id="Subscribe_box_button">
                       <button type="submit">Subscribe</button>
@@ -70,7 +71,7 @@ export default function Home_footer() {
                   <div>
                     <ul>
                       <li><Link>India</Link></li>
-                      <li><Link>Services</Link></li>
+                      <li><Link>Singapore</Link></li>
                       <li><Link>Blogs</Link></li>
                       <li><Link>Courses</Link></li>
                       <li><Link>Events</Link></li>

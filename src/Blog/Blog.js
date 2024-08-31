@@ -28,7 +28,7 @@ export default class Blog extends Component {
             <Card.Img alt="N?a" src={this.state.media} style={{ height: "40%" ,borderRadius:"14px",padding:"5px"}} />
             <Card.Body>
               <Card.Title className="head">{this.state.heading}</Card.Title>
-              <Card.Text>{this.state.peragraph}</Card.Text>
+              <Card.Text id="B_pera">{this.state.peragraph}</Card.Text>
             </Card.Body>
           </Card>
         </Link>
@@ -48,7 +48,7 @@ export default class Blog extends Component {
             
             <Card.Body>
               <Card.Title className="head" style={{paddingBottom:"10px"}}>{this.state.heading} </Card.Title>
-              <Card.Text >{this.state.peragraph}</Card.Text>
+              <Card.Text  id="B_pera">{this.state.peragraph}</Card.Text>
             </Card.Body>
           </Card>
         </Link>

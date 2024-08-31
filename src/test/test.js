@@ -20,7 +20,7 @@ export default function Test() {
         let data = (email.email);
         console.log(data.length)
         if (data.length !== 0) {
-            axios.post("http://localhost:8000/", email).then(res => console.log("okay")).catch(err => console.log("error"));
+            axios.post("http://localhost:8000/", email).then(res => console.log(res)).catch(err => console.log("error"));
             valid(email.email, 0);
         }
 
@@ -29,6 +29,7 @@ export default function Test() {
         <div onSubmit={sub}>
             <form method='POST'>
                 <input placeholder='email' name='email' onChange={cha} />
+                <p></p>
                 <button type='submit'>Submit</button>
             </form>
         </div>

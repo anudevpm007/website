@@ -98,7 +98,7 @@ export default function Events() {
             </div>
           </div>
         </div>
-        <table id='event_data_set_2'>
+        {/* <table id='event_data_set_2'>
           <tr>
             <th>Date</th>
             <th>Sunday June 15 2024</th>
@@ -107,7 +107,7 @@ export default function Events() {
             <th>Date</th>
             <th>Sunday June 15 2024</th>
           </tr>
-        </table>
+        </table> */}
       </div>
       <div id='down'>
         <Home_footer />

@@ -31,12 +31,19 @@ export default class Map extends Component {
               United Kingdom
             </div>
           </div>
+          <div id='ETH'>
+            <div id='dot'>
+            </div>
+            <div id='text'>
+              Ethiopia
+            </div>
+          </div>
           <div id='MDE'>
-            
+
             <div id='dot_CEN'>
               Middle East
             </div>
-           
+
 
           </div>
           <div id='SG'>

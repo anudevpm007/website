@@ -39,7 +39,7 @@ html{
 }
 
 .container-fluid {
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -77,13 +77,14 @@ html{
 }
 
 #why_box_2>h2{
-    font-size: 2.4vw;
+    font-size: 2.0vw;
     margin: 0px;
     color: white;
 }
 
 #why_box_2>p{
-    font-size: 1.6vw;
+    
+    font-size: 1.1vw;
 }
 
 .detials>a {
@@ -109,6 +110,13 @@ html{
 }
 
 @media screen and (max-width:1090px) {
+    
+    #why_box_2>h2{
+        font-size: 3vw;
+    }
+    #why_box_2>p{
+        font-size: 2vw;
+    }
 
     #Book_Link{
         font-size: 2vw;
@@ -117,9 +125,9 @@ html{
     #service_list {
         width: 80%;
     }
-    #why_box_2{
+    /* #why_box_2{
         width: 70%;
-    }
+    } */
     /* #list{
         display: none;
     } */
@@ -127,9 +135,9 @@ html{
 }
 
 @media screen and (max-width:750px) {
-    #why_box_2{
+    /* #why_box_2{
         width: 80%;
-    }
+    } */
     #service_list {
         width: 90%;
     }
@@ -137,11 +145,18 @@ html{
 }
 
 @media screen and (max-width:600px) {
+    #why_box_2>h2{
+        font-size: 5vw;
+    }
+    #why_box_2>p{
+        font-size: 2.5vw;
+    }
+
     #service_list {
         width: 100%;
     }
     #why_box_2{
-        width: 93%;
+        width: 85%;
     }
     
     

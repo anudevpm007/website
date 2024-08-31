@@ -58,8 +58,8 @@
 
 #dot {
     background-color: rgb(255, 0, 0);
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     margin-right: 20px;
     z-index: 4;
@@ -70,8 +70,8 @@
 }
 #dot_CEN {
     background-color: rgb(255, 0, 0);
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     margin-right: 20px;
     z-index: 4;
@@ -90,12 +90,22 @@
 
 #dot_CEN:hover{
     border-radius: 2px;
-    width: 70px;
-    height: 30px;
+    width: fit-content;
+    height: fit-content;
     border-radius: 5px;
-    font-size: 0.7vw;
+    padding: 3px;
+    font-size: 15px;
     background-color: rgb(20, 239, 255);
     font-weight: 800;
+}
+
+#dot_CEN:hover~#ETH{
+    margin-left: 20px;
+}
+#ETH{
+    position: absolute;
+    top: 60%;
+    right: 33%;
 }
 
 #IN{
@@ -107,13 +117,13 @@
 #US{
     
     position: absolute;
-    top: 42%;
-    right: 80%;
+    top: 37%;
+    right: 74%;
 }
 #UK{
     position: absolute;
-    top: 33%;
-    right: 34%;
+    top: 28%;
+    right: 33%;
 }
 #MDE{
     
@@ -143,6 +153,17 @@
 }
 
 @media screen and (max-width:800px) {
+    #dot_CEN:hover{
+        font-size: 11px;
+    }
+    #text {
+        font-size: 11px;
+    }
+    #dot,#dot_CEN {
+        width: 8px;
+        height: 8px;
+    }
+    
     #World_img>img{
         width: 600px;
     }
@@ -150,9 +171,17 @@
     #IN{
         position: absolute;
         top: 56%;
-        right: 21.5%;
+        right: 24%;
     }
-    
+    #SG{
+        top: 60%;
+        right: 15%;
+    }
+    #UK{
+        position: absolute;
+        top: 28%;
+        right: 36%;
+    }
 }
 
 @media screen and (max-width:660px) {
@@ -160,10 +189,14 @@
         width: 450px;
     }
 
+    #SG{
+        top: 60%;
+        right: 12%;
+    }
+
     #IN{
-        position: absolute;
         top: 56%;
-        right: 17.5%;
+        right: 21.5%;
     }
 
     #dot {
@@ -171,6 +204,16 @@
         height: 8px;
         border-radius: 50%;
     }
+    #MDE{
+    
+        top: 48%;
+        right: 33%;
+    }
+    #UK{
+        top: 28%;
+        right: 31%;
+    }
+    
     
 }
 
@@ -185,11 +228,34 @@
         top: 56%;
         right: 17.5%;
     }
+    #SG{
+        top: 60%;
+        right: 7%;
+    }
+
+    #IN{
+        top: 50%;
+        right: 19.5%;
+    }
 
     #dot {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
+    }
+    #MDE{
+    
+        top: 48%;
+        right: 32%;
+    }
+    #UK{
+        top: 28%;
+        right: 27%;
+    }
+    #ETH{
+        position: absolute;
+        top: 60%;
+        right: 30%;
     }
     
 }

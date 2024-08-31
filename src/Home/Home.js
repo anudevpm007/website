@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Button, CardImg } from "react-bootstrap";
 // import { useEffect } from "react";
 import "./Home.css";
 import "./Home_body.css";
@@ -35,7 +34,7 @@ export default function Home() {
             </div>
             <input type="checkbox" id="sidebar-active" />
             <label htmlFor="sidebar-active" className="open-sidebar-bt">
-              <img src={require("../images/Menu.png")} alt="N/A" />
+              <img src={require("../images/white_menu.png")} alt="N/A" />
             </label>
             <label id="overlay" htmlFor="sidebar-active"></label>
             <div className="links-container" id="comp_1">
@@ -60,7 +59,7 @@ export default function Home() {
                 About Us
               </a>
               <Link to={"/website/carrier"} onClick={close} className="links">
-                Carrier
+              Careers
               </Link>
               <Link to={"/website/events/"} onClick={close} className="links">
                 Events
@@ -99,7 +98,7 @@ export default function Home() {
                 <div className="row">
                   <div id="Header_Heading_1">
                     <div>
-                      <h3>Our Services</h3>
+                      <h2>Our Services</h2>
                       <p>We are a team of innovative digital security experts, committed to providing effective and reliable services. Our proactive approach and deep knowledge allow us to offer unique solutions that safeguard your digital assets.</p>
                     </div>
                   </div>

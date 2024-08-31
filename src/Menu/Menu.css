@@ -42,7 +42,7 @@ nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 1.3vw;
 }
 
 #jU {
@@ -97,7 +97,7 @@ nav .S-logo {
 }
 
 .S-logo>img {
-    width: 8vw;
+    width: 7vw;
 }
 
 @media screen and (max-width:1450px) {
@@ -132,12 +132,20 @@ nav .S-logo {
 }
 
 @media screen and (max-width:900px) {
+    .links{
+        padding-bottom: 10px;
+        padding-bottom: 15px;
+    }
     nav a {
         color: white;
         box-sizing: border-box;
         height: auto;
         width: 100%;
         padding: 30px 40px;
+    }
+
+    nav a {
+        font-size: 2vh;
     }
 
     .links-container {

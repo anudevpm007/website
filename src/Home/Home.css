@@ -14,7 +14,7 @@ html {
 }
 
 #Header_Heading_1>div{
-    width: 77%;
+    width: 70%;
     color: white;
     margin-top: 50px;
     text-align: justify;
@@ -22,7 +22,7 @@ html {
 
 #Header_Heading>span>h1{
     color: white;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 
@@ -139,6 +139,7 @@ html {
 }
 
 #world_head_1>h3{
+    font-size: 2.0vw;
     color: white;
 }
 
@@ -155,6 +156,8 @@ html {
 }
 
 #world_head_1>p{
+    text-align: justify;
+    font-size: 1.1vw;
     margin-top: 10px;
     color: white;
 }
@@ -164,28 +167,40 @@ html {
     align-items: center;
 }
 
-#Header_Heading_1>h3{
-    font-size: 2.4vw;
-    margin-bottom: 10px;
+#Header_Heading_1>div>h2{
+    font-size: 2.0vw;
 }
-#Header_Heading_1>p{
-    font-size: 1.6vw;
+#Header_Heading_1>div>p{
+    text-align: justify;
+    font-size: 1.1vw;
 }
 
+@media screen and (max-width:1090px) {
+    #world_head_1>h3{
+        font-size: 3vw;
+    }
+    #world_head_1>p{
+        font-size: 2vw;
+    }
+    #Header_Heading_1>div>h2{
+        font-size: 3vw;
+    }
+    #Header_Heading_1>div>p{
+        font-size: 2vw;
+    }
+}
 
 
 @media screen and (max-width:1000px) {
-    #world_head_1{
-        margin-top: 10vw;
-        width: 80%;
-    }
+    #Header_Heading>span>h1{
+        font-size: 4vw;
+      }
+      #Header_Heading>p{
+        font-size: 2vw;
+      }
 
-    #world_head_1>h3{
-        font-size: 6vw;
-    }
-    #world_head_1>p{
-        font-size: 3vw;
-    }
+    
+    
 
     #book_box_1 {
         width: 75%;
@@ -197,17 +212,31 @@ html {
         width: 50%;
         height: 6vw;
     }
-    #Header_Heading_1{
-        width: 100%;
-    }
 }
 @media screen and (max-width:600px) {
+
+    #world_head_1>h3{
+        font-size: 5vw;
+    }
+    #world_head_1>p{
+        font-size: 2vw;
+    }
+    #Header_Heading_1>div{
+        width: 85%;
+    }
+    #Header_Heading_1>div>h2{
+        font-size: 5vw;
+    }
+    #Header_Heading_1>div>p{
+        font-size: 2.5vw;
+    }
+
     #world_head_1{
-        width: 80%;
+        width: 85%;
     }
 
     #Header_Heading{
-        top: 3%;
+        top: 6%;
         left: 10%;
     }
 
@@ -224,7 +253,52 @@ html {
         background-position: 80%;
         background-size: auto;
     }
+    #Header_Heading>span>h1{
+        font-size: 4vw;
+    }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
+    #Header_Heading{
+        top: 6%;
+    }
+    #Header_Heading{
+
+        width: 100%;
+        left: 0%;
+    }
+    #Header_Heading>p{
+        font-size: 2.4vw;
+        display: flex;
+        justify-content: center;
+    }
+    #Header_Heading>span>h1{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    #book_box_1_2>button {
+        width: 100px;
+        border-radius: 5px;
+        height: 40px;
+        transition: 1s;
+    
+    }
+    #book_box_1_2>button>a  {
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    #book_box_1_1>h3{
+        display: flex;
+        align-items: center;
+        font-size: 2.7vw;
+        font-weight: bold;
+    }
+    #book_box_1 {
+        width: 90%;
+    }
+    #footer_logo>div>img{
+        width: 30vw;
+    }
+
 }

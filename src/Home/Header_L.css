@@ -65,12 +65,7 @@
 
 @media screen and (max-width:900px) {
 
-  #Header_Heading>span>h1{
-    font-size: 4vw;
-  }
-  #Header_Heading>p{
-    font-size: 2vw;
-  }
+  
 
   #H_div_mian{
     

@@ -32,7 +32,7 @@ export default function Main_Blog() {
           </div>
           <input type="checkbox" id="sidebar-active" />
           <label htmlFor="sidebar-active" className="open-sidebar-bt">
-            <img src={require("../../images/Menu.png")} alt="N/A" />
+            <img src={require("../../images/white_menu.png")} alt="N/A" />
           </label>
           <label id="overlay" htmlFor="sidebar-active"></label>
           <div className="links-container">
@@ -53,7 +53,7 @@ export default function Main_Blog() {
               About Us
             </Link>
             <Link to={"/website/carrier"} className="links">
-              Carrier
+            careers
             </Link>
             <Link to={"/website/events/"} className="links">
               Events
