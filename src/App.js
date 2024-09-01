@@ -5,16 +5,16 @@ import Blog_detials from "./Blog-detials/Blog_detials";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import "./App.css"
-import Book from "./Book/Book";
+import "./booking/booking"
 import Main_services from "./Services/Main_services";
 import Events from "./Events/Events";
-import Main_book from "./Book/Main_book";
+import Register from "./register/register";
 import { HelmetProvider, Helmet } from "react-helmet-async";
-import Main_book_Register from "./Events/Register/Main_Register";
 import Test from "./test/test";
 import Carrier from "./Carrier/Carrier";
 import Carrier_det from "./Carrier/Detials/Carrier_det";
 import Under_construction from "./under_con/Under_construction";
+import booking from "./booking/booking";
 
 
 class App extends Component {
@@ -50,8 +50,8 @@ class App extends Component {
             <Route path="website/from=blog/" Component={Home} />
             <Route path="website/blogs/" Component={Main_Blog} />
             <Route path="/blogs/:Headings" Component={Blog_detials} />
-            <Route path={"/website/Book/"} Component={Main_book} />
-            <Route path={"/website/Register/"} Component={Main_book_Register} />
+            <Route path={"/website/Book/"} Component={booking} />
+            <Route path={"/website/Register/"} Component={Register} />
             <Route path="website/services/:id" Component={Main_services} />
             <Route path="/website/events/" Component={Events} />
 

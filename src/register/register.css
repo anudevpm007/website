@@ -1,0 +1,150 @@
+#booking{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(40deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 107, 121, 1) 59%,
+            rgba(0, 212, 255, 1) 100%);
+            width: 100%;
+            padding: 0px;
+
+            
+}
+#booking_main{
+    width: 100%;
+}
+
+#Book_form{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    
+}
+#Book_form_1{
+    
+    border-radius: 10px;
+    width: 35%;
+    background-color: rgb(4, 6, 27);
+    margin-bottom: 20px;
+    
+}
+#Book_footer{
+    margin: 0px;
+}
+
+#Book_form_tag>h1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+}
+
+#privacy{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+#privacy>p{
+    margin: 0px;
+    color: white;
+    font-size: 10px;
+}
+
+#privacy>p>a{
+    color: rgb(68, 16, 255);
+    font-size: 10px;
+}
+#Book_form_tag>div{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.field{
+    color: white;
+    border: none;
+    background-color: transparent;
+    width: 75%;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 12px;
+}
+
+.field::placeholder{
+    font-size: 12px;
+    color: white;
+}
+
+#Book_submite{
+    margin-top: 20px;
+    background-color: rgb(46, 213, 255);
+    border: none;
+    width: 70%;
+    height: 35px;  
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:870px){
+    .field{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    #Book_form_1{
+        width: 50%;
+    }
+    .field::placeholder{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:670px){
+    #Book_form_tag>h1{
+        font-size: 4.2vw;
+    }
+    .field{
+        width: 80%;
+    }
+    #Book_form_1{
+        width: 70%;
+    }
+}
+@media screen and (max-width:470px){
+    #Book_form_tag>h1{
+        font-size: 5vw;
+    }
+    .field{
+        width: 80%;
+    }
+
+    #Book_form_1{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:400px){
+    #Book_form_tag>h1{
+        font-size: 8vw;
+    }
+    .field{
+        width: 80%;
+    }
+    #Book_form_1{
+        width: 95%;
+    }
+}
+@media screen and (max-width:300px){
+    #Book_form_tag>h1{
+        font-size: 8vw;
+    }
+    .field{
+        width: 90%;
+    }
+    #Book_form_1{
+        width: 100%;
+    }
+}

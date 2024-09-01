@@ -13,6 +13,9 @@ export default function Home_footer() {
   //   console.log(email.email);
 
   // }
+  const rep=()=>{
+
+  }
 
   const sub = (event) => {
     // console.log(email);
@@ -21,7 +24,7 @@ export default function Home_footer() {
     let data = {email:email};
     console.log(data.length)
     if (data.length !== 0) {
-      axios.post("http://localhost:8000/", data).then(res => console.log("okay")).catch(err => console.log("error"));
+      axios.post("http://localhost:8000/", data).then(res => console.log("Status Code :"+res.status)).catch(err => console.log("error"));
       
     }
   }
