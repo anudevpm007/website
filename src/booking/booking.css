@@ -79,7 +79,7 @@
 }
 
 #Book_submite{
-    margin-top: 20px;
+    margin-top: 5px;
     background-color: rgb(46, 213, 255);
     border: none;
     width: 70%;
@@ -87,11 +87,15 @@
     border-radius: 10px;
     font-weight: 700;
 }
-
+#errortext{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
 @media screen and (max-width:870px){
     .field{
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 13px;
+        margin-bottom: 13px;
         width: 80%;
     }
     #Book_form_1{

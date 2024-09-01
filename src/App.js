@@ -14,7 +14,7 @@ import Test from "./test/test";
 import Carrier from "./Carrier/Carrier";
 import Carrier_det from "./Carrier/Detials/Carrier_det";
 import Under_construction from "./under_con/Under_construction";
-import booking from "./booking/booking";
+import Booking from "./booking/booking";
 
 
 class App extends Component {
@@ -50,7 +50,7 @@ class App extends Component {
             <Route path="website/from=blog/" Component={Home} />
             <Route path="website/blogs/" Component={Main_Blog} />
             <Route path="/blogs/:Headings" Component={Blog_detials} />
-            <Route path={"/website/Book/"} Component={booking} />
+            <Route path={"/website/Book/"} Component={Booking} />
             <Route path={"/website/Register/"} Component={Register} />
             <Route path="website/services/:id" Component={Main_services} />
             <Route path="/website/events/" Component={Events} />

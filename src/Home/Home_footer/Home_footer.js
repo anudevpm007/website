@@ -1,9 +1,7 @@
 import React from "react";
 import "./Home_footer.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import axios from "axios";
-import valid from "../../test/validation";
 
 export default function Home_footer() {
   // const [email, setEmail] = useState({})
