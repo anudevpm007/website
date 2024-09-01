@@ -50,7 +50,7 @@ function Booking() {
                     <div className='row' id='Book_form_1'>
                         <div className='col' id='Book_form_box'>
                             <form id='Book_form_tag' method='POST' >
-                                <h1 style={{ color: "white" }}>SEND ENQUIRY</h1>
+                                <h1 style={{ color: "white" }}>Book your slot</h1>
                                 <div className='col'>
                                     <input type="text" id="Book_name" placeholder="Name" className='field' />
                                 </div>

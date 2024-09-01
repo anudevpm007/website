@@ -12,7 +12,7 @@ export default class Under_construction extends Component {
                 </div>
                 <div id='construction_page_1' className='row'>
                     <div className='col'>
-                        <img src={require("../images/AB WPL 5.png")} />
+                        <img src={require("../images/Main_logo.png")} />
                     </div>
                     <div id='Con_text' className='col'>
                         <div>

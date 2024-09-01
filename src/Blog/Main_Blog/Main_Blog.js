@@ -40,26 +40,28 @@ export default function Main_Blog() {
               <img src={require("../../images/Menu2.png")} id="M_logo" alt="N/A" />
             </label>
 
-            <Link to={"/website/"} className="links">
-              Home
-            </Link>
-            <Link to={"/website/blogs/"} className="links">
-              Blog
-            </Link>
-            <a href="/website/from=blog/#service_list" className="links">
-              Services
-            </a>
-            <Link href="#" className="links">
-              About Us
-            </Link>
-            <Link to={"/website/carrier"} className="links">
-            careers
-            </Link>
-            <Link to={"/website/events/"} className="links">
-              Events
-            </Link>
-            <Link  to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
-            <Link  to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
+            
+            <Link to={"/website/"} onClick={close} className="links">
+                Home
+              </Link>
+
+              <a href="#service_list" onClick={close} className="links">
+                Services
+              </a>
+              <Link to={"/website/events/"} onClick={close} className="links">
+                Events
+              </Link>
+              <Link to={"/website/blogs/"} onClick={close} className="links">
+                Blog
+              </Link>
+              <Link to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
+              <Link to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
+              <Link to={"/website/carrier"} onClick={close} className="links">
+                Careers
+              </Link>
+              <a href="#down" onClick={close} className="links">
+                About
+              </a>
             <div>
               <Link id="jU">Join Us</Link>
             </div>

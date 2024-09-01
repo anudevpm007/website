@@ -30,13 +30,14 @@ export default function Menu() {
             </label>
 
             <Link to={"/website/"} className="links" onClick={close}>Home</Link>
-            <Link to={"/website/blogs/"} className="links" onClick={close}>Blog</Link>
             <Link to={"/website/"} className="links" onClick={close}>Services</Link>
-            <a href="#down" className="links" onClick={close}>About Us</a>
-            <Link to={"/website/carrier"} className="links" onClick={close}>Careers</Link>
             <Link  to={"/website/events/"} className="links" onClick={close}>Events</Link>
+            <Link to={"/website/blogs/"} className="links" onClick={close}>Blogs</Link>
             <Link  to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
             <Link  to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
+            <Link to={"/website/carrier"} className="links" onClick={close}>Careers</Link>
+            <a href="#down" className="links" onClick={close}>About</a>
+
             <div id="B_T_N_join"><Link to={"/website/Book/"} id="jU">Book Now</Link></div>
           </div>
         </nav>

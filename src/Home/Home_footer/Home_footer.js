@@ -73,10 +73,10 @@ export default function Home_footer() {
                     <ul>
                       <li><Link>India</Link></li>
                       <li><Link>Singapore</Link></li>
-                      <li><Link>Blogs</Link></li>
-                      <li><Link>Courses</Link></li>
-                      <li><Link>Events</Link></li>
-                      <li><Link>Join Us</Link></li>
+                      <li><Link>united kingdom</Link></li>
+                      <li><Link>Middle East</Link></li>
+                      <li><Link>Ethiopia</Link></li>
+                      <li><Link>USA</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ export default function Home_footer() {
 
                 <div className="col" id="loc_box_2">
                   <div className="row">
-                    India
+                    Kerala
                   </div>
                   <div className="row">
                     45456456
@@ -176,7 +176,7 @@ export default function Home_footer() {
 
                 <div className="col" id="loc_box_2">
                   <div className="row">
-                    Japan
+                  Bangalore
                   </div>
                   <div className="row">
                     234234234433
