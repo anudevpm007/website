@@ -73,7 +73,7 @@ export default function Home_footer() {
                     <ul>
                       <li><Link>India</Link></li>
                       <li><Link>Singapore</Link></li>
-                      <li><Link>united kingdom</Link></li>
+                      <li><Link>United States</Link></li>
                       <li><Link>Middle East</Link></li>
                       <li><Link>Ethiopia</Link></li>
                       <li><Link>USA</Link></li>
