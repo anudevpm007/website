@@ -43,19 +43,20 @@ class App extends Component {
           </HelmetProvider>
 
           <Routes>
-            <Route path={"about/"} Component={About} />
-            <Route path="website/" Component={Home} />
-            <Route path="/website/Under_construction" Component={Under_construction} />
-            <Route path="/website/carrier" Component={Carrier} />
-            <Route path="/website/carrier/:d" Component={Carrier_det} />
-            <Route path="/website/test" Component={Test} />
-            <Route path="/website/from=blog/" Component={Home} />
-            <Route path="/website/blogs/" Component={Main_Blog} />
-            <Route path="/blogs/:Headings" Component={Blog_detials} />
+            
+            <Route path={"/website/"} Component={Home} />
+            <Route path={"/website/about/"} Component={About} />
+            <Route path={"/website/Under_construction"} Component={Under_construction} />
+            <Route path={"/website/carrier"} Component={Carrier} />
+            <Route path={"/website/carrier/:d"} Component={Carrier_det} />
+            <Route path={"/website/test"} Component={Test} />
+            <Route path={"/website/from=blog/"} Component={Home} />
+            <Route path={"/website/blogs/"} Component={Main_Blog} />
+            <Route path={"/blogs/:Headings"} Component={Blog_detials} />
             <Route path={"/website/Book/"} Component={Booking} />
             <Route path={"/website/Register/"} Component={Register} />
-            <Route path="/website/services/:id" Component={Main_services} />
-            <Route path="/website/events/" Component={Events} />
+            <Route path={"/website/services/:id"} Component={Main_services} />
+            <Route path={"/website/events/"} Component={Events} />
 
           </Routes>
         </div>
