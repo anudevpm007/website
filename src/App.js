@@ -15,6 +15,7 @@ import Carrier from "./Carrier/Carrier";
 import Carrier_det from "./Carrier/Detials/Carrier_det";
 import Under_construction from "./under_con/Under_construction";
 import Booking from "./booking/booking";
+import About from "./about/about";
 
 
 class App extends Component {
@@ -43,6 +44,7 @@ class App extends Component {
 
           <Routes>
             <Route path="website/" Component={Home} />
+            <Route path="website/about" Component={About} />
             <Route path="website/Under_construction" Component={Under_construction} />
             <Route path="website/carrier" Component={Carrier} />
             <Route path="website/carrier/:d" Component={Carrier_det} />
