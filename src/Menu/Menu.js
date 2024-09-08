@@ -36,7 +36,7 @@ export default function Menu() {
             <Link  to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
             <Link  to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
             <Link to={"/website/carrier"} className="links" onClick={close}>Careers</Link>
-            <a href="#down" className="links" onClick={close}>About</a>
+            <a href="website/about" className="links" onClick={close}>About</a>
 
             <div id="B_T_N_join"><Link to={"/website/Book/"} id="jU">Book Now</Link></div>
           </div>
