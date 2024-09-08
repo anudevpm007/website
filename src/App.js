@@ -44,7 +44,7 @@ class App extends Component {
 
           <Routes>
             <Route path="website/" Component={Home} />
-            <Route path="/website/about" Component={About} />
+            <Route path="/about/" Component={About} />
             <Route path="/website/Under_construction" Component={Under_construction} />
             <Route path="/website/carrier" Component={Carrier} />
             <Route path="/website/carrier/:d" Component={Carrier_det} />
