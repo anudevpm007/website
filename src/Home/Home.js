@@ -64,7 +64,7 @@ export default function Home() {
               <Link to={"/website/carrier"} onClick={close} className="links">
                 Careers
               </Link>
-              <a href="website/about" onClick={close} className="links">
+              <a href="/website/about" onClick={close} className="links">
                 About
               </a>
               <div>
