@@ -42,8 +42,7 @@ nav a{
     font-size: 18px;
 }
 
-#jU{
-    background-color: rgb(0, 0, 0);
+/* #jU{
     color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -52,7 +51,7 @@ nav a{
     justify-content: center;
     border-radius: 6px;
     transition: 1s;
-}
+} */
 #jU:hover{
     transform: rotateZ(10deg);
     background-color: rgb(4, 85, 92);

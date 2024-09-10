@@ -8,7 +8,7 @@
   opacity: 0.8;
   transition: 1s;
   color: rgb(255, 255, 255);
-  border: 3px solid rgb(0, 113, 128);
+  border: 3px solid rgb(255, 0, 0);
 }
 .SH_img {
   display: flex;
@@ -19,6 +19,8 @@
 }
 
 #EP_Button{
+  border: none;
+  background-color: rgb(255, 0, 0);
   margin-top: 30px;
   margin-left: 10px;
   margin-bottom: 40px;
@@ -58,7 +60,8 @@
   justify-content: center;
   margin-top: 30px;
   margin-left: 10px;
-  color: rgb(0, 238, 255);
+  font-weight: 700;
+  color: rgb(250, 68, 68);
 }
 
 #ser_link,.I_S_card{

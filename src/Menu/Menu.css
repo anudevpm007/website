@@ -46,7 +46,7 @@ nav a {
 }
 
 #jU {
-    background-color: rgba(4, 85, 92, 0.619);
+    background-color: rgba(255, 0, 0, 0.619);
     color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,7 +59,7 @@ nav a {
 
 #jU:hover {
     transform: rotateZ(10deg);
-    background-color: rgb(4, 85, 92);
+    background-color: rgb(255, 3, 3);
 }
 
 nav .M-logo {
@@ -68,7 +68,7 @@ nav .M-logo {
 }
 
 .links-container>a:hover {
-    color: rgb(16, 241, 121);
+    color: rgb(255, 0, 0);
     text-decoration: underline;
 }
 

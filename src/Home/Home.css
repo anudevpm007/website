@@ -49,7 +49,7 @@ html {
     position: relative;
     width: 100vw;
     height: 100%;
-    background: #061113;
+    background: #000000;
     background-size: 100vh 100vw;
 }
 
@@ -102,7 +102,7 @@ html {
     padding: 15px;
     border-radius: 10px;
     width: 850px;
-    background-color: rgb(154, 255, 233);
+    background-color: rgb(255, 52, 52);
 }
 
 #book_box_1_2 {
@@ -115,6 +115,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #061113;
+    box-shadow: 2px 2px 8px black;
     border: none;
     width: 120px;
     border-radius: 5px;
@@ -187,6 +188,13 @@ html {
     }
     #Header_Heading_1>div>p{
         font-size: 2vw;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    #book_box_1 {
+        width: 75%;
     }
 }
 
