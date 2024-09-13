@@ -3,10 +3,13 @@
     position: relative;
 }
 
-
+#footer{
+    position: absolute;
+    bottom: 0px;
+}
 
 #Home_heading {
-    margin-top: 200px;
+    margin-top: 130px;
     width: 100%;
     position: absolute;
     display: flex;
@@ -20,6 +23,18 @@
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
+}
+
+
+#Home_top_heading{
+    display: flex;
+    justify-content: center;
+}
+
+
+#Home_heading>div>div>h1{
+    font-size: 3vw;
+    width: 100%;
 }
 
 #heading_box {

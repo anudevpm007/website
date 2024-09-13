@@ -2,7 +2,20 @@ import React, { Component } from 'react'
 import Menu from '../Menu/Menu'
 import "./Home.css"
 import { Link } from 'react-router-dom'
+import Home_footer from "./Home_footer/Home_footer"
+import axios from 'axios'
 
+const sub = (event) => {
+  // console.log(email);
+  event.preventDefault();
+  let email = document.getElementById('sub_email').value;
+  let data = {email:email};
+  console.log(data.length)
+  if (data.length !== 0) {
+    axios.post("http://localhost:8000/", data).then(res => console.log("Status Code :"+res.status)).catch(err => console.log("error"));
+    
+  }
+}
 
 export default class Home extends Component {
   render() {
@@ -15,7 +28,7 @@ export default class Home extends Component {
           </div>
           <div id='Home_heading'>
             <div>
-              <div >
+              <div id='Home_top_heading'>
                 <h1>Cybersecurity is safeguarding trust in a digital world.</h1>
               </div>
             </div>
