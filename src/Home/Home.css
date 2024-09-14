@@ -1,21 +1,21 @@
 #Home_container {
     width: 100%;
-    position: relative;
 }
 
-#footer{
-    position: absolute;
-    bottom: 0px;
-}
 
 #Home_heading {
-    margin-top: 130px;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
+#Home_menu {
+    height: 100px;
+}
+
+
+
 
 #Home_heading>div {
     text-align: justify;
@@ -26,13 +26,13 @@
 }
 
 
-#Home_top_heading{
+#Home_top_heading {
     display: flex;
     justify-content: center;
 }
 
 
-#Home_heading>div>div>h1{
+#Home_heading>div>div>h1 {
     font-size: 3vw;
     width: 100%;
 }
@@ -94,7 +94,9 @@
 #service_box_1,
 #service_box_2,
 #service_box_3,
-#service_box_4 {
+#service_box_4,
+#service_box_5,
+#service_box_6{
     transition: 0.4s;
     border-radius: 10px;
     height: 10rem;
@@ -102,6 +104,15 @@
     background-image: linear-gradient(black, rgba(255, 255, 255, 0));
     margin: 5px;
 }
+
+#service_box_6:hover {
+    box-shadow: 2px 2px 20px 2px;
+}
+
+#service_box_5:hover {
+    box-shadow: 2px 2px 20px 2px;
+}
+
 
 #service_box_4:hover {
     box-shadow: 2px 2px 20px 2px;
@@ -144,6 +155,14 @@
     width: 7vw;
 }
 
+#service_box_5>a>div>img {
+    width: 7vw;
+}
+
+#service_box_6>a>div>img {
+    width: 7vw;
+}
+
 
 #service_box_4>a>div {
     padding: 15px;
@@ -173,21 +192,45 @@
     align-items: center;
 }
 
-#service_box_1>a{
+#service_box_5>a>div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#service_box_6>a>div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#service_box_1>a {
     text-decoration: none;
 }
 
-#service_box_2>a{
+#service_box_2>a {
     text-decoration: none;
 }
 
-#service_box_3>a{
+#service_box_3>a {
     text-decoration: none;
 }
 
-#service_box_4>a{
+#service_box_4>a {
     text-decoration: none;
 }
+
+#service_box_5>a {
+    text-decoration: none;
+}
+
+#service_box_6>a {
+    text-decoration: none;
+}
+
 
 
 #service_box_2>a>div>p {
@@ -210,4 +253,38 @@
 #service_box_1>a>div>p {
     color: white;
     text-align: center;
+}
+
+#service_box_6>a>div>p {
+    color: white;
+    text-align: center;
+}
+
+#service_box_5>a>div>p {
+    color: white;
+    text-align: center;
+}
+
+#show_service{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 3px solid rgb(0, 153, 153);
+}
+
+#show_service>button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.3vw;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#why_box_1>p{
+    text-align: justify;
 }
