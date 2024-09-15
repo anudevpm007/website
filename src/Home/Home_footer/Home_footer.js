@@ -11,9 +11,7 @@ export default function Home_footer() {
   //   console.log(email.email);
 
   // }
-  const rep=()=>{
 
-  }
 
   const sub = (event) => {
     // console.log(email);
