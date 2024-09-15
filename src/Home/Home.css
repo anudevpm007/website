@@ -414,12 +414,6 @@
     transition: 1s;
 }
 
-#reg_form>form>div>input{
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid white;
-    width: 100%;
-}
 
 #reg_row_1>div>input::placeholder{
     color: white;
@@ -444,14 +438,13 @@
 }
 
 #reg_row_1>div>input{
+    color: white;
+    outline: none;
     border: none;
     background-color: transparent;
     border-bottom: 2px solid white;
 }
 
-#reg_form>form>div>input::placeholder{
-    color: white;
-}
 
 #reg_row_1{
     margin: 0px;
@@ -463,9 +456,6 @@
     margin-bottom: 50px;
 }
 
-.reg_div{
-    margin-bottom: 50px;
-}
 
 #reg_box_2>div>button:hover{
     background-color: transparent;
@@ -487,3 +477,52 @@
     transition: 1s;
     display: none;
 }
+
+#reg_div_2>input{
+    outline: none;
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#reg_div_2>input::placeholder{
+    color: white;
+}
+
+#phone_drop{
+    
+    outline: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.drop{
+    
+    background-color: rgb(71, 71, 71);
+}
+
+#reg_div_3{
+    
+    color: white;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+#reg_div_3::placeholder{
+    color: white;
+}
+
+#Con_name{
+    display: none;
+}
+

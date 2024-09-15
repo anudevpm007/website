@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { DropdownButton, Dropdown } from 'react-bootstrap'
 import Menu from '../Menu/Menu'
 import "./Home.css"
 import { Link } from 'react-router-dom'
 import Home_footer from "./Home_footer/Home_footer"
 import { useScrollYPosition } from 'react-use-scroll-position'
+import countryCodes from './Phone_list/list'
 // import axios from 'axios'
 
 // const sub = (event) => {
@@ -20,13 +22,17 @@ import { useScrollYPosition } from 'react-use-scroll-position'
 
 var i = 0;
 
-function Vis_form(){
+function Vis_form() {
   console.log("pressed");
-  
+
   document.getElementById("reg_com").style.display = "block";
   document.getElementById("reg_com").style.scale = 1;
   document.getElementById("reg_bt").style.display = "none";
-  
+
+}
+
+function Show_hide(){
+  document.getElementById("Con_name").style.display = "block";
 }
 
 function Reg_form() {
@@ -48,12 +54,26 @@ function Reg_form() {
             </div>
           </div>
         </div>
-        <div className='reg_div'>
-          <input placeholder='Phone number' />
+        <div id='reg_div_1'  className="row">
+          <div className='col-3'>
+            <select name="phone_drop" id="phone_drop" onClick={Show_hide}>
+              {
+                countryCodes.map((Data,index)=>{
+                  return(
+                    <option className='drop' value={Data.code}>+{Data.code} <p id='Con_name'>{Data.short}</p></option>
+                  )
+
+                })
+              }
+              
+            </select>
+          </div>
+          <div id='reg_div_2' className='col'>
+            <input placeholder='Phone number' />
+          </div>
         </div>
-        <div className='reg_div'>
-          <input placeholder='Location' />
-        </div>
+        <input id='reg_div_3' placeholder='Location'/>
+
         <div id='sub_bt'>
           <button type="submit">Book Now</button>
         </div>
@@ -80,7 +100,7 @@ function Register_click() {
               </button>
             </div>
             <div id='reg_com'>
-              <Reg_form/>
+              <Reg_form />
             </div>
           </div>
         </div>
