@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.fbf3a641.css",
-    "main.js": "/website/static/js/main.192e3afa.js",
+    "main.css": "/website/static/css/main.8942d280.css",
+    "main.js": "/website/static/js/main.ebfff713.js",
     "static/js/453.bb828c5d.chunk.js": "/website/static/js/453.bb828c5d.chunk.js",
     "static/media/Head_p1.jpg": "/website/static/media/Head_p1.bd0042f9b4ffb8b083b7.jpg",
     "static/media/p11.png": "/website/static/media/p11.68a0d10e13a24510f4a4.png",
+    "static/media/Designer.png": "/website/static/media/Designer.bdce219743ff267d759d.png",
     "static/media/image-1.jpg": "/website/static/media/image-1.1d1dbf46b4508d9f9fdd.jpg",
     "static/media/twitter.jpg": "/website/static/media/twitter.e4ac3a949248f8da4590.jpg",
     "static/media/image-2.jpg": "/website/static/media/image-2.53f56bc9e17f3e495b44.jpg",
@@ -28,12 +29,12 @@
     "static/media/reddit.png": "/website/static/media/reddit.2075bfc31002e9091450.png",
     "static/media/linkedin.png": "/website/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/website/index.html",
-    "main.fbf3a641.css.map": "/website/static/css/main.fbf3a641.css.map",
-    "main.192e3afa.js.map": "/website/static/js/main.192e3afa.js.map",
+    "main.8942d280.css.map": "/website/static/css/main.8942d280.css.map",
+    "main.ebfff713.js.map": "/website/static/js/main.ebfff713.js.map",
     "453.bb828c5d.chunk.js.map": "/website/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbf3a641.css",
-    "static/js/main.192e3afa.js"
+    "static/css/main.8942d280.css",
+    "static/js/main.ebfff713.js"
   ]
 }
