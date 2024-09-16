@@ -40,14 +40,14 @@ nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     font-size: 1.3vw;
 }
 
 #jU {
-    background-color: #c402ff;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
