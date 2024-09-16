@@ -176,3 +176,20 @@
 #Home_services{
     padding: 50px;
 }
+
+#B_header,#Th_Header,#Home_services{
+    animation: scroll_animation linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+@keyframes scroll_animation {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
