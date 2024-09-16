@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
           </div>
 
           <div>
@@ -129,10 +129,51 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
           </div>
-          
-          
+        </div>
+        <div id="Home_start">
+          <div id="Home_start_header">
+            <p>GET STARTED NOW</p>
+            <h1>Send us a Maessage</h1>
+          </div>
+          <div id="Home_start_form">
+            <div>
+              <form action="POST">
+                <div id="start_inputs">
+                  <div className="row">
+                    <div className="row" id="start_input_s1">
+                      <div className="col-6">
+                        <input type="text" placeholder="Name" />
+                      </div>
+                      <div className="col-6">
+                        <input type="email" name="" id="" placeholder="E Mail"/>
+                      </div>
+                    </div>
+                    <div className="row"  id="start_input_s2">
+                      <div className="col-2">
+                        <select name="code" id="code">
+                          <option value="91">91+</option>
+                        </select>
+                      </div>
+                      <div className="col">
+                        <input type="text" placeholder="Phone Number" />
+                      </div>
+                    </div>
+                    <div className="row" id="start_input_s3">
+                      <div className="col"><input type="text" placeholder="Location" /></div>
+                    </div>
+
+                    <div className="row" id="start_submit">
+                      <div className="col">
+                        <button type="submit">SEND</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
