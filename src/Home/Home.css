@@ -19,7 +19,7 @@
 #Home_header {
     width: 100%;
     background: rgb(0, 0, 0);
-    background: linear-gradient(49deg, rgba(0, 0, 0, 1) 47%, rgba(0, 0, 0, 1) 68%, rgba(0, 88, 106, 1) 92%);
+    background: linear-gradient(49deg, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 10%, rgba(0, 88, 106, 1) 100%);
 }
 
 #B_header {
