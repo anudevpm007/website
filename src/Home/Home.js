@@ -1,6 +1,9 @@
 import React, { useEffect } from "react"
 import "./Home.css"
 import Menu from "../Menu/Menu"
+import Map from "./Map/Map"
+import Home_footer from "./Home_footer/Home_footer"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 export default function Home() {
   return (
@@ -57,21 +60,21 @@ export default function Home() {
             <div id="Th_Header_section" className="row">
               <div className="col-3">
                 <div className="Th_Header_S">
-                  <img src={require("./image/customer.png")} alt="N?A" />
+                  <LazyLoadImage src={require("./image/customer.png")} effect="blur" loading="lazy" alt="N?A" />
                   <h1>22+</h1>
                   <h4>Our Clients</h4>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Th_Header_S">
-                  <img src={require("./image/global.png")} alt="N?A" />
+                  <LazyLoadImage src={require("./image/global.png")} effect="blur" loading="lazy" alt="N?A" />
                   <h1>5+</h1>
                   <h4>Global presences</h4>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Th_Header_S">
-                  <img src={require("./image/user.png")} alt="N?A" />
+                  <LazyLoadImage src={require("./image/user.png")} width={80} effect="blur" loading="lazy" alt="N?A" />
                   <h1>98%</h1>
                   <h4>Client referra</h4>
                 </div>
@@ -88,19 +91,19 @@ export default function Home() {
             <div id="Home_services_row" className="row">
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><img src={require("./image/iot.png")} alt="N?A" /></div>
+                  <div><LazyLoadImage src={require("./image/iot.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                   <p>Iot and Embedded Security Testing</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><img src={require("./image/applications.png")} alt="N?A" /></div>
+                  <div><LazyLoadImage src={require("./image/applications.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                   <p>Web application security testing</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><img src={require("./image/application.png")} alt="N?A" /></div>
+                  <div><LazyLoadImage src={require("./image/application.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                   <p>Mobile application security testing</p>
                 </div>
               </div>
@@ -112,19 +115,20 @@ export default function Home() {
             <div id="Home_services_row" className="row">
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><img src={require("./image/globe-grid.png")} alt="N?A" /></div>
+                  <div><LazyLoadImage src={require("./image/globe-grid.png")} effect="blur" /></div>
                   <p>Network security assessment</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><img src={require("./image/security.png")} alt="N?A" /></div>
+                  <div><LazyLoadImage src={require("./image/security.png")} effect="blur"/></div>
                   <p>vulnerability assessment and penetration testing</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><img src={require("./image/Backup.png")} alt="N?A" /></div>
+                
+                  <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur"/></div>
                   <p>Data recovery</p>
                 </div>
               </div>
@@ -147,10 +151,10 @@ export default function Home() {
                         <input type="text" placeholder="Name" />
                       </div>
                       <div className="col-6">
-                        <input type="email" name="" id="" placeholder="E Mail"/>
+                        <input type="email" name="" id="" placeholder="E Mail" />
                       </div>
                     </div>
-                    <div className="row"  id="start_input_s2">
+                    <div className="row" id="start_input_s2">
                       <div className="col-2">
                         <select name="code" id="code">
                           <option value="91">91+</option>
@@ -174,6 +178,16 @@ export default function Home() {
               </form>
             </div>
           </div>
+
+        </div>
+        <div id="Home_map">
+          <div id="Map_heading">
+            <h1>Our Global Presence</h1>
+          </div>
+          <Map />
+        </div>
+        <div id="Home_footer">
+          <Home_footer/>
         </div>
       </div>
     </div>

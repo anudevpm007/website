@@ -80,7 +80,7 @@
     color: rgb(0, 192, 112);
 }
 
-.Th_Header_S>img {
+.Th_Header_S>span>img {
     margin-bottom: 20px;
     width: 5vw;
 }
@@ -146,7 +146,7 @@
     width: 100%;
 }
 
-.Home_services_box>div>img {
+.Home_services_box>div>span>img {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 80px;
@@ -304,6 +304,17 @@
 
 #start_submit>div>button:hover{
     background-color: rgba(2, 70, 66, 0.733);
+}
+#Home_map{
+    margin-top: 100px;
+    animation: scroll_animation linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+#Map_heading>h1{
+    display: flex;
+    justify-content: center;
+    color: black;
 }
 
 

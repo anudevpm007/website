@@ -8,7 +8,7 @@ export default class Map extends Component {
 
         <div id='world2'>
           <div id='World_img'>
-            <img src={require("./world_map3.png")} />
+            <img src={require("./world_map3.png")}  loading="lazy"/>
           </div>
           <div id='IN'>
             <div id='dot'>
@@ -39,8 +39,9 @@ export default class Map extends Component {
             </div>
           </div>
           <div id='MDE'>
-
-            <div id='dot_CEN'>
+            <div id='dot'>
+            </div>
+            <div id='text'>
               Middle East
             </div>
 

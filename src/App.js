@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Suspense } from "react";
 import Main_Blog from "./Blog/Main_Blog/Main_Blog";
-import Home from "./Home/Home";
+// import Home from "./Home/Home";
 import Blog_detials from "./Blog-detials/Blog_detials";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
@@ -16,6 +17,7 @@ import Carrier_det from "./Carrier/Detials/Carrier_det";
 import Under_construction from "./under_con/Under_construction";
 import Booking from "./booking/booking";
 import About from "./about/about";
+const LazyHome = React.lazy(()=>import("./Home/Home"))
 
 
 class App extends Component {
@@ -44,13 +46,13 @@ class App extends Component {
 
           <Routes>
             
-            <Route path={"/website/"} Component={Home} />
+            <Route path={"/website/"} element={<div><Suspense fallback={<h1>Loading</h1>}><LazyHome/></Suspense></div>} />
             <Route path={"/website/about/"} Component={About} />
             <Route path={"/website/Under_construction"} Component={Under_construction} />
             <Route path={"/website/carrier"} Component={Carrier} />
             <Route path={"/website/carrier/:d"} Component={Carrier_det} />
             <Route path={"/website/test"} Component={Test} />
-            <Route path={"/website/from=blog/"} Component={Home} />
+            <Route path={"/website/from=blog/"} element={<lazyHome/>} />
             <Route path={"/website/blogs/"} Component={Main_Blog} />
             <Route path={"/blogs/:Headings"} Component={Blog_detials} />
             <Route path={"/website/Book/"} Component={Booking} />

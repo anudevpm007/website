@@ -15,6 +15,7 @@
 
 
 #text {
+    position: relative;
     background-color: rgb(20, 239, 255);
     opacity: 0;
     width: auto;
@@ -22,12 +23,13 @@
     padding: 8px;
     border-radius: 10px;
     font-weight: 900;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     color: transparent;
     scale: 0;
     transition: 0.7s;
+    z-index: -1;
 }
 
 #world_map {
@@ -57,12 +59,13 @@
 }
 
 #dot {
-    background-color: rgb(255, 0, 0);
+    position: relative;
+    z-index: 2;
+    background-color: rgb(43, 255, 0);
     width: 12px;
     height: 12px;
     border-radius: 50%;
     margin-right: 20px;
-    z-index: 4;
     /* animation-name: dot_animation;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -74,7 +77,7 @@
     height: 12px;
     border-radius: 50%;
     margin-right: 20px;
-    z-index: 4;
+   
     font-size: 0px;
     display: flex;
     align-items: center;
@@ -129,7 +132,7 @@
     
     position: absolute;
     top: 48%;
-    right: 35%;
+    right: 25%;
 }
 #KW{
     position: absolute;
@@ -150,6 +153,7 @@
     opacity: 1;
     scale: 1;
     color: rgb(0, 0, 0);
+    z-index: 3;
 }
 
 @media screen and (max-width:800px) {

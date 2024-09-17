@@ -29,7 +29,7 @@ export default function Home_footer() {
 
     <div id="home_footer">
       <div className="row" id="main_box">
-        <div id="footer_logo" className="row">
+        <div id="footer_logo" className="row ">
           <div className="col-2"><img src={require("./image/Main_logo.png")} alt="N?a" id="box_logo" /></div>
         </div>
 

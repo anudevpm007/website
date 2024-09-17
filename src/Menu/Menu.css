@@ -19,7 +19,7 @@
 
 nav {
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color: transparent;
     display: flex;
     justify-content: flex-end;
     align-items: center;
