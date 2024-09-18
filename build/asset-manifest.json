@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.455edac8.css",
-    "main.js": "/website/static/js/main.aa793452.js",
-    "static/js/453.bb828c5d.chunk.js": "/website/static/js/453.bb828c5d.chunk.js",
+    "main.css": "/website/static/css/main.5ecfd978.css",
+    "main.js": "/website/static/js/main.1868cf3b.js",
+    "static/css/984.8dd0af48.chunk.css": "/website/static/css/984.8dd0af48.chunk.css",
+    "static/js/984.7452dbb0.chunk.js": "/website/static/js/984.7452dbb0.chunk.js",
+    "static/js/453.b03e3c98.chunk.js": "/website/static/js/453.b03e3c98.chunk.js",
     "static/media/Head_p1.jpg": "/website/static/media/Head_p1.bd0042f9b4ffb8b083b7.jpg",
     "static/media/p11.png": "/website/static/media/p11.68a0d10e13a24510f4a4.png",
     "static/media/image-1.jpg": "/website/static/media/image-1.1d1dbf46b4508d9f9fdd.jpg",
@@ -13,6 +15,7 @@
     "static/media/about_header_img1.jpg": "/website/static/media/about_header_img1.f0691775cbbb9ad439e9.jpg",
     "static/media/micro.png": "/website/static/media/micro.b9729af8c5a7273d85d9.png",
     "static/media/image-3.jpg": "/website/static/media/image-3.6938b533cad0ff6a1e25.jpg",
+    "static/media/world_map3.png": "/website/static/media/world_map3.59e2879932dfe3514e45.png",
     "static/media/image-4.png": "/website/static/media/image-4.a6137232539f561efd62.png",
     "static/media/pngwing.com.png": "/website/static/media/pngwing.com.00dc9231b5ee48dbdc5e.png",
     "static/media/img_1.jpg": "/website/static/media/img_1.ba4406ef18daf9b2588d.jpg",
@@ -20,7 +23,6 @@
     "static/media/globe-grid.png": "/website/static/media/globe-grid.773ca0a0129462c19636.png",
     "static/media/instagram.png": "/website/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/security.png": "/website/static/media/security.fa8488b970eaa3c2c3ff.png",
-    "static/media/Backup.png": "/website/static/media/Backup.060d4ddfbc70972582b3.png",
     "static/media/iot.png": "/website/static/media/iot.b55def5a5d5a5aab224d.png",
     "static/media/applications.png": "/website/static/media/applications.442d9b1451307e858d0b.png",
     "static/media/application.png": "/website/static/media/application.c78436e587545a6d8299.png",
@@ -31,12 +33,14 @@
     "static/media/customer.png": "/website/static/media/customer.0c0330cea6ab524bc4b8.png",
     "static/media/linkedin.png": "/website/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/website/index.html",
-    "main.455edac8.css.map": "/website/static/css/main.455edac8.css.map",
-    "main.aa793452.js.map": "/website/static/js/main.aa793452.js.map",
-    "453.bb828c5d.chunk.js.map": "/website/static/js/453.bb828c5d.chunk.js.map"
+    "main.5ecfd978.css.map": "/website/static/css/main.5ecfd978.css.map",
+    "main.1868cf3b.js.map": "/website/static/js/main.1868cf3b.js.map",
+    "984.8dd0af48.chunk.css.map": "/website/static/css/984.8dd0af48.chunk.css.map",
+    "984.7452dbb0.chunk.js.map": "/website/static/js/984.7452dbb0.chunk.js.map",
+    "453.b03e3c98.chunk.js.map": "/website/static/js/453.b03e3c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.455edac8.css",
-    "static/js/main.aa793452.js"
+    "static/css/main.5ecfd978.css",
+    "static/js/main.1868cf3b.js"
   ]
 }

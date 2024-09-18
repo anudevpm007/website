@@ -17,6 +17,7 @@ import Carrier_det from "./Carrier/Detials/Carrier_det";
 import Under_construction from "./under_con/Under_construction";
 import Booking from "./booking/booking";
 import About from "./about/about";
+import Loading from "./Loading/Loading"
 const LazyHome = React.lazy(()=>import("./Home/Home"))
 
 
@@ -46,8 +47,9 @@ class App extends Component {
 
           <Routes>
             
-            <Route path={"/website/"} element={<div><Suspense fallback={<h1>Loading</h1>}><LazyHome/></Suspense></div>} />
+            <Route path={"/website/"} element={<div><Suspense fallback={<div><Loading/></div>}><LazyHome/></Suspense></div>} />
             <Route path={"/website/about/"} Component={About} />
+            <Route path={"/website/loading/"} Component={Loading} />
             <Route path={"/website/Under_construction"} Component={Under_construction} />
             <Route path={"/website/carrier"} Component={Carrier} />
             <Route path={"/website/carrier/:d"} Component={Carrier_det} />

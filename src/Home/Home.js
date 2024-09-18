@@ -1,11 +1,22 @@
 import React, { useEffect } from "react"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Home.css"
 import Menu from "../Menu/Menu"
 import Map from "./Map/Map"
 import Home_footer from "./Home_footer/Home_footer"
 import { LazyLoadImage } from "react-lazy-load-image-component"
+import Slide from "./Slide/Slide";
+
+
+
+
+
 
 export default function Home() {
+
+
+
   return (
     <div id="Home">
       <div id="Home">
@@ -121,14 +132,14 @@ export default function Home() {
               </div>
               <div className="col-3">
                 <div className="Home_services_box">
-                  <div><LazyLoadImage src={require("./image/security.png")} effect="blur"/></div>
+                  <div><LazyLoadImage src={require("./image/security.png")} effect="blur" /></div>
                   <p>vulnerability assessment and penetration testing</p>
                 </div>
               </div>
               <div className="col-3">
                 <div className="Home_services_box">
-                
-                  <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur"/></div>
+
+                  <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur" /></div>
                   <p>Data recovery</p>
                 </div>
               </div>
@@ -186,8 +197,19 @@ export default function Home() {
           </div>
           <Map />
         </div>
+        <div id="Home_blogs">
+          <div>
+            <div id="Home_blog_heading">
+              <p>EXPLORE BLOGS</p>
+              <h1>Our Leatest Blogs</h1>
+            </div>
+            <div className="row" id="Home_blogs_section">
+              <Slide />
+            </div>
+          </div>
+        </div>
         <div id="Home_footer">
-          <Home_footer/>
+          <Home_footer />
         </div>
       </div>
     </div>

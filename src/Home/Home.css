@@ -317,5 +317,41 @@
     color: black;
 }
 
+#Home_blogs{
+    width: 100%;
+    background-color: white;
+}
 
+#Home_blog_heading>h1{
+    color: black;
+}
+
+#Home_blog_heading>p{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.home_blog{
+    width: 100px;
+    height: 150px;
+    background-color: blue;
+}
+
+#Home_blogs_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Home_blogs_section>div{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+#Home_blogs_section>div>div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
 
