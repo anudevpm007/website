@@ -72,12 +72,13 @@
 }
 
 #slider_3>button:focus~#blog_list_boxs{
-    animation-name: focusbtn;
-    animation-duration: 0.5s;
+    animation-name: blog_box_anime;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
 
 }
 
-.blog_list_boxs{
+#blog_list_boxs{
     background-color: black;
     border: none;
     position: relative;
@@ -88,7 +89,7 @@
     position: absolute;
     z-index: -4;
     width: 100%;
-    opacity: 0.86;
+    opacity: 0.76;
 }
 
 .back_blog_head{
@@ -100,6 +101,21 @@
 }
 
 @keyframes focusbtn {
+    0%{
+        opacity: 1;
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes blog_box_anime {
     0%{
         opacity: 1;
         opacity: 1;

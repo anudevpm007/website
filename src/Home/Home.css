@@ -320,6 +320,9 @@
 #Home_blogs{
     width: 100%;
     background-color: white;
+    animation: scroll_animation linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 #Home_blog_heading>h1{
@@ -336,12 +339,14 @@
     width: 100px;
     height: 150px;
     background-color: blue;
+    
 }
 
 #Home_blogs_section{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 #Home_blogs_section>div{
     width: 95%;

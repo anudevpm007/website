@@ -21,6 +21,7 @@ import Loading from "./Loading/Loading"
 const LazyHome = React.lazy(()=>import("./Home/Home"))
 
 
+
 class App extends Component {
   render() {
     // var url = window.location.pathname;
