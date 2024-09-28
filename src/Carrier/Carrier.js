@@ -1,144 +1,109 @@
-import React, { Component, useState } from 'react'
-import "./Carrier.css"
-import Carrier_data from './Data/Data_Carrier'
+import React from 'react'
 import { Link } from 'react-router-dom';
+import "./Carrier.css"
+import Carrier_data from './Data/Data_Carrier';
+import { Card } from 'react-bootstrap';
+import Home_footer from "../Home/Home_footer/Home_footer"
 
+
+function close() {
+  document.getElementById("sidebar-active").click()
+
+}
+
+
+
+const Menu = () => {
+  return (
+    <div>
+      <nav className="Menu_carrier" >
+        <div className="S-logo"><img className="logo" src={require("../images/Main_logo.png")} alt="N/A" /></div>
+        <input type="checkbox" id="sidebar-active" />
+        <label htmlFor="sidebar-active" className="open-sidebar-bt">
+          <img src={require("../images/white_menu.png")} alt="N/A" />
+        </label>
+        <label id="overlay" htmlFor="sidebar-active"></label>
+        <div className="links-container">
+          <label htmlFor="sidebar-active" className="close-sidebar-bt">
+            <img src={require("../images/Menu2.png")} id="M_logo" alt="N/A" />
+          </label>
+          <Link to={"/website/"} className="links" onClick={close}>Home</Link>
+          <Link to={"/website/"} className="links" onClick={close}>Services</Link>
+          <Link to={"/website/events/"} className="links" onClick={close}>Events</Link>
+          <Link to={"/website/blogs/"} className="links" onClick={close}>Blogs</Link>
+          <Link to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
+          <Link to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
+          <Link to={"/website/carrier"} className="links" onClick={close}>Careers</Link>
+          <a href="/about/" className="links" onClick={close}>About</a>
+          <div id="B_T_N_join"><Link to={"/website/Book/"} id="jU">Book Now</Link></div>
+        </div>
+      </nav>
+    </div>
+  );
+}
 
 
 export default function Carrier() {
-    const [val, setVal] = useState("0");
-    const [inval, setInval] = useState("");
-
-    const search = () => {
-        const invalue = document.getElementById("getSearch").value;
-        setInval(invalue);
-    }
-
-    const location = () => {
-        const value = document.getElementById("drop_down_carrier").value;
-        setVal(value);
-        setInval(0);
-    }
-
-
-
-    const Searching = (data) => {
-        let i = 0;
-        let j = (i + inval.length);
-
-        console.log(data);
-        let k = 1;
-        let len = (data.heading).length;
-        while (k === 1) {
-
-            if (j <= len) {
-                let part = (data.heading).slice(i, j);
-                i = i + 1
-                j = j + 1
-                console.log(part);
-
-                if ((inval.toLocaleLowerCase()) === (part.toLocaleLowerCase())) {
-                    console.log("dsfkldskfjnmklsdjmfklsjdflkjsldkfjlskdjf");
-
-                    return true;
-                }
-
-            } else {
-                k = 0;
-            }
-
-        }
-    }
-    return (
-        <div id='Carrier'>
-            <div id='Carrier_body'>
-                <div id='Carrier_head'>
-                    <h3>Our job Carrier</h3>
-                </div>
-                <div id='Carrier_mid'>
-                    <div id='Carrier_search' className='row'>
-                        <div className='col-9' id='Carrier_search_input'>
-                            <input id='getSearch' placeholder='Search' />
-                        </div>
-                        <div className='col' id='Carrier_search_button'>
-                            <button onClick={search}>Search</button>
-                        </div>
-                        <div className='col' id='Carrier_search_menu'>
-                            <select id='drop_down_carrier' onChange={location}>
-                                <option value={"0"}>location</option>
-                                <option value={"Bangalure"}>Bangalure</option>
-                                <option value={"Kozhikode"}>Kozhikode</option>
-                                <option value={"Mysuru"}>Mysuru</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div id='Carrier_list'>
-                    <div id='Carrier_list_1'>
-                        {
-                            Carrier_data.map((data) => {
-                                if (val === "0") {
-                                    if (inval.length !== 0 || inval === 0) {
-
-                                        if (Searching(data)) {
-                                            return (
-                                                <Link>
-                                                    <div id='Carrier_list_box' >
-                                                        <h3>{data.heading}</h3>
-                                                        <div className='row'>
-                                                            <div className='col'><p>Location:{data.loc}</p></div>
-                                                            <div className='col'>{data.exp} </div>
-                                                        </div>
-                                                    </div>
-                                                </Link>
-                                            );
-                                        }
-                                    } else {
-                                        return (
-                                            <Link>
-                                                <div id='Carrier_list_box' >
-                                                    <h3>{data.heading}</h3>
-                                                    <div className='row'>
-                                                        <div className='col'><p>Location:{data.loc}</p> </div>
-                                                        <div className='col'>{data.exp} </div>
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        );
-                                    }
-                                } else if (inval.length === 0) {
-                                    return (
-                                        <Link>
-                                            <div id='Carrier_list_box' >
-                                                <h3>{data.heading}</h3>
-                                                <div className='row'>
-                                                    <div className='col'><p>Location:{data.loc}</p> </div>
-                                                    <div className='col'>{data.exp} </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    );
-                                }
-                                else {
-                                    if (val === data.loc) {
-                                        return (
-                                            <Link>
-                                            <div id='Carrier_list_box' >
-                                                <h3>{data.heading}</h3>
-                                                <div className='row'>
-                                                    <div className='col'><p>Location:{data.loc}</p> </div>
-                                                    <div className='col'>{data.exp} </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                        );
-                                    } 
-                                }
-                            })
-                        }
-                    </div>
-                </div>
-            </div>
+  return (
+    <div id='Carrier'>
+      <div id='Carrier_head'>
+        <div id='Carrier_Menu'>
+          <Menu />
         </div>
-    )
+        <div id="header_image">
+          <img src={require("./image/Career head2.jpg")} alt="N?A" />
+        </div>
+        <div id="event_header">
+          <h1>Explore Our Carrier</h1>
+          <h3>Join to our journey</h3>
+        </div>
+      </div>
+      <div id="event_body">
+        <div>
+          <div id='event_body_heading'>
+            <h1>Carriers</h1>
+          </div>
+          <h6>Search the Carrier here</h6>
+          <div className='row' id='event_search_box'>
+
+            <div id='event_S_input' className='col-10'>
+              <input type="text" placeholder='Search' />
+            </div>
+            <div className='col'>
+              <button>Search</button>
+            </div>
+          </div>
+          <div id='event_data'>
+            <div>
+              {
+                Carrier_data.map((data) => {
+                  return (
+                    <Card id='Event_datalist'>
+                      <div className='row'>
+                        <div className="col">
+                          <h2>{data.heading}</h2>
+                          <p>{data.pera}</p>
+                          <h4>{data.loc}</h4>
+                          
+                        </div>
+                        <div id='Event_card_col2' className="col">
+                          <div id='event_apply'>
+                            <button >Apply Now</button>
+                            <a href="#">Explore More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='event_footer'>
+        <Home_footer/>
+      </div>
+    </div>
+  )
 }

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Suspense } from "react";
 import Main_Blog from "./Blog/Main_Blog/Main_Blog";
-// import Home from "./Home/Home";
 import Blog_detials from "./Blog-detials/Blog_detials";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
@@ -18,7 +16,7 @@ import Under_construction from "./under_con/Under_construction";
 import Booking from "./booking/booking";
 import About from "./about/about";
 import Loading from "./Loading/Loading"
-const LazyHome = React.lazy(()=>import("./Home/Home"))
+import Home from "./Home/Home";
 
 
 
@@ -48,7 +46,7 @@ class App extends Component {
 
           <Routes>
             
-            <Route path={"/website/"} element={<div><Suspense fallback={<div><Loading/></div>}><LazyHome/></Suspense></div>} />
+            <Route path={"/website/"} element={<Home/>} />
             <Route path={"/website/about/"} Component={About} />
             <Route path={"/website/loading/"} Component={Loading} />
             <Route path={"/website/Under_construction"} Component={Under_construction} />
