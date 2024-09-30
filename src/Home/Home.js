@@ -7,7 +7,6 @@ import Map from "./Map/Map"
 import Home_footer from "./Home_footer/Home_footer"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import Slide from "./Slide/Slide";
-import Loading from "../Loading/Loading";
 import axios from "axios";
 
 
@@ -135,12 +134,37 @@ const Home_body = () => {
               <div className="Home_services_box">
 
                 <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur" /></div>
-                <p>Data recovery</p>
+                <p>AI/ML Security Audit</p>
               </div>
             </div>
           </div>
 
         </div>
+        <div>
+          <div id="Home_services_row" className="row">
+            <div className="col-3">
+              <div className="Home_services_box">
+                <div><LazyLoadImage src={require("./image/globe-grid.png")} effect="blur" /></div>
+                <p>Source Code Review</p>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="Home_services_box">
+                <div><LazyLoadImage src={require("./image/security.png")} effect="blur" /></div>
+                <p>API Pen testing</p>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="Home_services_box">
+
+                <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur" /></div>
+                <p> cloud Security</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
       <div id="flow">
         <h1>ASTRALIVA Flow chart view</h1>
@@ -199,33 +223,28 @@ const Home_body = () => {
         </div>
         <Map />
       </div>
-      <div id="home_event_set">
-        <h6>Explore Our Programs</h6>
-        <h2>Our latest <span>Event</span></h2>
-        <div className="row">
-          <div className="col" id="home_event_set_S1">
-            <h6>Third-Party Risk Management</h6>
-            <p> refers to the strategic process of identifying, assessing, mitigating, and continuously monitoring the cybersecurity risks that arise from an organization’s relationships with external vendors, partners, or service providers.</p>
+      <div id="home_event_set"> {/* Event section */}
+        <img src={require("./background_img/event_box.png")} alt="N?A" />
+        <div>
+
+          <div id="home_event_heading">
+            <h1>Our latest Event that happening</h1>
+            <h3>October 4 vulnerability assessment and penetration testing event 2024</h3>
+            <h5><a href="#">Read More --></a></h5>
           </div>
-          <div className="col-6" id="home_event_set_S2">
-            <h5>Proactive Cyber Third-Party Risk Management</h5>
-            <h6>Application Security</h6>
-            <a href="">Explore More</a>
-            <div id="home_event_set_S-21">
-              <div className="row" id="home_event_set_S21">
-                <div className="col" id="home_event_set_S211">
-                  29-08-2024
-                </div>
-                <div className="col" id="home_event_set_S212">
-                  Starting on
-                </div>
-              </div>
+          <div className="row" id="home_event_date">
+            <div className="col-6" id="HED_1">
+              <p>Start On: 04-10-2024</p>
+            </div>
+            <div className="col-6" id="HED_2">
+              <p>Start On: 07-10-2024</p>
             </div>
           </div>
-          <div className="col" id="home_event_set_S3">
-            <h5>Explore More About Our Events</h5>
-            <img src={require("./Icons/job-application.png")} alt="N?A" />
-            <div><button>Apply Now</button></div>
+          <div id="home_event_pera">
+            <p>
+              The significance of the field stems from the expanded reliance on computer systems, the Internet,[3] and wireless network standards. Its importance is further amplified by the growth of smart devices, including smartphones, televisions, and the various devices that constitute the Internet of things (IoT). Cybersecurity has emerged as one of the most significant new challenges facing the contemporary world, due to both the complexity of information systems and the societies they support. Security is particularly crucial for systems that govern large-scale systems with far-reaching physical effects, such as power distribution, elections, and finance.[4][5]
+              Although many aspects of computer security involve digital security, such as electronic passwords and encryption, physical security measures such as metal locks are still used to prevent unauthorized tampering. IT security is not a perfect subset of information security, therefore does not completely align into the security convergence schema.
+            </p>
           </div>
         </div>
       </div>
