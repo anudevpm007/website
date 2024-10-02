@@ -10,28 +10,9 @@ import Slide from "./Slide/Slide";
 import axios from "axios";
 
 
-
-const Home_body = () => {
-  return (
-    <div id="Home">
-      <div id="Home_Menu">
-        <Menu />
-      </div>
-      <div id="Home_header">
-        <div className="row">
-          <div id="Home_header_S1" className="col">
-            <div>
-              <h1>A Bit of Defense Beats a Breach of Bytes</h1>
-              <h6>Protect Your Business with Our Innovative Cybersecurity Services!</h6>
-            </div>
-          </div>
-          <div id="Home_header_S2" className="col">
-
-          </div>
-        </div>
-      </div>
-      <div id="B_header">
-        <div>
+const B_header_Com=()=>{
+  return(
+    <div>
           <div id="B_header_sec" className="row">
             <div className="col-4">
               <div>
@@ -59,6 +40,30 @@ const Home_body = () => {
             </div>
           </div>
         </div>
+  );
+}
+
+
+const Home_body = () => {
+  return (
+    <div id="Home">
+      <div id="Home_Menu">
+        <Menu />
+      </div>
+      <div id="Home_header">
+        <div className="row">
+          <div id="Home_header_S1" className="col">
+            <div>
+              <h1>A Bit of Defense Beats a Breach of Bytes</h1>
+              <h6>Protect Your Business with Our Innovative Cybersecurity Services!</h6>
+            </div>
+          </div>
+          <div id="Home_header_S2" className="col">
+          </div>
+        </div>
+      </div>
+      <div id="B_header">
+        <B_header_Com/>
       </div>
       <div id="Th_Header">
         <div>
