@@ -10,7 +10,7 @@
     position: relative;
 }
 
-#event_header{
+#carrier_header{
     width: 100%;
     top: 40%;
     height: 35%;
@@ -19,7 +19,7 @@
     padding: 30px;
 }
 
-#event_header>h3{
+#carrier_header>h3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,36 +27,36 @@
     color: white;
 }
 
-#event_body{
+#carrier_body{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#event_body>div{
+#carrier_body>div{
     width: 80%;
 }
-#event_body_heading>h1{
+#carrier_body_heading>h1{
     margin-bottom: 40px;
     margin-top: 40px;
     display: flex;
     justify-content: start;
 }
-#event_body_heading>h1{
+#carrier_body_heading>h1{
     color: black;
 }
 
-#event_search_box{
+#carrier_search_box{
     height: 60px;
     background-color: rgba(0, 0, 0, 0.24);
     border-radius: 5px;
 }
 
-#event_data{
+#carrier_data{
     margin-top: 40px;
 }
 
-#event_search_box>div>input{
+#carrier_search_box>div>input{
     width: 90%;
     height: 65%;
     border: none;
@@ -64,18 +64,18 @@
     border-radius: 4px;
 }
 
-#event_search_box>div{
+#carrier_search_box>div{
     display: flex;
     align-items: center;
     
 }
 
-#event_search_box>div>input::placeholder{
+#carrier_search_box>div>input::placeholder{
     color: black;
     padding-left: 10px;
 }
 
-#event_search_box>div>button{
+#carrier_search_box>div>button{
     color: white;
     font-weight: 800;
     background-color: rgb(25, 0, 255);
@@ -85,12 +85,12 @@
     border: none;
 }
 
-#event_S_input{
+#carrier_S_input{
     display: flex;
     justify-content: start;
 }
 
-#Event_datalist{
+#carrier_datalist{
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -98,13 +98,15 @@
     border: none;
 }
 
-#Event_card_col2{
+#carrier_card_col2{
     display: flex;
     justify-content: end;
 
 }
 
-#event_apply>button{
+#carrier_apply_link{
+    display: flex;
+    align-items: center;
     border: none;
     background-color: rgb(0, 85, 85);
     width: 130px;
@@ -113,18 +115,18 @@
     color: white;
 }
 
-#event_apply>a{
+#carrier_apply>a{
     text-decoration: none;
     display: flex;
     justify-content: center;
 }
 
-#event_apply{
+#carrier_apply{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#event_footer{
+#carrier_footer{
     margin-top: 40px;
 }

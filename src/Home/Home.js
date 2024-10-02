@@ -96,19 +96,19 @@ const Home_body = () => {
           <div id="Home_services_row" className="row">
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/iot.png")} effect="blur" loading="lazy" alt="N?A" /></div>
+                <div><img src={require("./image/iot.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                 <p>Iot and Embedded Security Testing</p>
               </div>
             </div>
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/applications.png")} effect="blur" loading="lazy" alt="N?A" /></div>
+                <div><img src={require("./image/applications.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                 <p>Web application security testing</p>
               </div>
             </div>
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/application.png")} effect="blur" loading="lazy" alt="N?A" /></div>
+                <div><img src={require("./image/application.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                 <p>Mobile application security testing</p>
               </div>
             </div>
@@ -120,20 +120,20 @@ const Home_body = () => {
           <div id="Home_services_row" className="row">
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/globe-grid.png")} effect="blur" /></div>
+                <div><img src={require("./image/globe-grid.png")} effect="blur" /></div>
                 <p>Network security assessment</p>
               </div>
             </div>
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/security.png")} effect="blur" /></div>
+                <div><img src={require("./image/security.png")} effect="blur" /></div>
                 <p>vulnerability assessment and penetration testing</p>
               </div>
             </div>
             <div className="col-3">
               <div className="Home_services_box">
 
-                <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur" /></div>
+                <div><img src={require("./image/artifical-intelligence.png")} effect="blur" /></div>
                 <p>AI/ML Security Audit</p>
               </div>
             </div>
@@ -144,20 +144,20 @@ const Home_body = () => {
           <div id="Home_services_row" className="row">
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/globe-grid.png")} effect="blur" /></div>
+                <div><img src={require("./image/Code_review.png")} effect="blur" /></div>
                 <p>Source Code Review</p>
               </div>
             </div>
             <div className="col-3">
               <div className="Home_services_box">
-                <div><LazyLoadImage src={require("./image/security.png")} effect="blur" /></div>
+                <div><img src={require("./image/api.png")} effect="blur" /></div>
                 <p>API Pen testing</p>
               </div>
             </div>
             <div className="col-3">
               <div className="Home_services_box">
 
-                <div><LazyLoadImage src={"http://localhost:8000/File/backup.png"} effect="blur" /></div>
+                <div><img src={require("./image/cyber-security (1).png")} effect="blur" /></div>
                 <p> cloud Security</p>
               </div>
             </div>
@@ -230,7 +230,7 @@ const Home_body = () => {
           <div id="home_event_heading">
             <h1>Our latest Event that happening</h1>
             <h3>October 4 vulnerability assessment and penetration testing event 2024</h3>
-            <h5><a href="#">Read More --></a></h5>
+            <h5><a href="#">Read More --&gt;</a></h5>
           </div>
           <div className="row" id="home_event_date">
             <div className="col-6" id="HED_1">

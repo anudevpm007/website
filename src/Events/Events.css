@@ -5,6 +5,8 @@
 }
 
 #Event_head{
+    z-index: -1;
+    margin-bottom: -120px;
     position: relative;
     background-color: black;
 }
@@ -40,7 +42,7 @@
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 60%;
+    top: 45%;
 }
 
 #Timer_box{

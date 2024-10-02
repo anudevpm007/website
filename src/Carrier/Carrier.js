@@ -53,32 +53,32 @@ export default function Carrier() {
         <div id="header_image">
           <img src={require("./image/Career head2.jpg")} alt="N?A" />
         </div>
-        <div id="event_header">
+        <div id="carrier_header">
           <h1>Explore Our Carrier</h1>
           <h3>Join to our journey</h3>
         </div>
       </div>
-      <div id="event_body">
+      <div id="carrier_body">
         <div>
-          <div id='event_body_heading'>
+          <div id='carrier_body_heading'>
             <h1>Carriers</h1>
           </div>
           <h6>Search the Carrier here</h6>
-          <div className='row' id='event_search_box'>
+          <div className='row' id='carrier_search_box'>
 
-            <div id='event_S_input' className='col-10'>
+            <div id='carrier_S_input' className='col-10'>
               <input type="text" placeholder='Search' />
             </div>
             <div className='col'>
               <button>Search</button>
             </div>
           </div>
-          <div id='event_data'>
+          <div id='carrier_data'>
             <div>
               {
                 Carrier_data.map((data) => {
                   return (
-                    <Card id='Event_datalist'>
+                    <Card id='carrier_datalist'>
                       <div className='row'>
                         <div className="col">
                           <h2>{data.heading}</h2>
@@ -86,9 +86,9 @@ export default function Carrier() {
                           <h4>{data.loc}</h4>
                           
                         </div>
-                        <div id='Event_card_col2' className="col">
-                          <div id='event_apply'>
-                            <button >Apply Now</button>
+                        <div id='carrier_card_col2' className="col">
+                          <div id='carrier_apply'>
+                            <Link to={"/website/carrier/"+data.id} id='carrier_apply_link'>Apply Now</Link>
                             <a href="#">Explore More</a>
                           </div>
                         </div>
@@ -101,7 +101,7 @@ export default function Carrier() {
           </div>
         </div>
       </div>
-      <div id='event_footer'>
+      <div id='carrier_footer'>
         <Home_footer/>
       </div>
     </div>

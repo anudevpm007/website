@@ -2,6 +2,10 @@
     width: 500px;
 }
 
+#Home_header_S1{
+    margin-left: 30px;
+}
+
 #Home_header_S1>div>h1 {
     color: white;
 }
@@ -117,6 +121,8 @@
     align-items: center;
 }
 
+/* home services */
+
 #Home_services_row {
     margin-top: 20px;
     width: 65%;
@@ -146,7 +152,9 @@
     width: 100%;
 }
 
-.Home_services_box>div>span>img {
+
+
+.Home_services_box>div>img {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 80px;
@@ -156,6 +164,8 @@
     text-align: center;
     color: white;
 }
+
+
 
 #Home_services_row {
     display: flex;
@@ -225,14 +235,14 @@
     justify-content: center;
     margin-top: 90px;
 }
+
 #Home_start_form>div{
     width: 50%;
-
 }
 
 
 #Home_start{
-    padding: 20px;
+    padding: 40px;
     width: 100%;
     background-color: rgb(0, 15, 15);
     animation: scroll_animation linear;
@@ -256,7 +266,7 @@
     background-color: rgb(0, 29, 36);
     border: none;
     outline: none;
-    height: 35px;
+    height: 40px;
     width: 100%;
     color: white;
 }
@@ -340,6 +350,11 @@
     height: 150px;
     background-color: blue;
     
+}
+#Home_services_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #Home_blogs_section{
@@ -449,4 +464,48 @@
 }
 #home_event_date>div>p{
     color: white;
+}
+
+.Home_services_box{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+@media screen and (max-width:900px) {
+    #B_header>div {
+        width: 80%;
+    }
+
+    #Th_Header>div{
+        width: 80%;
+    }
+
+    #Home_services_row {
+        width: 80%;
+    }
+    .Home_services_box>div>img {
+        width: 60%;
+    }
+    .Home_services_box>p{
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #B_header>div {
+        width: 99%;
+    }
+    #Th_Header>div{
+        width: 99%;
+    }
+    #Home_services_row {
+        width: 99%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #Home_services>header>h2{
+        font-size: 3.6vw;
+    }
 }
