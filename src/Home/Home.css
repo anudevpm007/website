@@ -396,7 +396,7 @@
 #home_event_set
 #home_event_heading>h1{
     margin-bottom: 20px;
-    color: rgb(0, 255, 85);
+    color: rgb(0, 255, 238);
 }
 
 #home_event_heading>h2>span{
@@ -471,6 +471,13 @@
     display: flex;
     justify-content: start;
 }
+#Th_Header_section>div{
+    margin: 10px;
+}
+
+#flow>div>img{
+    width: 100%;
+}
 
 @media screen and (max-width:900px) {
     #B_header>div {
@@ -490,6 +497,9 @@
     .Home_services_box>p{
         font-size: 1.7vw;
     }
+    #Home_start_form>div{
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -502,10 +512,61 @@
     #Home_services_row {
         width: 99%;
     }
+    #Home_start_form>div{
+        width: 70%;
+    }
+    
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
+
+    #Home_start{
+        padding: 0px;
+        padding-top: 20px;
+    }
+    #Th_Header_section>div{
+        margin: 5px;
+    }
+
+    .Th_Header_S>span>img{
+        width: 50px;
+    }
+    #B_header_sec>div>div>h6{
+        font-size: smaller;
+    }
+    #B_header_sec>div>div>p{
+        font-size: smaller;
+    }
     #Home_services>header>h2{
         font-size: 3.6vw;
+    }
+    #Home_start_form>div{
+        width: 100%;
+    }
+
+    #home_event_heading>h1{
+        font-size: 5vw;   
+    }
+    #home_event_heading>h3{
+        font-size: 3vw;   
+    }
+
+    #home_event_heading>h5>a{
+        font-size: 3vw;   
+    }
+    #HED_1,#HED_2{
+        font-size: 2.4vw;
+    }
+
+    #home_event_pera>p{
+        font-size: 2.4vw;
+    }
+
+    #home_event_set{
+        height: fit-content;
+    }
+
+    #home_event_set>img{
+        width: 100%;
     }
 }

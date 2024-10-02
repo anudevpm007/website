@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.fe8b5e4d.css",
-    "main.js": "/website/static/js/main.6706750a.js",
+    "main.css": "/website/static/css/main.1d283a94.css",
+    "main.js": "/website/static/js/main.c9fc5742.js",
     "static/js/453.b03e3c98.chunk.js": "/website/static/js/453.b03e3c98.chunk.js",
     "static/media/event_box.png": "/website/static/media/event_box.fb750183312d24e8ba59.png",
     "static/media/Head_p1.jpg": "/website/static/media/Head_p1.bd0042f9b4ffb8b083b7.jpg",
@@ -12,6 +12,7 @@
     "static/media/Career head2.jpg": "/website/static/media/Career head2.14958f885ac5bce0e139.jpg",
     "static/media/im2.jpg": "/website/static/media/im2.aec7d517bc1e7d743d57.jpg",
     "static/media/image-2.jpg": "/website/static/media/image-2.53f56bc9e17f3e495b44.jpg",
+    "static/media/Code_review.png": "/website/static/media/Code_review.2790af01747bba93dfff.png",
     "static/media/IOT.jpg": "/website/static/media/IOT.1e9ca2dece5ccbcfc5ba.jpg",
     "static/media/IOT_D.jpeg": "/website/static/media/IOT_D.3aebb1d3723c990386bd.jpeg",
     "static/media/about_header_img1.jpg": "/website/static/media/about_header_img1.f0691775cbbb9ad439e9.jpg",
@@ -26,8 +27,11 @@
     "static/media/globe-grid.png": "/website/static/media/globe-grid.773ca0a0129462c19636.png",
     "static/media/instagram.png": "/website/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/security.png": "/website/static/media/security.fa8488b970eaa3c2c3ff.png",
+    "static/media/api.png": "/website/static/media/api.eb071586fa72b16e2a30.png",
+    "static/media/artifical-intelligence.png": "/website/static/media/artifical-intelligence.dab7864e9536e9ba3690.png",
     "static/media/iot.png": "/website/static/media/iot.b55def5a5d5a5aab224d.png",
     "static/media/applications.png": "/website/static/media/applications.442d9b1451307e858d0b.png",
+    "static/media/cyber-security (1).png": "/website/static/media/cyber-security (1).c5d8457f311621d7fd9b.png",
     "static/media/application.png": "/website/static/media/application.c78436e587545a6d8299.png",
     "static/media/location.png": "/website/static/media/location.39261a4c95eecf324099.png",
     "static/media/global.png": "/website/static/media/global.aeb09adbbbe061077333.png",
@@ -40,12 +44,12 @@
     "static/media/slick.ttf": "/website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/website/index.html",
-    "main.fe8b5e4d.css.map": "/website/static/css/main.fe8b5e4d.css.map",
-    "main.6706750a.js.map": "/website/static/js/main.6706750a.js.map",
+    "main.1d283a94.css.map": "/website/static/css/main.1d283a94.css.map",
+    "main.c9fc5742.js.map": "/website/static/js/main.c9fc5742.js.map",
     "453.b03e3c98.chunk.js.map": "/website/static/js/453.b03e3c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe8b5e4d.css",
-    "static/js/main.6706750a.js"
+    "static/css/main.1d283a94.css",
+    "static/js/main.c9fc5742.js"
   ]
 }

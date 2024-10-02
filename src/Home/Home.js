@@ -63,21 +63,21 @@ const Home_body = () => {
       <div id="Th_Header">
         <div>
           <div id="Th_Header_section" className="row">
-            <div className="col-3">
+            <div className="col">
               <div className="Th_Header_S">
                 <LazyLoadImage src={require("./image/customer.png")} effect="blur" loading="lazy" alt="N?A" />
                 <h1>22+</h1>
                 <h4>Our Clients</h4>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Th_Header_S">
                 <LazyLoadImage src={require("./image/global.png")} effect="blur" loading="lazy" alt="N?A" />
                 <h1>5+</h1>
                 <h4>Global presences</h4>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Th_Header_S">
                 <LazyLoadImage src={require("./image/user.png")} width={80} effect="blur" loading="lazy" alt="N?A" />
                 <h1>98%</h1>
