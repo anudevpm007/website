@@ -113,10 +113,10 @@ export default class Events extends Component {
                 <div>
                   <div id='Events_in_subscribe' className='row'>
                     <div className='col' id='Event_subscribe_in'>
-                      <input type="text" placeholder='search here ....' />
+                      <input type="text" placeholder='Email Address ....' />
                     </div>
                     <div className="col-4" id='Event_subscribe_btn'>
-                      <input type="button" value="Search" />
+                      <input type="button" value="Subscribe" />
                     </div>
                   </div>
                 </div>
