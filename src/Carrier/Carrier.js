@@ -187,6 +187,19 @@ export default class Carrier extends Component {
                 </p>
               </div>
             </div>
+            <div id="Carrier_list_search_con">
+              <div id="Carrier_list_search" className="row">
+                <div id="Carrier_list_search_in" className="col-8">
+                  <input type="text" placeholder="Search here ...." />
+                </div>
+                <div id="Carrier_list_search_btn" className="col-3">
+                  <input type="button" value="search" />
+                </div>
+              </div>
+            </div>
+            <div id="Carrier_list_con">
+
+            </div>
             <div id="JOIN">
               <div id="join_head">
                 JOIN OUR<br />TALENT COMMMUNITY
