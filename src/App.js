@@ -11,7 +11,6 @@ import Register from "./register/register";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import Test from "./test/test";
 import Carrier from "./Carrier/Carrier";
-import Carrier_det from "./Carrier/Detials/Carrier_det";
 import Under_construction from "./under_con/Under_construction";
 import Booking from "./booking/booking";
 import About from "./about/about";
@@ -51,7 +50,6 @@ class App extends Component {
             <Route path={"/website/loading/"} Component={Loading} />
             <Route path={"/website/Under_construction"} Component={Under_construction} />
             <Route path={"/website/carrier"} Component={Carrier} />
-            <Route path={"/website/carrier/:d"} Component={Carrier_det} />
             <Route path={"/website/test"} Component={Test} />
             <Route path={"/website/from=blog/"} element={<lazyHome/>} />
             <Route path={"/website/blogs/"} Component={Main_Blog} />

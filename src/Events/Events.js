@@ -1,84 +1,133 @@
-import React from 'react'
-import Menu from '../Menu/Menu'
-import "./Events.css"
-import { Link } from 'react-router-dom'
-import Home_footer from '../Home/Home_footer/Home_footer'
+import React, { Component } from 'react'
+import "./Events.css";
+import Home_footer from '../Home/Home_footer/Home_footer';
 
-
-
-
-
-
-export default function Events() {
-
+const EventsContainer = () => {
   return (
-    <div id='Events'>
-      <div>
-        <div>
-          <Menu />
-        </div>
-        <div id='Event_head'>
-          <div>
-            <img loading='lazy' src={require("./image/Head_p1.jpg")} alt="N?A" />
-          </div>
-          <div id='Event_heading'>
-            <h1>ASTRALIVA CYBER SECURITY CONFRANCES 2024</h1>
-          </div>
-          <div id='Timer'>
-          <div>
-            <div id='Timer_box' className='row'>
-              <div className="col-3"><h1>02D</h1></div>
-              <div className="col-3"><h1>12H</h1></div>
-              <div className="col-3"><h1>04M</h1></div>
+    <div id='Event_box_border'>
+      <div id='Event_box' className='row'>
+        <div className="col-6" id='Event_box_detials'>
+          <div id='Event_box_detials_in'>
+            <div id='Event_box_heading'>
+              Advanced Frida Usage Part 10 – Instruction
+              Tracing using Frida Stalker
             </div>
-          </div>
-        </div>
-        </div>
-       
-
-      </div>
-      <div className='row' id='event_body'>
-        <h3>Just come with an open mind and willingness to share and learn.</h3>
-        <div id='event_img_box'>
-          <img src={require("./image/img_1.jpg")} />
-        </div>
-        <div id='event_data_set_1'>
-          <div id='event_data_set1_1'>
-            <p>null meets are free for anyone to attend. There are absolutely no fees. just come with an open mind and willingness to share and learn. </p>
-            <div>
-              <h4>Proposed sessions for this event</h4>
-              <div>
-                <ul id='event_data_set_point'>
-                  <li>Soc what lies ahead! by Aarya Jain</li>
-                  <li>OpSec Safe Red Team Infrastructure by Rishi Kanwar</li>
-                  <li>Pentesters Approach to AWS! AM by Divyanshu Shaukla</li>
-                </ul>
-              </div>
-              <p>Note: The session details including schedule are available below</p>
+            <div id='Event_box_pera'>
+              Welcome to another blog in the series of Advance
+              Frida Usage. This blog post takes a unique and
+              intriguing approach by demonstrating how to
+              use Frida’s Stalker APIs to trace instructionsas
+              they execute within anapp in real time. Additionally,
+              we’ll explore how to use various attributes of these
+              instructions to extract valuable insights.
             </div>
-          </div>
-        </div>
-        <div id='Reg_box'>
-          <div id='Reg_box_1' className='row' >
-            <div id='Reg_box1_1' className='col'>
-              Continue with Register
-            </div>
-            <div id='Reg_box1_2' className='col'>
-              <Link to={"/website/Register/"}>
-                <div>
-                  Register Now
+            <div id='Event_box_info_con'>
+              <div id='Event_box_info' className='row'>
+                <div className="col-3">
+                  Astraliva
                 </div>
-              </Link>
+                <div className="col-3">
+                  September 17, 2024
+                </div>
+                <div className="col-3">
+                  11:00 am
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-      </div>
-      <div id='down'>
-        <Home_footer />
+        <div className="col-6" id='Event_box_img'>
+          <img src={require("./dynamic_image/Event_image_1.jpeg")} alt="" />
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 
+
+
+export default class Events extends Component {
+  render() {
+    return (
+      <div>
+        <div>
+          <div>
+            Menu
+          </div>
+          <div id='Events_heading' className='row'>
+
+            <div id='Events_heading-1' className="col-6">
+              <div id='sub_Events_heading_1'>
+                <div id='sub_Events_heading_1_1'>
+                  Hacker's Journal
+                </div>
+                <div id='sub_Events_heading_1_2'>
+                  Astraliva
+                </div>
+                <div id='sub_Events_heading_1_3'>
+                  Discover Tarlogic's latest Cybersecurity and cyberintelligence researchs
+                </div>
+              </div>
+              <div className='row' id='sub_Events_heading_2'>
+                We actively contribute to and participate in the cybersecurity community. Come see us at an upcoming
+                industry event or tune into one of our speaking gigs, past or present!
+              </div>
+            </div>
+            <div id='Events_heading_2' className="col-6">
+              <div id='Game_div'>
+                GAME<br />OVER
+              </div>
+            </div>
+          </div>
+          <div id='Events_search_con'>
+            <div id='Events_Search' className='row'>
+              <div className='col' id='Event_search_in'>
+                <input type="text" placeholder='search here ....' />
+              </div>
+              <div className="col-4" id='Event_search_btn'>
+                <input type="button" value="Search" />
+              </div>
+            </div>
+          </div>
+          <div id='Events_under_search_pera'>
+            <p>
+              We actively contribute to and participate in the cybersecurity community. Come see us at an upcoming industry event or tune into one of our speaking gigs, past or present!
+            </p>
+          </div>
+          <div id='Event_list'>
+            <EventsContainer />
+            <EventsContainer />
+            <EventsContainer />
+            <EventsContainer />
+            <EventsContainer />
+            <EventsContainer />
+          </div>
+          <div id='Events_subscribe_container'>
+            <div id='Events_subscribe'>
+              <div>
+                <div id='Events_subscribe_pera'>
+                  Subscribe to Astraliva Security Blog<br />
+                  Be first to learn about latest tools, advisories, and findings.
+                </div>
+                <div>
+                  <div id='Events_in_subscribe' className='row'>
+                    <div className='col' id='Event_subscribe_in'>
+                      <input type="text" placeholder='search here ....' />
+                    </div>
+                    <div className="col-4" id='Event_subscribe_btn'>
+                      <input type="button" value="Search" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          <Home_footer />
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
