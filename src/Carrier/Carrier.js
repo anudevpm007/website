@@ -1,3 +1,4 @@
+import Home_footer from "../Home/Home_footer/Home_footer"
 import "./Carrier.css"
 import React, { Component } from 'react'
 
@@ -210,6 +211,9 @@ export default class Carrier extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div>
+            <Home_footer/>
           </div>
         </div>
       </div>
