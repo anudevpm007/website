@@ -1,43 +1,37 @@
 import React, { Component } from 'react'
 import "./Events.css";
 import Home_footer from '../Home/Home_footer/Home_footer';
+import Events_DB from './Events_data';
 
-const EventsContainer = () => {
+const EventsContainer = ({heading,pera,publish,date,time,img}) => {
   return (
     <div id='Event_box_border'>
       <div id='Event_box' className='row'>
         <div className="col-6" id='Event_box_detials'>
           <div id='Event_box_detials_in'>
             <div id='Event_box_heading'>
-              Advanced Frida Usage Part 10 – Instruction
-              Tracing using Frida Stalker
+              {heading}
             </div>
             <div id='Event_box_pera'>
-              Welcome to another blog in the series of Advance
-              Frida Usage. This blog post takes a unique and
-              intriguing approach by demonstrating how to
-              use Frida’s Stalker APIs to trace instructionsas
-              they execute within anapp in real time. Additionally,
-              we’ll explore how to use various attributes of these
-              instructions to extract valuable insights.
+              {pera}
             </div>
             <div id='Event_box_info_con'>
               <div id='Event_box_info' className='row'>
                 <div className="col-3">
-                  Astraliva
+                  {publish}
                 </div>
                 <div className="col-3">
-                  September 17, 2024
+                  {date}
                 </div>
                 <div className="col-3">
-                  11:00 am
+                  {time}
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="col-6" id='Event_box_img'>
-          <img src={require("./dynamic_image/Event_image_1.jpeg")} alt="" />
+          <img src={img} alt="" />
         </div>
       </div>
     </div>
@@ -96,12 +90,15 @@ export default class Events extends Component {
             </p>
           </div>
           <div id='Event_list'>
-            <EventsContainer />
-            <EventsContainer />
-            <EventsContainer />
-            <EventsContainer />
-            <EventsContainer />
-            <EventsContainer />
+            {
+              Events_DB.map((EData,Eindex)=>{
+                return(
+                  <div>
+                    <EventsContainer heading={EData.heading} pera={EData.pera} publish={EData.pub} date={EData.date} time={EData.time} img={EData.img}/>
+                  </div>
+                );
+              })
+            }
           </div>
           <div id='Events_subscribe_container'>
             <div id='Events_subscribe'>

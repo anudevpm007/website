@@ -1,10 +1,51 @@
 import Home_footer from "../Home/Home_footer/Home_footer"
 import "./Carrier.css"
 import React, { Component } from 'react'
+import Carrier_DB from "./Carrier_data"
+
+
+
+const CarrierList = ({ heading, peragraph, year, loc }) => {
+  return (
+    <div id="Carrier_box" className="col-4">
+      <div id="Carrier_box_1">
+        <div id="Carrier_box_heading">
+          {heading}
+        </div>
+        {peragraph.map((PData, Pindex) => {
+          return (
+            <div id="Carrier_box_pera">
+              {PData}
+            </div>
+          );
+        })}
+        <div id="Carrier_box_info" className="row">
+          <div className="col">
+            {year}
+          </div>
+          <div className="col">
+            {loc}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 
 export default class Carrier extends Component {
   render() {
+    this.state = {
+      headings: Carrier_DB.heading,
+      peras: Carrier_DB.pera,
+      years: Carrier_DB.year,
+      locs: Carrier_DB.loc
+    };
+
+    const CaSearch = () => {
+
+    }
+
     return (
       <div>
         <div id="Carrier">
@@ -117,58 +158,60 @@ export default class Carrier extends Component {
               </div>
             </div>
             <div id="unique">
-              <div id="unique_head">
-                A company as unique as you
-              </div>
-              <div id="unique_container" className="row">
-                <div className="col-3">
-                  <div className="unique_container_head">
-                    No Hierarchy
+              <div>
+                <div id="unique_head">
+                  A company as unique as you
+                </div>
+                <div id="unique_container" className="row">
+                  <div className="col-3">
+                    <div className="unique_container_head">
+                      No Hierarchy
+                    </div>
+                    <div className="unique_container_pera">
+                      We believe in action rather than position. So we’ve eliminated the entire hierarchical structure to make room for individuals to own up to projects and drive them with full responsibility
+                    </div>
                   </div>
-                  <div className="unique_container_pera">
-                    We believe in action rather than position. So we’ve eliminated the entire hierarchical structure to make room for individuals to own up to projects and drive them with full responsibility
+                  <div className="col-3">
+                    <div className="unique_container_head">
+                      No "Leave Policy"
+                    </div>
+                    <div className="unique_container_pera">
+                      It is extremely important to give yourself a break for as long as you need. Keeping this in mind, we’ve gotten rid of the archaic “leave policy”.
+                    </div>
+                  </div>
+                  <div className="col-3">
+                    <div className="unique_container_head">
+                      Health and Wellness
+                    </div>
+                    <div className="unique_container_pera">
+                      Being part of a health and wellness company, we do care for you. A part of it means we give food allowance for all our employees and extension privileges on purchasing a Cult pack.
+                    </div>
                   </div>
                 </div>
-                <div className="col-3">
-                  <div className="unique_container_head">
-                    No "Leave Policy"
+                <div id="unique_container" className="row">
+                  <div className="col-3">
+                    <div className="unique_container_head">
+                      Flexible Working Hours
+                    </div>
+                    <div className="unique_container_pera">
+                      Few hours of productive work is better than a day wasted. Work in a place and time that you are most productive.
+                    </div>
                   </div>
-                  <div className="unique_container_pera">
-                    It is extremely important to give yourself a break for as long as you need. Keeping this in mind, we’ve gotten rid of the archaic “leave policy”.
+                  <div className="col-3">
+                    <div className="unique_container_head">
+                      Pick your Projects
+                    </div>
+                    <div className="unique_container_pera">
+                      We are always up to something healthy and interesting. If a project appeals to you, and you want to be a part of it, we always welcome a fresh pair of hands.
+                    </div>
                   </div>
-                </div>
-                <div className="col-3">
-                  <div className="unique_container_head">
-                    Health and Wellness
-                  </div>
-                  <div className="unique_container_pera">
-                    Being part of a health and wellness company, we do care for you. A part of it means we give food allowance for all our employees and extension privileges on purchasing a Cult pack.
-                  </div>
-                </div>
-              </div>
-              <div id="unique_container" className="row">
-                <div className="col-3">
-                  <div className="unique_container_head">
-                    Flexible Working Hours
-                  </div>
-                  <div className="unique_container_pera">
-                    Few hours of productive work is better than a day wasted. Work in a place and time that you are most productive.
-                  </div>
-                </div>
-                <div className="col-3">
-                  <div className="unique_container_head">
-                    Pick your Projects
-                  </div>
-                  <div className="unique_container_pera">
-                    We are always up to something healthy and interesting. If a project appeals to you, and you want to be a part of it, we always welcome a fresh pair of hands.
-                  </div>
-                </div>
-                <div className="col-3">
-                  <div className="unique_container_head">
-                    Work Life Balance
-                  </div>
-                  <div className="unique_container_pera">
-                    Maintaining work-life balance is not just a cliche for us, we truly believe in it. And what better way to find this balance than being able to be around your loved ones as and when you need?
+                  <div className="col-3">
+                    <div className="unique_container_head">
+                      Work Life Balance
+                    </div>
+                    <div className="unique_container_pera">
+                      Maintaining work-life balance is not just a cliche for us, we truly believe in it. And what better way to find this balance than being able to be around your loved ones as and when you need?
+                    </div>
                   </div>
                 </div>
               </div>
@@ -184,18 +227,28 @@ export default class Carrier extends Component {
                 </p>
               </div>
             </div>
-            <div id="Carrier_list_search_con">
-              <div id="Carrier_list_search" className="row">
-                <div id="Carrier_list_search_in" className="col-8">
-                  <input type="text" placeholder="Search here ...." />
-                </div>
-                <div id="Carrier_list_search_btn" className="col-3">
-                  <input type="button" value="search" />
+            <div id="Carrier_list_gradient">
+              <div id="Carrier_list_search_con">
+                <div id="Carrier_list_search" className="row">
+                  <div id="Carrier_list_search_in" className="col-8">
+                    <input type="text" placeholder="Search here ...." />
+                  </div>
+                  <div id="Carrier_list_search_btn" className="col-3">
+                    <input type="button" value="search" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="Carrier_list_con">
-
+              <div id="Carrier_list_con">
+                <div className="row">
+                  {
+                    (this.state.headings).map((Data, index) => {
+                      return (
+                        <CarrierList heading={this.state.headings[index]} peragraph={this.state.peras[index]} loc={this.state.locs[index]} year={this.state.years[index]} />
+                      );
+                    })
+                  }
+                </div>
+              </div>
             </div>
             <div id="JOIN">
               <div id="join_head">
@@ -223,7 +276,7 @@ export default class Carrier extends Component {
             </div>
           </div>
           <div>
-            <Home_footer/>
+            <Home_footer />
           </div>
         </div>
       </div>

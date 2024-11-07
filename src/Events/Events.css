@@ -114,7 +114,6 @@
 }
 #Event_box{
     width: 97%;
-    height: 400px;
     margin: 30px;
 }
 
@@ -158,9 +157,7 @@
     position: relative;
 }
 #Event_box_img>img{
-    position: absolute;
     width: 100%;
-    height: auto;
 }
 
 #Events_subscribe_container{
@@ -220,10 +217,4 @@
 #Events_subscribe_pera{
     text-align: center;
     font-size: 23px;
-}
-@media screen and (min-width:1500px) {
-    #Event_box_img>img{
-        width:auto;
-        height: 100%;
-    }
 }
