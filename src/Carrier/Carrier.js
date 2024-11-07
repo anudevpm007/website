@@ -77,9 +77,6 @@ export default class Carrier extends Component {
               <div id="Middle_heading_B">
                 Astraliva
               </div>
-              <div id="Middle_heading_S">
-                Why Astraliva
-              </div>
             </div>
             <div id="Middle_Pera">
               <div id="Middle_Pera_1">
