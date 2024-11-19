@@ -1,0 +1,268 @@
+/* #IN,#DB,#KW {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    height: max-content;
+    font-size: small;
+} */
+
+
+
+#World_img>img{
+    width: 700px;
+}
+
+
+#text {
+    position: relative;
+    background-color: rgb(20, 239, 255);
+    opacity: 0;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 900;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    scale: 0;
+    transition: 0.7s;
+    z-index: -1;
+}
+
+#world_map {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#world2 {
+    position: relative;
+}
+
+@keyframes dot_animation {
+    0%{
+        /* scale: 0; */
+        opacity: 0;
+    }
+    50%{
+        /* scale: 1; */
+        opacity: 1;
+    }
+    100%{
+        /* scale: 0; */
+        opacity: 0;
+    }
+}
+
+#dot {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(43, 255, 0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+    /* animation-name: dot_animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+}
+#dot_CEN {
+    background-color: rgb(255, 0, 0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+   
+    font-size: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    /* animation-name: dot_animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+}
+
+
+
+#dot_CEN:hover{
+    border-radius: 2px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 15px;
+    background-color: rgb(20, 239, 255);
+    font-weight: 800;
+}
+
+#dot_CEN:hover~#ETH{
+    margin-left: 20px;
+}
+#ETH{
+    position: absolute;
+    top: 60%;
+    right: 33%;
+}
+
+#IN{
+    position: absolute;
+    top: 56%;
+    right: 23%;
+}
+
+#US{
+    
+    position: absolute;
+    top: 37%;
+    right: 74%;
+}
+#UK{
+    position: absolute;
+    top: 28%;
+    right: 33%;
+}
+#MDE{
+    
+    position: absolute;
+    top: 48%;
+    right: 25%;
+}
+#KW{
+    position: absolute;
+    top: 47%;
+    right: 21%;
+}
+#SG{
+    position: absolute;
+    top: 60%;
+    right: 13%;
+}
+#dot:hover~#dot{
+    opacity: 0;
+    
+}
+
+#dot:hover~#text {
+    opacity: 1;
+    scale: 1;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+}
+
+@media screen and (max-width:800px) {
+    #dot_CEN:hover{
+        font-size: 11px;
+    }
+    #text {
+        font-size: 11px;
+    }
+    #dot,#dot_CEN {
+        width: 8px;
+        height: 8px;
+    }
+    
+    #World_img>img{
+        width: 600px;
+    }
+
+    #IN{
+        position: absolute;
+        top: 56%;
+        right: 24%;
+    }
+    #SG{
+        top: 60%;
+        right: 15%;
+    }
+    #UK{
+        position: absolute;
+        top: 28%;
+        right: 36%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    #World_img>img{
+        width: 450px;
+    }
+
+    #SG{
+        top: 60%;
+        right: 12%;
+    }
+
+    #IN{
+        top: 56%;
+        right: 21.5%;
+    }
+
+    #dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    #MDE{
+    
+        top: 48%;
+        right: 33%;
+    }
+    #UK{
+        top: 28%;
+        right: 31%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:460px) {
+    #World_img>img{
+        width: 350px;
+    }
+
+    #IN{
+        position: absolute;
+        top: 56%;
+        right: 17.5%;
+    }
+    #SG{
+        top: 60%;
+        right: 7%;
+    }
+
+    #IN{
+        top: 50%;
+        right: 19.5%;
+    }
+
+    #dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    #MDE{
+    
+        top: 48%;
+        right: 32%;
+    }
+    #UK{
+        top: 28%;
+        right: 27%;
+    }
+    #ETH{
+        position: absolute;
+        top: 60%;
+        right: 30%;
+    }
+    
+}
+
+
+

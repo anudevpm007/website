@@ -1,0 +1,161 @@
+#about_header>img{
+    width: 100%;
+    opacity: 0.4;
+}
+
+#about{
+    background-color: #061113;
+    height: auto;
+}
+
+
+#about_header{
+    position: relative;
+}
+
+#about_heading{
+    top: 30%;
+    left: 10%;
+    position: absolute;
+}
+
+#about_heading_H{
+    color: white;
+}
+
+#about_heading_peragraph{
+    color: white;
+    margin-top: 10px;
+}
+
+#about_center{
+    height: 100%;
+}
+
+#about_center_1{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_center_1>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+}
+#about_center_2{
+    padding: 0px;
+}
+#about_center_2>p{
+    color: white;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+#about_center_box{
+    margin-top: 50px;
+    width: 98%;
+}
+
+#about_center_Approach{
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_center_Approach>div{
+    margin-top: 30px;
+    width: 80%;
+}
+
+#about_center_Approach1_1>h3{
+    color: white;
+}
+
+#about_center_Approach1_1>p{
+    font-size: larger;
+    color: white;
+    text-align: justify;
+    font-size: smaller;
+}
+
+#about_bullet_point{
+    height: 40px;
+}
+
+
+#about_bullet_point{
+    width: 80%;
+    height: max-content;
+    background-color: #061113;
+}
+
+#about_bullet_point>ul>li{
+    color: white;
+    font-size: 1.3vw;
+}
+
+#about_bullet_point>ul>li{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+#about_bullet_point_-1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#progress_section_box>div{
+    font-size: 20px;
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+/* #progress_section_box>div{
+    border: 2px solid white;
+} */
+
+#core_value_chart_img{
+    width: 400px;
+}
+
+#progress_section_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.699);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+}
+
+#progress_section{
+    display: flex;
+    justify-content: center;
+}
+#core_value_heading{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#core_value_heading>h3{
+    color: white;
+    width: 80%;
+}
+#core_value{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
