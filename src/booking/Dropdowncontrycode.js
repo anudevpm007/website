@@ -6,7 +6,7 @@ export default function Dropdowncontrycode() {
         <div>
             <select name="countryCode" id="contryCodeMenu">
                 <option data-countryCode="IN" value="91">India (+91)</option>
-                <option data-countryCode="US" value="1">UK (+44)</option>
+                <option data-countryCode="US" value="44">UK (+44)</option>
                 <optgroup label="Other countries">
                     <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                     <option data-countryCode="AD" value="376">Andorra (+376)</option>

@@ -14,6 +14,15 @@
     color: aqua;
 }
 
+#Home{
+    position: relative;
+}
+
+#Home_Menu{
+    width: 100%;
+    position: absolute;
+}
+
 #Home_header_S1 {
     height: 600px;
     display: flex;
@@ -112,6 +121,8 @@
 
 #Home_services {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #Home_services>div {
@@ -124,8 +135,11 @@
 /* home services */
 
 #Home_services_row {
-    margin-top: 20px;
     width: 65%;
+}
+
+#Home_services_row >div{
+    margin: 20px;
 }
 
 .Home_services_box {
@@ -479,6 +493,12 @@
     width: 100%;
 }
 
+#Home_Middle_heading_B{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width:900px) {
     #B_header>div {
         width: 80%;
@@ -519,6 +539,13 @@
 }
 
 @media screen and (max-width:500px) {
+    #Home_services{
+        margin: 0px;
+        padding: 0px;
+    }
+    #Home_services_row {
+        width: 100%;
+    }
 
     #Home_start{
         padding: 0px;

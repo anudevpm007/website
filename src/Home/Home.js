@@ -2,78 +2,78 @@ import React from "react"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css"
-import Menu from "../Menu/Menu"
 import Map from "./Map/Map"
 import Home_footer from "./Home_footer/Home_footer"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import Slide from "./Slide/Slide";
 import axios from "axios";
+import HomeMenu from "./Home_menu/HomeMenu";
 
 
-const B_header_Com=()=>{
-  return(
+const B_header_Com = () => {
+  return (
     <div>
-          <div id="B_header_sec" className="row">
-            <div className="col-4">
-              <div>
-                <h6>VIRTUAL EVENTS</h6>
-                <p>Cum sociis natoque penatibus et magnisd is
-                  parturient montes nasc.</p>
-                <p>28 December 2024</p>
-              </div>
-            </div>
-            <div className="col-4">
-              <div>
-                <h6>NEW REPORT</h6>
-                <p>Cum sociis natoque penatibus et magnisd is
-                  parturient montes nasc.</p>
-                <p>28 December 2024</p>
-              </div>
-            </div>
-            <div className="col-4">
-              <div>
-                <h6>EXPERT PANEL</h6>
-                <p>Cum sociis natoque penatibus et magnisd is
-                  parturient montes nasc.</p>
-                <p>28 December 2024</p>
-              </div>
-            </div>
+      <div id="B_header_sec" className="row">
+        <div className="col-4">
+          <div>
+            <h6>VIRTUAL EVENTS</h6>
+            <p>Cum sociis natoque penatibus et magnisd is
+              parturient montes nasc.</p>
+            <p>28 December 2024</p>
           </div>
         </div>
+        <div className="col-4">
+          <div>
+            <h6>NEW REPORT</h6>
+            <p>Cum sociis natoque penatibus et magnisd is
+              parturient montes nasc.</p>
+            <p>28 December 2024</p>
+          </div>
+        </div>
+        <div className="col-4">
+          <div>
+            <h6>EXPERT PANEL</h6>
+            <p>Cum sociis natoque penatibus et magnisd is
+              parturient montes nasc.</p>
+            <p>28 December 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
 
-const B_header_Mob=()=>{
-  return(
+const B_header_Mob = () => {
+  return (
     <div>
-          <div id="B_header_sec" className="row">
-            <div className="col-4">
-              <div>
-                <h6>VIRTUAL EVENTS</h6>
-                <p>Cum sociis natoque penatibus et magnisd is
-                  parturient montes nasc.</p>
-                <p>28 December 2024</p>
-              </div>
-            </div>
-            <div className="col-4">
-              <div>
-                <h6>NEW REPORT</h6>
-                <p>Cum sociis natoque penatibus et magnisd is
-                  parturient montes nasc.</p>
-                <p>28 December 2024</p>
-              </div>
-            </div>
-            <div className="col-4">
-              <div>
-                <h6>EXPERT PANEL</h6>
-                <p>Cum sociis natoque penatibus et magnisd is
-                  parturient montes nasc.</p>
-                <p>28 December 2024</p>
-              </div>
-            </div>
+      <div id="B_header_sec" className="row">
+        <div className="col-4-sm">
+          <div>
+            <h6>VIRTUAL EVENTS</h6>
+            <p>Cum sociis natoque penatibus et magnisd is
+              parturient montes nasc.</p>
+            <p>28 December 2024</p>
           </div>
         </div>
+        <div className="col-4-sm">
+          <div>
+            <h6>NEW REPORT</h6>
+            <p>Cum sociis natoque penatibus et magnisd is
+              parturient montes nasc.</p>
+            <p>28 December 2024</p>
+          </div>
+        </div>
+        <div className="col-4-sm">
+          <div>
+            <h6>EXPERT PANEL</h6>
+            <p>Cum sociis natoque penatibus et magnisd is
+              parturient montes nasc.</p>
+            <p>28 December 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -82,7 +82,7 @@ const Home_body = () => {
   return (
     <div id="Home">
       <div id="Home_Menu">
-        <Menu />
+        <HomeMenu colorOut={"White"} />
       </div>
       <div id="Home_header">
         <div className="row">
@@ -97,7 +97,7 @@ const Home_body = () => {
         </div>
       </div>
       <div id="B_header">
-        <B_header_Com/>
+        <B_header_Com />
       </div>
       <div id="Th_Header">
         <div>
@@ -133,19 +133,19 @@ const Home_body = () => {
         </header>
         <div>
           <div id="Home_services_row" className="row">
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/iot.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                 <p>Iot and Embedded Security Testing</p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/applications.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                 <p>Web application security testing</p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/application.png")} effect="blur" loading="lazy" alt="N?A" /></div>
                 <p>Mobile application security testing</p>
@@ -157,19 +157,19 @@ const Home_body = () => {
 
         <div>
           <div id="Home_services_row" className="row">
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/globe-grid.png")} effect="blur" /></div>
                 <p>Network security assessment</p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/security.png")} effect="blur" /></div>
                 <p>vulnerability assessment and penetration testing</p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
 
                 <div><img src={require("./image/artifical-intelligence.png")} effect="blur" /></div>
@@ -181,19 +181,19 @@ const Home_body = () => {
         </div>
         <div>
           <div id="Home_services_row" className="row">
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/Code_review.png")} effect="blur" /></div>
                 <p>Source Code Review</p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
                 <div><img src={require("./image/api.png")} effect="blur" /></div>
                 <p>API Pen testing</p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col">
               <div className="Home_services_box">
 
                 <div><img src={require("./image/cyber-security (1).png")} effect="blur" /></div>
@@ -205,10 +205,9 @@ const Home_body = () => {
         </div>
 
       </div>
-      <div id="flow">
-        <h1>ASTRALIVA Flow chart view</h1>
-        <div>
-          <img src={require("./image/Screenshot 2024-09-21 142943.png")} />
+      <div id="Home_Middle_heading_B">
+        <div id="Middle_heading_B">
+          Astraliva
         </div>
       </div>
       <div id="Home_start">

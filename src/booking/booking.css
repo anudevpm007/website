@@ -1,5 +1,5 @@
 #BookinginBox>div {
-    width: 40%;
+    width: 45%;
     background-color: rgba(0, 0, 0, 0.151);
     display: flex;
     justify-content: center;
@@ -96,4 +96,30 @@
 
 #BookInLoc{
     margin-top: 50px;
+}
+
+@media screen and (max-width:800px) {
+    #BookinginBox>div  {
+        width: 70%;
+    }
+
+    #BookInSubmit>div>input{
+        font-size: 3vw;
+    }
+    #BookInHead>div>h2{
+        font-size: 4vw;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    #BookinginBox>div  {
+        width: 90%;
+    }
+    #BookinginBox>div>form {
+        width: 90%;
+    }
+    #BookInSubmit>div>input{
+        font-size: 4vw;
+    }
 }

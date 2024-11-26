@@ -13,9 +13,6 @@ export default function BookingMenu() {
         <div className='col'><a href="">Glitch</a></div>
         <div className='col'><a href="">Careers</a></div>
         <div className='col'><a href="">About</a></div>
-        <div className='col-6' id='booking_menu_2'>
-          <div><a href=""><div>Book Now</div></a></div>
-        </div>
       </div>
     </div>
   )

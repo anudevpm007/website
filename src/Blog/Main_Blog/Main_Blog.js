@@ -63,7 +63,7 @@ export default function Main_Blog() {
                 About
               </a>
             <div>
-              <Link id="jU">Join Us</Link>
+              <Link to={"/website/Book/"} id="jU">Book Now</Link>
             </div>
           </div>
         </nav>

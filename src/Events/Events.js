@@ -3,6 +3,8 @@ import "./Events.css";
 import Home_footer from '../Home/Home_footer/Home_footer';
 import Events_DB from './Events_data';
 import EventsMenu from './Events_menu/Events_menu';
+import HomeMenu from '../Home/Home_menu/HomeMenu';
+
 
 
 const EventsContainer = ({ heading, pera, publish, date, time, img }) => {
@@ -107,7 +109,7 @@ export default function Events() {
       <div>
         <div id='Events_top'>
           <div id='Events_menu_div'>
-            <EventsMenu />
+            <HomeMenu colorOut={"black"}/>
           </div>
           <div id='Events_heading' className='row'>
             
