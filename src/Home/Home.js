@@ -44,38 +44,38 @@ const B_header_Com = () => {
 }
 
 
-const B_header_Mob = () => {
-  return (
-    <div>
-      <div id="B_header_sec" className="row">
-        <div className="col-4-sm">
-          <div>
-            <h6>VIRTUAL EVENTS</h6>
-            <p>Cum sociis natoque penatibus et magnisd is
-              parturient montes nasc.</p>
-            <p>28 December 2024</p>
-          </div>
-        </div>
-        <div className="col-4-sm">
-          <div>
-            <h6>NEW REPORT</h6>
-            <p>Cum sociis natoque penatibus et magnisd is
-              parturient montes nasc.</p>
-            <p>28 December 2024</p>
-          </div>
-        </div>
-        <div className="col-4-sm">
-          <div>
-            <h6>EXPERT PANEL</h6>
-            <p>Cum sociis natoque penatibus et magnisd is
-              parturient montes nasc.</p>
-            <p>28 December 2024</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+// const B_header_Mob = () => {
+//   return (
+//     <div>
+//       <div id="B_header_sec" className="row">
+//         <div className="col-4-sm">
+//           <div>
+//             <h6>VIRTUAL EVENTS</h6>
+//             <p>Cum sociis natoque penatibus et magnisd is
+//               parturient montes nasc.</p>
+//             <p>28 December 2024</p>
+//           </div>
+//         </div>
+//         <div className="col-4-sm">
+//           <div>
+//             <h6>NEW REPORT</h6>
+//             <p>Cum sociis natoque penatibus et magnisd is
+//               parturient montes nasc.</p>
+//             <p>28 December 2024</p>
+//           </div>
+//         </div>
+//         <div className="col-4-sm">
+//           <div>
+//             <h6>EXPERT PANEL</h6>
+//             <p>Cum sociis natoque penatibus et magnisd is
+//               parturient montes nasc.</p>
+//             <p>28 December 2024</p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 const Home_body = () => {

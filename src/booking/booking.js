@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import BookingMenu from './BookingMenu/BookingMenu'
 import "./booking.css"
 import Dropdowncontrycode from './Dropdowncontrycode'
 import HomeMenu from '../Home/Home_menu/HomeMenu'
@@ -8,10 +7,7 @@ import axios from 'axios'
 
 
 export default function Booking() {
-  var headTextIn = ""
   var fullHeadText = "The Career Opportunity Await"
-  var ArrayFUllhead = fullHeadText.split("")
-  const [text, setText] = useState("")
 
 
   const formSubmit = (event) => {
