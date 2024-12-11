@@ -3,7 +3,7 @@ import Blog from "../Blog";
 import Main_Data from "../../Data/Blog_data";
 import "./Main_Blog.css";
 import { Link } from "react-router-dom";
-import Home_footer from "../../Home/Home_footer/Home_footer"
+import HomeFooter from "../../Home/Home_footer/HomeFooter"
 
 
 // var url = window.location.pathname;
@@ -41,29 +41,29 @@ export default function Main_Blog() {
             </label>
 
             
-            <Link to={"/website/"} onClick={close} className="links">
+            <Link to={"/"} onClick={close} className="links">
                 Home
               </Link>
 
               <a href="#service_list" onClick={close} className="links">
                 Services
               </a>
-              <Link to={"/website/events/"} onClick={close} className="links">
+              <Link to={"/events/"} onClick={close} className="links">
                 Events
               </Link>
-              <Link to={"/website/blogs/"} onClick={close} className="links">
+              <Link to={"/blogs/"} onClick={close} className="links">
                 Blog
               </Link>
-              <Link to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
-              <Link to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
-              <Link to={"/website/carrier"} onClick={close} className="links">
+              <Link to={"/Under_construction"} className="links" onClick={close}>Training</Link>
+              <Link to={"/Under_construction"} className="links" onClick={close}>Glitch</Link>
+              <Link to={"/carrier"} onClick={close} className="links">
                 Careers
               </Link>
               <a href="#down" onClick={close} className="links">
                 About
               </a>
             <div>
-              <Link to={"/website/Book/"} id="jU">Book Now</Link>
+              <Link to={"/Book/"} id="jU">Book Now</Link>
             </div>
           </div>
         </nav>
@@ -96,7 +96,7 @@ export default function Main_Blog() {
         </div>
       </div>
       <div id="down">
-        <Home_footer/>
+        <HomeFooter/>
       </div>
     </div>
   );

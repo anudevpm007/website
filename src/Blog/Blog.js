@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./blog.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Card, CardBody } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 export default class Blog extends Component {
 
   
@@ -21,7 +21,7 @@ export default class Blog extends Component {
   }
   render() {
     
-    if (this.state.media_type == 1) {
+    if (this.state.media_type === 1) {
       return (
         <Link className="blog" style={{textDecoration:"none" }} to={"/blogs/"+this.state.id}>
           <Card id="blog_Card" style={{ marginTop: "20px" ,color:"white"}}>
@@ -33,7 +33,7 @@ export default class Blog extends Component {
           </Card>
         </Link>
       );
-    } else if (this.state.media_type == 2) {
+    } else if (this.state.media_type === 2) {
       return (
         <Link className="blog" style={{textDecoration:"none"}} to={"/blogs/"+this.state.id}>
           <Card id="blog_Card" style={{ marginTop: "10px" ,color:"white"}}>

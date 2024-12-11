@@ -221,6 +221,47 @@
     font-size: 23px;
 }
 
+@media screen and (max-width: 800px) {
+    #Event_box_heading{
+        font-size: 3vw;
+        margin-bottom: 30px;
+    }
+
+    #Event_box_pera{
+        font-size: 2vw;
+        margin-bottom: 30px;
+    }
+
+    #Event_box_info>div{
+        font-size: 1vw;
+        padding: 0px;
+    }
+    #Events_subscribe_pera{
+        font-size: 4vw;
+    }
+
+    #Event_subscribe_btn>input{
+        font-size: 2vw;
+    }
+    #Events_subscribe{
+        padding: 0px;
+        width: 100%;
+    }
+    #Event_box_img{
+        padding: 0px;
+    }
+    #Event_box_detials{
+        padding: 0px;
+    }
+    #Event_box{
+        margin: 10px;
+    }
+    #Events_subscribe_pera{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     #Game_div{
         font-size: 15vw;

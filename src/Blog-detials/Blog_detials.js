@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Blog_detials.css";
-import { useParams } from "react-router-dom";
 import Main_Data from "../Data/Blog_data";
 import { Card, CardBody } from "react-bootstrap";
 class Blog_detials extends React.Component {
@@ -12,7 +11,7 @@ class Blog_detials extends React.Component {
 
 
     while (i < Main_Data.length) {
-      if (Main_Data[i].id.toString() == urlid) {
+      if (Main_Data[i].id.toString() === urlid) {
         break;
       }
       i++;
@@ -28,7 +27,6 @@ class Blog_detials extends React.Component {
     };
 
     if (this.state.type === 1) {
-      console.log(this.state.Read);
       return (
         <div className="blog_detials">
           <div className="container">

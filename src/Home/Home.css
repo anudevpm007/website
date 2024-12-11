@@ -499,6 +499,8 @@
     justify-content: center;
 }
 
+
+
 @media screen and (max-width:900px) {
     #B_header>div {
         width: 80%;
@@ -535,7 +537,12 @@
     #Home_start_form>div{
         width: 70%;
     }
-    
+    #B_header_sec>div>div>h6{
+        font-size: smaller;
+    }
+    #B_header_sec>div>div>p{
+        font-size: 2.1vw;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -558,11 +565,12 @@
     .Th_Header_S>span>img{
         width: 50px;
     }
+    
     #B_header_sec>div>div>h6{
         font-size: smaller;
     }
     #B_header_sec>div>div>p{
-        font-size: smaller;
+        font-size: fo;
     }
     #Home_services>header>h2{
         font-size: 3.6vw;

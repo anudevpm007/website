@@ -374,3 +374,144 @@
     border-radius: 40px;
     background-color: transparent;
 }
+
+@media screen and (max-width:800px) {
+
+    #Carrier_Main_point{
+        margin-top: 150PX;
+    }
+    #Ca_MP_head{
+        margin-top: 20px;
+        font-size: 3vw;
+    }
+
+    #Carrier_Main_point>div {
+        height: auto;
+    }
+    #Ca_textb-1{
+        font-size: 6.9vw;
+    }
+    #Ca_textb-2{
+        font-size: 3vw;
+        font-weight: 400;
+    }
+    #Ca_MP_Pera{
+        font-size: 2.2VW;
+        margin-bottom: 10px;
+    }
+
+    #Middle_heading_B{
+        font-size: 20vw;
+    }
+
+    #Middle_Pera_1{
+        font-size: 2.5vw;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Middle_Pera_2{
+        font-size: 2.5vw;
+        width: 90%;
+    }
+
+    #Middle_Pera{
+        width: 100% ;
+    }
+
+    #carrier_Why_pera{
+        font-size: 2vw;
+    }
+
+    #carrier_Why_head{
+        margin-bottom: 20px;
+        font-size: 4vw;
+    }
+
+    #unique_head{
+        font-size: 5vw;
+    }
+    #unique_container{
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    .unique_container_head{
+        font-size: 2.4vw;
+        text-align: center;
+    }
+    #unique>div {
+        width: 100%;
+    }
+    .unique_container_pera{
+        font-size: 2vw;
+    }
+
+    #future_head{
+        font-size: 7.5vw;
+    }
+    #future_pera>p {
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    #Carrier_list_search{
+        width: 100%;
+    }
+
+    #Carrier_list_search_in>input{
+        height: 40px;
+        font-size: 3vw;
+    }
+    #Carrier_list_search_btn>input{
+        font-size: 3vw;
+    }
+
+    #Carrier_box_heading{
+        text-align: center;
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+    #Carrier_box_pera{
+        font-size: 3vw;
+    }
+
+    #Carrier_box_1{
+        padding: 2px;
+    }
+
+    #Carrier_box_info>div{
+        font-size: 2.9vw;
+    }
+
+    #join_button>div>a {
+        font-size: 4vw;
+    }
+
+    #join_button>div>a>img {
+        width: 26%;
+        margin-left: 10px;
+    }
+
+    #join_button>div {
+        width: 100%;
+        
+    }
+
+    #join_button>div>a {
+        width: 100%;
+    }
+    #join_head{
+        font-size: 8vw;
+    }
+    #join_part_pera{
+        font-size: 2.6vw;
+        margin-left: 30px;
+    }
+    #Carrier_head_img>img {
+        margin-top: -40px;
+    }
+}

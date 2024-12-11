@@ -57,7 +57,7 @@ export default function Slide() {
                             data.map((res) => {
 
                                 return (
-                                    <Card key={res.id} id="blog_list_boxs" className="col-3">
+                                    <Card key={res.id} id="blog_list_boxs" className="col-3-lg">
                                         <img src={res.img} alt="N?A" className="back_blog_img" />
                                         <CardHeader  className="back_blog_head" ><h3>{res.heading}</h3></CardHeader>
                                         <CardText  className="back_blog_subH" >{res.heading}</CardText>

@@ -3,36 +3,27 @@ import "./Home_footer.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-export default function Home_footer() {
-  // const [email, setEmail] = useState({})
-
-  // const getData = (event) => {
-  //   setEmail({ email: event.target.value })
-  //   console.log(email.email);
-
-  // }
-
+export default function HomeFooter({BackColor}) {
 
   const sub = (event) => {
-    // console.log(email);
     event.preventDefault();
     let email = document.getElementById('sub_email').value;
-    let data = {email:email};
-    console.log(data.length)
-    if (data.length !== 0) {
-      axios.post("http://localhost:8000/", data).then(res => console.log("Status Code :"+res.status)).catch(err => console.log("error"));
+    console.log(email.length)
+    if (email.length !== 0) {
+      axios.post("http://localhost:2452/subscribe",{email}).then(result=>{
+        console.log(result);
+      }).catch(err=>{
+        console.log(err);
+        
+      })
       
     }
   }
 
+
   return (
-
-    <div id="home_footer">
+    <div id="home_footer" style={{backgroundColor:BackColor}}>
       <div className="row" id="main_box">
-        <div id="footer_logo" className="row ">
-          <div className="col-2"><img src={require("./image/Main_logo.png")} alt="N?a" id="box_logo" /></div>
-        </div>
-
         <div className="col-lg" id="Ev_box_2">
           <div className="row" id="Ev_box2_1">
             <div className="col-lg-6" id="Ev_box21_1">

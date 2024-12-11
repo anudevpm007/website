@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import "./Events.css";
-import Home_footer from '../Home/Home_footer/Home_footer';
+import HomeFooter from '../Home/Home_footer/HomeFooter';
 import Events_DB from './Events_data';
-import EventsMenu from './Events_menu/Events_menu';
 import HomeMenu from '../Home/Home_menu/HomeMenu';
 
 
@@ -185,7 +184,7 @@ export default function Events() {
           </div>
         </div>
         <div>
-          <Home_footer />
+          <HomeFooter BackColor={"rgb(15, 15, 15)"}/>
         </div>
       </div>
     </div>

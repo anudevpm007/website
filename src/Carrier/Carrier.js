@@ -1,14 +1,14 @@
-import Home_footer from "../Home/Home_footer/Home_footer"
+import HomeFooter from "../Home/Home_footer/HomeFooter"
 import "./Carrier.css"
 import React, { useState } from 'react'
 import Carrier_DB from "./Carrier_data"
-import CarrierMenu from "./Carrier_Menu/CarrierMenu"
+import HomeMenu from "../Home/Home_menu/HomeMenu"
 
 
 
 const CarrierList = ({ heading, peragraph, year, loc }) => {
   return (
-    <div id="Carrier_box" className="col-4" >
+    <div id="Carrier_box" className="col-lg-4" >
       <div id="Carrier_box_1">
         <div id="Carrier_box_heading">
           {heading}
@@ -79,7 +79,7 @@ export default function Carrier() {
       <div id="Carrier">
         <div id="Carrier_header">
           <div id="Carrier_Menu">
-            <CarrierMenu />
+            <HomeMenu colorOut={"black"}/>
           </div>
           <div id="Carrier_head_img">
             <img src={require("./image/Carrier_header.jpg")} alt="N?A" />
@@ -307,7 +307,7 @@ export default function Carrier() {
           </div>
         </div>
         <div>
-          <Home_footer />
+          <HomeFooter BackColor={"rgb(15, 15, 15)"}/>
         </div>
       </div>
     </div>

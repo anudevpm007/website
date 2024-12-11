@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import "./App.css"
 import "./booking/booking"
-import Main_services from "./Services/Main_services";
 import Events from "./Events/Events";
 import Register from "./register/register";
 import { HelmetProvider, Helmet } from "react-helmet-async";
@@ -16,6 +15,8 @@ import Booking from "./booking/booking";
 import About from "./about/about";
 import Loading from "./Loading/Loading"
 import Home from "./Home/Home";
+import MainServices from "./MainServices/MainServices";
+import BookingConselting from "./BookingConselting/BookingConselting";
 
 
 
@@ -45,19 +46,20 @@ class App extends Component {
 
           <Routes>
             
-            <Route path={"/website/"} element={<Home/>} />
-            <Route path={"/website/about/"} Component={About} />
-            <Route path={"/website/loading/"} Component={Loading} />
-            <Route path={"/website/Under_construction"} Component={Under_construction} />
-            <Route path={"/website/carrier"} Component={Carrier} />
-            <Route path={"/website/test"} Component={Test} />
-            <Route path={"/website/from=blog/"} element={<lazyHome/>} />
-            <Route path={"/website/blogs/"} Component={Main_Blog} />
+            <Route path={"/"} element={<Home/>} />
+            <Route path={"/about/"} Component={About} />
+            <Route path={"/loading/"} Component={Loading} />
+            <Route path={"/Under_construction"} Component={Under_construction} />
+            <Route path={"/carrier"} Component={Carrier} />
+            <Route path={"/test"} Component={Test} />
+            <Route path={"/from=blog/"} element={<lazyHome/>} />
+            <Route path={"/blogs/"} Component={Main_Blog} />
             <Route path={"/blogs/:Headings"} Component={Blog_detials} />
-            <Route path={"/website/Book/"} Component={Booking} />
-            <Route path={"/website/Register/"} Component={Register} />
-            <Route path={"/website/services/:id"} Component={Main_services} />
-            <Route path={"/website/events/"} Component={Events} />
+            <Route path={"/Book/"} Component={Booking} />
+            <Route path={"/Register/"} Component={Register} />
+            <Route path={"/services/"} Component={MainServices} />
+            <Route path={"/events/"} Component={Events} />
+            <Route path={"/Bookingconselting"} Component={BookingConselting}/>
 
           </Routes>
         </div>
