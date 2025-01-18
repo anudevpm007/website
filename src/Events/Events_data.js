@@ -1,7 +1,0 @@
-const Events_DB=[
-    {heading:"Advanced Frida Usage Part 10 – Instruction Tracing using Frida Stalker",pera:"Welcome to another blog in the series of Advance Frida Usage. This blog post takes a unique and intriguing approach by demonstrating how to use Frida’s Stalker APIs to trace instructionsas they execute within anapp in real time. Additionally, we’ll explore how to use various attributes of these instructions to extract valuable insights.",pub:"Astraliva",date:"September 17, 2024",time:"11:00 am",img:require("./dynamic_image/Event_image_1.jpeg")},
-    {heading:"SQL Injection",pera:"A log file is an extremely valuable piece of information that is provided by a server. Almost all servers, services, and applications provide some sort of logging. A log file records events and actions that take place during the run time of a service or application.",pub:"Astraliva",date:"September 27, 2024",time:"12:30 am",img:require("./dynamic_image/Event_image_2.jpg")},
-    {heading:"Server Hardening: The Backbone of SaaS Security",pera:"This is the case for many SaaS providers; however, server hardening can serve as a buffer. Server hardening for SaaS is more than just a catchphrase—it’s essential to ensure secure operations. As the backbone of SaaS infrastructure, servers must be hardened in order to reduce risks, reduce attack surfaces, and comply with security standards",pub:"Astraliva",date:"September 27, 2024",time:"12:30 am",img:require("./dynamic_image/Event_image_3.jpeg")}
-]
-
-export default Events_DB;
