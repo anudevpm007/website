@@ -7,7 +7,9 @@
     font-family: "Gliroy";
     src: url("../public/Fonts/Gilroy-Regular.ttf");
 }
-
+/* .test{
+    margin-right: -50vw;
+} */
 
 @font-face {
     font-family: "Gliroy-ExtraBold";

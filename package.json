@@ -8,12 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "deploy:local": "next build && pm2 startOrRestart ecosystem.config.js --env local ",
-    "run:local":"pm2 startOrRestart ecosystem.config.js --env local"
+    "run:local": "pm2 startOrRestart ecosystem.config.js --env local"
   },
   "dependencies": {
     "next": "15.1.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-scroll-trigger": "^0.6.14"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

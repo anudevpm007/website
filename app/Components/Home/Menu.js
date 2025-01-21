@@ -6,7 +6,7 @@ export default function Menu() {
     return (
         <div className=" p-5 py-8 flex columns-2 justify-between items-center border-b-2 border-[#6161618f] bg-transparent"  >
             <div>
-                <Image src={Logo} alt="Logo" className="w-[12vw]" />
+                <Link href={"/"}><Image src={Logo} alt="Logo" className="w-[12vw]" /></Link>
             </div>
             <div className="flex columns-5 justify-around w-1/2">
 

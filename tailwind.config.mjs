@@ -17,6 +17,45 @@ export default {
         'headingHeavy':["Gliroy-Heavy"],
         'headingSemiBold':["Gliroy-SemiBold"]
 
+      },
+      keyframes:{
+        fade_left:{
+          "0%":{
+            opacity:"0",
+            // scale:"0"
+            "margin-left": "-50vw"
+
+          },
+          "50%":{
+            opacity:"0",
+            // scale:"0"
+            "margin-left": "-50vw"
+
+          },
+          "100%":{
+            opacity:"1",
+            // scale:"1"
+            "margin-left": "0vw"
+          }
+        },
+        fade:{
+          "0%":{
+            opacity:"0",
+
+          },
+          "50%":{
+            opacity:"0",
+
+          },
+          "100%":{
+            opacity:"1",
+          }
+        },
+        
+      },
+      animation:{
+        fade_left:"fade_left linear",
+        fade:"fade linear",
       }
       
     },
@@ -31,6 +70,14 @@ export default {
       ".scrollbar-hide": {
           "-ms-overflow-style": "none",  
           "scrollbar-width": "none"
+      },
+      ".scrollSettings":{
+        "animation-timeline": "View()",
+        "animation-range": "entry 0% cover 50%"
+      },
+      ".scrollSettings2":{
+        "animation-timeline": "View()",
+        "animation-range": "entry 0% cover 30%"
       }
       
       }

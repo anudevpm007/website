@@ -2,12 +2,6 @@ import Menu from "./Components/Home/Menu";
 import Image from "next/image";
 import Header_img from "@/public/image/Home/banner_main.jpg";
 import Link from "next/link";
-import img0 from "@/public/image/Home/image0.png";
-import img1 from "@/public/image/Home/image1.png";
-import img2 from "@/public/image/Home/image2.png";
-import img3 from "@/public/image/Home/image3.png";
-import img4 from "@/public/image/Home/image4.png";
-import img5 from "@/public/image/Home/image5.png";
 import arrow_right from "@/public/image/Home/arrow_right.png";
 import arrow_left from "@/public/image/Home/arrow_left.png";
 import img0_0 from "@/public/image/Home/image0_0.png";
@@ -21,6 +15,9 @@ import quetes from "@/public/image/Home/quetes.png";
 import Right_BT from "@/public/image/Home/Right_BT.png";
 import Left_BT from "@/public/image/Home/Left_BT.png";
 import HomeBottom from "./Components/Home/HomeBottom";
+import dbServices from "./db/dbServices";
+import CardS from "./Components/cards/cardS";
+import CounterSec from "./Components/Home/CounterSec";
 
 
 
@@ -30,7 +27,7 @@ import HomeBottom from "./Components/Home/HomeBottom";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="scroll-smooth relative">
       <Menu />
       <Image
         src={Header_img}
@@ -43,7 +40,7 @@ export default function Home() {
             <ul className="mb-6 mt-[200px]">
               <li className="flex justify-center items-center">
                 <div className="font-[200] text-[2vw]">Next-Generation </div>
-                <span className="ml-2 text-[4.2vw] font-bold text-blue-700">
+                <span className=" ml-2 text-[4.2vw]  font-bold text-blue-700">
                   CYBER SECURITY
                 </span>
               </li>
@@ -73,19 +70,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center h-fit bg-[#185BD8] mt-[300px]">
+      <div className="flex justify-center h-fit animate-fade_left scrollSettings2 anim bg-[#185BD8] mt-[300px]">
         <div className="w-[85%] pt-14">
-          <h2 className="text-[2.2vw] text-white font-[400] font-sans">
-            Services
-          </h2>
-          <p className="text-white pt-2 text-[3vw] font-thin">
-            Comprehensive Cybersecurity Solutions for Your Business.
-          </p>
-          <p className="text-white text-[1.2vw] pt-6">
-            Protect your business with a comprehensive suite of cybersecurity
-            solutions designed to meet your unique needs and exceed your
-            expectations.
-          </p>
+          <div className="animate-fade_left scrollSettings">
+            <h2 className="text-[2.2vw] text-white font-[400] font-sans">
+              Services
+            </h2>
+            <p className="text-white pt-2 text-[3vw] font-thin">
+              Comprehensive Cybersecurity Solutions for Your Business.
+            </p>
+            <p className="text-white text-[1.2vw] pt-6">
+              Protect your business with a comprehensive suite of cybersecurity
+              solutions designed to meet your unique needs and exceed your
+              expectations.
+            </p>
+          </div>
           <div className="grid gap-24 grid-cols-12 mt-32 mb-14">
             <div className=" col-span-5">
               <h1 className="text-[50px] font-medium text-white ">
@@ -95,7 +94,7 @@ export default function Home() {
                 Our experts deliver advanced application security testing,
                 identifying critical vulnerabilities like CVEs and business
                 logic flaws to protect your application and protect your
-                brand's reputation
+                brand's reputation
               </p>
               <div className="flex justify-end mt-10">
                 <div className="flex justify-center w-fit">
@@ -110,52 +109,13 @@ export default function Home() {
             </div>
             <div className="  col-span-7">
               <div className="grid grid-cols-3 gap-10">
-                <div className="flex flex-col bg-white items-center p-3 rounded-lg">
-                  <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
-                    <Image src={img0} alt="Nothing" />
-                  </div>
-                  <p className="text-black text-center">
-                    Web Application Security Testing
-                  </p>
-                </div>
-                <div className="flex flex-col bg-white items-center p-3 rounded-lg">
-                  <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
-                    <Image src={img1} alt="Nothing" />
-                  </div>
-                  <p className="text-black text-center">
-                    API Application Security Testing
-                  </p>
-                </div>
-                <div className="flex flex-col bg-white items-center p-3 rounded-lg">
-                  <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
-                    <Image src={img2} alt="Nothing" />
-                  </div>
-                  <p className="text-black text-center">
-                    Mobile Application Security Testing
-                  </p>
-                </div>
-                <div className="flex flex-col bg-white items-center p-3 rounded-lg">
-                  <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
-                    <Image src={img3} alt="Nothing" />
-                  </div>
-                  <p className="text-black text-center">
-                    Thick Client Application Security Testing
-                  </p>
-                </div>
-                <div className="flex flex-col bg-white items-center p-3 rounded-lg">
-                  <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
-                    <Image src={img4} alt="Nothing" />
-                  </div>
-                  <p className="text-black text-center">Secure Coding Review</p>
-                </div>
-                <div className="flex flex-col bg-white items-center p-3 rounded-lg">
-                  <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
-                    <Image src={img5} alt="Nothing" />
-                  </div>
-                  <p className="text-black text-center">
-                    POS Application Testing
-                  </p>
-                </div>
+                {
+                  dbServices.map((Data, index) => {
+                    return (
+                      <CardS img={Data.img} heading={Data.heading} key={index} />
+                    );
+                  })
+                }
               </div>
             </div>
           </div>
@@ -163,15 +123,15 @@ export default function Home() {
       </div>
       <div className="flex justify-center mt-20">
         <div className="w-[85%] ">
-          <div className="text-[2.2vw]">
+          <div className="scrollSettings animate-fade_left text-[2.2vw]">
             Why <span className="text-[#185BD8] font-[600]">ASTRALIVA</span>{" "}
             Stands Outs
           </div>
-          <div className="text-[1.2vw] mt-5">
+          <div className="text-[1.2vw] scrollSettings animate-fade_left mt-5">
             Astraliva delivers comprehensive cybersecurity solutions designed
             for your unique needs and customized to perfectly fit your business.
           </div>
-          <div className="grid gap-10 grid-cols-3 mt-20 ">
+          <div className="scrollSettings animate-fade grid gap-10 grid-cols-3 mt-20 ">
             <div className="flex justify-center">
               <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
                 <Image
@@ -273,41 +233,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#185BD8] w-[100%] mt-24 flex justify-center">
-        <div className="w-[90%] grid grid-cols-3">
-          <div className="bg-white m-10 relative rounded-lg flex items-center flex-col p-8">
-            <Image
-              src={box_bg_img}
-              alt="Box background"
-              className="absolute top-0 left-0"
-            />
-            <div className="text-[#185BD8] font-black text-[4vw]">5+</div>
-            <div className="text-center text-[1.5vw] mt-6">Global Presence</div>
-          </div>
-          <div className="bg-white m-10 relative rounded-lg flex items-center flex-col p-8">
-            <Image
-              src={box_bg_img}
-              alt="Box background"
-              className="absolute top-0 left-0"
-            />
-            <div className="text-[#185BD8] font-black text-[4vw]">30+</div>
-            <div className="text-center text-[1.5vw] mt-6">
-              Trusted Companies
-            </div>
-          </div>
-          <div className="bg-white m-10 relative rounded-lg flex items-center flex-col p-8">
-            <Image
-              src={box_bg_img}
-              alt="Box background"
-              className="absolute top-0 left-0"
-            />
-            <div className="text-[#185BD8] font-black text-[4vw]">99%</div>
-            <div className="text-center text-[1.5vw] mt-6">
-              Client Retention Rate
-            </div>
-          </div>
-        </div>
-      </div>
+      <CounterSec/>
       <div className="flex justify-center mt-12">
         <div className="w-[85%]">
           <div className="text-[2.5vw]">
@@ -366,7 +292,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <HomeBottom/>
+      <HomeBottom />
     </div>
   );
 }
