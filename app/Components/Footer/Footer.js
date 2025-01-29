@@ -11,8 +11,8 @@ import Mail from "@/public/image/Footer/Mail.png";
 
 export default function Footer() {
   return (
-    <div className="w-[100%] bg-[#185BD8] mt-20 px-20 pb-10">
-      <div className=" w-[100%] h-[100%] grid grid-cols-12">
+    <div className=" w-[100%] bg-[#185BD8] mt-20 px-20 pb-10">
+      <div className="scrollSettings animate-fade w-[100%] h-[100%] grid grid-cols-12">
         <div className="m-10 my-20 col-span-4">
           <Image src={Logo} alt="N?A" className="w-[18vw]" />
           <div className="flex justify-start px-5 gap-4">

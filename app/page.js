@@ -164,7 +164,7 @@ export default function Home() {
           </div>
         </div>
         <CounterSec />
-        <div className="flex justify-center mt-12">
+        <div className="scrollSettings animate-fade_left flex justify-center mt-12">
           <div className="w-[85%]">
             <div className="text-[2.5vw]">
               What <span className="text-[#185BD8]">Our Clients</span> Say
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end w-[90%] mt-10">
+        <div className="scrollSettings animate-fade flex justify-end w-[90%] mt-10">
           <button className=" bg-white p-1 ml-1 rounded-md border-[#00000080] border-[1px] flex justify-center items-center">
             <Image src={Left_BT} alt="Botton" />
           </button>
@@ -211,7 +211,7 @@ export default function Home() {
             <Image src={Right_BT} alt="Botton" />
           </button>
         </div>
-        <div className="w-[100%] flex justify-center">
+        <div className="scrollSettings animate-fade w-[100%] flex justify-center">
           <div className="w-[85%]">
             <div className="text-[1.8vw] mb-4 mt-28">
               Astraliva Security <span className="text-[#185BD8]">Summits & Webinars</span>

@@ -11,7 +11,7 @@ import BlogSlider from "./blogSlider";
 export default function HomeBottom() {
   return (
     <div>
-      <div className="flex justify-center mt-24">
+      <div className="scrollSettings animate-fade flex justify-center mt-24">
         <div className="w-[85%] rounded-3xl grid gap-16 grid-cols-2 bg-[#E1E1E1]">
           <Image src={Event_img} alt="N/A" />
           <div className="py-[60px] relative">
@@ -53,7 +53,7 @@ export default function HomeBottom() {
           src={EventSym}
           alt="N?A"
         />
-        <div className="w-[85%] ">
+        <div className="scrollSettings animate-fade_left w-[85%] ">
           <div className="text-white text-[2.2vw] mt-20 font-bold">
             Take the Next Step.{" "}
           </div>
@@ -71,7 +71,7 @@ export default function HomeBottom() {
         </div>
       </div>
       <div className="mt-52 flex justify-center">
-        <div className="w-[85%] ">
+        <div className="w-[85%] scrollSettings animate-fade">
           <div className="text-[2.5vw] mb-4">
             The Astraliva{" "}
             <span className="text-[#185BD8]">Security Library</span>

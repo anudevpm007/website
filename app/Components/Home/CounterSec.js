@@ -75,7 +75,7 @@ export default function () {
 
     })
     return (
-        <div ref={myRef22} id="Triggger1" className="bg-[#185BD8] w-[100%] mt-24 flex justify-center">
+        <div ref={myRef22} id="Triggger1" className="bg-[#185BD8]  w-[100%] mt-24 flex justify-center">
             <div className="w-[90%] grid grid-cols-3">
                 <div className="bg-white m-10 relative rounded-lg flex items-center flex-col p-8">
                     <Image
