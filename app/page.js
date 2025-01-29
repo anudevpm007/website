@@ -2,8 +2,7 @@ import Menu from "./Components/Home/Menu";
 import Image from "next/image";
 import Header_img from "@/public/image/Home/banner_main.jpg";
 import Link from "next/link";
-import arrow_right from "@/public/image/Home/arrow_right.png";
-import arrow_left from "@/public/image/Home/arrow_left.png";
+import HomeSerBox from "./Components/Home/HomeSerBox";
 import img0_0 from "@/public/image/Home/image0_0.png";
 import img0_1 from "@/public/image/Home/image0_1.png";
 import img0_2 from "@/public/image/Home/image0_2.png";
@@ -15,8 +14,7 @@ import quetes from "@/public/image/Home/quetes.png";
 import Right_BT from "@/public/image/Home/Right_BT.png";
 import Left_BT from "@/public/image/Home/Left_BT.png";
 import HomeBottom from "./Components/Home/HomeBottom";
-import dbServices from "./db/dbServices";
-import CardS from "./Components/cards/cardS";
+
 import CounterSec from "./Components/Home/CounterSec";
 import GetInTouch from "./Components/GetInTouch/GetInTouch";
 
@@ -28,7 +26,7 @@ import GetInTouch from "./Components/GetInTouch/GetInTouch";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth relative">
+    <div className="over relative">
       <GetInTouch />
       <Menu />
       <div className="relative h-[100%]">
@@ -52,57 +50,7 @@ export default function Home() {
         <Image src={Header_img} className="" alt="Header Image" />
       </div>
       <div id="bodySec">
-        <div className="flex -mt-[200px] justify-center h-fit animate-fade_left scrollSettings2 anim bg-[#185BD8] ">
-          <div className="w-[85%] pt-14">
-            <div className="animate-fade_left scrollSettings">
-              <h2 className="text-[2.2vw] text-white font-[400] font-sans">
-                Services
-              </h2>
-              <p className="text-white pt-2 text-[3vw] font-thin">
-                Comprehensive Cybersecurity Solutions for Your Business.
-              </p>
-              <p className="text-white text-[1.2vw] pt-6">
-                Protect your business with a comprehensive suite of cybersecurity
-                solutions designed to meet your unique needs and exceed your
-                expectations.
-              </p>
-            </div>
-            <div className="grid gap-24 grid-cols-12 mt-32 mb-14">
-              <div className=" col-span-5">
-                <h1 className="text-[50px] font-medium text-white ">
-                  Application Security
-                </h1>
-                <p className="mt-14 text-white leading-[38px] text-justify">
-                  Our experts deliver advanced application security testing,
-                  identifying critical vulnerabilities like CVEs and business
-                  logic flaws to protect your application and protect your
-                  brand's reputation
-                </p>
-                <div className="flex justify-end mt-10">
-                  <div className="flex justify-center w-fit">
-                    <button>
-                      <Image src={arrow_right} alt="Arrow" />
-                    </button>
-                    <button>
-                      <Image src={arrow_left} alt="Arrow" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="  col-span-7">
-                <div className="grid grid-cols-3 gap-10">
-                  {
-                    dbServices.map((Data, index) => {
-                      return (
-                        <CardS img={Data.img} heading={Data.heading} key={index} />
-                      );
-                    })
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HomeSerBox/>
         <div className="flex justify-center mt-20">
           <div className="w-[85%] ">
             <div className="scrollSettings animate-fade_left text-[2.2vw]">

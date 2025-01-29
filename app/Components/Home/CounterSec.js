@@ -1,64 +1,81 @@
 "use client"
 
 import Image from "next/image";
-import { gsap, ScrollTrigger } from "gsap/all";
-import { useState } from "react";
+import { useRef } from "react";
+import { useState, useEffect } from "react";
 import box_bg_img from "@/public/image/Home/why_box_bg_image.png";
 
 
 var count = 0;
 export default function () {
-    const [GP, setGP] = useState(0);
-    const [TC, setTC] = useState(0);
-    const [CRR, setCRR] = useState(0);
+    var DeGP = 0;
+    var DeTC = 0;
+    var DeCRR = 0;
+
+    const [GP, setGP] = useState(DeGP);
+    const [TC, setTC] = useState(DeTC);
+    const [CRR, setCRR] = useState(DeCRR);
 
     var clrefDe = [false, false, false];
     var clref = [false, false, false];
 
-
+    
 
     const increaseCount = () => {
+
         const intervalCount = setInterval(() => {
-            count = count + 1
-            if (count <= 99) {
-                setCRR(count);
-            } else {
-                clref[0] = true;
-            }
-            if (count <= 30) {
-                setTC(count);
-            } else {
-                clref[1] = true;
-            }
-            if (count <= 5) {
-                setGP(count);
-            } else {
-                clref[2] = true;
+            if (clref[0] === false || clref[1] === false || clref[2] === false) {
+                count = count + 1
+                if (count <= 99) {
+                    setCRR(count);
+                } else {
+                    clref[0] = true;
+                }
+                if (count <= 30) {
+                    setTC(count);
+                } else {
+                    clref[1] = true;
+                }
+                if (count <= 5) {
+                    setGP(count);
+                } else {
+                    clref[2] = true;
+                }
             }
         }, 70);
         if (clref[0] === true && clref[1] === true && clref[2] === true) {
             clearInterval(intervalCount)
+            count = 0;
+
         }
     }
 
-    gsap.registerPlugin(ScrollTrigger)
-
-    gsap.to({}, {
-        scrollTrigger: {
-            trigger: "#Triggger1",
-            start: "bottom 90%",
-            end: "top 10%",
-            onEnter: () => {
-
-                increaseCount();
 
 
+
+    const myRef22 = useRef()
+    var i = 0
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                if (i === 0) {
+                    increaseCount()
+                    i = i + 1
+                }
+            }else{
+                count = 0
             }
-        }
-    }
-    )
+
+        }, {
+            threshold: 1,
+        })
+        observer.observe(myRef22.current);
+
+
+    })
     return (
-        <div id="Triggger1" className="bg-[#185BD8] w-[100%] mt-24 flex justify-center">
+        <div ref={myRef22} id="Triggger1" className="bg-[#185BD8] w-[100%] mt-24 flex justify-center">
             <div className="w-[90%] grid grid-cols-3">
                 <div className="bg-white m-10 relative rounded-lg flex items-center flex-col p-8">
                     <Image

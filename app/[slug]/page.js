@@ -21,13 +21,19 @@ export default async function page({ params }) {
 
   var { slug } = await params
   slug = slug.replaceAll("%20", " ")
-  dbServices.map((data, index) => {
+  var id = (slug.split(" "))[0]
+  slug = slug.replace("2", "")
+  slug = slug.replace(" ", "")
+  
+  console.log(id);
+  
+  (dbServices[parseInt(id)].content).map((data, index) => {
     if (data.heading === slug && ref === 0) {
       ref = 1
       i = index;
     }
   })
-  if (ref === 1) {
+  if (ref===1 ){
     return (
       <div>
         <GetInTouch />
@@ -37,12 +43,12 @@ export default async function page({ params }) {
           <div className="absolute top-[35%] left-[8%]">
             <div className="text-[5.4vw] font-heading leading-tight text-[#0858ED]">
               {
-                dbServices[i].heading1
+                (dbServices[id].content)[i].heading1
               }
             </div>
             <div className="text-[4vw] font-body">
               {
-                dbServices[i].heading2
+                (dbServices[id].content)[i].heading2
               }
             </div>
             <p className="text-[1.5vw] font-body">
@@ -218,7 +224,8 @@ export default async function page({ params }) {
         </div>
       </div>
     );
-  } else {
+  }
+   else {
     notFound();
   }
 }
