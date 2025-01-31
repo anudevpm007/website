@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SubIN from "./SubIN";
 import Logo from "@/public/image/Footer/Logo.png";
 import link from "@/public/image/Footer/Link.png";
 import you from "@/public/image/Footer/Youtube.png";
@@ -8,6 +9,9 @@ import x from "@/public/image/Footer/X.png";
 import location from "@/public/image/Footer/Location.png";
 import Phone from "@/public/image/Footer/Phone.png";
 import Mail from "@/public/image/Footer/Mail.png";
+
+
+
 
 export default function Footer() {
   return (
@@ -30,16 +34,7 @@ export default function Footer() {
             <div className="text-white font-light mt-2 text-[1.1vw]">
               Subscribe to our newsletter and stay updated
             </div>
-            <div className="h-fit mt-4">
-              <input
-                type="text"
-                placeholder="Enter your mail ID"
-                className=" rounded-s-md p-2 w-[20vw] px-4"
-              />
-              <button className="bg-[#10377F] h-full px-10 py-2 text-white rounded-e-md">
-                Subscribe
-              </button>
-            </div>
+            <SubIN/>
           </div>
         </div>
         <div className="flex justify-end col-span-12 ">

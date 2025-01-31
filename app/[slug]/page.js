@@ -226,6 +226,5 @@ export default async function page({ params }) {
     );
   }
    else {
-    notFound();
   }
 }

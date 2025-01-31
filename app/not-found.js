@@ -1,12 +1,19 @@
 import Link from "next/link"
+import Image from "next/image"
+import Menu from "./Components/Home/Menu"
+import MainLogo from "@/public/image/NotFound/MainLogo.png"
+import ErrorImage from "@/public/image/NotFound/ErrorImage.png"
 
 
 export default function NotFound() {
-    return (
+  return (
+    <div>
       <div>
-        <h2>Not Found</h2>
-        <p>Could not find requested resource</p>
-        <Link className="text-blue-800" href="/">Return Home</Link>
+        <Menu />
       </div>
-    )
-  }
+      <div className=" flex justify-center">
+        <Image src={ErrorImage} className="w-[40%] flex justify-center" alt="Main Logo" />
+      </div>
+    </div>
+  )
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import Card from "../Cards/Card";
+import { useRef,useEffect } from "react";
 
 export default function BlogSlider() {
   // var ScrollingContainer = document.getElementById("Blog_SlideBar");
@@ -10,11 +11,21 @@ export default function BlogSlider() {
   //     ScrollingContainer.scrollLeft += evt.deltaY;
   //   });
   // }
+  // const myRef = useRef()
+  // useEffect(()=>{
+    
+  //   const observer = new IntersectionObserver((entries)=>{
+  //     const entry = entries[0];
+  //   },{
+  //     threshold:1
+  //   })
+  //   observer.observe(myRef.current);
+  // })
   return (
-    <div className="scrollSettings animate-fade flex justify-end mt-36">
+    <div  className=" flex justify-end mt-36">
       <div
         id="Blog_SlideBar"
-        className="w-[95%] mb-5 grid gap-5  grid-flow-col scrollbar-hide scroll-smooth overflow-scroll"
+        className=" w-[95%] mb-5 grid gap-5  grid-flow-col scrollbar-hide scroll-smooth overflow-scroll"
       >
         <Card />
         <Card />
