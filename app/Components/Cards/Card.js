@@ -1,14 +1,12 @@
 import Image from "next/image";
-import img1 from "@/public/image/Blog_images/img_1.png";
-import img2 from "@/public/image/Blog_images/img_2.png";
-import img3 from "@/public/image/Blog_images/img_3.png";
+
 import Link from "next/link";
 
-export default function Card() {
+export default function Card({image}) {
   return (
     <div className="w-[30vw] rounded-2xl border-[#F1F1F1] border-[1px]">
       <div>
-        <Image src={img1} alt="N?A" className="" />
+        <Image src={image} alt="N?A" className="" />
       </div>
       <div className="p-5">
         <div className="mt-5 text-[2vw]">Hello Hackers</div>

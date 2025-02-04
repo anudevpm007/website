@@ -16,23 +16,30 @@ export default function GetInTouch() {
     let des;
     let country;
 
-    const Submit = () => {
-        name = document.getElementById('name').value;
-        email = document.getElementById('email').value;
-        phone = document.getElementById('phone').value;
-        comname = document.getElementById('comname').value;
-        des = document.getElementById('des').value;
-        country = document.getElementById('CountryCodeSelect').value;
+    const Isempty = () => {
+        dataAr.map((data, inde) => {
+            if (data.length === 0) {
 
-        console.log({
-            Name: name,
-            Email: email,
-            Phone: phone,
-            Code: country,
-            ComName: comname,
-            Des: des
+            }
         })
 
+    }
+
+    const Submit = () => {
+        console.log("Update 0.1v");
+
+        name = (document.getElementById('name').value) + "";
+        email = (document.getElementById('email').value) + "";
+        phone = (document.getElementById('phone').value) + "";
+        comname = (document.getElementById('comname').value) + "";
+        des = (document.getElementById('des').value) + "";
+        country = (document.getElementById('CountryCodeSelect').value) + "";
+
+
+
+         [name, email, phone, country, comname, des, country]
+
+       
         var data = {
             Name: name,
             Email: email,
@@ -41,9 +48,8 @@ export default function GetInTouch() {
             ComName: comname,
             Des: des
         }
-        var CheckCount = 0
+        // var CheckCount = 0
         let CheckOut;
-
         var Phone_count = Phone_Code[country].phone_number_digits;
         if (Phone_count === 100) {
             CheckOut = (phone.length === 11 || phone.length === 12)
@@ -56,6 +62,8 @@ export default function GetInTouch() {
         if (CheckOut === true) {
             document.getElementById("phone").style.color = "black";
             document.getElementById("phoneIN").style.color = "black";
+            console.log("3000");
+
             axios.post("/api/post", data).then((res) => {
                 console.log((res.data).status);
                 var resStatus = (res.data).status;
@@ -107,14 +115,9 @@ export default function GetInTouch() {
                     document.getElementById("phone").style.color = "black";
                     document.getElementById("emailIN").style.color = "black";
                 }
-
-
-                
-
-
-
             }).catch((err) => {
-                console.log(err);
+                setError("Something error from Server")
+                document.getElementById("serverInfo").style.color = "red";
             })
         } else {
             document.getElementById("serverInfo").style.color = "red";

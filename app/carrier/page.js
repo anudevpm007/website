@@ -3,20 +3,29 @@ import GetInTouch from "../Components/GetInTouch/GetInTouch";
 import Menu from "../Components/Home/Menu";
 import Footer from "../Components/Footer/Footer";
 import Image from "next/image";
-import AimImg from "@/public/image/carrier/trance.png";
-import BagIcon from "@/public/image/carrier/BagIcon.png";
+import AimImg from "@/public/image/carrier/MVP/trance.png";
+import EyeImg from "@/public/image/carrier/MVP/Eye.png";
+import TargetImg from "@/public/image/carrier/MVP/target.png";
+import BagIcon from "@/public/image/carrier/ListIcon/BagIcon.png";
+import CaleIcon from "@/public/image/carrier/ListIcon/cale.png";
 import NoteIcon from "@/public/image/carrier/NoteIcon.png";
 import Location from "@/public/image/carrier/ListIcon/Location.png";
-import Bag from "@/public/image/carrier/ListIcon/Mail.png";
-import Phone from "@/public/image/carrier/ListIcon/Phone.png";
+import IMG1 from "@/public/image/carrier/Unique/IMG1.png";
+import IMG2 from "@/public/image/carrier/Unique/IMG2.png";
+import IMG3 from "@/public/image/carrier/Unique/IMG3.png";
+import IMG4 from "@/public/image/carrier/Unique/IMG4.png";
+import IMG5 from "@/public/image/carrier/Unique/IMG5.png";
+import IMG6 from "@/public/image/carrier/Unique/IMG6.png";
+import Banner from "@/public/image/carrier/CarrierBanner.png";
+
 
 export default function carrier() {
-  
+
 
   return (
     <div className="relative">
-      
-      <GetInTouch/>
+
+      <GetInTouch />
       <Menu />
       <div className="py-36">
         <div className="text-[8vw] font-body flex justify-center">
@@ -31,58 +40,58 @@ export default function carrier() {
           </p>
         </div>
       </div>
-      
+
       <div id="bodySec">
-      <div className="flex justify-center bg-[#2f80ed] py-16">
-        <div className="w-[85%] grid grid-cols-3 gap-20">
-          <div>
-            <div className="flex justify-center">
-              <Image src={AimImg} className="w-[30%]" alt="N?A" />
+        <div className="flex justify-center bg-[#2f80ed] py-16">
+          <div className="w-[85%] grid grid-cols-3 gap-20">
+            <div>
+              <div className="flex justify-center">
+                <Image src={AimImg} className="w-[30%]" alt="N?A" />
+              </div>
+              <div className=" font-body flex justify-center text-[3.2vw] text-white">
+                Mission
+              </div>
+              <p className="font-body flex justify-center text-[1.2vw] mt-2 text-white text-center">
+                By prioritizing cybersecurity for businesses globally, we aim to
+                enhance safety for all individuals. Utilizing our research and
+                innovation, we seek to enhance the safety of all individuals in
+                the digital realm. A fresh cohort of cybersecurity professionals
+                will be trained to defend against possible risks.
+              </p>
             </div>
-            <div className=" font-body flex justify-center text-[3.2vw] text-white">
-              Mission
+            <div>
+              <div className="flex justify-center">
+                <Image src={EyeImg} className="w-[30%]" alt="N?A" />
+              </div>
+              <div className="font-body flex justify-center text-[3.2vw] text-white">
+                Vision
+              </div>
+              <p className="font-body flex justify-center text-[1.2vw] mt-2 text-white text-center">
+                Our mission is to protect businesses from online threats by
+                offering expert security assessments, creating innovative
+                solutions, ensuring compliance, and educating future cybersecurity
+                professionals. We identify vulnerabilities, provide cutting edge
+                solutions, and foster collaboration through conferences to stay
+                ahead of evolving risks and protect organizations.
+              </p>
             </div>
-            <p className="font-body flex justify-center text-[1.2vw] mt-2 text-white text-center">
-              By prioritizing cybersecurity for businesses globally, we aim to
-              enhance safety for all individuals. Utilizing our research and
-              innovation, we seek to enhance the safety of all individuals in
-              the digital realm. A fresh cohort of cybersecurity professionals
-              will be trained to defend against possible risks.
-            </p>
-          </div>
-          <div>
-            <div className="flex justify-center">
-              <Image src={AimImg} className="w-[30%]" alt="N?A" />
+            <div>
+              <div className="flex justify-center">
+                <Image src={TargetImg} className="w-[30%]" alt="N?A" />
+              </div>
+              <div className="font-body flex justify-center text-[3.2vw] text-white">
+                Purpose
+              </div>
+              <p className="font-body flex justify-center text-[1.2vw] mt-2 text-white text-center">
+                Astraliva's mission is to safeguard businesses in the digital
+                realm. We achieve this by Continually researching and developing
+                new defences against internet attacks. delivering trustworthy
+                (Fanatics) assistance to organizations when needed. enlightening
+                and inspiring the next generation of cybersecurity experts.
+              </p>
             </div>
-            <div className="font-body flex justify-center text-[3.2vw] text-white">
-              Vision
-            </div>
-            <p className="font-body flex justify-center text-[1.2vw] mt-2 text-white text-center">
-              Our mission is to protect businesses from online threats by
-              offering expert security assessments, creating innovative
-              solutions, ensuring compliance, and educating future cybersecurity
-              professionals. We identify vulnerabilities, provide cutting edge
-              solutions, and foster collaboration through conferences to stay
-              ahead of evolving risks and protect organizations.
-            </p>
-          </div>
-          <div>
-            <div className="flex justify-center">
-              <Image src={AimImg} className="w-[30%]" alt="N?A" />
-            </div>
-            <div className="font-body flex justify-center text-[3.2vw] text-white">
-              Purpose
-            </div>
-            <p className="font-body flex justify-center text-[1.2vw] mt-2 text-white text-center">
-              Astraliva's mission is to safeguard businesses in the digital
-              realm. We achieve this by Continually researching and developing
-              new defences against internet attacks. delivering trustworthy
-              (Fanatics) assistance to organizations when needed. enlightening
-              and inspiring the next generation of cybersecurity experts.
-            </p>
           </div>
         </div>
-      </div>
         <div className="flex justify-center py-10">
           <div className="w-[85%]">
             <div className="font-body text-[2.4vw] font-light">
@@ -97,12 +106,12 @@ export default function carrier() {
             <div className="grid grid-cols-3 mt-10 gap-10">
               <div className="py-4 rounded-2xl px-8 border-black border-[1px]">
                 <div>
-                  <div className="bg-[#185BD8] rounded-md p-1 my-5  w-fit">
-                    <Image src={BagIcon} alt="N?A" />
+                  <div className="bg-[#185BD8] rounded-md p-[2px] my-5 mb-8 w-fit">
+                    <Image src={IMG1} alt="N?A" />
                   </div>
                 </div>
-                <div className="text-[1.3vw] font-bold">No Hierarchy</div>
-                <p className="mt-5">
+                <div className="text-[1.3vw] font-headingSemiBold">No Hierarchy</div>
+                <p className="mt-5 text-[1.1vw] font-body">
                   We understand your specific security challenges and customize
                   our testing approach to fit your business perfectly
                 </p>
@@ -110,14 +119,14 @@ export default function carrier() {
               <div className="py-4 rounded-2xl px-8 border-black border-[1px]">
                 <div>
                   <div>
-                    <div className="bg-[#185BD8] rounded-md p-1 my-5  w-fit">
-                      <Image src={BagIcon} alt="N?A" />
+                    <div className="bg-[#185BD8] rounded-md p-[2px] my-5 mb-8 w-fit">
+                      <Image src={IMG2} alt="N?A" />
                     </div>
                   </div>
-                  <div className="text-[1.3vw] font-bold">
+                  <div className="text-[1.3vw] font-headingSemiBold">
                     Flexible Working Hours
                   </div>
-                  <p className="mt-5">
+                  <p className="mt-5 text-[1.1vw] font-body">
                     Our team of experience cybersecurity professionals combines
                     years of expertise with the latest industry insights to ensure
                     your application remains secure
@@ -127,14 +136,14 @@ export default function carrier() {
               <div className="py-4 rounded-2xl px-8 border-black border-[1px]">
                 <div>
                   <div>
-                    <div className="bg-[#185BD8] rounded-md p-1 my-5  w-fit">
-                      <Image src={BagIcon} alt="N?A" />
+                    <div className="bg-[#185BD8] rounded-md p-[2px] my-5 mb-8 w-fit">
+                      <Image src={IMG3} alt="N?A" />
                     </div>
                   </div>
-                  <div className="text-[1.3vw] font-bold">
+                  <div className="text-[1.3vw] font-headingSemiBold">
                     Health and Wellness
                   </div>
-                  <p className="mt-5">
+                  <p className="mt-5 text-[1.1vw] font-body">
                     Our security professionals use advanced techniques and
                     thorough research to uncover hidden vulnerabilities, including
                     CVEs, business logic flaws, and sophisticated attack
@@ -145,14 +154,14 @@ export default function carrier() {
               <div className="py-4 rounded-2xl px-8 border-black border-[1px]">
                 <div>
                   <div>
-                    <div className="bg-[#185BD8] rounded-md p-1 my-5  w-fit">
-                      <Image src={BagIcon} alt="N?A" />
+                    <div className="bg-[#185BD8] rounded-md p-[2px] my-5 mb-8 w-fit">
+                      <Image src={IMG4} alt="N?A" />
                     </div>
                   </div>
-                  <div className="text-[1.3vw] font-bold">
+                  <div className="text-[1.3vw] font-headingSemiBold">
                     Recognition and Rewards
                   </div>
-                  <p className="mt-5">
+                  <p className="mt-5 text-[1.1vw] font-body">
                     Astraliva helps you meet key industry standards like
                     GDPR,PCI-DSS,and HIPAA ensuring your app stays compliant and
                     avoids costly fines
@@ -162,12 +171,12 @@ export default function carrier() {
               <div className="py-4 rounded-2xl px-8 border-black border-[1px]">
                 <div>
                   <div>
-                    <div className="bg-[#185BD8] rounded-md p-1 my-5  w-fit">
-                      <Image src={BagIcon} alt="N?A" />
+                    <div className="bg-[#185BD8] rounded-md p-[2px] my-5 mb-8 w-fit">
+                      <Image src={IMG5} alt="N?A" />
                     </div>
                   </div>
-                  <div className="text-[1.3vw] font-bold">Work Life Balance</div>
-                  <p className="mt-5">
+                  <div className="text-[1.3vw] font-headingSemiBold">Work Life Balance</div>
+                  <p className="mt-5 text-[1.1vw] font-body">
                     We don’t just identify vulnerabilities we collaborate with you
                     to implement strategies that prevent future threats and
                     strengthen your overall security
@@ -177,14 +186,14 @@ export default function carrier() {
               <div className="py-4 rounded-2xl px-8 border-black border-[1px]">
                 <div>
                   <div>
-                    <div className="bg-[#185BD8] rounded-md p-1 my-5  w-fit">
-                      <Image src={BagIcon} alt="N?A" />
+                    <div className="bg-[#185BD8] rounded-md p-[2px] my-5 mb-8 w-fit">
+                      <Image src={IMG6} alt="N?A" />
                     </div>
                   </div>
-                  <div className="text-[1.3vw] font-bold">
+                  <div className="text-[1.3vw] font-headingSemiBold">
                     Respectful Workspace
                   </div>
-                  <p className="mt-5">
+                  <p className="mt-5 text-[1.1vw] font-body">
                     Recive clear detailed reports with our observation and
                     customized recommendations on fixing vulnerabilities making it
                     easy to understand and act upon
@@ -205,7 +214,7 @@ export default function carrier() {
               <div className="grid grid-cols-12 gap-5 py-5 rounded-xl shadow-[0px_5px_20px_0px_rgba(0,0,0,0.2)]">
                 <div className="col-span-2 flex items-center justify-center">
                   <div className="bg-[#185BD8] rounded-xl w-[7vw] h-[7vw] flex justify-center items-center">
-                    <Image className="w-[90%]" src={NoteIcon} alt="N?A" />
+                    <Image className="w-[80%]" src={NoteIcon} alt="N?A" />
                   </div>
                 </div>
                 <div className="col-span-7">
@@ -216,8 +225,8 @@ export default function carrier() {
                     <div className="grid grid-cols-3 w-[60%] pr-3 mt-5">
                       <div className="flex items-center p-0 -ml-1">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={BagIcon}
+                          className=" m-0 p-0"
                           alt="N?A"
                         />
                         <div> 3-5 years</div>
@@ -225,15 +234,15 @@ export default function carrier() {
                       <div className="flex items-center">
                         <Image
                           src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          className=" m-0 p-0"
                           alt="N?A"
                         />
                         <div>Calicut</div>
                       </div>
                       <div className="flex items-center">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={CaleIcon}
+                          className=" m-0 mr-2 p-0"
                           alt="N?A"
                         />
                         <div>2 Day ago</div>
@@ -252,7 +261,7 @@ export default function carrier() {
               <div className="grid grid-cols-12 gap-5 py-5 rounded-xl shadow-[0px_5px_20px_0px_rgba(0,0,0,0.2)]">
                 <div className="col-span-2 flex items-center justify-center">
                   <div className="bg-[#185BD8] rounded-xl w-[7vw] h-[7vw] flex justify-center items-center">
-                    <Image className="w-[90%]" src={NoteIcon} alt="N?A" />
+                    <Image className="w-[80%]" src={NoteIcon} alt="N?A" />
                   </div>
                 </div>
                 <div className="col-span-7">
@@ -263,8 +272,8 @@ export default function carrier() {
                     <div className="grid grid-cols-3 w-[60%] pr-3 mt-5">
                       <div className="flex items-center p-0 -ml-1">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={BagIcon}
+                          className="m-0 p-0"
                           alt="N?A"
                         />
                         <div> 3-5 years</div>
@@ -272,15 +281,15 @@ export default function carrier() {
                       <div className="flex items-center">
                         <Image
                           src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          className="m-0 p-0"
                           alt="N?A"
                         />
                         <div>Calicut</div>
                       </div>
                       <div className="flex items-center">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={CaleIcon}
+                          className="m-0 mr-2 p-0"
                           alt="N?A"
                         />
                         <div>2 Day ago</div>
@@ -299,7 +308,7 @@ export default function carrier() {
               <div className="grid grid-cols-12 gap-5 py-5 rounded-xl shadow-[0px_5px_20px_0px_rgba(0,0,0,0.2)]">
                 <div className="col-span-2 flex items-center justify-center">
                   <div className="bg-[#185BD8] rounded-xl w-[7vw] h-[7vw] flex justify-center items-center">
-                    <Image className="w-[90%]" src={NoteIcon} alt="N?A" />
+                    <Image className="w-[80%]" src={NoteIcon} alt="N?A" />
                   </div>
                 </div>
                 <div className="col-span-7">
@@ -310,8 +319,8 @@ export default function carrier() {
                     <div className="grid grid-cols-3 w-[60%] pr-3 mt-5">
                       <div className="flex items-center p-0 -ml-1">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={BagIcon}
+                          className="m-0 p-0"
                           alt="N?A"
                         />
                         <div> 3-5 years</div>
@@ -319,15 +328,15 @@ export default function carrier() {
                       <div className="flex items-center">
                         <Image
                           src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          className="m-0 p-0"
                           alt="N?A"
                         />
                         <div>Calicut</div>
                       </div>
                       <div className="flex items-center">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={CaleIcon}
+                          className="mr-2 m-0 p-0"
                           alt="N?A"
                         />
                         <div>2 Day ago</div>
@@ -346,7 +355,7 @@ export default function carrier() {
               <div className="grid grid-cols-12 gap-5 py-5 rounded-xl shadow-[0px_5px_20px_0px_rgba(0,0,0,0.2)]">
                 <div className="col-span-2 flex items-center justify-center">
                   <div className="bg-[#185BD8] rounded-xl w-[7vw] h-[7vw] flex justify-center items-center">
-                    <Image className="w-[90%]" src={NoteIcon} alt="N?A" />
+                    <Image className="w-[80%]" src={NoteIcon} alt="N?A" />
                   </div>
                 </div>
                 <div className="col-span-7">
@@ -355,8 +364,8 @@ export default function carrier() {
                     <div className="grid grid-cols-3 w-[60%] pr-3 mt-5">
                       <div className="flex items-center p-0 -ml-1">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={BagIcon}
+                          className="m-0 p-0"
                           alt="N?A"
                         />
                         <div> 3-5 years</div>
@@ -364,15 +373,15 @@ export default function carrier() {
                       <div className="flex items-center">
                         <Image
                           src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          className="m-0 p-0"
                           alt="N?A"
                         />
                         <div>Calicut</div>
                       </div>
                       <div className="flex items-center">
                         <Image
-                          src={Location}
-                          className="w-[1.8vw] m-0 p-0"
+                          src={CaleIcon}
+                          className="mr-2 m-0 p-0"
                           alt="N?A"
                         />
                         <div>2 Day ago</div>
@@ -386,6 +395,18 @@ export default function carrier() {
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex mt-7 justify-center">
+          <div className="w-[85%] relative">
+            <Image className="w-full" src={Banner} alt="Carrier Banner" />
+            <div className="absolute w-full top-[25%] justify-center flex flex-col items-center">
+              <h1 className="font-headingSemiBold text-[3vw] text-white">Join our Community</h1>
+              <p className="font-body text-[1.6vw] text-white">Register today & start exploring the endless possibilities.</p>
+              <button className="font-body text-[1.5vw] px-16 mt-5 rounded-md py-2 bg-white text-black">
+                Join
+              </button>
             </div>
           </div>
         </div>

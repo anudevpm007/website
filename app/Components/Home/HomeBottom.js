@@ -1,3 +1,5 @@
+"use client"
+
 import Event_img from "@/public/image/Home_1/events 1.png";
 import Image from "next/image";
 import BTN_Arrow from "@/public/image/Home_1/BTN_Arrow.png";
@@ -7,6 +9,14 @@ import EventSym from "@/public/image/Home_1/EventSymbol.png";
 import EventBg from "@/public/image/Home_1/EventBG.png";
 import Footer from "../Footer/Footer";
 import BlogSlider from "./blogSlider";
+
+
+function handleOn() {
+  document.getElementById("bodySec").style.display = "none";
+  document.getElementById("InputSec").style.display = "block";
+  console.log("Hello");
+  
+}
 
 export default function HomeBottom() {
   return (
@@ -46,7 +56,7 @@ export default function HomeBottom() {
           <Image src={Right_BT} alt="Botton" />
         </button>
       </div>
-      <div className="flex justify-center relative bg-transparent mt-28">
+      <div className="hidden justify-center relative bg-transparent mt-28">
         <Image className="absolute object-fill -z-10" src={EventBg} alt="N?A" />
         <Image
           className="absolute scale-90 right-80"
@@ -62,7 +72,7 @@ export default function HomeBottom() {
             <br />
             and explore our specialized solutions.
           </div>
-          <button className="flex justify-center p-3 px-10 rounded-lg mt-6 items-center bg-white">
+          <button onClick={handleOn} className="flex justify-center p-3 px-10 rounded-lg mt-6 items-center bg-white">
             Get started
             <span className="ml-2">
               <Image src={BTN_Arrow} alt="N?A" />

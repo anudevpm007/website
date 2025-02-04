@@ -22,17 +22,25 @@ export default async function page({ params }) {
   var { slug } = await params
   slug = slug.replaceAll("%20", " ")
   var id = (slug.split(" "))[0]
-  slug = slug.replace("2", "")
+  slug = slug.replace(id, "")
   slug = slug.replace(" ", "")
   
-  console.log(id);
+  console.log("Slug",id);
+  // console.log("data",(dbServices[parseInt(id)].content));
+  try {
+    (dbServices[parseInt(id)].content).map((data, index) => {
+      console.log(data.heading);
+      
+      if (data.heading === slug && ref === 0) {
+        
+        ref = 1
+        i = index;
   
-  (dbServices[parseInt(id)].content).map((data, index) => {
-    if (data.heading === slug && ref === 0) {
-      ref = 1
-      i = index;
-    }
-  })
+      }
+    })
+  } catch (error) {
+    ref = 0
+  }
   if (ref===1 ){
     return (
       <div>
@@ -226,5 +234,6 @@ export default async function page({ params }) {
     );
   }
    else {
+    notFound();
   }
 }

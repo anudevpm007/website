@@ -10,14 +10,21 @@ import img0_3 from "@/public/image/Home/image0_3.png";
 import img0_4 from "@/public/image/Home/image0_4.png";
 import img0_5 from "@/public/image/Home/image0_5.png";
 import box_bg_img from "@/public/image/Home/why_box_bg_image.png";
-import quetes from "@/public/image/Home/quetes.png";
-import Right_BT from "@/public/image/Home/Right_BT.png";
-import Left_BT from "@/public/image/Home/Left_BT.png";
+import Peragraph from "./Peragraph";
+import ExpoBtn from "./ExpoBtn";
 import HomeBottom from "./Components/Home/HomeBottom";
-
 import CounterSec from "./Components/Home/CounterSec";
 import GetInTouch from "./Components/GetInTouch/GetInTouch";
+import quetes from "@/public/image/Home/quetes.png";
+import MobileMenu from "./Components/Home/MobileMenu";
+import HomeMobileBody from "./Components/Home/Mobile/HomeMobileBody";
 
+function handleOn() {
+  document.getElementById("bodySec").style.display = "none";
+  document.getElementById("InputSec").style.display = "block";
+  console.log("Hello");
+
+}
 
 
 
@@ -29,7 +36,10 @@ export default function Home() {
     <div className="over relative">
       <GetInTouch />
       <Menu />
-      <div className="relative h-[100%]">
+      <MobileMenu />
+      <HomeMobileBody/>
+      <div>
+        {/* <div className="relative h-[100%]">
         <div className="absolute top-[20%]">
           <div className="grid grid-cols-10 gap-2">
             <div className="flex justify-end items-center text-[2.5vw] col-span-4 font-body">Next-Generation </div>
@@ -43,14 +53,12 @@ export default function Home() {
               Astraliva delivers next-generation cybersecurity solutions through customized strategies and research-oriented approach. We protect your entire digital ecosystem, from your core network to cloud infrastructure and all connected devices with proactive threat intelligence and robust security measures. Empower your business with the confidence to focus on achieving your core objectives. Explore our solutions.
             </p>
           </div>
-          <div className="flex justify-center mt-10">
-            <Link className="bg-[#185BD8] py-4 px-6 rounded-lg font-body text-white" href={"/"}>Explore Solutions</Link>
-          </div>
+          <ExpoBtn/>
         </div>
         <Image src={Header_img} className="" alt="Header Image" />
       </div>
       <div id="bodySec">
-        <HomeSerBox/>
+        <HomeSerBox />
         <div className="flex justify-center mt-20">
           <div className="w-[85%] ">
             <div className="scrollSettings animate-fade_left text-[2.2vw]">
@@ -61,7 +69,7 @@ export default function Home() {
               Astraliva delivers comprehensive cybersecurity solutions designed
               for your unique needs and customized to perfectly fit your business.
             </div>
-            <div className="scrollSettings animate-fade grid gap-10 grid-cols-3 mt-20 ">
+            <div className="scrollSettings animate-fade grid gap-10 2xl:grid-cols-3 grid-cols-2 mt-20 ">
               <div className="flex justify-center">
                 <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
                   <Image
@@ -164,53 +172,8 @@ export default function Home() {
           </div>
         </div>
         <CounterSec />
-        <div className="scrollSettings animate-fade_left flex justify-center mt-12">
-          <div className="w-[85%]">
-            <div className="text-[2.5vw]">
-              What <span className="text-[#185BD8]">Our Clients</span> Say
-            </div>
-            <div className="flex justify-center mt-10">
-              <div className="w-[92%] items-center relative flex justify-center">
-                <div className=" bg-[#185BD8] p-[70px] py-[50px] w-[92%] rounded-lg">
-                  <div className="flex justify-center">
-                    <span>
-                      <Image className="w-[10vw]" src={quetes} alt="N?A" />
-                    </span>
-                    <p className="text-justify mt-8 px-4 leading-[50px]  text-white text-[1.3vw]">
-                      We were really impressed with how professional and
-                      responsive the team at Astraliva was. They were always there
-                      to answer our questions and help us out whenever we needed
-                      it. Their expertise in penetration testing helped us
-                      identify and address some serious security vulnerabilities
-                      --{" "}
-                      <span>
-                        OpusNexus{" "}
-                        <Image
-                          className=" mt-3 float-right ml-4 w-[3.1vw] rotate-180"
-                          src={quetes}
-                          alt="Nothing"
-                        />
-                      </span>
-                    </p>
-                  </div>
-                  <div className="mt-10 text-[1.6vw] text-white w-[100%] flex justify-end p-3">
-                    Sophia Joseph ( Director)
-                  </div>
-                </div>
-                <div className=" absolute  bg-[#185BD833]  w-[98%] h-[80%] -z-10 rounded-lg"></div>
-                <div className="flex absolute justify-center  h-[90%] bg-[#185BD880] -z-20  w-[95%] rounded-lg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="scrollSettings animate-fade flex justify-end w-[90%] mt-10">
-          <button className=" bg-white p-1 ml-1 rounded-md border-[#00000080] border-[1px] flex justify-center items-center">
-            <Image src={Left_BT} alt="Botton" />
-          </button>
-          <button className="bg-[#185BD8] p-1 ml-1 rounded-md flex justify-center items-center">
-            <Image src={Right_BT} alt="Botton" />
-          </button>
-        </div>
+        <Peragraph />
+        
         <div className="scrollSettings animate-fade w-[100%] flex justify-center">
           <div className="w-[85%]">
             <div className="text-[1.8vw] mb-4 mt-28">
@@ -223,6 +186,7 @@ export default function Home() {
           </div>
         </div>
         <HomeBottom />
+      </div> */}
       </div>
     </div>
   );

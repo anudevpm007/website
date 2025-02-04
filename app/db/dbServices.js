@@ -67,6 +67,23 @@ const dbServices = [
         ]
     },
     {
+        Main: "IoT Security",
+        content: [
+            {
+                "heading": "Hardware Security",
+                "img": img0,
+                "heading1": "Hardware Security",
+                "heading2": ""
+            },
+            {
+                "heading": "Firmware Security",
+                "img": img1,
+                "heading1": "Firmware Security",
+                "heading2": ""
+            },            
+        ]
+    },
+    {
         Main: "Network Security",
         content: [
             {
@@ -96,6 +113,7 @@ const dbServices = [
             
         ]
     }
+    
 ]
 
 

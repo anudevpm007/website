@@ -15,7 +15,7 @@ import Mail from "@/public/image/Footer/Mail.png";
 
 export default function Footer() {
   return (
-    <div className=" w-[100%] bg-[#185BD8] mt-20 px-20 pb-10">
+    <div className="hidden w-[100%] bg-[#185BD8] mt-20 px-20 pb-10">
       <div className="scrollSettings animate-fade w-[100%] h-[100%] grid grid-cols-12">
         <div className="m-10 my-20 col-span-4">
           <Image src={Logo} alt="N?A" className="w-[18vw]" />
@@ -94,7 +94,7 @@ export default function Footer() {
                     <Image alt="N?A" src={location} />
                   </div>
                   <Link href={"/"} className="text-white text-justify ml-4 w-72 text-[1.2vw]">
-                    DOOR NO.2211, 2/1149/I 100, HILITE BUSINESS PARK, Kozhikode-
+                    NO.2211, 2/1149/I 100, HILITE BUSINESS PARK, Kozhikode-
                     673014, Kerala, India
                   </Link>
                 </li>

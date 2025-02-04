@@ -8,13 +8,18 @@ const connection = await mysql.createConnection({
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE_NAME,
+    port: process.env.DATABASE_PORT
 })
 
 export async function POST(request) {
+
     try {
         var sqlshow = "SELECT Email,Phone,Code FROM ClientSideData;"
         const [results, fields] = await connection.query(sqlshow)
         const Cdata = await request.json()
+        console.log(Object.keys(Cdata).length);
+
+
         var resp = []
         var phoneCheckIndex = []
         var emailCheckIndex = []
@@ -28,8 +33,6 @@ export async function POST(request) {
                     phoneCheckIndex.push(index)
                 }
             }
-
-
         })
 
         var EmailC = Cdata.Email + "";
@@ -55,16 +58,12 @@ export async function POST(request) {
         } else if (emailCheckIndex.length !== 0) {
             resp.push("E")
         }
-
         if (!(EmailC).match(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/)) {
             resp.push("EW")
             emailValid = false
         } else {
             emailValid = true
         }
-
-
-
         if (phoneCheckIndex.length === 0 && emailCheckIndex.length === 0 && emailValid === true) {
             resp.push("200")
             var sqlAdd = "INSERT INTO `ClientSideData` (`Name`, `Email`, `Phone`,`Code`, `Company`, `Designation`) VALUES('" + Cdata.Name + "','" + Cdata.Email + "','" + Cdata.Phone + "','" + Cdata.Code + "','" + Cdata.ComName + "','" + Cdata.Des + "')";
@@ -78,14 +77,15 @@ export async function POST(request) {
                 console.log("response :", resp);
 
             }
-
-
         }
+
+        resp.push('N')
+
         console.log(resp)
 
         return NextResponse.json({ status: resp })
     } catch (error) {
         console.log("From route page error:", error);
-        return NextResponse.json({ Err: error })
+        return NextResponse.json({ "Massage from server route": error })
     }
 }
