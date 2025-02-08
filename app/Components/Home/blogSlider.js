@@ -1,6 +1,6 @@
 "use client";
 
-import Card from "../Cards/Card";
+import Card from "../Card/Card";
 import { useRef,useEffect } from "react";
 import img1 from "@/public/image/Blog_images/img_1.png";
 import img2 from "@/public/image/Blog_images/img_2.png";
