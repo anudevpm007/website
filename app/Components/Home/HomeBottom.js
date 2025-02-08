@@ -21,6 +21,7 @@ function handleOn() {
 export default function HomeBottom() {
   return (
     <div>
+      
       <div className="scrollSettings animate-fade flex justify-center mt-24">
         <div className="w-[85%] rounded-3xl grid gap-16 grid-cols-2 bg-[#E1E1E1]">
           <Image src={Event_img} alt="N/A" />
@@ -56,7 +57,7 @@ export default function HomeBottom() {
           <Image src={Right_BT} alt="Botton" />
         </button>
       </div>
-      <div className="hidden justify-center relative bg-transparent mt-28">
+      <div className="flex justify-center relative bg-transparent mt-28">
         <Image className="absolute object-fill -z-10" src={EventBg} alt="N?A" />
         <Image
           className="absolute scale-90 right-80"

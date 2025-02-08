@@ -48,7 +48,8 @@ export async function POST(request) {
                 emailValid = false
                 console.log("entered")
 
-            } else if (((EmailC.split("@"))[0])[(((EmailC.split("@"))[0]).length) - 1] === "." || EmailC[0] === ".") {
+            }
+            else if (((EmailC.split("@"))[0])[(((EmailC.split("@"))[0]).length) - 1] === "." || EmailC[0] === ".") {
                 resp.push("EW")
                 emailValid = false
             } else {

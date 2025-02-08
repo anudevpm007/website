@@ -17,29 +17,30 @@ const dbServices = [
                 "heading2": "Security Testing"
             },
             {
-                "heading": "API Application Security Testing",
-                "img": img1,
-                "heading1": "API Application",
-                "heading2": "Security Testing"
-            },
-            {
                 "heading": "Mobile Application Security Testing",
                 "img": img2,
                 "heading1": "Mobile Application",
                 "heading2": "Security Testing"
             },
             {
+                "heading": "API Security Testing",
+                "img": img1,
+                "heading1": "API Security",
+                "heading2": "Testing"
+            },
+            
+            {
                 "heading": "Thick Client Application Security Testing",
                 "img": img3,
                 "heading1": "Thick Client Application",
                 "heading2": "Security Testing"
             },
-            {
-                "heading": "Secure Coding Review",
-                "img": img4,
-                "heading1": "Secure Coding",
-                "heading2": "Review"
-            },
+            // {
+            //     "heading": "Secure Coding Review",
+            //     "img": img4,
+            //     "heading1": "Secure Coding",
+            //     "heading2": "Review"
+            // },
             {
                 "heading": "POS Application Testing",
                 "img": img5,
@@ -52,10 +53,10 @@ const dbServices = [
         Main: "Cloud Security",
         content: [
             {
-                "heading": "Cloud Security",
+                "heading": "Cloud Security Assessment and Penetration testing",
                 "img": img0,
-                "heading1": "Cloud Security",
-                "heading2": ""
+                "heading1": "Cloud Security Assessment and",
+                "heading2": "Penetration testing"
             },
             {
                 "heading": "Cloud Configuration Review",

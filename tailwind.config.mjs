@@ -47,11 +47,19 @@ export default {
             opacity: "1",
           }
         },
-
+        scroll: {
+          from:{
+            transform: "translateX(0vw)"
+          },
+          to: {
+            transform: "translateX(-100vw)"
+          }          
+        }
       },
       animation: {
         fade_left: "fade_left linear",
         fade: "fade linear",
+        scrolls: "scroll 10s linear infinite"
       }
 
     },
