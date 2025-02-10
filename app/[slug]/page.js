@@ -15,7 +15,6 @@ import EventBg from "@/public/image/Home_1/EventBG.png";
 import QAdb from "./QAdb";
 import dbServices from "../db/dbServices";
 import { notFound } from "next/navigation";
-import GetInTouch from "../Components/GetInTouch/GetInTouch";
 import SerPage from "../db/dbPageServ";
 import Link from "next/link";
 import GetBtn from "./GetBtn";
@@ -34,38 +33,39 @@ const Card = ({ Heading, Peragra }) => {
 }
 
 
-export default async function page({ params }) {
+export default async function page({ searchParams }) {
+  let id;
+  let i;
 
-
-  var ref = 0;
-  var i;
-
-  var { slug } = await params
-  slug = slug.replaceAll("%20", " ")
-  var id = (slug.split(" "))[0]
-  slug = slug.replace(id, "")
-  slug = slug.replace(" ", "")
-
-  console.log("Slug", id);
-  // console.log("data",(dbServices[parseInt(id)].content));
+  var ref = 1
   try {
-    (dbServices[parseInt(id)].content).map((data, index) => {
-      console.log(data.heading);
-
-      if (data.heading === slug && ref === 0) {
-
-        ref = 1
-        i = index;
-
+    var indexValue = await searchParams; 
+    if(indexValue.id!==undefined || indexValue.id!== null || (indexValue.id).length!==0){
+      if(indexValue.i!==undefined || indexValue.i!== null || (indexValue.i).length!==0){
+        ref=1
+        id = indexValue.id
+        i = indexValue.i
+        
+      }else{
+        ref=0
+        console.log("wrong");
       }
-    })
+
+      
+    }else{
+      console.log("wrong");
+      ref=0
+    }
+    
   } catch (error) {
-    ref = 0
+    ref=0
+    notFound();
   }
+
+  
   if (ref === 1) {
     return (
       <div>
-        <GetInTouch />
         <Menu />
         <MobileMenu />
         <div className="relative">
@@ -91,12 +91,13 @@ export default async function page({ params }) {
           <div className="bg-[#185BD8] flex justify-center">
             <div className="w-[85%] mt-10">
               <div className="text-white text-[3.5vw] xl:text-[3vw] font-body">
-                Why is <span className="font-heading">{(dbServices[id].content)[i].heading1}</span>{" "}
-                Security Matters
+                {
+                  SerPage[id][i].Heading1
+                }
               </div>
               <p className="text-white xl:text-[1.1vw] text-[2vw] font-body mt-4 xl:mt-5">
                 {
-                  SerPage[i].H1Pera
+                  SerPage[id][i].H1Pera
                 }
               </p>
               <div className="bg-white rounded-md flex items-center mt-8 xl:mt-10 flex-col xl:mb-10 mb-8">
@@ -105,7 +106,7 @@ export default async function page({ params }) {
                 </div>
                 <div className="xl:w-[85%] w-[90%] xl:mt-10 mt-5 xl:mb-10 mb-5 text-[#185BD8] font-headingSemiBold text-center xl:text-[1.5vw] text-[2.3vw]">
                   {
-                    SerPage[i].WWF
+                    SerPage[id][i].WWF
                   }
                 </div>
               </div>
@@ -115,7 +116,7 @@ export default async function page({ params }) {
             <div className="w-[85%]">
               <div className="xl:text-[3vw] text-[3.2vw]  font-body">
                 {
-                  SerPage[i].Heading2
+                  SerPage[id][i].Heading2
                 }
                 <span className="text-[#185BD8] font-heading">{(dbServices[id].content)[i].heading1}</span>
               </div>
@@ -124,13 +125,13 @@ export default async function page({ params }) {
               </div>
               <p className="mt-5 xl:text-[1.1vw] text-[2.1vw]">
                 {
-                  SerPage[i].H2Pera
+                  SerPage[0][0].H2Pera
                 }
               </p>
               <div className="mt-10 mb-10">
                 <div className="flex justify-center flex-col items-center">
                   {
-                    (SerPage[i].List).map((Data, Index) => {
+                    (SerPage[id][i].List).map((Data, Index) => {
                       return (
                         <Card key={Index} Heading={Data.heading} Peragra={Data.Pera} />
                       )

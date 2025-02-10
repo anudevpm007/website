@@ -1,15 +1,11 @@
 import Menu from "../Components/Home/Menu"
 import MobFooter from "../Components/Home/Mobile/MobFooter"
 import MobileMenu from "../Components/Home/MobileMenu"
-import GetInTouch from "../Components/GetInTouch/GetInTouch"
 import Image from "next/image"
 import Footer from "../Components/Footer/Footer"
 import AimLogo from "@/public/image/WhoAreWe/AimLogo.png"
 import EyeLogo from "@/public/image/WhoAreWe/EyeLogo.png"
-import Img1 from "@/public/image/WhoAreWe/Maskgroup.png"
-import img0_0 from "@/public/image/Home/image0_0.png";
 import Icon1 from "@/public/image/WhoAreWe/Icon/Icon1.png"
-import CyberImg from "@/public/image/WhoAreWe/CyberImg.png"
 
 import box_bg_img from "@/public/image/Home/why_box_bg_image.png";
 
@@ -19,7 +15,6 @@ export default function Page() {
 
       <Menu />
       <MobileMenu />
-      <GetInTouch />
       <div id="bodySec" >
         <div className="relative">
           <div className="absolute -z-10 w-full h-[400px] sm:h-[500px] md:h-[800px] lg:h-[1000px] Gradient"></div>

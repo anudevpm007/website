@@ -2,133 +2,176 @@
 
 import axios from "axios";
 import { useState } from "react";
-import Phone_Code from "../Components/GetInTouch/CountryCode";
-import MobileMenu from "../Components/Home/MobileMenu";
 import MobFooter from "../Components/Home/Mobile/MobFooter";
+import MobileMenu from "../Components/Home/MobileMenu";
+import Footer from "../Components/Footer/Footer";
+import Menu from "../Components/Home/Menu";
 
 
 
 export default function page() {
 
-    const [err, setError] = useState("");
+    const [errmsg, seterrmsg] = useState("");
 
     let name;
     let email;
     let phone;
     let comname;
     let des;
-    let country;
 
-    const Isempty = () => {
-        dataAr.map((data, inde) => {
-            if (data.length === 0) {
-
-            }
-        })
-
-    }
 
     const Submit = () => {
-        console.log("Update 0.1v");
-
-        name = (document.getElementById('name').value) + "";
-        email = (document.getElementById('email').value) + "";
-        phone = (document.getElementById('phone').value) + "";
-        comname = (document.getElementById('comname').value) + "";
-        des = (document.getElementById('des').value) + "";
-        country = (document.getElementById('CountryCodeSelect').value) + "";
+        try {
+            var err = ""
+            var IndexAr = []
 
 
 
-         [name, email, phone, country, comname, des, country]
-
-       
-        var data = {
-            Name: name,
-            Email: email,
-            Phone: phone,
-            Code: Phone_Code[country].country,
-            ComName: comname,
-            Des: des
-        }
-        // var CheckCount = 0
-        let CheckOut;
-        var Phone_count = Phone_Code[country].phone_number_digits;
-        if (Phone_count === 100) {
-            CheckOut = (phone.length === 11 || phone.length === 12)
-        }
-        else {
-            CheckOut = (Phone_count === phone.length)
-        }
+            var emailLabel = document.getElementById("emailIN");
+            var phoneLabel = document.getElementById("phoneIN");
+            var Ptag = document.getElementById('serverInfo');
 
 
-        if (CheckOut === true) {
-            document.getElementById("phone").style.color = "black";
-            document.getElementById("phoneIN").style.color = "black";
-            console.log("3000");
 
-            axios.post("/api/post", data).then((res) => {
-                console.log((res.data).status);
-                var resStatus = (res.data).status;
 
-                if (resStatus.includes("502")) {
-                    document.getElementById("serverInfo").style.color = "red";
-                    setError("Please try later the server has some problem")
+
+            name = (document.getElementById('name').value) + "";
+            email = (document.getElementById('email').value) + "";
+            phone = (document.getElementById('phone').value) + "";
+            comname = (document.getElementById('comname').value) + "";
+            des = (document.getElementById('des').value) + "";
+
+            var data = [name, email, phone, comname, des]
+
+
+            data.map((data, index) => {
+
+                if (data.length === 0) {
+                    IndexAr.push(index);
                 }
-
-
-                document.getElementById("email").style.color = "black";
-                document.getElementById("emailIN").style.color = "black";
-
-                if (!resStatus.includes("200")) {
-                    document.getElementById("serverInfo").style.color = "red";
-                    if (resStatus.includes("P")) {
-                        if (resStatus.includes("E")) {
-                            setError("The Entered Email and Phone Number are already using")
-                            document.getElementById("email").style.color = "red";
-                            document.getElementById("emailIN").style.color = "red";
-                            document.getElementById("phone").style.color = "red";
-                            document.getElementById("phoneIN").style.color = "red";
-                        }
-                        else {
-                            setError("The Entered Phone Number are already using")
-                            document.getElementById("phone").style.color = "red";
-                            document.getElementById("phoneIN").style.color = "red";
-                            document.getElementById("email").style.color = "black";
-                            document.getElementById("emailIN").style.color = "black";
-                        }
-                    } else if (resStatus.includes("E")) {
-                        setError("The Entered Email are already using")
-                        document.getElementById("email").style.color = "red";
-                        document.getElementById("emailIN").style.color = "red";
-                        document.getElementById("phone").style.color = "black";
-                        document.getElementById("phoneIN").style.color = "black";
-                    } else if (resStatus.includes("EW")) {
-                        setError("The Entered Email is Wrong")
-                        document.getElementById("email").style.color = "red";
-                        document.getElementById("emailIN").style.color = "red";
-                        document.getElementById("phone").style.color = "black";
-                        document.getElementById("phoneIN").style.color = "black";
-                    }
-                } else if (!resStatus.includes("502") && resStatus.includes("200")) {
-                    setError("You are successfully registered")
-                    document.getElementById("serverInfo").style.color = "green";
-                    document.getElementById("email").style.color = "black";
-                    document.getElementById("emailIN").style.color = "black";
-                    document.getElementById("phone").style.color = "black";
-                    document.getElementById("emailIN").style.color = "black";
-                }
-            }).catch((err) => {
-                setError("Something error from Server")
-                document.getElementById("serverInfo").style.color = "red";
             })
-        } else {
-            document.getElementById("serverInfo").style.color = "red";
-            setError("Something wrong with Phone Number")
-            document.getElementById("phone").style.color = "red";
-            document.getElementById("phoneIN").style.color = "red";
 
+
+
+
+            if (IndexAr.length === 0) {
+
+                var emailValid = true
+                if (email.length < 320 && email.length !== 0) {
+
+                    if (!(email).match(/^[a-zA-Z0-9][a-zA-Z0-9._%+]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/) && email.split("@")[0].length !== 0) {
+
+                        emailValid = false
+
+
+                    }
+
+
+                    else if (((email.split("@"))[0])[(((email.split("@"))[0]).length) - 1] === "." || email[0] === "@") {
+
+                        emailValid = false
+                    } else if ((email.split("@"))[0].length < 2) {
+
+                        emailValid = false
+                    } else if (!isNaN((email.split("@"))[0][0])) {
+
+                        emailValid = false
+                    }
+                    else {
+                        var WDCount = 0
+                        whiteDom.map((data, index) => {
+                            if (((email.split("@"))[1]) === data) {
+                                WDCount = WDCount + 1
+                            }
+                        })
+                        if (WDCount === 0) {
+
+                            emailValid = true
+
+                        } else {
+                            emailValid = false
+
+
+                        }
+                    }
+                } else {
+                    emailValid = false
+                }
+
+
+
+                if (emailValid === true) {
+
+                    if (!(phone.length >= 7 && phone.length <= 15)) {
+                        err = "Phone is Incorrect"
+                        seterrmsg(err)
+                        phoneLabel.style.color = "red"
+                        Ptag.style.color = "red";
+                    } else {
+                        axios.post("/api/GetInTouch", data).then((res) => {
+                            var Servererror = res.data.Servererror
+                            var ServerStatus = res.data.ServerStatus
+
+                            if (Servererror === "" || Servererror === undefined || Servererror.length === 0) {
+                                err = ServerStatus
+                                Ptag.style.color = "green"
+                            } else {
+                                err = Servererror
+                                Ptag.style.color = "red"
+                                console.log("Entered");
+
+                            }
+                            seterrmsg(err)
+
+
+
+                        })
+
+                    }
+
+                } else {
+                    err = "email is Incorrect"
+                    seterrmsg(err)
+
+                    emailLabel.style.color = "red"
+                    if (!(phone.length >= 7 && phone.length <= 15)) {
+                        err = "Email and Phone is Incorrect"
+                        seterrmsg(err)
+                        phoneLabel.style.color = "red"
+                        Ptag.style.color = "red";
+                    }
+                }
+            } else {
+                Ptag.style.color = "red"
+                err = "Missing on the form"
+
+
+                if (IndexAr.includes(1) && IndexAr.includes(2)) {
+
+                    emailLabel.style.color = "red"
+
+                    phoneLabel.style.color = "red"
+
+                    err = "Fill the Email and Phone"
+                } else if (IndexAr.includes(1)) {
+                    err = "Fill the Email filed"
+                    emailLabel.style.color = "red"
+
+                }
+                else if (IndexAr.includes(2)) {
+                    err = "Fill the Phone filed"
+                    phoneLabel.style.color = "red"
+
+                }
+                seterrmsg(err)
+
+            }
+
+
+        } catch (error) {
+            seterrmsg("Something wrong with registration process")
         }
+
     }
 
     function handle() {
@@ -138,58 +181,56 @@ export default function page() {
 
     return (
         <div>
+            <Menu />
             <MobileMenu />
             <div className=" flex justify-center w-[95%] py-14 rounded-xl bg-white mt-10">
-                <div className="w-[90%]">
-                    <div className=" text-[5vw] font-headingSemiBold text-[#185BD8]">
-                        Let's Partner in Cybersecurity
-                    </div>
-                    <p className="mb-9 font-body">
-                        We believe in collaborative defense. Connect with our team of experts to discuss your unique security challenges and find the right solutions.
-                    </p>
-                    <p id="serverInfo" className="mb-9 font-body">{err}</p>
-                    <div className="mt-20">
-                        <form method="post">
-                            <div className="flex flex-col mb-10">
-                                <label htmlFor="Name" className="text-[4vw] font-body">Enter your Name</label>
-                                <input id="name" className="outline-none mt-5 border-b-[1px] text-[4.3vw] border-[#000000ce]" type="text" name="Name" />
-                            </div>
-                            <div className="flex flex-col mb-10">
-                                <label id="emailIN" htmlFor="email" className="text-[3.5vw] font-body">Enter your Email</label>
-                                <input id="email" className="outline-none mt-5 border-b-[1px] text-[4.3vw] border-[#000000ce]" type="email" name="Name" />
-                            </div>
-                            <div className="flex justify-between flex-row items-center mb-10">
-                                <div className="w-[70%] flex flex-col ">
-                                    <label id="phoneIN" htmlFor="phone" className="text-[3.5vw] font-body">Enter your Phone Number</label>
-                                    <input id="phone" className="outline-none mt-5 border-b-[1px] text-[4.3vw] border-[#000000ce]" type="number" name="phone" />
+                <div className="md:w-[85%] w-[90%] flex justify-start">
+                    <div className="md:w-[75%] sm:md:w-[95%] w-[100%]">
+                        <div className=" text-[5vw] md:text-[3.5vw] lg:text-[3vw] font-headingSemiBold text-[#185BD8]">
+                            Let's Partner in Cybersecurity
+                        </div>
+                        <p className="mb-9 font-body">
+                            We believe in collaborative defense. Connect with our team of experts to discuss your unique security challenges and find the right solutions.
+                        </p>
+                        <p id="serverInfo" className="mb-9 font-body">{errmsg}</p>
+                        <div className="mt-20">
+                            <form method="post">
+                                <div className="flex flex-col mb-10">
+                                    <label htmlFor="Name" className="text-[3.5vw] md:text-[2.2vw] lg:text-[1.2vw] xl:text-[20px] font-body">Enter your Name</label>
+                                    <input id="name" className="outline-none mt-5 border-b-[1px] text-[4.3vw] md:text-[1.6vw] lg:md:text-[1vw] xl:text-[20px] border-[#000000ce]" type="text" name="Name" />
                                 </div>
-                                <div className="w-[28%] ">
-                                    <select className=" mt-2 w-full h-14 outline-none font-headingSemiBold bg-[#185BD8] rounded-lg px-1 text-white" name="CountryCodeSelect" id="CountryCodeSelect" >
-                                        {
-                                            Phone_Code.map((Data, Index) => {
-                                                return (<option className="outline-none" key={Index} value={Index}>{Data.country_code} {Data.country}</option>)
-                                            })
-                                        }
-                                    </select>
+                                <div className="flex flex-col mb-10">
+                                    <label id="emailIN" htmlFor="email" className="text-[3.5vw] md:text-[2.2vw] lg:text-[1.2vw] xl:text-[20px] font-body">Enter your Email</label>
+                                    <input id="email" className="outline-none mt-5 border-b-[1px] text-[4.3vw] md:text-[1.6vw] lg:md:text-[1vw] xl:text-[20px] border-[#000000ce]" type="email" name="Name" />
                                 </div>
-                            </div>
-                            <div className="flex flex-col mb-10">
-                                <label htmlFor="Cname" className="text-[3.5vw] font-body">Enter your Company Name</label>
-                                <input id="comname" className="outline-none mt-5 border-b-[1px] text-[4.3vw] border-[#000000ce]" type="text" name="Cname" />
-                            </div>
-                            <div className="flex flex-col mb-10">
-                                <label htmlFor="des" className="text-[3.5vw] font-body">Enter your Designation</label>
-                                <input id="des" className="outline-none mt-5 border-b-[1px] text-[4.3vw] border-[#000000ce]" type="text" name="des" />
-                            </div>
-                            <div>
-                                <button className="mt-1 bg-[#185BD8] rounded-md py-3 text-[4.1vw] text-white font-headingSemiBold px-14" onClick={Submit} type="button">Submit</button>
-                            </div>
-                        </form>
+                                <div className="flex flex-col mb-10">
+
+                                    <label id="phoneIN" htmlFor="phone" className="text-[3.5vw] md:text-[2.2vw] lg:text-[1.2vw] xl:text-[20px] font-body">Enter your Phone Number</label>
+                                    <input id="phone" className="outline-none mt-5 border-b-[1px] text-[4.3vw] md:text-[1.6vw] lg:md:text-[1vw] xl:text-[20px] border-[#000000ce]" type="number" name="phone" />
+
+
+                                </div>
+                                <div className="flex flex-col mb-10">
+                                    <label htmlFor="Cname" className="text-[3.5vw] md:text-[2.2vw] lg:text-[1.2vw] xl:text-[20px] font-body">Enter your Company Name</label>
+                                    <input id="comname" className="outline-none mt-5 border-b-[1px] text-[4.3vw] md:text-[1.6vw] lg:md:text-[1vw] xl:text-[20px] border-[#000000ce]" type="text" name="Cname" />
+                                </div>
+                                <div className="flex flex-col mb-10">
+                                    <label htmlFor="des" className="text-[3.5vw] md:text-[2.2vw] lg:text-[1.2vw] xl:text-[20px] font-body">Enter your Designation</label>
+                                    <input id="des" className="outline-none mt-5 border-b-[1px] text-[4.3vw] md:text-[1.6vw] lg:md:text-[1vw] xl:text-[20px] border-[#000000ce]" type="text" name="des" />
+                                </div>
+                                <div>
+                                    <button className="mt-1 bg-[#185BD8] rounded-md py-3 text-[3.5vw] md:text-[2.2vw] lg:text-[1.2vw] xl:text-[20px] font-body text-white px-14" onClick={Submit} type="button">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <MobFooter/>
+            <div className="hidden md:block">
+                <Footer />
+            </div>
+            <div className="md:hidden">
+                <MobFooter />
             </div>
         </div>
     )

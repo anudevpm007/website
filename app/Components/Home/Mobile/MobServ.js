@@ -2,10 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import img0 from "@/public/image/Home/image0.png";
 import dbServices from "@/app/db/dbServices";
-import gsap from "gsap";
-import { useEffect, useRef, useState } from "react";
 
 
 
@@ -31,10 +28,16 @@ export default function MobServ() {
 
                                     <ul className="mt-4 ">
                                         {
-                                            Data.content.map((data, Index) => {
+                                            Data.content.map((data, index) => {
                                                 return (
-                                                    <li className="mb-2" key={Index}>
-                                                        <Link className="grid grid-cols-10 md:grid-cols-12 gap-2" href={"/" + 0 + " " + data.heading}>
+                                                    <li className="mb-2" key={index}>
+                                                        <Link className="grid grid-cols-10 md:grid-cols-12 gap-2" href={{
+                                                            pathname:"/"+data.heading,
+                                                            query:{
+                                                                id:Index,
+                                                                i:index
+                                                            }
+                                                        }}>
                                                             <Image src={data.img} className="bg-[#0858ED] p-1 rounded-md col-span-1 " alt="Nothing" />
                                                             <p className="col-span-9 md:col-span-11 flex items-center justify-start font-heading text-[#0858ED]">{data.heading}</p>
                                                         </Link>

@@ -15,8 +15,6 @@ import Peragraph from "./Peragraph";
 import ExpoBtn from "./ExpoBtn";
 import HomeBottom from "./Components/Home/HomeBottom";
 import CounterSec from "./Components/Home/CounterSec";
-import GetInTouch from "./Components/GetInTouch/GetInTouch";
-import quetes from "@/public/image/Home/quetes.png";
 import MobileMenu from "./Components/Home/MobileMenu";
 import HomeMobileBody from "./Components/Home/Mobile/HomeMobileBody";
 
@@ -42,7 +40,6 @@ export default async function Home({searchParams}) {
   }
   return (
     <div className="over relative">
-      <GetInTouch />
       <Menu />
       <MobileMenu />
       <HomeMobileBody />

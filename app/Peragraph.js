@@ -4,7 +4,7 @@ import quetes from "@/public/image/Home/quetes.png";
 import Right_BT from "@/public/image/Home/Right_BT.png";
 import Left_BT from "@/public/image/Home/Left_BT.png";
 import Image from "next/image";
-import {useState, useRef } from "react";
+import {useState, useRef, useEffect } from "react";
 
 
 
@@ -17,33 +17,36 @@ export default function () {
     const box = useRef()
 
     let toop
-    function timeO() {
-        toop = setTimeout(() => {
-            gsap.to(pera.current, { duration: 0.1, opacity: 0, ease: "bounce.inOut" })
-            gsap.to(word.current, { duration: 0.1, opacity: 0, ease: "bounce.inOut" })
-            
-            setTimeout(()=>{
-                if (changeP === 0) {
-                    setChangeP(changeP + 1)
-                    
-                } else {
-                    setChangeP(0)
-                    
-                }
-            },250)
-            
-        }, 3000)
-    }
+    
 
-    setTimeout(() => {
+    useEffect(()=>{
+        function timeO() {
+            toop = setTimeout(() => {
+                gsap.to(pera.current, { duration: 0.1, opacity: 0, ease: "bounce.inOut" })
+                gsap.to(word.current, { duration: 0.1, opacity: 0, ease: "bounce.inOut" })
+                
+                setTimeout(()=>{
+                    if (changeP === 0) {
+                        setChangeP(changeP + 1)
+                        
+                    } else {
+                        setChangeP(0)
+                        
+                    }
+                },250)
+                
+            }, 3000)
+        }
+        setTimeout(() => {
         
         
-        clearTimeout(toop)
-        gsap.to(pera.current, { duration: 0.1, opacity: 1, ease: "bounce.inOut" })
-        gsap.to(word.current, { duration: 0.1, opacity: 1, ease: "bounce.inOut" })
-        timeO();
-        
-    },500)
+            clearTimeout(toop)
+            gsap.to(pera.current, { duration: 0.1, opacity: 1, ease: "bounce.inOut" })
+            gsap.to(word.current, { duration: 0.1, opacity: 1, ease: "bounce.inOut" })
+            timeO();
+            
+        },500)
+    })
 
     const data = [
         "We were really impressed with how professional and responsive the team at Astraliva was. They were always there to answer our questions and help us out whenever we needed it. Their expertise in penetration testing helped us identify and address some serious security vulnerabilities --OpusNexus",

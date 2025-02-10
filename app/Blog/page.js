@@ -1,5 +1,4 @@
 import Menu from "../Components/Home/Menu"
-import GetInTouch from "../Components/GetInTouch/GetInTouch"
 import BannerImg from "@/public/image/BlogPage/blogsBannner.png"
 import img1 from "@/public/image/BlogPage/img_1.png"
 import img2 from "@/public/image/BlogPage/img_2.png"
@@ -18,7 +17,6 @@ import Image from "next/image"
 export default function page() {
   return (
     <div>
-      <GetInTouch />
       <Menu />
       <MobileMenu />
 

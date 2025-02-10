@@ -1,6 +1,7 @@
 "use client"
 import BTN_Arrow from "@/public/image/Home_1/BTN_Arrow.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function GetBtn() {
 
@@ -13,11 +14,11 @@ export default function GetBtn() {
 
     return (
 
-        <button onClick={handleOn} className="flex justify-center p-3 px-10 rounded-lg mt-6 items-center bg-white">
+        <Link href={"/Registration"} className="flex justify-center p-3 px-10 w-[250px] rounded-lg mt-6 items-center bg-white">
             Get started
             <span className="ml-2">
                 <Image src={BTN_Arrow} alt="N?A" />
             </span>
-        </button>
+        </Link>
     )
 }

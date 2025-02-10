@@ -91,7 +91,7 @@ export default function HomeSerBox() {
                                     (dbServices[indexs].content).map((Data, index) => {
                                         console.log(indexs);
                                         return (
-                                            <CardS img={Data.img} ids={indexs} heading={Data.heading} key={index} />
+                                            <CardS img={Data.img} ids={indexs} i={index} heading={Data.heading} key={index} />
                                         );
                                     })
                                 }

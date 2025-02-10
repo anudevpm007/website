@@ -16,6 +16,8 @@ export async function POST(request) {
 
         const Cdata = await request.json()
         var EmailC = Cdata.Email
+        console.log(EmailC);
+        
         let emailValid;
         let erro;
         if (EmailC.length !== 0) {

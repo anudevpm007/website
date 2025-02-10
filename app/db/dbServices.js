@@ -57,13 +57,13 @@ const dbServices = [
                 "img": img0,
                 "heading1": "Cloud Security Assessment and",
                 "heading2": "Penetration testing"
-            },
-            {
-                "heading": "Cloud Configuration Review",
-                "img": img1,
-                "heading1": "Cloud Configuration",
-                "heading2": "Review"
             }
+            // {
+            //     "heading": "Cloud Configuration Review",
+            //     "img": img1,
+            //     "heading1": "Cloud Configuration",
+            //     "heading2": "Review"
+            // }
             
         ]
     },
@@ -71,47 +71,52 @@ const dbServices = [
         Main: "IoT Security",
         content: [
             {
-                "heading": "Hardware Security",
+                "heading": "IoT Security Testing",
                 "img": img0,
-                "heading1": "Hardware Security",
-                "heading2": ""
-            },
-            {
-                "heading": "Firmware Security",
-                "img": img1,
-                "heading1": "Firmware Security",
-                "heading2": ""
-            },            
+                "heading1": "IoT Security",
+                "heading2": "Testing"
+            }
+            // {
+            //     "heading": "Firmware Security",
+            //     "img": img1,
+            //     "heading1": "Firmware Security",
+            //     "heading2": ""
+            // },            
         ]
     },
     {
         Main: "Network Security",
         content: [
             {
-                "heading": "Network Security Testing",
+                "heading": "Internal Penetration Testing",
                 "img": img0,
-                "heading1": "Network Security",
+                "heading1": "Internal Penetration",
                 "heading2": "Testing"
             },
             {
-                "heading": "Firewall rule review",
+                "heading": "External Penetration Testing",
                 "img": img1,
-                "heading1": "Firewall rule",
-                "heading2": "Review"
+                "heading1": "External Penetration",
+                "heading2": "Testing"
+            },
+            {
+                "heading": "Segmentation Penetration Testing (SpT)",
+                "img": img2,
+                "heading1": "Segmentation Penetration",
+                "heading2": "Testing"
             },
             {
                 "heading": "Server Configuration Review",
-                "img": img2,
+                "img": img3,
                 "heading1": "Server Configuration",
                 "heading2": "Review"
             },
             {
-                "heading": "Network segmentation testing",
-                "img": img3,
-                "heading1": "Network segmentation",
-                "heading2": "Testing"
+                "heading": "Firewall Rule Review (FRR)",
+                "img": img4,
+                "heading1": "Firewall Rule",
+                "heading2": "Review"
             },
-            
         ]
     }
     

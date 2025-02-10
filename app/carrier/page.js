@@ -25,7 +25,6 @@ export default function carrier() {
 
   return (
     <div className="relative">
-      <GetInTouch />
       <Menu />
       <MobileMenu />
       <div className="py-36">

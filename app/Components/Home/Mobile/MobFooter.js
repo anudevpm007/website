@@ -12,6 +12,7 @@ import FooterSub from "./FooterSub";
 
 
 export default function MobFooter() {
+    
     return (
         <div className="bg-[#185BD8] py-3 flex justify-center">
             <div className="w-[95%]">
