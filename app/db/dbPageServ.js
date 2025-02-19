@@ -1,7 +1,7 @@
 const SerPage = [
     [{
         "heading": "Web Application Security Testing",
-        "WWF": "We specialize in securing business logic, CVE vulnerabilities, and component-based vulnerabilities, setting Astraliva apart from traditional security methods.",
+        "WWF": "We specialize in securing business logic, CVE, and component-based vulnerabilities, setting Astraliva apart from traditional security methods.",
         "Heading1": "Why Web Application Security Matters",
         "H1Pera": "Web application security is crucial for protecting your business from cyber threats. Vulnerabilities in your web app can lead to data breaches, financial loss, and damage to your reputation. By securing your web applications, you safeguard sensitive data, maintain customer trust, and ensure business continuity.",
         "Heading2": "Unlock Limitless Security with Astraliva ",
@@ -41,7 +41,7 @@ const SerPage = [
         "WWF": "We focus on securing API business logic, identifying CVE-related vulnerabilities, and ensuring secure authentication, data transmission, and effective rate limiting. We protect your APIs from common exploits like broken authentication and data exposure, ensuring reliable and secure connections for your users.",
         "Heading1": "Why API Security Matters",
         "H1Pera": "An unsecured API can put your business and users at risk. Vulnerabilities in your API may expose sensitive data, lead to unauthorized access, and harm system integrity. By securing your APIs, you safeguard valuable data, maintain customer trust, and ensure a secure, seamless experience for your users.",
-        "Heading2": "Unlock Limitless Security with Astraliva",
+        "Heading2": "Unlock Limitless Security with Astraliva ",
         "H2Pera": "Our API security testing goes beyond conventional methods, offering a comprehensive, multi-layered strategy that ensures your entire API is well-secured. We specialize in identifying vulnerabilities and mitigating risks such as:",
         "List": [
             {"heading": "Threat Modeling", "Pera": "Identify and assess potential security threats in your API, addressing risks unique to the API architecture, such as unauthorized access, data leakage, and DoS attacks."},
@@ -60,7 +60,7 @@ const SerPage = [
         "WWF": "We focus on securing business logic and identifying CVE vulnerabilities in thick client applications, testing for reverse engineering, tampering, and memory-related risks to ensure your application remains secure.",
         "Heading1": "Why Thick Client Security Matters",
         "H1Pera": "Thick client applications often store sensitive data locally and interact directly with the server, making them a prime target for security breaches. Unsecured thick client applications can expose critical business logic, proprietary information, and user data to attacks such as reverse engineering, tampering, and local storage vulnerabilities. By securing your thick client applications, you ensure that both client-side data and interactions are protected, preventing unauthorized access, data manipulation, and exploits.",
-        "Heading2": "Unlock Limitless Security with Astraliva Thick Client",
+        "Heading2": "Unlock Limitless Security with Astraliva Thick Client ",
         "H2Pera": "Our thick client application security testing offers a comprehensive, multi-layered strategy that ensures your application is thoroughly protected. We specialize in identifying vulnerabilities and mitigating risks such as:",
         "List": [
             {"heading": "Threat Modeling", "Pera": "Assess security risks in thick client applications by identifying potential threats related to local storage, execution environments, and user interactions, ensuring your application’s most vulnerable areas are addressed."},
@@ -79,7 +79,7 @@ const SerPage = [
         "WWF": "We focus on securing card data and PII information, identifying CVE vulnerabilities, and ensuring compliance with industry standards. Our testing includes transaction processes, tampering, skimming protection, and encryption, securing your POS applications from security threats.",
         "Heading1": "Why POS Security Matters",
         "H1Pera": "An unsecured POS system can expose your business and customers to significant risks. Vulnerabilities in your POS application can lead to unauthorized access to payment data, compromise personally identifiable information (PII), and cause transaction errors or fraud. By securing your POS system, you protect sensitive cardholder data, maintain compliance with industry standards, and ensure a trusted, seamless transaction experience for your customers. This strengthens your reputation and helps prevent financial losses, legal consequences, and damage to customer trust.",
-        "Heading2": "Unlock Limitless Security with Astraliva",
+        "Heading2": "Unlock Limitless Security with Astraliva ",
         "H2Pera": "Our POS application security testing takes a comprehensive approach to safeguard your business from security vulnerabilities. We specialize in protecting sensitive payment data and ensuring compliance with industry standards, offering a multi-layered security solution:",
         "List": [
             {"heading": "Threat Modelling", "Pera": "Identify and evaluate potential security risks specific to POS applications, focusing on payment data handling, communication, and transaction processes."},
@@ -98,7 +98,7 @@ const SerPage = [
         "WWF": "We specialize in securing cloud environments, addressing misconfigurations, IAM vulnerabilities, data protection flaws, and microservices vulnerabilities. Our expertise extends to cloud penetration testing, going beyond traditional perimeter security to ensure the integrity and confidentiality of your cloud assets.",
         "Heading1": "Why Cloud Security Matters",
         "H1Pera": "As businesses increasingly rely on cloud infrastructure, securing it becomes critical. Without proper security measures, misconfigurations, weak access controls, and unprotected data can lead to breaches, unauthorized access, and operational disruptions. Attackers can exploit vulnerabilities in cloud services, APIs, and identity management systems, putting sensitive business and customer data at risk. Implementing strong cloud security measures ensures data confidentiality, integrity, and availability while aligning with industry regulations. It helps prevent financial losses, legal issues, and reputational damage, allowing businesses to operate securely and confidently in the cloud.",
-        "Heading2": "Unlock Limitless Security with Astraliva Cloud Security Assessment",
+        "Heading2": "Unlock Limitless Security with Astraliva ",
         "H2Pera": "Our cloud security assessment goes beyond conventional methods by implementing a thorough, multi-layered strategy that ensures the comprehensive protection of your entire cloud infrastructure. We specialize in identifying and mitigating risks related to:",
         "List": [
             { "heading": "Manual & Automated Configuration Review", "Pera": "Evaluate cloud configurations to identify misconfigurations that could lead to security breaches." },
@@ -117,7 +117,7 @@ const SerPage = [
         "WWF": "In a world ruled by random exploits, we stand apart with a research-driven approach, uncovering vulnerabilities through a deep understanding of your IoT device functionality.",
         "Heading1": "Why IoT Security Matters",
         "H1Pera": "IoT devices often lack robust security measures, making them prime targets for attackers. Our expert team of security researchers helps you identify and mitigate vulnerabilities in your embedded devices before malicious actors can exploit them.",
-        "Heading2": "Unlock Limitless Security with Astraliva IoT Device Penetration Testing",
+        "Heading2": "Unlock Limitless Security with Astraliva ",
         "H2Pera": "Our IoT device security testing goes beyond traditional methods by focusing on a comprehensive, multi-layered approach that ensures the protection of your entire IoT ecosystem. We specialize in identifying and mitigating risks related to:",
         "List": [
             { "heading": "Hardware and Firmware Exploitation", "Pera": "Identifying and exploiting security weaknesses in both hardware and firmware, including fuzzing techniques to discover unexpected vulnerabilities." },

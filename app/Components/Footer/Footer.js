@@ -45,22 +45,22 @@ export default function Footer() {
                   Quick Links
                 </li>
                 <li>
-                  <Link href={"/"} className="text-white text-[1.2vw]">
+                  <Link href={"/WhoWeAre"} className="text-white text-[1.2vw]">
                     About us
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"} className="text-white text-[1.2vw]">
+                  <Link href={"/#bodySec"} className="text-white text-[1.2vw]">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"} className="text-white text-[1.2vw]">
+                  <Link href={"/Blog/"} className="text-white text-[1.2vw]">
                     Blogs
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"} className="text-white text-[1.2vw]">
+                  <Link href={"/carrier"} className="text-white text-[1.2vw]">
                     Careers
                   </Link>
                 </li>
@@ -88,32 +88,32 @@ export default function Footer() {
             </div>
             <div>
               <ul className="grid grid-rows-1 gap-8">
-                <li className="text-white h-fit font-medium text-[1.4vw]">Company</li>
+                <li className="text-white h-fit font-medium text-[1.4vw]">Get in  touch</li>
                 <li className="flex justify-start">
                   <div>
                     <Image alt="N?A" src={location} />
                   </div>
-                  <Link href={"/"} className="text-white text-justify ml-4 w-72 text-[1.2vw]">
+                  <p  className="text-white text-justify ml-4 w-72 text-[1.2vw]">
                     NO.2211, 2/1149/I 100, HILITE BUSINESS PARK, Kozhikode-
                     673014, Kerala, India
-                  </Link>
+                  </p>
                 </li>
                 <li className="flex justify-start">
                   <div>
                     <Image alt="N?A" src={Phone} />
                   </div>
-                  <Link href={"/"} className="text-white text-[1.2vw] ml-4">
-                  +91 96454 93245 
-                  </Link>
+                  <p className="text-white text-[1.2vw] ml-4">
+                  +91 9037981682 
+                  </p>
 
                 </li>
                 <li className="flex justify-start">
                   <div>
                     <Image alt="N?A" src={Mail} />
                   </div>
-                  <Link href={"/"} className="text-white text-[1.2vw] ml-4">
+                  <p className="text-white text-[1.2vw] ml-4">
                   info@astraliva.com
-                  </Link>
+                  </p>
                 </li>
               </ul>
             </div>

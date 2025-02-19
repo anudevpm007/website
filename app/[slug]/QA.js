@@ -1,5 +1,5 @@
 "use client";
-
+import parse from "html-react-parser"
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
@@ -46,9 +46,9 @@ export default function QA({Q,A}) {
       </div>
       { QAVisible?
         <div className="flex justify-center mt-3  md:mt-5">
-          <p className="w-[85%] font-body xl:text-[0.9vw] mb-5 lg:text-[1.5vw] md:text-[1.8vw] text-[2.5vw]">
-            {A}
-          </p>
+          <div className="w-[85%] font-body xl:text-[0.9vw] mb-5 lg:text-[1.5vw] md:text-[1.8vw] text-[2.5vw]">
+            {parse(A)}
+          </div>
         </div>
         :null
       }

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import arrow_left from "@/public/image/Home/arrow_left.png";
 import dbServices from "@/app/db/dbServices";
@@ -10,6 +10,9 @@ export default function HomeSerBox() {
 
     var [indexs,setindex] = useState(0)
 
+    useEffect(()=>{
+        
+    })
 
     const rightInc = () => {
         if(indexs<3){
@@ -66,7 +69,7 @@ export default function HomeSerBox() {
                                     dbServices[indexs].Main
                                 }
                             </h1>
-                            <p className="mt-14 text-white leading-[38px] text-justify">
+                            <p className="mt-14 text-white leading-[38px] tracking-tight text-justify">
                                 Our experts deliver advanced application security testing,
                                 identifying critical vulnerabilities like CVEs and business
                                 logic flaws to protect your application and protect your

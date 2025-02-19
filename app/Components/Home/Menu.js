@@ -38,7 +38,7 @@ export default function Menu() {
                 }>What we do</Link></div>
                 <div className="flex font-body items-center"><Link className="opacity-75 md:text-[1.4vw] lg:text-[1.2vw] xl:text-[1.1vw] hover:text-[#185BD8]" href={"/Blog"}>Resources</Link></div>
                 {/* <div className="flex font-body items-center"><Link className="opacity-75 md:text-[1.4vw] lg:text-[1.2vw] xl:text-[1.1vw] hover:text-[#185BD8]" href={"/"}>Events</Link></div> */}
-                <div className="flex font-body items-center"><Link className="opacity-75 md:text-[1.4vw] lg:text-[1.2vw] xl:text-[1.1vw] hover:text-[#185BD8]" href={"/carrier"}>Careers</Link></div>
+                <div className="flex font-body items-center"><Link className="opacity-75 md:text-[1.4vw] lg:text-[1.2vw] xl:text-[1.1vw] hover:text-[#185BD8]" href={"/Careers"}>Careers</Link></div>
                 {/* <button className="bg-[#185BD8] py-3 px-14 hover:px-16 duration-150 rounded-full md:text-[1.4vw] text-white font-body" onClick={handleOn}>Get in Touch</button> */}
                 <Link className="bg-[#185BD8] py-3 px-14 hover:px-16 duration-150 rounded-full md:text-[1.4vw] text-white font-body" href={"/Registration"}>Get in Touch</Link>
             </div>

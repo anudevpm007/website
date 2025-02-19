@@ -9,6 +9,7 @@ import EventSym from "@/public/image/Home_1/EventSymbol.png";
 import EventBg from "@/public/image/Home_1/EventBG.png";
 import Footer from "../Footer/Footer";
 import BlogSlider from "./blogSlider";
+import Link from "next/link";
 
 
 function handleOn() {
@@ -22,7 +23,7 @@ export default function HomeBottom() {
   return (
     <div>
       
-      <div className="scrollSettings animate-fade flex justify-center mt-24">
+      {/* <div className=" scrollSettings animate-fade flex justify-center mt-24">
         <div className="w-[85%] rounded-3xl grid gap-16 grid-cols-2 bg-[#E1E1E1]">
           <Image src={Event_img} alt="N/A" />
           <div className="py-[60px] relative">
@@ -48,15 +49,15 @@ export default function HomeBottom() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-end w-[90%] mt-10">
+      </div> */}
+      {/* <div className="flex justify-end w-[90%] mt-10">
         <button className=" bg-white p-1 ml-1 rounded-md border-[#00000080] border-[1px] flex justify-center items-center">
           <Image src={Left_BT} alt="Botton" />
         </button>
         <button className="bg-[#185BD8] p-1 ml-1 rounded-md flex justify-center items-center">
           <Image src={Right_BT} alt="Botton" />
         </button>
-      </div>
+      </div> */}
       <div className="flex justify-center relative bg-transparent mt-28">
         <Image className="absolute object-fill -z-10" src={EventBg} alt="N?A" />
         <Image
@@ -73,12 +74,12 @@ export default function HomeBottom() {
             <br />
             and explore our specialized solutions.
           </div>
-          <button onClick={handleOn} className="flex justify-center p-3 px-10 rounded-lg mt-6 items-center bg-white">
+          <Link href={"/Registration"} className="hover:w-[220px] duration-150 w-[200px] flex justify-center p-3 px-10 rounded-lg mt-6 items-center bg-white">
             Get started
             <span className="ml-2">
               <Image src={BTN_Arrow} alt="N?A" />
             </span>
-          </button>
+          </Link>
         </div>
       </div>
       <div className="mt-52 flex justify-center">

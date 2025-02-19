@@ -14,7 +14,7 @@ export default function SubIN() {
 
         var data = { Email: email }
 
-        axios.post(process.env.BASE_URL+"/api/Registration", data).then((res) => {
+        axios.post("/api/Registration", data).then((res) => {
             console.log((res.data.error));
             if ((res.data.error) === 200) {
                 document.getElementById("MSG").style.color = "green"

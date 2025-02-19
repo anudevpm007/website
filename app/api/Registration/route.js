@@ -1,6 +1,6 @@
 import mysql from "mysql2/promise"
 import { NextResponse } from "next/server";
-import whiteDom from "./whiteList";
+import whiteDom from "../GetInTouch/whiteList";
 
 
 const connection = await mysql.createConnection({
@@ -22,7 +22,7 @@ export async function POST(request) {
         let erro;
         if (EmailC.length !== 0) {
 
-            var sql2 = "select Email from ClientReg;"
+            var sql2 = "select Email from "+process.env.TABLE_2_NAME+";"
 
             const [results, fields] = await connection.query(sql2)
 
@@ -93,7 +93,7 @@ export async function POST(request) {
             }
 
             if (emailValid) {
-                var sql = "INSERT INTO `ClientReg` ( `Email`) VALUES('" + Cdata.Email + "'); "
+                var sql = "INSERT INTO `"+process.env.TABLE_2_NAME+"` ( `Email`) VALUES('" + Cdata.Email + "'); "
                 const [results, fields] = await connection.query(sql)
                 Status = "Your Action Updated"
             }

@@ -96,7 +96,7 @@ export default function MobileMenu() {
                         <div className="flex text-[4.2vw] sm:text-[3.5vw] md:text-[2.8vw] lg:text-[2.5vw] font-body items-center"><Link className="opacity-75  hover:text-[#185BD8] duration-150 hover:ml-1" href={"/?info=false"}>What we do</Link></div>
                         <div className="flex text-[4.2vw] sm:text-[3.5vw] md:text-[2.8vw] lg:text-[2.5vw] font-body items-center"><Link className="opacity-75  hover:text-[#185BD8] duration-150 hover:ml-1" href={"/Blog"}>Resources</Link></div>
                         {/* <div className="flex text-[4.2vw] sm:text-[3.5vw] md:text-[2.8vw] lg:text-[2.5vw] font-body items-center"><Link className="opacity-75  hover:text-[#185BD8] duration-150 hover:ml-1" href={"/"}>Events</Link></div> */}
-                        <div className="flex text-[4.2vw] sm:text-[3.5vw] md:text-[2.8vw] lg:text-[2.5vw] font-body items-center"><Link className="opacity-75  hover:text-[#185BD8] duration-150 hover:ml-1" href={"/carrier"}>Careers</Link></div>
+                        <div className="flex text-[4.2vw] sm:text-[3.5vw] md:text-[2.8vw] lg:text-[2.5vw] font-body items-center"><Link className="opacity-75  hover:text-[#185BD8] duration-150 hover:ml-1" href={"/Careers"}>Careers</Link></div>
 
                         <div>
                             <Link href={"/Registration"} className="bg-[#185BD8] text-[4.2vw] sm:text-[3.5vw] md:text-[2.8vw] lg:text-[2.5vw] flex justify-start py-3 px-14 hover:px-16 duration-150 rounded-full text-white font-body">Get in Touch</Link>

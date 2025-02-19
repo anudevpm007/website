@@ -2,7 +2,7 @@
 
 import Card from "../Card/Card";
 import { useRef,useEffect } from "react";
-import img1 from "@/public/image/Blog_images/img_1.png";
+import BlogDataCard from "@/app/db/DBCardData";
 import img2 from "@/public/image/Blog_images/img_2.png";
 import img3 from "@/public/image/Blog_images/img_3.png";
 
@@ -30,12 +30,13 @@ export default function BlogSlider() {
         id="Blog_SlideBar"
         className=" w-[95%] mb-5 grid gap-5  grid-flow-col scrollbar-hide scroll-smooth overflow-scroll"
       >
-        <Card image={img1}/>
-        <Card image={img2}/>
-        <Card image={img3}/>
-        <Card image={img2}/>
-    
-        
+        {
+          BlogDataCard.map((data ,index)=>{
+            return(
+              <Card key={index} index={index} heading={data.Heading} pera={data.pera} image={data.img}/>
+            )
+          })
+        }
       </div>
     </div>
   );

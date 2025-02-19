@@ -22,21 +22,15 @@ function handleOn() {
   document.getElementById("bodySec").style.display = "none";
   document.getElementById("InputSec").style.display = "block";
   console.log("Hello");
-
 }
 
-
-
-
-
-export default async function Home({searchParams}) {
+export default async function Home({ searchParams }) {
   var info = await searchParams;
-  
-  if(info.info === "true"){
-    
-    redirect("/#bodySec")
-  }else if(info.info === "false"){
-    redirect("/#bodySec1")
+
+  if (info.info === "true") {
+    redirect("/#bodySec");
+  } else if (info.info === "false") {
+    redirect("/#bodySec1");
   }
   return (
     <div className="over relative">
@@ -47,15 +41,25 @@ export default async function Home({searchParams}) {
         <div className="relative h-[100%]">
           <div className="absolute top-[20%]">
             <div className="grid grid-cols-10 gap-2">
-              <div className="flex justify-end items-center text-[2.5vw] col-span-4 font-body">Next-Generation </div>
-              <div className="font-heading text-[5vw] col-span-6 text-[#0858ED]">CYBER SECURITY</div>
+              <div className="flex justify-end items-center text-[2.5vw] col-span-4 font-body">
+                Next-Generation{" "}
+              </div>
+              <div className="font-heading text-[5vw] col-span-6 text-[#0858ED]">
+                CYBER SECURITY
+              </div>
             </div>
             <div className="flex justify-center text-[2.5vw] font-body">
               Solutions For Your Business
             </div>
             <div className="flex justify-center mt-5">
               <p className="text-center w-[80%]">
-                Astraliva delivers next-generation cybersecurity solutions through customized strategies and research-oriented approach. We protect your entire digital ecosystem, from your core network to cloud infrastructure and all connected devices with proactive threat intelligence and robust security measures. Empower your business with the confidence to focus on achieving your core objectives. Explore our solutions.
+                Astraliva delivers next-generation cybersecurity solutions
+                through customized strategies and research-oriented approach. We
+                protect your entire digital ecosystem, from your core network to
+                cloud infrastructure and all connected devices with proactive
+                threat intelligence and robust security measures. Empower your
+                business with the confidence to focus on achieving your core
+                objectives. Explore our solutions.
               </p>
             </div>
             <ExpoBtn />
@@ -71,8 +75,9 @@ export default async function Home({searchParams}) {
                 Stands Outs
               </div>
               <div className="text-[1.2vw] scrollSettings animate-fade_left mt-5">
-                Astraliva delivers comprehensive cybersecurity solutions designed
-                for your unique needs and customized to perfectly fit your business.
+                Astraliva delivers comprehensive cybersecurity solutions
+                designed for your unique needs and customized to perfectly
+                fit your business.
               </div>
               <div className="scrollSettings animate-fade grid gap-10 2xl:grid-cols-3 grid-cols-2 mt-20 ">
                 <div className="flex justify-center">
@@ -85,10 +90,13 @@ export default async function Home({searchParams}) {
                     <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
                       <Image className="w-10" src={img0_0} alt="Nothing" />
                     </div>
-                    <div className="text-[1.5vw] mb-5">To Your Business Needs</div>
+                    <div className="text-[1.5vw] mb-5">
+                      To Your Business Needs
+                    </div>
                     <p>
-                      We understand your specific security challenges and customize
-                      our testing approach to fit your business perfectly
+                      We understand your specific security challenges and
+                      customize our testing approach to fit your business
+                      perfectly
                     </p>
                   </div>
                 </div>
@@ -104,8 +112,8 @@ export default async function Home({searchParams}) {
                   <div className="text-[1.5vw] mb-5">Expert Security Teams</div>
                   <p>
                     Our team of experience cybersecurity professionals combines
-                    years of expertise with the latest industry insights to ensure
-                    your application remains secure
+                    years of expertise with the latest industry insights to
+                    ensure your application remains secure
                   </p>
                 </div>
                 <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
@@ -119,9 +127,10 @@ export default async function Home({searchParams}) {
                   </div>
                   <div className="text-[1.5vw] mb-5">Next Gen Security</div>
                   <p>
-                    Our security professionals use advanced techniques and thorough
-                    research to uncover hidden vulnerabilities, including CVEs,
-                    business logic flaws, and sophisticated attack strategies
+                    Our security professionals use advanced techniques and
+                    thorough research to uncover hidden vulnerabilities,
+                    including CVEs, business logic flaws, and sophisticated
+                    attack strategies
                   </p>
                 </div>
                 <div className="flex justify-center">
@@ -134,10 +143,13 @@ export default async function Home({searchParams}) {
                     <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
                       <Image className="w-10" src={img0_3} alt="Nothing" />
                     </div>
-                    <div className="text-[1.5vw] mb-5">To Your Business Needs</div>
+                    <div className="text-[1.5vw] mb-5">
+                      Achieving Compliance
+                    </div>
                     <p>
-                      We understand your specific security challenges and customize
-                      our testing approach to fit your business perfectly
+                      Astraliva helps you meet key industry standards like
+                      GDPR,PCI-DSS,and HIPAA ensuring your app stays compliant
+                      and avoids costly fines
                     </p>
                   </div>
                 </div>
@@ -150,11 +162,11 @@ export default async function Home({searchParams}) {
                   <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
                     <Image className="w-10" src={img0_4} alt="Nothing" />
                   </div>
-                  <div className="text-[1.5vw] mb-5">Expert Security Teams</div>
+                  <div className="text-[1.5vw] mb-5">Risk Mitigation</div>
                   <p>
-                    Our team of experience cybersecurity professionals combines
-                    years of expertise with the latest industry insights to ensure
-                    your application remains secure
+                    We don’t just identify vulnerabilities we collaborate with
+                    you to implement strategies that prevent future threats and
+                    strengthen your overall security
                   </p>
                 </div>
                 <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
@@ -166,11 +178,13 @@ export default async function Home({searchParams}) {
                   <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
                     <Image className="w-10" src={img0_5} alt="Nothing" />
                   </div>
-                  <div className="text-[1.5vw] mb-5">Next Gen Security</div>
+                  <div className="text-[1.5vw] mb-5">
+                    Clear Actionable Reporting
+                  </div>
                   <p>
-                    Our security professionals use advanced techniques and thorough
-                    research to uncover hidden vulnerabilities, including CVEs,
-                    business logic flaws, and sophisticated attack strategies
+                    Recive clear detailed reports with our observation and
+                    customized recommendations on fixing vulnerabilities making
+                    it easy to understand and act upon
                   </p>
                 </div>
               </div>
@@ -179,17 +193,18 @@ export default async function Home({searchParams}) {
           <CounterSec />
           <Peragraph />
 
-          <div className="scrollSettings animate-fade w-[100%] flex justify-center">
+          {/* <div className="scrollSettings animate-fade w-[100%] flex justify-center">
             <div className="w-[85%]">
               <div className="text-[1.8vw] mb-4 mt-28">
-                Astraliva Security <span className="text-[#185BD8]">Summits & Webinars</span>
+                Astraliva Security{" "}
+                <span className="text-[#185BD8]">Summits & Webinars</span>
               </div>
               <div className="text-[1.2vw]">
-                Join the Astraliva community. Learn, connect, and grow with industry
-                leaders at our Security Summits & Webinars.
+                Join the Astraliva community. Learn, connect, and grow with
+                industry leaders at our Security Summits & Webinars.
               </div>
             </div>
-          </div>
+          </div> */}
           <HomeBottom />
         </div>
       </div>

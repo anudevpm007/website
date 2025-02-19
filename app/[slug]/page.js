@@ -62,6 +62,14 @@ export default async function page({ searchParams }) {
     notFound();
   }
 
+  const Heading1= () =>{
+    if(id<3){
+      return(
+        <span className="text-[#185BD8] font-heading">{(dbServices[id].content)[i].heading}</span>
+      )
+    }
+  }
+
   
   if (ref === 1) {
     return (
@@ -114,18 +122,18 @@ export default async function page({ searchParams }) {
           </div>
           <div className="flex justify-center mt-20">
             <div className="w-[85%]">
-              <div className="xl:text-[3vw] text-[3.2vw]  font-body">
+              <div className="xl:text-[3vw] text-wrap text-[3.2vw]  font-body">
                 {
                   SerPage[id][i].Heading2
                 }
-                <span className="text-[#185BD8] font-heading">{(dbServices[id].content)[i].heading1}</span>
+                <Heading1/>
               </div>
-              <div className="text-[#185BD8] xl:text-[3vw] text-[3.2vw] font-heading">
+              {/* <div className="text-[#185BD8] xl:text-[3vw] text-[3.2vw] font-heading">
                 {(dbServices[id].content)[i].heading2}
-              </div>
+              </div> */}
               <p className="mt-5 xl:text-[1.1vw] text-[2.1vw]">
                 {
-                  SerPage[0][0].H2Pera
+                  SerPage[id][i].H2Pera
                 }
               </p>
               <div className="mt-10 mb-10">
@@ -191,8 +199,8 @@ export default async function page({ searchParams }) {
               <div className="md:w-[85%] w-[95%] ">
                 <div className="text-[3.5vw] md:text-[3vw] lg:text-[2.5vw] mt-10 mb-20 font-body">
                   Why Choose
-                  <span className="font-heading text-[#185BD8]">Astraliva</span> for
-                  Your App's Security
+                  <span className="font-heading text-[#185BD8]"> Astraliva</span> for
+                  Your services Security
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 xl:gap-8 mt-10 mb-16">
                   <div className="md:px-10 px-3 md:py-8 lg:py-10 py-6 rounded-xl border-[#BBBBBB] border-[0.5px] shadow-[5px_6px_5px_1px_rgba(0,0,0,0.18)]">
@@ -263,7 +271,7 @@ export default async function page({ searchParams }) {
               <div className="flex justify-center">
                 <div className="md:w-[95%] w-[100%]">
                   {
-                    QAdb.map((data, index) => {
+                    QAdb[id].map((data, index) => {
                       return (
                         <QA Q={data.Q} A={data.A} key={data.id} />
                       )
