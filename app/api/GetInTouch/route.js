@@ -6,6 +6,7 @@ const connection = await mysql.createConnection({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_USER,
   database: process.env.DATABASE_NAME,
+  database: process.env.DATABASE_PASSWORD,
 });
 
 var error = "";
@@ -47,28 +48,39 @@ export async function POST(request) {
         if (count === 0) {
           try {
             console.log("Hello world");
-            
-            const [result, field] = await connection.query("SELECT Phone, Email FROM registration;");
-            console.log("from Db",result);
-            var Ecount = 0
-            var Pcount = 0
-            result.map((data,index)=>{
-              if(data.Email===email){
+
+            const [result, field] = await connection.query(
+              "SELECT Phone, Email FROM registration;"
+            );
+            console.log("from Db", result);
+            var Ecount = 0;
+            var Pcount = 0;
+            result.map((data, index) => {
+              if (data.Email === email) {
                 Ecount = Ecount + 1;
               }
-              if(data.Phone == phone){
+              if (data.Phone == phone) {
                 Pcount = Pcount + 1;
               }
-            })
+            });
 
-            console.log("Phone: ",Pcount,"Email: ",Ecount);
-            
+            console.log("Phone: ", Pcount, "Email: ", Ecount);
 
-            if(Ecount== 0 && Pcount == 0){
-              
+            if (Ecount == 0 && Pcount == 0) {
               console.log(error);
               try {
-                var Insert_SQL = "INSERT INTO `registration` ( `Name`, `Email`, `Phone`, `Company`, `Discreption`) VALUES ( '"+ClientData[0]+"', '"+ClientData[1]+"', '"+ClientData[2]+"', '"+ClientData[3]+"', '"+ClientData[4]+"');"
+                var Insert_SQL =
+                  "INSERT INTO `registration` ( `Name`, `Email`, `Phone`, `Company`, `Discreption`) VALUES ( '" +
+                  ClientData[0] +
+                  "', '" +
+                  ClientData[1] +
+                  "', '" +
+                  ClientData[2] +
+                  "', '" +
+                  ClientData[3] +
+                  "', '" +
+                  ClientData[4] +
+                  "');";
                 const [result, field] = await connection.query(Insert_SQL);
                 console.log(result);
                 error = "You are action update";
@@ -77,23 +89,20 @@ export async function POST(request) {
                 error = "Something breaking the process";
                 E = "C";
               }
-              
-            }else if(Ecount !== 0){
-              if(Pcount !== 0){
+            } else if (Ecount !== 0) {
+              if (Pcount !== 0) {
                 error = "The entered Phone number and Email are already used";
                 E = "EP";
-              }else{
+              } else {
                 error = "The entered Email is already used";
                 E = "E";
               }
-            }else if(Pcount !== 0){
+            } else if (Pcount !== 0) {
               error = "The entered Phone number is already used";
               E = "P";
             }
-            
           } catch (error) {
             console.log(error);
-            
           }
         } else {
           error = "This email is not acceptable";
