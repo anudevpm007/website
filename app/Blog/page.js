@@ -16,19 +16,19 @@ const Card = ({ image, heading, pera, date, index }) => {
       <Image src={image} alt="Image1" className="w-[100%] rounded-t-2xl" />
       <div className="flex justify-center items-center flex-col mt-5">
         <div className="w-[95%] flex justify-between">
-          <div className="text-[2.4vw] md:text-[2vw] w-[60%] xl:text-[1vw] font-body">
+          <div className="text-[2.4vw] md:text-[2vw] w-[60%] lg:text-[1.3vw] font-body">
             {heading}
           </div>
-          <div className="text-[2.4vw] md:text-[2vw] xl:text-[1.1vw] font-body">
+          <div className="text-[2.4vw] md:text-[2vw] lg:text-[1.1vw] font-body">
             {date}
           </div>
         </div>
-        <div className="w-[95%] mt-10">
-          <p className="xl:text-[1.2vw] md:text-[1.9vw] text-[2.8vw]  font-body text-justify">
+        <div className="w-[95%] mt-8">
+          <p className="lg:text-[1.1vw] md:text-[1.9vw] text-[2.8vw]  font-body text-justify">
             {pera}
           </p>
         </div>
-        <div className="w-[95%] flex justify-end mt-10">
+        <div className="w-[95%] flex justify-end mt-6">
           <Link
             href={{
               pathname: "/Blog/" + heading,
@@ -36,7 +36,7 @@ const Card = ({ image, heading, pera, date, index }) => {
                 Index: index,
               },
             }}
-            className="bg-[#185BD8] text-white rounded-md px-8 py-2 text-[1.7vw] xl:text-[1vw]"
+            className="bg-[#185BD8] text-white rounded-md px-8 py-2 text-[1.7vw] lg:text-[1vw]"
           >
             Read More
           </Link>
@@ -48,23 +48,23 @@ const Card = ({ image, heading, pera, date, index }) => {
 
 const SmallCard = ({image,heading,pera,index}) => {
   return (
-    <div  className="flex flex-col xl:flex-row  mb-14 xl:mb-5">
-      <div className="flex items-center justify-start">
+    <div  className="flex flex-col lg:grid-cols-3 lg:grid gap-5 mb-14 lg:mb-5">
+      <div className="flex items-center justify-start xl:grid  xl:col-span-1">
         <Image
           src={image}
           alt="Image 2"
-          className="xl:w-[12.5vw] md:w-1/2 w-3/4 rounded-xl"
+          width={300}
         />
       </div>
-      <div className="xl:ml-5">
-        <h1 className=" font-heading text-[3vw] lg:text-[2vw] xl:text-[1.6vw] mt-2">
+      <div className="lg:grid lg:col-span-2">
+        <h1 className=" font-heading text-[3vw] md:text-[2vw] lg:text-[1.2vw] mt-2">
           {heading}
         </h1>
-        <p className=" font-body w-[80%] xl:w-full xl:text-[1vw] text-[1.8vw] mt-5">
+        <p className=" font-body w-[80%] lg:w-full lg:text-[0.8vw] text-[1.8vw] mt-5">
           {pera}
         </p>
         <div className="flex justify-center">
-          <div className="flex justify-start xl:justify-end xl:w-[70%] w-[100%] mt-5 xl:mt-0">
+          <div className="flex justify-start lg:justify-end lg:w-[90%] w-[100%] mt-5 xl:mt-0">
             <Link
               href={{
                 pathname: "/Blog/" + heading,
@@ -72,7 +72,7 @@ const SmallCard = ({image,heading,pera,index}) => {
                   Index: index,
                 },
               }}
-              className="bg-[#185BD8] text-white rounded-md px-8 py-2 text-[1.7vw] xl:text-[1vw]"
+              className="bg-[#185BD8] text-white lg:mt-1 rounded-md px-8 py-1 text-[2.6vw] lg:text-[1vw]"
             >
               Read More
             </Link>
@@ -97,7 +97,7 @@ export default function page() {
             alt="Blog Banner"
           />
           <div className="relative bg  xl:absolute bottom-[40%] flex justify-center">
-            <div className="w-[85%]">
+            <div className="w-[90%]">
               <h1 className=" text-[5vw] md:text-[4vw] lg:text-[3.2vw] font-body">
                 Stay Tuned For Our Next{" "}
                 <span className="font-heading text-[#0858ED]">Blog !!</span>
@@ -113,7 +113,7 @@ export default function page() {
           </div>
         </div>
         <div className="flex justify-center bg-[#F1F5F7] py-16">
-          <div className="w-[85%]">
+          <div className="w-[90%]">
             <h1 className="font-heading text-[5vw] md:text-[4vw] lg:text-[3vw] mt-10">
               Trending blogs
             </h1>
@@ -124,7 +124,7 @@ export default function page() {
               critical vulnerabilities, these blogs are packed with valuable
               insights to help you enhance your security strategy.
             </p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 mt-10 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-12">
               <div className=" ">
                 {BlogDataCard.map((data, index) => {
                   if (BlogDataCard.length - 1 === index) {
@@ -142,7 +142,7 @@ export default function page() {
                 })}
               </div>
               <div>
-                <div className="grid grid-cols-2 xl:grid-cols-1 ">
+                <div className="grid grid-cols-2 lg:gap-0 gap-8 lg:grid-cols-1 ">
                   {
                     BlogDataCard.map((data,index)=>{
                       if(BlogDataCard.length - 1 === index){
@@ -155,90 +155,7 @@ export default function page() {
                       }
                     })
                   }
-                  {/* <div className="flex flex-col xl:flex-row  mb-14 xl:mb-5">
-                    <div className="flex items-center justify-start">
-                      <Image
-                        src={img3}
-                        alt="Image 2"
-                        className="xl:w-[12.5vw] md:w-1/2 w-3/4 rounded-xl"
-                      />
-                    </div>
-                    <div className="xl:ml-5">
-                      <h1 className=" font-heading text-[3vw] lg:text-[2vw] xl:text-[1.6vw] mt-2">
-                        GPT-3 and Open AI is the future.{" "}
-                      </h1>
-                      <p className=" font-body w-[80%] xl:w-full xl:text-[1vw] text-[1.8vw] mt-5">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </p>
-                      <div className="flex justify-center">
-                        <div className="flex justify-start xl:justify-end xl:w-[70%] w-[100%] mt-5 xl:mt-0">
-                          <Link
-                            href={"/"}
-                            className="bg-[#185BD8] text-white rounded-md px-8 py-2 text-[1.7vw] xl:text-[1vw]"
-                          >
-                            Read More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
-                  {/* <div className="flex flex-col xl:flex-row mb-14 xl:mb-5">
-                    <div className="flex items-center justify-start">
-                      <Image
-                        src={img4}
-                        alt="Image 2"
-                        className="xl:w-[12.5vw] md:w-1/2 w-3/4 rounded-xl"
-                      />
-                    </div>
-                    <div className="xl:ml-5">
-                      <h1 className=" font-heading text-[3vw] lg:text-[2vw] xl:text-[1.6vw] mt-2">
-                        GPT-3 and Open AI is the future.{" "}
-                      </h1>
-                      <p className=" font-body w-[80%] xl:w-full xl:text-[1vw] text-[1.8vw] mt-5">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </p>
-                      <div className="flex justify-center">
-                        <div className="flex justify-start xl:justify-end xl:w-[70%] w-[100%] mt-5 xl:mt-0">
-                          <Link
-                            href={"/"}
-                            className="bg-[#185BD8] text-white rounded-md px-8 py-2 text-[1.7vw] xl:text-[1vw]"
-                          >
-                            Read More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
-                  {/* <div className="flex flex-col xl:flex-row  mb-14 xl:mb-5">
-                    <div className="flex items-center justify-start">
-                      <Image
-                        src={img5}
-                        alt="Image 2"
-                        className="xl:w-[12.5vw] md:w-1/2 w-3/4 rounded-xl"
-                      />
-                    </div>
-                    <div className="xl:ml-5">
-                      <h1 className=" font-heading text-[3vw] lg:text-[2vw] xl:text-[1.6vw] mt-2">
-                        GPT-3 and Open AI is the future.{" "}
-                      </h1>
-                      <p className=" font-body w-[80%] xl:w-full xl:text-[1vw] text-[1.8vw] mt-5">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </p>
-                      <div className="flex justify-center">
-                        <div className="flex justify-start xl:justify-end xl:w-[70%] w-[100%] mt-5 xl:mt-0">
-                          <Link
-                            href={"/"}
-                            className="bg-[#185BD8] text-white rounded-md px-8 py-2 text-[1.7vw] xl:text-[1vw]"
-                          >
-                            Read More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
+                 
                 </div>
               </div>
             </div>

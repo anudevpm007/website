@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Bimg1 from "@/public/image/Blog_images/img_1.png";
-import Bimg2 from "@/public/image/Blog_images/img_2.png";
-import Bimg3 from "@/public/image/Blog_images/img_3.png";
+
 import BlogDataCard from "@/app/db/DBCardData";
 import Link from "next/link";
 
@@ -9,7 +7,7 @@ import Link from "next/link";
 const MobCard = ({heading, pera, image , index }) => {
     return (
         <div className="w-[400px] md:w-[600px] lg:w-[800px]  border-[#0000006b] border-[2px] rounded-2xl md:rounded-3xl lg:rounded-[40px] ">
-            <Image src={Bimg1} alt="IMage 1 Blog" className="w-full" />
+            <Image src={image} alt="IMage 1 Blog" className="w-full" />
             <div className="p-5 md:p-10">
                 <h1 className="text-[5vw] md:text-[5.4vw] lg:text-[4.8vw] font-heading ">{heading}</h1>
                 <p className="mb-12 font-body text-[3vw] md:text-[2.8vw] lg:text-[2.3vw] text-justify">{pera}</p>

@@ -70,10 +70,9 @@ export default function HomeSerBox() {
                                 }
                             </h1>
                             <p className="mt-14 text-white leading-[38px] tracking-tight text-justify">
-                                Our experts deliver advanced application security testing,
-                                identifying critical vulnerabilities like CVEs and business
-                                logic flaws to protect your application and protect your
-                                brand's reputation
+                                {
+                                    dbServices[indexs].pera
+                                }
                             </p>
                             <div className="flex justify-end mt-10">
                                 <div className="flex justify-center w-fit">

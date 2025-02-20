@@ -3,8 +3,6 @@
 import Card from "../Card/Card";
 import { useRef,useEffect } from "react";
 import BlogDataCard from "@/app/db/DBCardData";
-import img2 from "@/public/image/Blog_images/img_2.png";
-import img3 from "@/public/image/Blog_images/img_3.png";
 
 export default function BlogSlider() {
   // var ScrollingContainer = document.getElementById("Blog_SlideBar");

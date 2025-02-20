@@ -111,8 +111,42 @@ const SerPage = [
             { "heading": "Cloud Penetration Testing", "Pera": "Simulate real-world attack scenarios to uncover vulnerabilities and strengthen cloud defences." },
             { "heading": "Comprehensive Cloud Security Testing", "Pera": "Cover major cloud platforms, including AWS, Azure, and GCP, ensuring a secure cloud infrastructure." }
         ]
+    },{
+        "heading": "Cloud Security Assessment and Penetration Testing",
+        "WWF": "We specialize in securing cloud environments, addressing misconfigurations, IAM vulnerabilities, data protection flaws, and microservices vulnerabilities. Our expertise extends to cloud penetration testing, going beyond traditional perimeter security to ensure the integrity and confidentiality of your cloud assets.",
+        "Heading1": "Why Cloud Security Matters",
+        "H1Pera": "As businesses increasingly rely on cloud infrastructure, securing it becomes critical. Without proper security measures, misconfigurations, weak access controls, and unprotected data can lead to breaches, unauthorized access, and operational disruptions. Attackers can exploit vulnerabilities in cloud services, APIs, and identity management systems, putting sensitive business and customer data at risk. Implementing strong cloud security measures ensures data confidentiality, integrity, and availability while aligning with industry regulations. It helps prevent financial losses, legal issues, and reputational damage, allowing businesses to operate securely and confidently in the cloud.",
+        "Heading2": "Unlock Limitless Security with Astraliva ",
+        "H2Pera": "Our cloud security assessment goes beyond conventional methods by implementing a thorough, multi-layered strategy that ensures the comprehensive protection of your entire cloud infrastructure. We specialize in identifying and mitigating risks related to:",
+        "List": [
+            { "heading": "Manual & Automated Configuration Review", "Pera": "Evaluate cloud configurations to identify misconfigurations that could lead to security breaches." },
+            { "heading": "IAM Security & Access Controls", "Pera": "Ensure proper identity and access management policies to prevent unauthorized access and privilege escalation." },
+            { "heading": "CIS Benchmark", "Pera": "Align cloud security settings with industry-leading CIS Benchmarks for optimal security posture." },
+            { "heading": "Custom Checklist", "Pera": "Develop security checklists tailored to your cloud environment, ensuring comprehensive protection aligned with your business requirements." },
+            { "heading": "Data Security & Encryption", "Pera": "Assess data storage, encryption mechanisms, and key management practices to safeguard sensitive information." },
+            { "heading": "Network Security", "Pera": "Analyze network configurations, firewall rules, and segmentation to prevent unauthorized access and lateral movement." },
+            { "heading": "Compliance & Governance", "Pera": "Ensure adherence to regulatory requirements such as GDPR, PCI DSS, ISO, and more." },
+            { "heading": "Cloud Penetration Testing", "Pera": "Simulate real-world attack scenarios to uncover vulnerabilities and strengthen cloud defences." },
+            { "heading": "Comprehensive Cloud Security Testing", "Pera": "Cover major cloud platforms, including AWS, Azure, and GCP, ensuring a secure cloud infrastructure." }
+        ]
     }],
     [{
+        "heading": "IoT Security Testing",
+        "WWF": "In a world ruled by random exploits, we stand apart with a research-driven approach, uncovering vulnerabilities through a deep understanding of your IoT device functionality.",
+        "Heading1": "Why IoT Security Matters",
+        "H1Pera": "IoT devices often lack robust security measures, making them prime targets for attackers. Our expert team of security researchers helps you identify and mitigate vulnerabilities in your embedded devices before malicious actors can exploit them.",
+        "Heading2": "Unlock Limitless Security with Astraliva ",
+        "H2Pera": "Our IoT device security testing goes beyond traditional methods by focusing on a comprehensive, multi-layered approach that ensures the protection of your entire IoT ecosystem. We specialize in identifying and mitigating risks related to:",
+        "List": [
+            { "heading": "Hardware and Firmware Exploitation", "Pera": "Identifying and exploiting security weaknesses in both hardware and firmware, including fuzzing techniques to discover unexpected vulnerabilities." },
+            { "heading": "Low-Level Vulnerability Assessment", "Pera": "Performing in-depth analysis of low-level vulnerabilities within device firmware, utilizing custom in-house tooling for more precise and effective testing." },
+            { "heading": "Black-Box and White-Box Testing", "Pera": "Employing both black-box and white-box testing methodologies, including fuzzing, for exhaustive evaluation of all firmware components." },
+            { "heading": "Automotive Industry Security", "Pera": "Securing automotive systems, including infotainment and charge point stations, to ensure safety and privacy." },
+            { "heading": "AI/IoT Research for Automation", "Pera": "Conducting cutting-edge research in AI and IoT to drive automation and identify security vulnerabilities in emerging technologies." },
+            { "heading": "IoT Ecosystem Security", "Pera": "Analyzing related components, including mobile applications, web applications, and cloud services, for potential security issues that impact the IoT ecosystem." },
+            { "heading": "Detailed Reporting and Recommendations", "Pera": "Providing comprehensive reports on identified vulnerabilities along with actionable recommendations for remediation." }
+        ]
+    },{
         "heading": "IoT Security Testing",
         "WWF": "In a world ruled by random exploits, we stand apart with a research-driven approach, uncovering vulnerabilities through a deep understanding of your IoT device functionality.",
         "Heading1": "Why IoT Security Matters",

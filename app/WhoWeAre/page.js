@@ -50,7 +50,7 @@ export default function Page() {
               </div>
               <div className="flex justify-center">
                 <p className="text-center mt-5 lg:text-[1.4vw] md:text-[2vw] text-[2.5vw] md:w-[90%] w-[100%]">
-                  We uphold the highest ethical standards in every interaction, ensuring transparency and trustworthiness in all we do.
+                We protect businesses from online threats by offering expert assessments, innovative solutions, ensuring compliance, educating future professionals, identifying vulnerabilities, and fostering collaboration to stay ahead of evolving risks.
                 </p>
               </div>
             </div>
@@ -63,7 +63,8 @@ export default function Page() {
               </div>
               <div className="flex justify-center">
                 <p className="text-center mt-5 lg:text-[1.4vw] md:text-[2vw] text-[2.5vw] md:w-[90%] w-[100%]">
-                  We uphold the highest ethical standards in every interaction, ensuring transparency and trustworthiness in all we do.
+                By prioritizing cybersecurity for businesses globally, we aim to enhance safety for all individuals. Utilizing our research and innovation, we seek to enhance the safety of all individuals in the digital realm.
+
                 </p>
               </div>
             </div>
