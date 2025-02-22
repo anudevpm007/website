@@ -172,8 +172,8 @@ export default async function page({ searchParams }) {
             </div>
           </div>
 
-          <div className="hidden xl:flex justify-center relative bg-transparent mt-28">
-            <Image className="absolute h-full -z-10" src={EventBg} alt="N?A" />
+          <div className="hidden xl:flex justify-center relative py-4 bg-transparent mt-28">
+            <Image className="absolute h-full w-full object-fill -z-10" src={EventBg} alt="N?A" />
             <div className=" flex w-[60%] justify-end">
               <Image
                 className=" object-contain ml-10 right-80"
@@ -241,7 +241,7 @@ export default async function page({ searchParams }) {
                   </div>
                   <div className="md:px-10 px-3 md:py-8 lg:py-10 py-6 rounded-xl border-[#BBBBBB] border-[0.5px] shadow-[5px_6px_5px_1px_rgba(0,0,0,0.18)]">
                     <h2 className="font-heading lg:text-[1.3vw] md:text-[1.6vw] text-[2.6vw]">
-                      Customized Testing{" "}
+                      Actionable Report{" "}
                     </h2>
                     <div className="w-[30%] h-1 bg-[#185BD8] mt-5 mb-5"></div>
                     <p className="font-body text-[3vw] md:text-[2vw] lg:text-[1.4vw] mt-8">

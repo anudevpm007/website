@@ -58,8 +58,8 @@ export default function HomeBottom() {
           <Image src={Right_BT} alt="Botton" />
         </button>
       </div> */}
-      <div className="flex justify-center relative bg-transparent mt-28">
-        <Image className="absolute object-fill -z-10" src={EventBg} alt="N?A" />
+      <div className="flex justify-center w-full relative bg-transparent py-4 mt-28">
+        <Image className="absolute h-full w-full object-fill -z-10" src={EventBg} alt="N?A" />
         <Image
           className="absolute scale-90 right-80"
           src={EventSym}
