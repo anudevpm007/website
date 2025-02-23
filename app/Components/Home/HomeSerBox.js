@@ -4,6 +4,7 @@ import Image from "next/image";
 import arrow_left from "@/public/image/Home/arrow_left.png";
 import dbServices from "@/app/db/dbServices";
 import CardS from "../cards/cardS";
+import parse from "html-react-parser"
 
 export default function HomeSerBox() {
     var count =0
@@ -15,12 +16,12 @@ export default function HomeSerBox() {
     })
 
     const rightInc = () => {
-        if(indexs<3){
+        if(indexs<4){
             setindex(indexs+1)
             document.getElementById("SerLeft").style.opacity = "0.55";
             document.getElementById("SerRight").style.opacity = "1";
         }
-        if(indexs<2 && indexs>=0){
+        if(indexs<3 && indexs>=0){
             console.log("In the middle");
             document.getElementById("SerLeft").style.opacity = "1";
             document.getElementById("SerRight").style.opacity = "1";
@@ -35,7 +36,7 @@ export default function HomeSerBox() {
             document.getElementById("SerLeft").style.opacity = "1";
             document.getElementById("SerRight").style.opacity = "0.55";
         }
-        if(indexs<4 && indexs>1){
+        if(indexs<5 && indexs>1){
             console.log("In the middle2");
             document.getElementById("SerLeft").style.opacity = "1";
             document.getElementById("SerRight").style.opacity = "1";
@@ -46,7 +47,7 @@ export default function HomeSerBox() {
     }
 
     return (
-        <div className="hidden xl:block">
+        <div className=" hidden xl:block">
             <div className="flex -mt-[200px] justify-center h-fit animate-fade_left scrollSettings2 anim bg-[#185BD8] ">
                 <div className="w-[85%] pt-14">
                     <div className="animate-fade_left scrollSettings">
@@ -71,7 +72,7 @@ export default function HomeSerBox() {
                             </h1>
                             <p className="mt-14 text-white leading-[38px] tracking-tight text-justify">
                                 {
-                                    dbServices[indexs].pera
+                                    parse(dbServices[indexs].pera)
                                 }
                             </p>
                             <div className="flex justify-end mt-10">

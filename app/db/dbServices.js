@@ -2,7 +2,7 @@ import img0 from "@/public/image/Home/image0.png";
 import img1 from "@/public/image/Home/image1.png";
 import img2 from "@/public/image/Home/image2.png";
 import img3 from "@/public/image/Home/image3.png";
-import img4 from "@/public/image/Home/image4.png";
+// import img4 from "@/public/image/Home/image4.png";
 import img5 from "@/public/image/Home/image5.png";
 import IOT0 from "@/public/image/Home/Service/IOT/0.png"
 import IOT1 from "@/public/image/Home/Service/IOT/1.png"
@@ -13,6 +13,9 @@ import Net3 from "@/public/image/Home/Service/Network/3.png"
 import Net4 from "@/public/image/Home/Service/Network/4.png"
 import Cloud0 from "@/public/image/Home/Service/Cloud/0.png"
 import Cloud1 from "@/public/image/Home/Service/Cloud/1.png"
+import Red0 from "@/public/image/Home/Service/Red/0.png"
+import Red1 from "@/public/image/Home/Service/Red/1.png"
+import Red2 from "@/public/image/Home/Service/Red/2.png"
 
 
 const dbServices = [
@@ -138,6 +141,31 @@ const dbServices = [
                 "heading1": "Firewall Rule",
                 "heading2": "Review"
             },
+        ]
+    },
+    {
+        Main: "Red Team Assessment",
+        pera:"Our experts conduct advanced <span className=\"font-heading\">Red Teaming Assessments</span>, simulating real-world attacks to identify critical vulnerabilities. We specialize in <span className=\"font-heading\">Active Directory Penetration Testing</span>, uncovering risks like privilege escalation, and <span className=\"font-heading\">Active Directory Attacks and Advisory Simulations</span> to assess your defenses against targeted threats. Our <span className=\"font-heading\">EDR Evasion</span> techniques test your endpoint protection by bypassing detection mechanisms, ensuring your security is resilient against advanced attack strategies and safeguarding your critical assets.",
+        content: [
+            {
+                "heading": "Active directory Penetration testing",
+                "img": Red0,
+                "heading1": "Active directory",
+                "heading2": "Penetration testing"
+            },
+            {
+                "heading": "Active directory attacks and advisory simulation",
+                "img": Red1,
+                "heading1": "Active directory attacks",
+                "heading2": "and advisory simulation"
+            },
+            {
+                "heading": "EDR Evasion",
+                "img": Red2,
+                "heading1": "EDR Evasion",
+                "heading2": ""
+            },
+           
         ]
     }
     

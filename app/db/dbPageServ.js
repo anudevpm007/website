@@ -246,7 +246,63 @@ const SerPage = [
             { "heading": "CVE-Based Firewall Rule Analysis", "Pera": "Validate firewall rules against known attack techniques and vulnerabilities." },
             { "heading": "Zero Trust Network Policy Review", "Pera": "Align firewall rules with Zero Trust security principles, ensuring strict access control enforcement." }
         ]
-    }]
+    }],
+    [{
+        "heading": "Red Teaming Matters",
+        "WWF": "We don't just mimic attacks; we reveal the 'blast radius.' We meticulously map how a determined adversary could pivot through your Active Directory, evade your EDR, and achieve critical objectives, providing a clear understanding of the true impact of potential breaches.",
+        "Heading1": "Why Red Teaming Matters",
+        "H1Pera": "Active Directory pentesting is crucial to uncover misconfigurations that enable privilege escalation and lateral movement, leading to full domain compromise. EDR evasion testing ensures security solutions detect advanced threats.Red Teaming helps businesses identify vulnerabilities, strengthen defenses of your organization, and prevent real-world cyberattacks.",
+        "Heading2": "Unlock Limitless Security with Astraliva Red Teaming",
+        "H2Pera": "Our Red Teaming goes beyond conventional security testing by employing a multi-layered, adversary-driven approach to identify and mitigate real-world threats. We specialize in simulating sophisticated attack scenarios to uncover vulnerabilities before they can be exploited.",
+        "List": [
+            { "heading": "Threat Modeling", "Pera": "Assess potential security threats, pinpointing vulnerabilities, and understanding their impact on your organization." },
+            { "heading": "Manual & Automated Testing", "Pera": "Combine manual attack simulations with automated tools to identify security gaps and enhance overall resilience." },
+            { "heading": "Local Privilege Escalation", "Pera": "Identify weaknesses that allow attackers to gain higher system privileges and execute unauthorized actions." },
+            { "heading": "Lateral Movement", "Pera": "Analyze attack pathways that adversaries use to move across systems and compromise multiple assets." },
+            { "heading": "EDR Evasion", "Pera": "Test endpoint security solutions against advanced evasion techniques to ensure effective threat detection" },
+            { "heading": "Domain Privilege Escalation", "Pera": "Expose vulnerabilities that enable attackers to elevate privileges and take control of domain-level resources." },
+            { "heading": "Domain Persistence", "Pera": "Assess tactics adversaries use to maintain long-term access to compromised environments undetected." },
+            { "heading": "Cross-Forest Attacks", "Pera": "Evaluate security gaps between Active Directory forests that attackers exploit to expand their access and control." }
+        ]
+    },{
+        "heading": "Red Teaming Matters",
+        "WWF": "We don't just mimic attacks; we reveal the 'blast radius.' We meticulously map how a determined adversary could pivot through your Active Directory, evade your EDR, and achieve critical objectives, providing a clear understanding of the true impact of potential breaches.",
+        "Heading1": "Why Red Teaming Matters",
+        "H1Pera": "Active Directory pentesting is crucial to uncover misconfigurations that enable privilege escalation and lateral movement, leading to full domain compromise. EDR evasion testing ensures security solutions detect advanced threats.Red Teaming helps businesses identify vulnerabilities, strengthen defenses of your organization, and prevent real-world cyberattacks.",
+        "Heading2": "Unlock Limitless Security with Astraliva Red Teaming",
+        "H2Pera": "Our Red Teaming goes beyond conventional security testing by employing a multi-layered, adversary-driven approach to identify and mitigate real-world threats. We specialize in simulating sophisticated attack scenarios to uncover vulnerabilities before they can be exploited.",
+        "List": [
+            { "heading": "Threat Modeling", "Pera": "Assess potential security threats, pinpointing vulnerabilities, and understanding their impact on your organization." },
+            { "heading": "Manual & Automated Testing", "Pera": "Combine manual attack simulations with automated tools to identify security gaps and enhance overall resilience." },
+            { "heading": "Local Privilege Escalation", "Pera": "Identify weaknesses that allow attackers to gain higher system privileges and execute unauthorized actions." },
+            { "heading": "Lateral Movement", "Pera": "Analyze attack pathways that adversaries use to move across systems and compromise multiple assets." },
+            { "heading": "EDR Evasion", "Pera": "Test endpoint security solutions against advanced evasion techniques to ensure effective threat detection" },
+            { "heading": "Domain Privilege Escalation", "Pera": "Expose vulnerabilities that enable attackers to elevate privileges and take control of domain-level resources." },
+            { "heading": "Domain Persistence", "Pera": "Assess tactics adversaries use to maintain long-term access to compromised environments undetected." },
+            { "heading": "Cross-Forest Attacks", "Pera": "Evaluate security gaps between Active Directory forests that attackers exploit to expand their access and control." }
+        ]
+    },{
+        "heading": "Red Teaming Matters",
+        "WWF": "We don't just mimic attacks; we reveal the 'blast radius.' We meticulously map how a determined adversary could pivot through your Active Directory, evade your EDR, and achieve critical objectives, providing a clear understanding of the true impact of potential breaches.",
+        "Heading1": "Why Red Teaming Matters",
+        "H1Pera": "Active Directory pentesting is crucial to uncover misconfigurations that enable privilege escalation and lateral movement, leading to full domain compromise. EDR evasion testing ensures security solutions detect advanced threats.Red Teaming helps businesses identify vulnerabilities, strengthen defenses of your organization, and prevent real-world cyberattacks.",
+        "Heading2": "Unlock Limitless Security with Astraliva Red Teaming",
+        "H2Pera": "Our Red Teaming goes beyond conventional security testing by employing a multi-layered, adversary-driven approach to identify and mitigate real-world threats. We specialize in simulating sophisticated attack scenarios to uncover vulnerabilities before they can be exploited.",
+        "List": [
+            { "heading": "Threat Modeling", "Pera": "Assess potential security threats, pinpointing vulnerabilities, and understanding their impact on your organization." },
+            { "heading": "Manual & Automated Testing", "Pera": "Combine manual attack simulations with automated tools to identify security gaps and enhance overall resilience." },
+            { "heading": "Local Privilege Escalation", "Pera": "Identify weaknesses that allow attackers to gain higher system privileges and execute unauthorized actions." },
+            { "heading": "Lateral Movement", "Pera": "Analyze attack pathways that adversaries use to move across systems and compromise multiple assets." },
+            { "heading": "EDR Evasion", "Pera": "Test endpoint security solutions against advanced evasion techniques to ensure effective threat detection" },
+            { "heading": "Domain Privilege Escalation", "Pera": "Expose vulnerabilities that enable attackers to elevate privileges and take control of domain-level resources." },
+            { "heading": "Domain Persistence", "Pera": "Assess tactics adversaries use to maintain long-term access to compromised environments undetected." },
+            { "heading": "Cross-Forest Attacks", "Pera": "Evaluate security gaps between Active Directory forests that attackers exploit to expand their access and control." }
+        ]
+    }
+    
+    
+    
+    ]
 ]
 
 export default SerPage;

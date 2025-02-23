@@ -196,7 +196,57 @@ const QAdb = [
       Q: "Will internal penetration testing disrupt my operations?",
       A: "Our team works closely with you to minimize disruption during testing. We ensure testing is conducted in a controlled manner to avoid interference with business operations. In cases where testing could impact critical systems, we collaborate to schedule testing during off-hours or in a manner that ensures continuity.",
     },
-  ],
+  ],[
+    {
+      id: 1,
+      Q: " What is Red Teaming and how does it differ from traditional penetration testing?",
+      A: "Red Teaming is a comprehensive, adversarial simulation designed to test an organization's security posture as a whole, mimicking real-world attacker tactics, techniques, and procedures (TTPs). Unlike traditional penetration testing, which typically focuses on specific vulnerabilities, Red Teaming aims to evaluate the effectiveness of an organization's people, processes, and technologies in detecting and responding to sophisticated attacks.",
+    },
+    {
+      id: 2,
+      Q: "What is Active Directory Penetration Testing and why is it important?",
+      A: "Active Directory Penetration Testing focuses on identifying and exploiting vulnerabilities within an organization's Active Directory (AD) environment. AD is a critical component of most enterprise networks, and a successful attack can grant an adversary widespread access. This testing is crucial for uncovering misconfigurations, weak passwords, and other security flaws that could be leveraged by attackers.",
+    },
+    {
+      id: 3,
+      Q: "What are some common Active Directory attack and advisory simulations conducted during a Red Team engagement?",
+      A: '<div className="ml-2 list-disc font-heading">Common simulations include: <ul className="mt-2 ml-7 list-disc font-body"><li className="mb-2"> Pass-the-Hash/Pass-the-Ticket attacks</li><li className="mb-2">Kerberoasting and AS-REP Roasting</li><li className="mb-2">Golden/Silver Ticket attacks</li><li className="mb-2">Domain/Forest Trust exploitation</li><li className="mb-2"> Privilege escalation and lateral movement within the AD environment.</li><li className="mb-2">Group Policy Object (GPO) manipulation.</li></ul></div>',
+    },
+    {
+      id: 4,
+      Q: "How does EDR Evasion fit into a Red Team operation?",
+      A: "EDR (Endpoint Detection and Response) Evasion involves techniques used by Red Team operators to bypass or disable EDR solutions during an attack simulation. This assesses the effectiveness of the EDR tool and the organization's security monitoring capabilities in detecting advanced threats that attempt to avoid detection.",
+    },{
+      id:5,
+      Q:"What are some examples of EDR Evasion techniques used in Red Teaming?",
+      A:'<div className="ml-2 list-disc font-heading">Some examples include: <ul className="mt-2 ml-7 list-disc font-body"><li className="mb-2"> Modifying or disabling EDR agents</li><li className="mb-2">Process injection and hollowing</li><li className="mb-2">Memory tampering and manipulation</li><li className="mb-2">Obfuscation and encryption of malicious code</li><li className="mb-2">Exploiting legitimate system tools (Living off the Land binaries - LOLBins)</li></ul></div>'
+    },
+    {
+      id:6,
+      Q:" What are the benefits of conducting Active Directory attack and advisory simulations?",
+      A:'<div className="ml-2 list-disc font-heading">These simulations help organizations: <ul className="mt-2 ml-7 list-disc font-body"><li className="mb-2"> Identify weaknesses in their AD security posture.</li><li className="mb-2">Improve their incident response capabilities.</li><li className="mb-2">Train security teams to detect and respond to advanced attacks.</li><li className="mb-2">Validate the effectiveness of security controls.</li><li className="mb-2">Reduce the risk of a successful real-world AD compromise.</li></ul></div>'
+    },
+    {
+      id:7,
+      Q:" What kind of reporting is provided after a Red Team engagement involving Active Directory and EDR Evasion?",
+      A:'<div className="ml-2 list-disc font-heading"> A comprehensive report is provided, detailing: <ul className="mt-2 ml-7 list-disc font-body"> <li className="mb-2"> Identified vulnerabilities and their severity. </li> <li className="mb-2">The attack paths used by the Red Team.</li> <li className="mb-2"> The effectiveness of existing security controls. </li> <li className="mb-2"> Recommendations for remediation and improvement. </li> <li className="mb-2"> Detailed steps taken during the engagement. </li> </ul> </div>'
+    },
+    {
+      id:8,
+      Q:" How often should an organization conduct Red Team exercises that include Active Directory and EDR Evasion?",
+      A:"The frequency depends on the organization's risk tolerance, industry regulations, and the complexity of their environment. Generally, annual or bi-annual Red Team exercises are recommended, especially after significant infrastructure changes or security incidents."
+    },
+    {
+      id:9,
+      Q:"What qualifications and experience should a Red Team have for conducting Active Directory and EDR Evasion testing?",
+      A:'<div className="ml-2 list-disc font-heading"> A reputable Red Team should possess: <ul className="mt-2 ml-7 list-disc font-body"> <li className="mb-2"> Deep understanding of Active Directory architecture and security. </li> <li className="mb-2"> Expertise in offensive security techniques and tools. </li> <li className="mb-2"> Experience with EDR solutions and evasion tactics. </li> <li className="mb-2"> Certifications like OSCP, OSCE, OSEP, or similar. </li> <li className="mb-2">Strong communication and reporting skills.</li> </ul> </div>'
+    },
+    {
+      id:10,
+      Q:" What are the key takeaways from a Red Team engagement focusing on Active Directory and EDR Evasion?",
+      A:'<div className="ml-2 list-disc font-heading"> Key takeaways include: <ul className="mt-2 ml-7 list-disc font-body"> <li className="mb-2"> A clear understanding of the organization\'s true security posture. </li> <li className="mb-2"> Actionable insights for improving security controls and processes. </li> <li className="mb-2"> Increased awareness of advanced attack techniques. </li> <li className="mb-2">Enhanced incident response capabilities.</li> <li className="mb-2">Validated security tool effectiveness.</li> </ul> </div>'
+    }
+  ]
 ];
 
 export default QAdb;
