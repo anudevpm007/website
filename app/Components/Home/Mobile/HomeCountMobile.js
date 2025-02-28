@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
+var count = 0
 export default function HomeCountMobile() {
     const countSec = useRef();
-    const [GP, setGP] = useState(0)
-    const [TC, setTC] = useState(0)
-    const [CRR, setCRR] = useState(0)
+
+    const [GP, setGP] = useState(5)
+    const [TC, setTC] = useState(30)
+    const [CRR, setCRR] = useState(99)
 
     var com = [false, false, false]
     var com2 = [false, false, false]
@@ -14,18 +15,19 @@ export default function HomeCountMobile() {
     const Increament = () => {
 
         const timeOut = setTimeout(() => {
-            if (GP <= 4) {
-                setGP(GP + 1)
+            count = count + 1
+            if (count <= 5) {
+                setGP(count)
             } else {
                 com[0] = true
             }
-            if (TC <= 29) {
-                setTC(TC + 1)
+            if (count <= 30) {
+                setTC(count)
             } else {
                 com[1] = true
             }
-            if (CRR <= 98) {
-                setCRR(CRR + 1)
+            if (count <= 99) {
+                setCRR(count)
             } else {
                 com[2] = true
             }
@@ -38,43 +40,16 @@ export default function HomeCountMobile() {
     }
 
 
-    const decreament = ()=>{
-        const timeIn = setTimeout(()=>{
-            if (GP >= 1) {
-                setGP(GP - 1)
-            } else {
-                com2[0] = true
-            }
-            if (TC >= 1) {
-                setTC(TC - 1)
-            } else {
-                com2[1] = true
-            }
-            if (CRR >= 1) {
-                setCRR(CRR - 1)
-            } else {
-                com2[2] = true
-            }
-        },10)
-        if (com2[0] === true && com2[1] === true && com2[2] === true) {
-            clearTimeout(timeIn)
-            com2 = [false, false, false]
-        }
-    }
+   
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0]
             if (entry.isIntersecting) {
                 Increament();
-            }else{
-                // setGP(0)
-                // setCRR(0)
-                // setTC(0)
-                decreament()
             }
         }, {
-            threshold: 1,
+            threshold: 0,
         })
 
         observer.observe(countSec.current)

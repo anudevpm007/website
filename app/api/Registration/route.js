@@ -1,6 +1,8 @@
 import mysql from "mysql2/promise";
 import { NextResponse } from "next/server";
 import whiteDom from "../GetInTouch/whiteList";
+import dotenv from 'dotenv';
+dotenv.config()
 
 const connection = await mysql.createConnection({
   host: process.env.DATABASE_HOST,

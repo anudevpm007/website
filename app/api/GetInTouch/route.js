@@ -1,6 +1,9 @@
 import mysql from "mysql2/promise";
 import { NextResponse } from "next/server";
 import whiteDom from "./whiteList";
+import dotenv from 'dotenv';
+dotenv.config()
+
 
 const connection = await mysql.createConnection({
   host: process.env.DATABASE_HOST,
@@ -116,6 +119,8 @@ export async function POST(request) {
 
     return NextResponse.json({ status: error, Alpha: E });
   } catch (err) {
+    console.log("Error");
+    
     return NextResponse.json({ status: 404 });
   }
 }

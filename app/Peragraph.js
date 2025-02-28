@@ -50,12 +50,12 @@ export default function () {
     })
 
     const data = [
-        "We were really impressed with how professional and responsive the team at Astraliva was. They were always there to answer our questions and help us out whenever we needed it. Their expertise in penetration testing helped us identify and address some serious security vulnerabilities <span className=\"font-heading\">--OpusNexus</span>",
+        "We were really impressed with how professional and responsive the team at Astraliva was. They were always there to answer our questions and help us out whenever we needed it. Their expertise in penetration testing helped us identify and address some serious security vulnerabilities ",
         "Astraliva has provided outstanding cloud solutions, enabling seamless scalability and security. Their technical expertise and proactive approach have greatly enhanced our operations, helping us achieve significant improvements in performance and efficiency",
     ]
 
     const data2 = [
-        "Sophia Joseph ( Director)","Densewave Networks- Nihal Asker"
+        "OpusNexus – Sophia Joseph ","Densewave Networks- Nihal Asker"
     ]
 
     return (
@@ -69,24 +69,13 @@ export default function () {
                         <div className="w-[92%] items-center relative flex justify-center">
                             <div ref={box} className="  bg-[#185BD8] p-[70px] py-[50px] w-[92%] rounded-lg">
                                 <div className="flex justify-center">
-                                    {/* <span>
-                                        <Image ref={img} className="w-[10vw] h-15" src={quetes} alt="N?A" />
-                                    </span> */}
-                                    <p ref={pera} className="transition-opacity opacity-100  text-justify mt-8 px-4 leading-[50px] font-body   text-white text-[1.3vw]">
+                                    <p ref={pera} className="transition-opacity opacity-100  text-justify mt-8 px-4 leading-[50px] font-body   text-white text-[1.2vw]">
                                         {
                                             parse(data[changeP])
                                         }
-                                        {/* <span>
-
-                                            <Image
-                                                className=" mt-3 float-right ml-4 w-[3.1vw] rotate-180"
-                                                src={quetes}
-                                                alt="Nothing"
-                                            />
-                                        </span> */}
                                     </p>
                                 </div>
-                                <div ref={word} className="mt-10 text-[1.6vw] text-white w-[100%] flex justify-end p-3">
+                                <div ref={word} className="mt-10 font-heading text-[1.6vw] text-white w-[100%] flex justify-end p-3">
                                     {
                                         data2[changeP]
                                     }
@@ -98,14 +87,6 @@ export default function () {
                     </div>
                 </div>
             </div>
-            {/* <div className="scrollSettings animate-fade flex justify-end w-[90%] mt-10">
-                <button  className=" bg-white p-1 ml-1 rounded-md border-[#00000080] border-[1px] flex justify-center items-center">
-                    <Image src={Left_BT} alt="Botton" />
-                </button>
-                <button  className="bg-[#185BD8] p-1 ml-1 rounded-md flex justify-center items-center">
-                    <Image src={Right_BT} alt="Botton" />
-                </button>
-            </div> */}
         </div>
     )
 }

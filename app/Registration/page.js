@@ -1,5 +1,5 @@
 "use client";
-import whiteDom from "../api/GetInTouch/whiteList";
+// import whiteDom from "../api/GetInTouch/whiteList";
 import axios from "axios";
 import { useState } from "react";
 import MobFooter from "../Components/Home/Mobile/MobFooter";
@@ -80,6 +80,14 @@ export default function page() {
               phoneLabel.style.color = "black";
               emailLabel.style.color = "black";
               Ptag.style.color = "green";
+
+
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("phone").value = "";
+              document.getElementById("comname").value = "";
+              document.getElementById("des").value = "";
+              
             }
 
             if (status.Alpha === "N") {

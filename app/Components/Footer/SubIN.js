@@ -18,6 +18,7 @@ export default function SubIN() {
             console.log((res.data.error));
             if ((res.data.error) === 200) {
                 document.getElementById("MSG").style.color = "green"
+                
 
             } else {
                 document.getElementById("MSG").style.color = "red"

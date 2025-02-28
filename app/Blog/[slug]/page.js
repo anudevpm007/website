@@ -27,7 +27,7 @@ export default async function page({ searchParams }) {
             if (Object.keys(data) == "h1") {
               return (
                 <div key={index}>
-                  <h1 className="md:text-[3vw] text-[4vw]  mb-14 mt-10 font-heading">
+                  <h1 className="md:text-[3vw] text-[4vw]  mb-4 md:mb-14 mt-6 md:mt-10 font-heading">
                     {data.h1}
                   </h1>
                 </div>
@@ -96,11 +96,11 @@ export default async function page({ searchParams }) {
                   <div className="bg-slate-800 py-4 px-4 pr-6 rounded-md   ">
                     <ul className="list-[decimal-leading-zero]  list-inside text-yellow-500">
                       {(data.CL).map((data1, a) => {
-                        id = data.CL.length + id +1
-                        console.log(id);
+                      
+                       
                         
                         return (
-                          <li  key={id}>
+                          <li  key={a}>
                             <span className="text-lime-500 ml-2">{data1.P}</span>
 
                           </li>
@@ -116,7 +116,7 @@ export default async function page({ searchParams }) {
             if (Object.keys(data) == "PL") {
               return (
                 <div className="flex justify-center" key={index}>
-                  <p className=" w-[90%] text-[1.3vw] mb-10 mt-10  font-body">
+                  <p className=" w-[90%] text-[1.9vw] md:text-[1.3vw] mb-10 mt-10  font-body">
                     {data.PL.P}
                     <Link className="text-blue-600" href={data.PL.url}>
                       {data.PL.L}
@@ -155,7 +155,7 @@ export default async function page({ searchParams }) {
                           return (
                             <span
                               key={index2}
-                              className="text-red-600 px-2 text-[1.2vw] py-[3px] rounded-md bg-slate-800"
+                              className="text-red-400 md:font-body font-heading md:text-red-600 px-2 text-[1.8vw] md:text-[1.2vw] py-[3px] rounded-md bg-slate-600  md:bg-slate-800"
                             >
                               {data2.replaceAll("#", "") + " "}
                             </span>
@@ -231,10 +231,10 @@ export default async function page({ searchParams }) {
           })}
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="mt-8 hidden md:block">
         <Footer />
       </div>
-      <div className="md:hidden">
+      <div className="mt-8 md:hidden">
         <MobFooter />
       </div>
     </div>

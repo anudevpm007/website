@@ -353,13 +353,13 @@ const Blog_data = [
         {"h1":"Critical in PDF Generation"},
         {"IMG":img4_0},
         {"p":"AI Created Image"},
-        {
-            "PL":{
-                "P":"",
-                "L":"Aswin Govind",
-                "url":"https://www.linkedin.com/in/aswingovind/"
-            }
-        },
+        // {
+        //     "PL":{
+        //         "P":"",
+        //         "L":"Aswin Govind",
+        //         "url":"https://www.linkedin.com/in/aswingovind/"
+        //     }
+        // },
         {"h4":"Hi Everyone,"},
         {"p":"Today, I want to discuss an advanced topic concerning PDF generation in applications and the critical vulnerabilities associated with it. You’re all familiar with this well-known common vulnerability, but I just wanted to share it with you."},
         {"p":"Most of the web applications provide a PDF generation features, commonly used for invoices or reports, which often incorporate dynamic user input. In this we will discuss the misconfigurations and vulnerability that can lead to critical security vulnerabilities. It’s basically caused by HTML injection in the user input that is processed by PDF generation libraries."},
@@ -957,7 +957,40 @@ const Blog_data = [
   {"p":"A Use-After-Free (UAF) vulnerability occurs when a program continues to access heap-allocated memory after it has been freed. While often mistaken for simply reusing freed memory, the real danger lies in how memory is allocated, freed, and later used."},
   {"pa":"% Example 1: A Basic UAF Condition"},
   {"CL":[
-    "#include <stdlib.h>","#include <stdio.h>"," ","int main() {","char *ptr = NULL;","ptr = malloc(100); // Allocating 100 bytes dynamically ","free(ptr); // Freeing the allocated object ","ptr = \"Astraliva\n\"; // 💣 Using the freed object","printf(\"%s\", ptr);","}"
+    {
+      "id":0,
+      "P":"#include <stdlib.h>"
+    },
+    {
+      "id":1,
+      "P":"#include <stdio.h>"
+    }
+    ,{
+      "id":2,
+      "P":" "
+    },{
+      "id":3,
+      "P":"int main() {\",\"char *ptr = NULL;"
+    },
+    {
+      "id":4,
+      "P":"ptr = malloc(100); // Allocating 100 bytes dynamically "
+    }
+    ,{
+      "id":5,
+      "P":"free(ptr); // Freeing the allocated object "
+    },{
+      "id":6,
+      "P":"ptr = \"Astraliva\n\"; // 💣 Using the freed object"
+    },
+    {
+      "id":7,
+      "P":"printf(\"%s\", ptr);"
+    }
+    ,{
+      "id":8,
+      "P":"}"
+    }
   ]},
   {"pa":"In this example, we allocate 100 bytes of memory using #malloc() and immediately free it. We then attempt to store the string \"Astraliva\" in the freed memory. While the program may not crash immediately, it introduces a UAF condition—the behaviour becomes unpredictable and could lead to security risks."},
   {"IMG":img5_0},

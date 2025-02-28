@@ -51,13 +51,13 @@ export default function HomeSerBox() {
             <div className="flex -mt-[200px] justify-center h-fit animate-fade_left scrollSettings2 anim bg-[#185BD8] ">
                 <div className="w-[85%] pt-14">
                     <div className="animate-fade_left scrollSettings">
-                        <h2 className="text-[2.2vw] text-white font-[400] font-sans">
+                        <h2 className="text-[2.2vw] text-white font-[400] font-body">
                             Services
                         </h2>
-                        <p className="text-white pt-2 text-[3vw] font-thin">
+                        <p className="text-white pt-2 text-[3vw] font-body">
                             Comprehensive Cybersecurity Solutions for Your Business.
                         </p>
-                        <p className="text-white text-[1.2vw] pt-6">
+                        <p className="text-white text-[1.2vw] font-body pt-6">
                             Protect your business with a comprehensive suite of cybersecurity
                             solutions designed to meet your unique needs and exceed your
                             expectations.
@@ -65,12 +65,12 @@ export default function HomeSerBox() {
                     </div>
                     <div className="grid gap-24 grid-cols-12 mt-32 mb-14">
                         <div className=" col-span-5">
-                            <h1 className="text-[50px] font-medium text-white ">
+                            <h1 className="text-[50px] font-headingSemiBold text-white ">
                                 {
                                     dbServices[indexs].Main
                                 }
                             </h1>
-                            <p className="mt-14 text-white leading-[38px] tracking-tight text-justify">
+                            <p className="mt-14 text-white font-body leading-[38px] tracking-tight text-justify">
                                 {
                                     parse(dbServices[indexs].pera)
                                 }

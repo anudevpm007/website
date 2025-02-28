@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function CardS({ img, ids,i, heading }) {
     return (
         <Link href={{
-            pathname:"/"+heading,
+            pathname:"/Services/"+heading,
             query:{
                 id:ids,
                 i:i
@@ -13,7 +13,7 @@ export default function CardS({ img, ids,i, heading }) {
             <div className="p-2 bg bg-[#185BD8] w-max m-5 rounded-lg">
                 <Image src={img} alt="ImageCard" />
             </div>
-            <p className="text-black text-center">
+            <p className="text-black font-body text-center">
                 {heading}
             </p>
         </Link>

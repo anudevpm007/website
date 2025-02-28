@@ -1,42 +1,41 @@
-import img0_0 from "@/public/image/Home/image0_0.png";
-import img0_1 from "@/public/image/Home/image0_1.png";
-import img0_2 from "@/public/image/Home/image0_2.png";
-import img0_3 from "@/public/image/Home/image0_3.png";
-import img0_4 from "@/public/image/Home/image0_4.png";
-import img0_5 from "@/public/image/Home/image0_5.png";
-
+import img0_1 from "@/public/image/Home/0_1.png"
+import img0_2 from "@/public/image/Home/0_2.png"
+import img0_3 from "@/public/image/Home/0_3.png"
+import img0_4 from "@/public/image/Home/0_4.png"
+import img0_5 from "@/public/image/Home/0_5.png"
+import img0_6 from "@/public/image/Home/0_6.png"
 
 const standData = [
     {
-        "heading":"To Your Business Needs",
-        "Pera":"We understand your specific security challenges and customize our testing approach to fit your business perfectly",
-        "Image":img0_0
-    },
-    {
-        "heading":"Expert Security Teams",
-        "Pera":"Our team of experience cybersecurity professionals combines years of expertise with the latest industry insights to ensure your application remains secure",
+        "heading":"True Security",
+        "Pera":"Our research-driven penetration testing identifies and eliminates critical vulnerabilities.",
         "Image":img0_1
     },
     {
-        "heading":"Next Gen Security",
-        "Pera":"Our security professionals use advanced techniques and thorough research to uncover hidden vulnerabilities, including CVEs, business logic flaws, and sophisticated attack strategies",
+        "heading":"Security Research Expertise",
+        "Pera":"Our team comprises highly credentialed security researchers with specialized expertise, providing unparalleled depth and accuracy in penetration testing and security analysis.",
         "Image":img0_2
     },
     {
-        "heading":"Achieving Compliance",
-        "Pera":"Astraliva helps you meet key industry standards like GDPR,PCI-DSS,and HIPAA ensuring your app stays compliant and avoids costly fines",
+        "heading":"Customized Threat Intelligence & Exploitation",
+        "Pera":"We tailor our penetration testing methodology to your specific industry and risk profile, developing custom exploits and delivering precise threat intelligence that addresses your unique security challenges.",
         "Image":img0_3
+    },
+    {
+        "heading":"Confidentiality and Integrity Assured",
+        "Pera":"Your sensitive data is handled with the utmost discretion and professionalism.",
+        "Image":img0_4
     }
     ,
     {
-        "heading":"Risk Mitigation",
-        "Pera":"We don’t just identify vulnerabilities we collaborate with you to implement strategies that prevent future threats and strengthen your overall security",
-        "Image":img0_4
+        "heading":"Actionable and Decisive Reporting",
+        "Pera":"We deliver clear, comprehensive reports that translate complex technical findings into actionable insights, empowering you to swiftly mitigate vulnerabilities and strengthen your security posture.",
+        "Image":img0_5
     },
     {
         "heading":"Clear Actionable Reporting",
-        "Pera":"Recive clear detailed reports with our observation and customized recommendations on fixing vulnerabilities making it easy to understand and act upon",
-        "Image":img0_5
+        "Pera":"Planning for Tomorrow's Threats Today. We go beyond identifying vulnerabilities; we deliver strategic recommendations to mitigate risks before they materialize, strengthening your security posture for the long term.",
+        "Image":img0_6
     }
 ]
 

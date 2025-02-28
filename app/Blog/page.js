@@ -161,7 +161,7 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="flex py-10 justify-center">
+        <div className="hidden  py-10 justify-center">
           <div className="w-[85%]">
             <h1 className=" text-[5vw] md:text-[4vw] lg:text-[3vw] font-body">
               The Astraliva{" "}
@@ -174,7 +174,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="flex py-10 justify-center">
+        <div className="hidden py-10 justify-center">
           <div className="w-[85%] grid grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-[#00000017] h-[260px] sm:h-[380px] md:h-[400px] lg:h-auto xl:rounded-2xl md:rounded-xl rounded-md">
               <Image src={img1_1} alt="Bottom Image" className="w-[100%]" />

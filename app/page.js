@@ -4,12 +4,12 @@ import { redirect } from "next/navigation";
 import Header_img from "@/public/image/Home/banner_main.jpg";
 import Link from "next/link";
 import HomeSerBox from "./Components/Home/HomeSerBox";
-import img0_0 from "@/public/image/Home/image0_0.png";
-import img0_1 from "@/public/image/Home/image0_1.png";
-import img0_2 from "@/public/image/Home/image0_2.png";
-import img0_3 from "@/public/image/Home/image0_3.png";
-import img0_4 from "@/public/image/Home/image0_4.png";
-import img0_5 from "@/public/image/Home/image0_5.png";
+import img0_1 from "@/public/image/Home/0_1.png";
+import img0_2 from "@/public/image/Home/0_2.png";
+import img0_3 from "@/public/image/Home/0_3.png";
+import img0_4 from "@/public/image/Home/0_4.png";
+import img0_5 from "@/public/image/Home/0_5.png";
+import img0_6 from "@/public/image/Home/0_6.png";
 import box_bg_img from "@/public/image/Home/why_box_bg_image.png";
 import Peragraph from "./Peragraph";
 import ExpoBtn from "./ExpoBtn";
@@ -52,7 +52,7 @@ export default async function Home({ searchParams }) {
               Solutions For Your Business
             </div>
             <div className="flex justify-center mt-5">
-              <p className="text-center w-[80%]">
+              <p className="font-body text-center w-[80%]">
                 Astraliva delivers next-generation cybersecurity solutions
                 through customized strategies and research-oriented approach. We
                 protect your entire digital ecosystem, from your core network to
@@ -64,22 +64,22 @@ export default async function Home({ searchParams }) {
             </div>
             <ExpoBtn />
           </div>
-          <Image src={Header_img} className="" alt="Header Image" />
+          <Image src={Header_img} className="w-full" alt="Header Image" />
         </div>
         <div id="bodySec">
           <HomeSerBox />
           <div className="flex justify-center mt-20">
             <div className="w-[85%] ">
-              <div className="scrollSettings animate-fade_left text-[2.2vw]">
-                Why <span className="text-[#185BD8] font-[600]">ASTRALIVA</span>{" "}
+              <div className="scrollSettings font-body animate-fade_left text-[2.2vw]">
+                Why <span className="text-[#185BD8] font-headingSemiBold">ASTRALIVA</span>{" "}
                 Stands Outs
               </div>
-              <div className="text-[1.2vw] scrollSettings animate-fade_left mt-5">
+              <div className="text-[1.2vw] scrollSettings animate-fade_left font-body mt-5">
                 Astraliva delivers comprehensive cybersecurity solutions
                 designed for your unique needs and customized to perfectly
                 fit your business.
               </div>
-              <div className="scrollSettings animate-fade grid gap-10 2xl:grid-cols-3 grid-cols-2 mt-20 ">
+              <div className="scrollSettings font-body animate-fade grid gap-10 2xl:grid-cols-3 grid-cols-2 mt-20 ">
                 <div className="flex justify-center">
                   <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
                     <Image
@@ -88,15 +88,12 @@ export default async function Home({ searchParams }) {
                       className="absolute w-[100%] top-0 left-0 rounded-xl"
                     />
                     <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
-                      <Image className="w-10" src={img0_0} alt="Nothing" />
+                      <Image className="w-10" src={img0_1} alt="Nothing" />
                     </div>
-                    <div className="text-[1.5vw] mb-5">
-                      To Your Business Needs
-                    </div>
+                    <div className="text-[1.5vw] font-headingSemiBold mb-5">True Security</div>
                     <p>
-                      We understand your specific security challenges and
-                      customize our testing approach to fit your business
-                      perfectly
+                      Our research-driven penetration testing identifies and
+                      eliminates critical vulnerabilities.
                     </p>
                   </div>
                 </div>
@@ -107,13 +104,15 @@ export default async function Home({ searchParams }) {
                     className="absolute w-[100%] top-0 left-0 rounded-xl"
                   />
                   <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
-                    <Image src={img0_1} className="w-10" alt="Nothing" />
+                    <Image src={img0_2} className="w-10" alt="Nothing" />
                   </div>
-                  <div className="text-[1.5vw] mb-5">Expert Security Teams</div>
+                  <div className="text-[1.5vw] font-headingSemiBold mb-5">
+                    Security Research Expertise
+                  </div>
                   <p>
-                    Our team of experience cybersecurity professionals combines
-                    years of expertise with the latest industry insights to
-                    ensure your application remains secure
+                    Our team comprises highly credentialed security researchers
+                    with specialized expertise, providing unparalleled depth and
+                    accuracy in penetration testing and security analysis.
                   </p>
                 </div>
                 <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
@@ -123,14 +122,16 @@ export default async function Home({ searchParams }) {
                     className="absolute w-[100%] top-0 left-0 rounded-xl"
                   />
                   <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
-                    <Image className="w-10" src={img0_2} alt="Nothing" />
+                    <Image className="w-10" src={img0_3} alt="Nothing" />
                   </div>
-                  <div className="text-[1.5vw] mb-5">Next Gen Security</div>
+                  <div className="text-[1.5vw] font-headingSemiBold mb-5">
+                    Customized Threat Intelligence & Exploitation
+                  </div>
                   <p>
-                    Our security professionals use advanced techniques and
-                    thorough research to uncover hidden vulnerabilities,
-                    including CVEs, business logic flaws, and sophisticated
-                    attack strategies
+                    We tailor our penetration testing methodology to your
+                    specific industry and risk profile, developing custom
+                    exploits and delivering precise threat intelligence that
+                    addresses your unique security challenges.
                   </p>
                 </div>
                 <div className="flex justify-center">
@@ -141,33 +142,16 @@ export default async function Home({ searchParams }) {
                       className="absolute w-[100%] top-0 left-0 rounded-xl"
                     />
                     <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
-                      <Image className="w-10" src={img0_3} alt="Nothing" />
+                      <Image className="w-10" src={img0_4} alt="Nothing" />
                     </div>
-                    <div className="text-[1.5vw] mb-5">
-                      Achieving Compliance
+                    <div className="text-[1.5vw] font-headingSemiBold mb-5">
+                      Confidentiality and Integrity Assured
                     </div>
                     <p>
-                      Astraliva helps you meet key industry standards like
-                      GDPR,PCI-DSS,and HIPAA ensuring your app stays compliant
-                      and avoids costly fines
+                      Your sensitive data is handled with the utmost discretion
+                      and professionalism.
                     </p>
                   </div>
-                </div>
-                <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
-                  <Image
-                    src={box_bg_img}
-                    alt="Nothing"
-                    className="absolute w-[100%] top-0 left-0 rounded-xl"
-                  />
-                  <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
-                    <Image className="w-10" src={img0_4} alt="Nothing" />
-                  </div>
-                  <div className="text-[1.5vw] mb-5">Risk Mitigation</div>
-                  <p>
-                    We don’t just identify vulnerabilities we collaborate with
-                    you to implement strategies that prevent future threats and
-                    strengthen your overall security
-                  </p>
                 </div>
                 <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
                   <Image
@@ -178,13 +162,33 @@ export default async function Home({ searchParams }) {
                   <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
                     <Image className="w-10" src={img0_5} alt="Nothing" />
                   </div>
-                  <div className="text-[1.5vw] mb-5">
-                    Clear Actionable Reporting
+                  <div className="text-[1.5vw] font-headingSemiBold mb-5">
+                    Actionable and Decisive Reporting
                   </div>
                   <p>
-                    Recive clear detailed reports with our observation and
-                    customized recommendations on fixing vulnerabilities making
-                    it easy to understand and act upon
+                    We deliver clear, comprehensive reports that translate
+                    complex technical findings into actionable insights,
+                    empowering you to swiftly mitigate vulnerabilities and
+                    strengthen your security posture.
+                  </p>
+                </div>
+                <div className="p-6 border-[rgba(0,0,0,0.36)] border-[1px] relative rounded-xl">
+                  <Image
+                    src={box_bg_img}
+                    alt="Nothing"
+                    className="absolute w-[100%] top-0 left-0 rounded-xl"
+                  />
+                  <div className="rounded-lg my-8 bg-[#185BD8] p-2 w-fit">
+                    <Image className="w-10" src={img0_6} alt="Nothing" />
+                  </div>
+                  <div className="text-[1.5vw] font-headingSemiBold mb-5">
+                    Proactive Risk Mitigation Strategies
+                  </div>
+                  <p>
+                    Planning for Tomorrow's Threats Today. We go beyond
+                    identifying vulnerabilities; we deliver strategic
+                    recommendations to mitigate risks before they materialize,
+                    strengthening your security posture for the long term.
                   </p>
                 </div>
               </div>
@@ -193,18 +197,7 @@ export default async function Home({ searchParams }) {
           <CounterSec />
           <Peragraph />
 
-          {/* <div className="scrollSettings animate-fade w-[100%] flex justify-center">
-            <div className="w-[85%]">
-              <div className="text-[1.8vw] mb-4 mt-28">
-                Astraliva Security{" "}
-                <span className="text-[#185BD8]">Summits & Webinars</span>
-              </div>
-              <div className="text-[1.2vw]">
-                Join the Astraliva community. Learn, connect, and grow with
-                industry leaders at our Security Summits & Webinars.
-              </div>
-            </div>
-          </div> */}
+     
           <HomeBottom />
         </div>
       </div>

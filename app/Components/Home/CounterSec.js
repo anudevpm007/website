@@ -7,10 +7,11 @@ import box_bg_img from "@/public/image/Home/why_box_bg_image.png";
 
 
 var count = 0;
+var DeGP = 5;
+var DeTC = 30;
+var DeCRR = 99;
 export default function () {
-    var DeGP = 0;
-    var DeTC = 0;
-    var DeCRR = 0;
+    
 
     const [GP, setGP] = useState(DeGP);
     const [TC, setTC] = useState(DeTC);
@@ -44,7 +45,7 @@ export default function () {
             }
         }, 70);
         if (clref[0] === true && clref[1] === true && clref[2] === true) {
-            clearInterval(intervalCount)
+            
             count = 0;
 
         }
@@ -63,12 +64,10 @@ export default function () {
                     increaseCount()
                     i = i + 1
                 }
-            }else{
-                count = 0
             }
 
         }, {
-            threshold: 1,
+            threshold: 0,
         })
         observer.observe(myRef22.current);
 

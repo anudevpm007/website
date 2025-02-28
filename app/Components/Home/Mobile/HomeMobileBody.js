@@ -43,7 +43,7 @@ export default function HomeMobileBody() {
         <div className="w-[90%]">
           <div>
             <div className="font-body text-[5vw] md:text-[4vw] lg:text-[3vw] mt-6">Why <span className="text-[#0858ED] font-heading">ASTRALIVA</span> Stands Outs </div>
-            <p className="mt-4 text-[3vw] md:text-[1.9vw] lg:text-[1.6vw] text-center">Astraliva delivers comprehensive cybersecurity solutions designed for your unique needs and customized to perfectly fit your business.</p>
+            <p className="mt-4 text-[3vw] md:text-[1.9vw] lg:text-[1.6vw] text-pretty">Astraliva delivers comprehensive cybersecurity solutions designed for your unique needs and customized to perfectly fit your business.</p>
           </div>
           <StandMobile />
         </div>

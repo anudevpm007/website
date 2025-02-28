@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Card({image,heading,pera,index}) {
   return (
-    <div className="relative w-[30vw] h-full rounded-2xl border-[#F1F1F1] border-[1px]">
+    <div className="relative w-[35vw] h-full rounded-2xl border-[#F1F1F1] border-[1px]">
       <div>
         <Image src={image} alt="N?A" className="rounded-t-2xl" />
       </div>
