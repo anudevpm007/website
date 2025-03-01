@@ -1,73 +1,73 @@
-import dbServices from "./db/dbServices";
-import BlogDataCard from "./db/DBCardData";
-import openData from "./Careers/openData";
+// import dbServices from "./db/dbServices";
+// import BlogDataCard from "./db/DBCardData";
+// import openData from "./Careers/openData";
 
 export default async function sitemap() {
   const baseUrl = "https://astraliva.com";
-  var url = "";
+  // var url = "";
 
-  const Serv = () => {
-    var objs = [];
-    dbServices?.flatMap(
-      (d0, id) =>
-        d0.content?.map((d1, i) => {
-          url = `${baseUrl}/Services/${encodeURIComponent(d1.heading)}?id=${id}&i=${i}`;
+  // const Serv = () => {
+  //   var objs = [];
+  //   dbServices?.flatMap(
+  //     (d0, id) =>
+  //       d0.content?.map((d1, i) => {
+  //         url = `${baseUrl}/Services/${encodeURIComponent(d1.heading)}?id=${id}&i=${i}`;
 
-          const obj = {
-            url: url.toString().replace(/&/g, "&amp;"),
-            lastModified: new Date().toISOString(),
-          };
+  //         const obj = {
+  //           url: url.toString().replace(/&/g, "&amp;"),
+  //           lastModified: new Date().toISOString(),
+  //         };
 
-          objs.push(obj);
+  //         objs.push(obj);
 
-          //   return "";
-        }) || []
-    );
-    return objs;
-  };
+  //         //   return "";
+  //       }) || []
+  //   );
+  //   return objs;
+  // };
 
-  const blog = () => {
-    var objs = [];
-    BlogDataCard?.map((d1, id) => {
-      url = `${baseUrl}/${encodeURIComponent(d1.Heading)}?index=${id}`;
+  // const blog = () => {
+  //   var objs = [];
+  //   BlogDataCard?.map((d1, id) => {
+  //     url = `${baseUrl}/${encodeURIComponent(d1.Heading)}?index=${id}`;
 
-      const obj = {
-        url: url.toString().replace(/&/g, "&amp;"),
-        lastModified: new Date().toISOString(),
-      };
+  //     const obj = {
+  //       url: url.toString().replace(/&/g, "&amp;"),
+  //       lastModified: new Date().toISOString(),
+  //     };
 
-      objs.push(obj);
+  //     objs.push(obj);
 
-      //   return "";
-    }) || [];
+  //     //   return "";
+  //   }) || [];
 
-    return objs;
-  };
+  //   return objs;
+  // };
 
 
-  const carrier = () => {
-    var objs = [];
-    openData?.map((d1, id) => {
-      url = `${baseUrl}/carrier/${encodeURIComponent(d1.id)}`;
+  // const carrier = () => {
+  //   var objs = [];
+  //   openData?.map((d1, id) => {
+  //     url = `${baseUrl}/carrier/${encodeURIComponent(d1.id)}`;
 
-      const obj = {
-        url: url.toString().replace(/&/g, "&amp;"),
-        lastModified: new Date().toISOString(),
-      };
+  //     const obj = {
+  //       url: url.toString().replace(/&/g, "&amp;"),
+  //       lastModified: new Date().toISOString(),
+  //     };
 
-      objs.push(obj);
+  //     objs.push(obj);
 
-      //   return "";
-    }) || [];
+  //     //   return "";
+  //   }) || [];
 
-    return objs;
-  };
+  //   return objs;
+  // };
 
-  const redataS = Serv();
-  const redataB = blog();
-  const redataC = carrier();
+  // const redataS = Serv();
+  // const redataB = blog();
+  // const redataC = carrier();
 
-  console.log(...redataB);
+  // console.log(...redataB);
 
   return [
     {
